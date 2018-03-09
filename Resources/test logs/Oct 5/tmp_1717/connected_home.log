@@ -1,0 +1,1420 @@
+[2017-10-3 15:19:10.09830]	 {INFO}	 <===============================Connected_home started ==============================>
+[2017-10-3 15:19:10.11581]	 {INFO}	 Page No: 1 Cur:0
+[2017-10-3 15:19:11.18462]	 {INFO}	 home mode matched
+[2017-10-3 15:19:12.81197]	 {INFO}	 Backhandler
+[2017-10-3 15:20:45.02652]	 {INFO}	 <===============================Connected_home started ==============================>
+[2017-10-3 15:20:45.04435]	 {INFO}	 Page No: 1 Cur:0
+[2017-10-3 15:20:45.26480]	 {INFO}	 home mode matched
+[2017-10-3 15:20:47.12482]	 {INFO}	 MultilevelSwitch 4 initial level is 0 
+[2017-10-3 15:20:50.03895]	 {INFO}	 Device 4 index 1 is set to 34 value
+[2017-10-3 15:20:50.12495]	 {INFO}	 Setting Multilevel Switch  4 on 
+[2017-10-3 15:20:50.45593]	 {INFO}	 MultilevelSwitch 4 index 1 value is 100 
+[2017-10-3 15:20:50.84642]	 {INFO}	 MultilevelSwitch 4 index 1 value is 99 
+[2017-10-3 15:20:51.63935]	 {INFO}	 Device 4 index 1 is set to 18 value
+[2017-10-3 15:20:52.03500]	 {INFO}	 MultilevelSwitch 4 index 1 value is 18 
+[2017-10-3 15:20:52.91997]	 {INFO}	 Device 4 index 1 is set to 2 value
+[2017-10-3 15:20:53.36729]	 {INFO}	 MultilevelSwitch 4 index 1 value is 2 
+[2017-10-3 15:20:54.77239]	 {INFO}	 Setting Multilevel Switch  4 off 
+[2017-10-3 15:20:55.16975]	 {INFO}	 MultilevelSwitch 4 index 1 value is 0 
+[2017-10-3 15:20:55.78981]	 {INFO}	 Setting Multilevel Switch  4 on 
+[2017-10-3 15:20:56.19325]	 {INFO}	 MultilevelSwitch 4 index 1 value is 100 
+[2017-10-3 15:20:58.31111]	 {INFO}	 Device 4 index 1 is set to 15 value
+[2017-10-3 15:20:58.76038]	 {INFO}	 MultilevelSwitch 4 index 1 value is 15 
+[2017-10-3 15:20:59.27023]	 {INFO}	 Device 4 index 1 is set to 16 value
+[2017-10-3 15:20:59.37609]	 {INFO}	 Device 4 index 1 is set to 33 value
+[2017-10-3 15:20:59.68087]	 {INFO}	 MultilevelSwitch 4 index 1 value is 33 
+[2017-10-3 15:21:2.44749]	 {INFO}	 Close button pressed
+[2017-10-3 15:21:2.62265]	 {INFO}	 home mode matched
+[2017-10-3 15:24:8.51640]	 {INFO}	 Backhandler
+[2017-10-3 15:25:26.71213]	 {INFO}	 <===============================Connected_home started ==============================>
+[2017-10-3 15:25:26.72950]	 {INFO}	 Page No: 1 Cur:0
+[2017-10-3 15:25:26.95134]	 {INFO}	 home mode matched
+[2017-10-3 15:25:28.21596]	 {INFO}	 SecurifiSmartSwitch  5 initial state Off ActivePower: 0.000W Current: 0.000A Voltage: 0.000V 
+[2017-10-3 15:25:29.34100]	 {INFO}	 Device 5 index 1 is set to true value
+[2017-10-3 15:25:35.78728]	 {INFO}	 Device 5 index 1 is set to false value
+[2017-10-3 15:25:37.10907]	 {INFO}	 Close button pressed
+[2017-10-3 15:25:37.28502]	 {INFO}	 home mode matched
+[2017-10-3 15:25:41.70296]	 {INFO}	 Backhandler
+[2017-10-3 15:30:56.87342]	 {INFO}	 <===============================Connected_home started ==============================>
+[2017-10-3 15:30:56.89080]	 {INFO}	 Page No: 1 Cur:0
+[2017-10-3 15:30:57.12079]	 {INFO}	 home mode matched
+[2017-10-3 15:30:58.49411]	 {INFO}	 Drawing Generic device
+[2017-10-3 15:30:58.49433]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:30:58.49463]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-3 15:30:58.49494]	 {INFO}	 Two-3 row x_present:45 y_present:90 x_previous3:305 y_previous3:90
+[2017-10-3 15:30:58.49506]	 {INFO}	 Two-3 row x_next:45 y_next:140
+[2017-10-3 15:30:58.49522]	 {INFO}	 GenericDevice enum :3 area:0.666600 X:45 Y:90
+[2017-10-3 15:30:58.49533]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:30:58.49543]	 {INFO}	 GenericDevice gd2:0  gd2:0  gd2:0
+[2017-10-3 15:30:58.49554]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-3 15:30:58.50773]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-3 15:30:58.50791]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:30:58.50805]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-3 15:30:58.50818]	 {INFO}	 Two-3 row x_present:45 y_present:140 x_previous3:305 y_previous3:140
+[2017-10-3 15:30:58.50835]	 {INFO}	 Two-3 row x_next:45 y_next:190
+[2017-10-3 15:30:58.50847]	 {INFO}	 GenericDevice enum :3 area:0.666600 X:45 Y:140
+[2017-10-3 15:30:58.50858]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:30:58.50868]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:0
+[2017-10-3 15:30:58.50880]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-3 15:30:58.52082]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-3 15:30:58.52100]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:30:58.52113]	 {INFO}	 Assigning area to the IndexType:12
+[2017-10-3 15:30:58.52125]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:30:58.52135]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:0
+[2017-10-3 15:30:58.52146]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-3 15:30:58.52161]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:30:58.52173]	 {INFO}	 Assigning area to the IndexType:9
+[2017-10-3 15:30:58.52183]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:30:58.52194]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:0
+[2017-10-3 15:30:58.52204]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-3 15:30:58.52402]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:30:58.52417]	 {INFO}	 Assigning area to the IndexType:25
+[2017-10-3 15:30:58.52427]	 {INFO}	 One-3 Previous Space found
+[2017-10-3 15:30:58.52438]	 {INFO}	 one-third x_present:305 y_present:140 x_next:45 y_next:190
+[2017-10-3 15:30:58.52449]	 {INFO}	 GenericDevice enum :25 area:0.333300 X:305 Y:140
+[2017-10-3 15:30:58.52460]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:30:58.52470]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-3 15:30:58.52481]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-3 15:30:58.52811]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:30:58.52827]	 {INFO}	 Assigning area to the IndexType:27
+[2017-10-3 15:30:58.52839]	 {INFO}	 one-third x_present:45 y_present:190 x_next:175 y_next:190
+[2017-10-3 15:30:58.52850]	 {INFO}	 GenericDevice enum :27 area:0.333300 X:45 Y:190
+[2017-10-3 15:30:58.52861]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:30:58.52871]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-3 15:30:58.52881]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-3 15:30:58.52891]	 {INFO}	 Drawing humidity for generic device
+[2017-10-3 15:30:58.53167]	 {INFO}	 GenericDevice 6 HUMIDITY is 0.000000
+[2017-10-3 15:32:17.59299]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:32:17.59318]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-3 15:32:17.59333]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:32:17.59345]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-3 15:32:17.59356]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-3 15:32:17.60391]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-3 15:32:17.60410]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-3 15:34:50.49290]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:34:50.49304]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-3 15:34:50.49316]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:34:50.49327]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-3 15:34:50.49337]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-3 15:34:50.50572]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-3 15:34:50.50588]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-3 15:34:56.93620]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:34:56.93636]	 {INFO}	 Assigning area to the IndexType:25
+[2017-10-3 15:34:56.93648]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:34:56.93659]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-3 15:34:56.93670]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-3 15:34:56.94999]	 {INFO}	 Updating index 5 value of GenericDevice
+[2017-10-3 15:35:9.49074]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:35:9.49090]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-3 15:35:9.49104]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:35:9.49115]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-3 15:35:9.49126]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-3 15:35:9.50268]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-3 15:35:9.50284]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-3 15:35:26.50114]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:35:26.50128]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-3 15:35:26.50140]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:35:26.50153]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-3 15:35:26.50163]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-3 15:35:26.51374]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-3 15:35:26.51391]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-3 15:36:40.39639]	 {INFO}	 Close button pressed
+[2017-10-3 15:36:40.57175]	 {INFO}	 home mode matched
+[2017-10-3 15:36:42.58236]	 {INFO}	 Drawing Generic device
+[2017-10-3 15:36:42.58254]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:36:42.58267]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-3 15:36:42.58279]	 {INFO}	 Two-3 row x_present:45 y_present:90 x_previous3:305 y_previous3:90
+[2017-10-3 15:36:42.58290]	 {INFO}	 Two-3 row x_next:45 y_next:140
+[2017-10-3 15:36:42.58302]	 {INFO}	 GenericDevice enum :3 area:0.666600 X:45 Y:90
+[2017-10-3 15:36:42.58312]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:36:42.58323]	 {INFO}	 GenericDevice gd2:0  gd2:0  gd2:0
+[2017-10-3 15:36:42.58333]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-3 15:36:42.59538]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-3 15:36:42.59556]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:36:42.59569]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-3 15:36:42.59581]	 {INFO}	 Two-3 row x_present:45 y_present:140 x_previous3:305 y_previous3:140
+[2017-10-3 15:36:42.59592]	 {INFO}	 Two-3 row x_next:45 y_next:190
+[2017-10-3 15:36:42.59603]	 {INFO}	 GenericDevice enum :3 area:0.666600 X:45 Y:140
+[2017-10-3 15:36:42.59614]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:36:42.59624]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:0
+[2017-10-3 15:36:42.59634]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-3 15:36:42.60831]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-3 15:36:42.60848]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:36:42.60861]	 {INFO}	 Assigning area to the IndexType:12
+[2017-10-3 15:36:42.60872]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:36:42.60883]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:0
+[2017-10-3 15:36:42.60894]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-3 15:36:42.60904]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:36:42.60914]	 {INFO}	 Assigning area to the IndexType:9
+[2017-10-3 15:36:42.60924]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:36:42.60935]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:0
+[2017-10-3 15:36:42.60945]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-3 15:36:42.61146]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:36:42.61160]	 {INFO}	 Assigning area to the IndexType:25
+[2017-10-3 15:36:42.61171]	 {INFO}	 One-3 Previous Space found
+[2017-10-3 15:36:42.61182]	 {INFO}	 one-third x_present:305 y_present:140 x_next:45 y_next:190
+[2017-10-3 15:36:42.61194]	 {INFO}	 GenericDevice enum :25 area:0.333300 X:305 Y:140
+[2017-10-3 15:36:42.61204]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:36:42.61215]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-3 15:36:42.61225]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-3 15:36:42.61558]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:36:42.61572]	 {INFO}	 Assigning area to the IndexType:27
+[2017-10-3 15:36:42.61584]	 {INFO}	 one-third x_present:45 y_present:190 x_next:175 y_next:190
+[2017-10-3 15:36:42.61596]	 {INFO}	 GenericDevice enum :27 area:0.333300 X:45 Y:190
+[2017-10-3 15:36:42.61606]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:36:42.61616]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-3 15:36:42.61627]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-3 15:36:42.61636]	 {INFO}	 Drawing humidity for generic device
+[2017-10-3 15:36:42.61909]	 {INFO}	 GenericDevice 6 HUMIDITY is 0.000000
+[2017-10-3 15:36:44.14810]	 {INFO}	 Assigning area to the IndexType:27
+[2017-10-3 15:36:44.14831]	 {INFO}	 x_star:45 y_star:190
+[2017-10-3 15:36:44.87384]	 {INFO}	 Assigning area to the IndexType:25
+[2017-10-3 15:36:44.87405]	 {INFO}	 x_star:305 y_star:140
+[2017-10-3 15:36:46.19805]	 {INFO}	 Assigning area to the IndexType:25
+[2017-10-3 15:36:46.19831]	 {INFO}	 x_star:305 y_star:140
+[2017-10-3 15:36:48.63303]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:36:48.63320]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-3 15:36:48.63336]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:36:48.63350]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-3 15:36:48.63364]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-3 15:36:48.64383]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-3 15:36:48.64401]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-3 15:36:52.01077]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:36:52.01094]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-3 15:36:52.01107]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:36:52.01118]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-3 15:36:52.01129]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-3 15:36:52.02355]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-3 15:36:52.02372]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-3 15:37:2.02081]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:37:2.02096]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-3 15:37:2.02108]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:37:2.02119]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-3 15:37:2.02130]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-3 15:37:2.03139]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-3 15:37:2.03154]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-3 15:37:3.33279]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:37:3.33293]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-3 15:37:3.33306]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:37:3.33321]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-3 15:37:3.33334]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-3 15:37:3.34536]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-3 15:37:3.34554]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-3 15:37:28.85232]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:37:28.85247]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-3 15:37:28.85258]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:37:28.85269]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-3 15:37:28.85279]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-3 15:37:28.86290]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-3 15:37:28.86307]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-3 15:37:37.70099]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:37:37.70112]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-3 15:37:37.70124]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:37:37.70135]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-3 15:37:37.70146]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-3 15:37:37.71355]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-3 15:37:37.71371]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-3 15:37:50.71077]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:37:50.71094]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-3 15:37:50.71107]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:37:50.71118]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-3 15:37:50.71128]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-3 15:37:50.72154]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-3 15:37:50.72170]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-3 15:37:59.94079]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:37:59.94096]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-3 15:37:59.94108]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:37:59.94119]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-3 15:37:59.94130]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-3 15:37:59.95364]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-3 15:37:59.95379]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-3 15:38:15.95076]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:38:15.95093]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-3 15:38:15.95105]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:38:15.95119]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-3 15:38:15.95131]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-3 15:38:15.96143]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-3 15:38:15.96159]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-3 15:38:16.51086]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:38:16.51103]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-3 15:38:16.51115]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:38:16.51126]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-3 15:38:16.51137]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-3 15:38:16.52351]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-3 15:38:16.52365]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-3 15:38:46.68071]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:38:46.68086]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-3 15:38:46.68097]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:38:46.68108]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-3 15:38:46.68119]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-3 15:38:46.69254]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-3 15:38:46.69273]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-3 15:39:14.72851]	 {ERROR}	 drawGenericDevice...
+[2017-10-3 15:39:14.72865]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-3 15:39:14.72877]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-3 15:39:14.72888]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-3 15:39:14.72898]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-3 15:39:14.74156]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-3 15:39:14.74173]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-3 15:39:15.89428]	 {INFO}	 Close button pressed
+[2017-10-3 15:39:16.06933]	 {INFO}	 home mode matched
+[2017-10-3 15:39:17.20675]	 {INFO}	 Backhandler
+[2017-10-3 15:42:9.68018]	 {INFO}	 <===============================Connected_home started ==============================>
+[2017-10-3 15:42:9.69760]	 {INFO}	 Page No: 1 Cur:0
+[2017-10-3 15:42:9.92208]	 {INFO}	 home mode matched
+[2017-10-3 15:42:11.11485]	 {INFO}	 DoorSensor 7 initial state is false 
+[2017-10-3 15:42:23.25885]	 {INFO}	 Device 7 index 3 is set to false value
+[2017-10-3 15:42:23.26695]	 {INFO}	 DoorSensor 7 index 3 value is false 
+[2017-10-3 15:42:25.63973]	 {INFO}	 Close button pressed
+[2017-10-3 15:42:25.81528]	 {INFO}	 home mode matched
+[2017-10-3 15:42:29.99836]	 {INFO}	 DoorSensor 7 initial state is false 
+[2017-10-3 15:42:35.13124]	 {INFO}	 DoorSensor 7 index 1 value is true 
+[2017-10-3 15:42:37.16523]	 {INFO}	 DoorSensor 7 index 1 value is false 
+[2017-10-3 15:42:40.07236]	 {INFO}	 DoorSensor 7 index 1 value is true 
+[2017-10-3 15:42:44.11205]	 {INFO}	 DoorSensor 7 index 1 value is false 
+[2017-10-3 15:42:49.65596]	 {INFO}	 DoorSensor 7 index 1 value is true 
+[2017-10-3 15:42:52.69046]	 {INFO}	 DoorSensor 7 index 1 value is false 
+[2017-10-3 15:42:56.04402]	 {INFO}	 DoorSensor 7 index 1 value is true 
+[2017-10-3 15:42:58.67144]	 {INFO}	 DoorSensor 7 index 1 value is false 
+[2017-10-3 15:43:4.53009]	 {INFO}	 DoorSensor 7 index 1 value is true 
+[2017-10-3 15:43:39.65951]	 {INFO}	 DoorSensor 7 index 1 value is false 
+[2017-10-3 15:43:53.55916]	 {INFO}	 DoorSensor 7 index 1 value is true 
+[2017-10-3 15:44:10.71412]	 {INFO}	 Close button pressed
+[2017-10-3 15:44:10.89256]	 {INFO}	 home mode matched
+[2017-10-3 15:48:34.97698]	 {INFO}	 Backhandler
+[2017-10-3 15:50:0.78198]	 {INFO}	 <===============================Connected_home started ==============================>
+[2017-10-3 15:50:0.79964]	 {INFO}	 Page No: 1 Cur:0
+[2017-10-3 15:50:1.03492]	 {INFO}	 home mode matched
+[2017-10-3 15:50:8.15733]	 {INFO}	 ContactSwitch 8 initial state true 
+[2017-10-3 15:50:13.47451]	 {INFO}	 ContactSwitch 8 index 1 value is false 
+[2017-10-3 15:50:15.74397]	 {INFO}	 ContactSwitch 8 index 1 value is true 
+[2017-10-3 15:50:16.61469]	 {INFO}	 ContactSwitch 8 index 1 value is false 
+[2017-10-3 15:50:17.39391]	 {INFO}	 ContactSwitch 8 index 1 value is true 
+[2017-10-3 15:50:17.69454]	 {INFO}	 ContactSwitch 8 index 1 value is false 
+[2017-10-3 15:50:37.07355]	 {INFO}	 ContactSwitch 8 index 1 value is true 
+[2017-10-3 15:51:52.58338]	 {INFO}	 ContactSwitch 8 index 1 value is false 
+[2017-10-3 15:51:58.42389]	 {INFO}	 ContactSwitch 8 index 1 value is true 
+[2017-10-3 15:52:12.47455]	 {INFO}	 ContactSwitch 8 index 1 value is false 
+[2017-10-3 15:55:8.51846]	 {INFO}	 Close button pressed
+[2017-10-3 15:55:8.69463]	 {INFO}	 home mode matched
+[2017-10-3 15:55:13.11836]	 {INFO}	 ContactSwitch 8 initial state false 
+[2017-10-3 15:55:14.11561]	 {INFO}	 Edit button on touch
+[2017-10-3 15:55:14.19593]	 {INFO}	 Editing name and location of Device 8 
+[2017-10-3 15:55:26.44221]	 {INFO}	 ContactSwitch 8 initial state false 
+[2017-10-3 15:55:26.47611]	 {PRINT}	 Received DeviceUpdated event
+[2017-10-3 15:55:27.56087]	 {INFO}	 Close button pressed
+[2017-10-3 15:55:27.73675]	 {INFO}	 home mode matched
+[2017-10-3 15:55:29.81534]	 {INFO}	 Backhandler
+[2017-10-3 15:56:43.45525]	 {INFO}	 <===============================Connected_home started ==============================>
+[2017-10-3 15:56:43.47292]	 {INFO}	 Page No: 1 Cur:0
+[2017-10-3 15:56:43.69747]	 {INFO}	 home mode matched
+[2017-10-3 15:56:45.42481]	 {INFO}	 ContactSwitch 9 initial state true 
+[2017-10-3 15:59:19.48521]	 {INFO}	 ContactSwitch 9 index 1 value is false 
+[2017-10-3 15:59:25.38414]	 {INFO}	 ContactSwitch 9 index 1 value is true 
+[2017-10-3 15:59:48.43659]	 {INFO}	 ContactSwitch 9 index 1 value is false 
+[2017-10-3 16:0:7.31617]	 {INFO}	 ContactSwitch 9 index 1 value is true 
+[2017-10-3 16:6:54.64417]	 {INFO}	 Close button pressed
+[2017-10-3 16:6:54.82029]	 {INFO}	 home mode matched
+[2017-10-3 16:11:7.97180]	 {PRINT}	 Received ClientUpdated event
+[2017-10-3 16:11:9.42150]	 {PRINT}	 Received ClientJoined event
+[2017-10-3 16:27:19.32677]	 {INFO}	 Backhandler
+[2017-10-4 9:59:29.61671]	 {INFO}	 <===============================Connected_home started ==============================>
+[2017-10-4 9:59:29.75306]	 {INFO}	 Page No: 1 Cur:0
+[2017-10-4 9:59:30.73528]	 {INFO}	 home mode matched
+[2017-10-4 10:3:37.49699]	 {INFO}	 EXIT
+[2017-10-4 10:4:6.35168]	 {INFO}	 <===============================Connected_home started ==============================>
+[2017-10-4 10:4:6.36923]	 {INFO}	 Page No: 1 Cur:0
+[2017-10-4 10:4:6.59429]	 {INFO}	 home mode matched
+[2017-10-4 10:4:23.18669]	 {INFO}	 SecurifiSmartSwitch  5 initial state Off ActivePower: 0.000W Current: 0.000A Voltage: 0.000V 
+[2017-10-4 10:4:25.95092]	 {INFO}	 Device 5 index 1 is set to true value
+[2017-10-4 10:4:30.95675]	 {INFO}	 Advance button on touch
+[2017-10-4 10:4:33.49078]	 {INFO}	 SecurifiSmartSwitch  5 initial state On ActivePower: 0.000W Current: 0.000A Voltage: 0.000V 
+[2017-10-4 10:4:35.32216]	 {INFO}	 Device 5 index 1 is set to false value
+[2017-10-4 10:4:36.65357]	 {INFO}	 Close button pressed
+[2017-10-4 10:4:36.82856]	 {INFO}	 home mode matched
+[2017-10-4 10:4:37.68457]	 {INFO}	 MultilevelSwitch 4 initial level is 33 
+[2017-10-4 10:4:43.01347]	 {INFO}	 Device 4 index 1 is set to 91 value
+[2017-10-4 10:4:43.45996]	 {INFO}	 MultilevelSwitch 4 index 1 value is 91 
+[2017-10-4 10:4:44.23313]	 {INFO}	 Device 4 index 1 is set to 31 value
+[2017-10-4 10:4:44.73597]	 {INFO}	 MultilevelSwitch 4 index 1 value is 31 
+[2017-10-4 10:4:44.85881]	 {INFO}	 Device 4 index 1 is set to 0 value
+[2017-10-4 10:4:45.30745]	 {INFO}	 MultilevelSwitch 4 index 1 value is 0 
+[2017-10-4 10:4:53.27065]	 {INFO}	 Device 4 index 1 is set to 44 value
+[2017-10-4 10:4:53.72386]	 {INFO}	 MultilevelSwitch 4 index 1 value is 44 
+[2017-10-4 10:4:56.37700]	 {INFO}	 Close button pressed
+[2017-10-4 10:4:56.55536]	 {INFO}	 home mode matched
+[2017-10-4 10:4:58.71718]	 {INFO}	 EXIT
+[2017-10-4 10:5:36.79855]	 {INFO}	 <===============================Connected_home started ==============================>
+[2017-10-4 10:5:36.81611]	 {INFO}	 Page No: 1 Cur:0
+[2017-10-4 10:5:37.04342]	 {INFO}	 home mode matched
+[2017-10-4 10:5:45.61260]	 {INFO}	 Drawing Generic device
+[2017-10-4 10:5:45.61283]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 10:5:45.61315]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 10:5:45.61345]	 {INFO}	 Two-3 row x_present:45 y_present:90 x_previous3:305 y_previous3:90
+[2017-10-4 10:5:45.61358]	 {INFO}	 Two-3 row x_next:45 y_next:140
+[2017-10-4 10:5:45.61373]	 {INFO}	 GenericDevice enum :3 area:0.666600 X:45 Y:90
+[2017-10-4 10:5:45.61384]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 10:5:45.61395]	 {INFO}	 GenericDevice gd2:0  gd2:0  gd2:0
+[2017-10-4 10:5:45.61405]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-4 10:5:45.62623]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 10:5:45.62640]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 10:5:45.62654]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 10:5:45.62666]	 {INFO}	 Two-3 row x_present:45 y_present:140 x_previous3:305 y_previous3:140
+[2017-10-4 10:5:45.62677]	 {INFO}	 Two-3 row x_next:45 y_next:190
+[2017-10-4 10:5:45.62688]	 {INFO}	 GenericDevice enum :3 area:0.666600 X:45 Y:140
+[2017-10-4 10:5:45.62698]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 10:5:45.62708]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:0
+[2017-10-4 10:5:45.62719]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-4 10:5:45.63936]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 10:5:45.63954]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 10:5:45.63966]	 {INFO}	 Assigning area to the IndexType:12
+[2017-10-4 10:5:45.63978]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 10:5:45.63988]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:0
+[2017-10-4 10:5:45.63999]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-4 10:5:45.64014]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 10:5:45.64025]	 {INFO}	 Assigning area to the IndexType:9
+[2017-10-4 10:5:45.64036]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 10:5:45.64047]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:0
+[2017-10-4 10:5:45.64057]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-4 10:5:45.64255]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 10:5:45.64269]	 {INFO}	 Assigning area to the IndexType:25
+[2017-10-4 10:5:45.64280]	 {INFO}	 One-3 Previous Space found
+[2017-10-4 10:5:45.64291]	 {INFO}	 one-third x_present:305 y_present:140 x_next:45 y_next:190
+[2017-10-4 10:5:45.64302]	 {INFO}	 GenericDevice enum :25 area:0.333300 X:305 Y:140
+[2017-10-4 10:5:45.64312]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 10:5:45.64323]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 10:5:45.64333]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-4 10:5:45.64686]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 10:5:45.64702]	 {INFO}	 Assigning area to the IndexType:27
+[2017-10-4 10:5:45.64714]	 {INFO}	 one-third x_present:45 y_present:190 x_next:175 y_next:190
+[2017-10-4 10:5:45.64726]	 {INFO}	 GenericDevice enum :27 area:0.333300 X:45 Y:190
+[2017-10-4 10:5:45.64736]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 10:5:45.64747]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 10:5:45.64757]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 10:5:45.64766]	 {INFO}	 Drawing humidity for generic device
+[2017-10-4 10:5:45.65044]	 {INFO}	 GenericDevice 6 HUMIDITY is 0.000000
+[2017-10-4 10:6:3.59000]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 10:6:3.59015]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 10:6:3.59027]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 10:6:3.59039]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 10:6:3.59050]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 10:6:3.60077]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 10:6:3.60093]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 10:6:5.18939]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 10:6:5.18956]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 10:6:5.18968]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 10:6:5.18980]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 10:6:5.18990]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 10:6:5.20204]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 10:6:5.20220]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 10:6:16.36473]	 {INFO}	 Close button pressed
+[2017-10-4 10:6:16.54020]	 {INFO}	 home mode matched
+[2017-10-4 10:6:23.93121]	 {INFO}	 DoorSensor 7 initial state is false 
+[2017-10-4 10:6:25.56318]	 {INFO}	 Close button pressed
+[2017-10-4 10:6:25.73896]	 {INFO}	 home mode matched
+[2017-10-4 10:6:26.24791]	 {INFO}	 ContactSwitch 8 initial state true 
+[2017-10-4 10:6:27.70597]	 {INFO}	 Close button pressed
+[2017-10-4 10:6:27.88135]	 {INFO}	 home mode matched
+[2017-10-4 10:6:28.46895]	 {INFO}	 ContactSwitch 9 initial state false 
+[2017-10-4 10:6:31.13588]	 {INFO}	 Close button pressed
+[2017-10-4 10:6:31.31125]	 {INFO}	 home mode matched
+[2017-10-4 10:7:58.73442]	 {INFO}	 EXIT
+[2017-10-4 15:53:50.46082]	 {INFO}	 <===============================Connected_home started ==============================>
+[2017-10-4 15:53:50.47849]	 {INFO}	 Page No: 1 Cur:0
+[2017-10-4 15:53:50.70392]	 {INFO}	 home mode matched
+[2017-10-4 15:53:51.88646]	 {INFO}	 setting on_off draw
+[2017-10-4 15:53:51.90855]	 {INFO}	 HueLamp 1 initial state is Off 
+[2017-10-4 15:53:51.90877]	 {INFO}	 HueLamp 1 initial level is 27 
+[2017-10-4 15:53:52.88466]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 15:53:57.24343]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 15:54:0.03195]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 15:54:3.79332]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 15:54:3.89184]	 {INFO}	 Device 1 index 2 is set to false value
+[2017-10-4 15:54:3.91033]	 {INFO}	 HueLamp 1 index 10 value received is true  
+[2017-10-4 15:54:4.41829]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 15:54:4.51610]	 {INFO}	 Device 1 index 2 is set to false value
+[2017-10-4 15:54:4.52537]	 {INFO}	 HueLamp 1 index 10 value received is true  
+[2017-10-4 15:54:6.41880]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 15:54:6.57054]	 {INFO}	 Device 1 index 2 is set to true value
+[2017-10-4 15:54:6.58123]	 {INFO}	 HueLamp 1 index 10 value received is true  
+[2017-10-4 15:54:6.59369]	 {INFO}	 notification received for on_off
+[2017-10-4 15:54:6.59932]	 {INFO}	 HueLamp 1 index 2 value received is true  
+[2017-10-4 15:54:7.56056]	 {PRINT}	 Received ClientJoined event
+[2017-10-4 15:54:7.81299]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 15:54:10.56542]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 15:54:11.62921]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 15:54:11.64605]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 15:54:13.24371]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 15:54:13.50558]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 15:54:13.52081]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 15:54:13.55179]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 15:54:13.57930]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 15:54:17.91226]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 15:54:21.42179]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 15:54:21.70503]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 15:54:21.72709]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 15:54:21.75442]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 16:7:25.36933]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 16:7:25.39702]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 16:7:25.83673]	 {INFO}	 Close button pressed
+[2017-10-4 16:7:26.01243]	 {INFO}	 home mode matched
+[2017-10-4 16:7:27.23391]	 {PRINT}	 trying to update modeeeeeeeeeeee 2
+[2017-10-4 16:7:27.23411]	 {PRINT}	 setting to home mode from rule
+[2017-10-4 16:7:27.39973]	 {INFO}	 data received AlmondModeUpdated Mode=3 NULL
+[2017-10-4 16:7:27.49832]	 {PRINT}	 Received SceneDeactivated event
+[2017-10-4 16:7:27.59929]	 {PRINT}	 Received SceneActivated event
+[2017-10-4 16:7:28.52825]	 {PRINT}	 trying to update modeeeeeeeeeeee 2
+[2017-10-4 16:7:28.52844]	 {PRINT}	 setting to away mode from rule
+[2017-10-4 16:7:28.71901]	 {INFO}	 data received AlmondModeUpdated Mode=2 NULL
+[2017-10-4 16:7:28.81759]	 {PRINT}	 Received SceneActivated event
+[2017-10-4 16:7:28.91859]	 {PRINT}	 Received SceneDeactivated event
+[2017-10-4 16:7:30.39297]	 {INFO}	 EXIT
+[2017-10-4 16:12:4.85221]	 {INFO}	 <===============================Connected_home started ==============================>
+[2017-10-4 16:12:4.86991]	 {INFO}	 Page No: 1 Cur:0
+[2017-10-4 16:12:5.10410]	 {INFO}	 home mode matched
+[2017-10-4 16:12:6.37545]	 {INFO}	 SecurifiSmartSwitch  5 initial state Off ActivePower: 0.000W Current: 0.000A Voltage: 0.000V 
+[2017-10-4 16:12:7.11969]	 {INFO}	 Device 5 index 1 is set to true value
+[2017-10-4 16:12:11.18113]	 {INFO}	 Device 5 index 1 is set to false value
+[2017-10-4 16:12:26.96810]	 {INFO}	 Close button pressed
+[2017-10-4 16:12:27.14342]	 {INFO}	 home mode matched
+[2017-10-4 16:12:36.12994]	 {INFO}	 Drawing Generic device
+[2017-10-4 16:12:36.13016]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 16:12:36.13039]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 16:12:36.13070]	 {INFO}	 Two-3 row x_present:45 y_present:90 x_previous3:305 y_previous3:90
+[2017-10-4 16:12:36.13083]	 {INFO}	 Two-3 row x_next:45 y_next:140
+[2017-10-4 16:12:36.13096]	 {INFO}	 GenericDevice enum :3 area:0.666600 X:45 Y:90
+[2017-10-4 16:12:36.13107]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 16:12:36.13117]	 {INFO}	 GenericDevice gd2:0  gd2:0  gd2:0
+[2017-10-4 16:12:36.13127]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-4 16:12:36.14329]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 16:12:36.14347]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 16:12:36.14360]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 16:12:36.14372]	 {INFO}	 Two-3 row x_present:45 y_present:140 x_previous3:305 y_previous3:140
+[2017-10-4 16:12:36.14382]	 {INFO}	 Two-3 row x_next:45 y_next:190
+[2017-10-4 16:12:36.14394]	 {INFO}	 GenericDevice enum :3 area:0.666600 X:45 Y:140
+[2017-10-4 16:12:36.14404]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 16:12:36.14414]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:0
+[2017-10-4 16:12:36.14424]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-4 16:12:36.15637]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 16:12:36.15654]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 16:12:36.15667]	 {INFO}	 Assigning area to the IndexType:12
+[2017-10-4 16:12:36.15679]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 16:12:36.15689]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:0
+[2017-10-4 16:12:36.15700]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-4 16:12:36.15715]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 16:12:36.15727]	 {INFO}	 Assigning area to the IndexType:9
+[2017-10-4 16:12:36.15737]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 16:12:36.15748]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:0
+[2017-10-4 16:12:36.15758]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-4 16:12:36.15956]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 16:12:36.15969]	 {INFO}	 Assigning area to the IndexType:25
+[2017-10-4 16:12:36.15980]	 {INFO}	 One-3 Previous Space found
+[2017-10-4 16:12:36.15990]	 {INFO}	 one-third x_present:305 y_present:140 x_next:45 y_next:190
+[2017-10-4 16:12:36.16002]	 {INFO}	 GenericDevice enum :25 area:0.333300 X:305 Y:140
+[2017-10-4 16:12:36.16012]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 16:12:36.16022]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 16:12:36.16032]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-4 16:12:36.16372]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 16:12:36.16388]	 {INFO}	 Assigning area to the IndexType:27
+[2017-10-4 16:12:36.16400]	 {INFO}	 one-third x_present:45 y_present:190 x_next:175 y_next:190
+[2017-10-4 16:12:36.16412]	 {INFO}	 GenericDevice enum :27 area:0.333300 X:45 Y:190
+[2017-10-4 16:12:36.16423]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 16:12:36.16433]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 16:12:36.16443]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 16:12:36.16453]	 {INFO}	 Drawing humidity for generic device
+[2017-10-4 16:12:36.16728]	 {INFO}	 GenericDevice 6 HUMIDITY is 0.000000
+[2017-10-4 16:12:38.91924]	 {INFO}	 Assigning area to the IndexType:27
+[2017-10-4 16:12:38.91946]	 {INFO}	 x_star:45 y_star:190
+[2017-10-4 16:12:39.64929]	 {INFO}	 Assigning area to the IndexType:25
+[2017-10-4 16:12:39.64949]	 {INFO}	 x_star:305 y_star:140
+[2017-10-4 16:12:42.08343]	 {INFO}	 Assigning area to the IndexType:25
+[2017-10-4 16:12:42.08366]	 {INFO}	 x_star:305 y_star:140
+[2017-10-4 16:12:42.32957]	 {INFO}	 Assigning area to the IndexType:25
+[2017-10-4 16:12:42.32980]	 {INFO}	 x_star:305 y_star:140
+[2017-10-4 16:12:43.28395]	 {INFO}	 Assigning area to the IndexType:25
+[2017-10-4 16:12:43.28421]	 {INFO}	 x_star:305 y_star:140
+[2017-10-4 16:12:46.62687]	 {INFO}	 Close button pressed
+[2017-10-4 16:12:46.80255]	 {INFO}	 home mode matched
+[2017-10-4 16:12:52.16924]	 {INFO}	 ContactSwitch 9 initial state true 
+[2017-10-4 16:12:53.66149]	 {INFO}	 Close button pressed
+[2017-10-4 16:12:53.83676]	 {INFO}	 home mode matched
+[2017-10-4 16:12:54.40676]	 {INFO}	 ContactSwitch 8 initial state true 
+[2017-10-4 16:12:55.44667]	 {INFO}	 Close button pressed
+[2017-10-4 16:12:55.62176]	 {INFO}	 home mode matched
+[2017-10-4 16:12:56.38340]	 {INFO}	 DoorSensor 7 initial state is true 
+[2017-10-4 16:12:57.45040]	 {INFO}	 Close button pressed
+[2017-10-4 16:12:57.62584]	 {INFO}	 home mode matched
+[2017-10-4 16:13:1.00598]	 {INFO}	 setting on_off draw
+[2017-10-4 16:13:1.02748]	 {INFO}	 HueLamp 1 initial state is On 
+[2017-10-4 16:13:1.02771]	 {INFO}	 HueLamp 1 initial level is 27 
+[2017-10-4 16:13:1.86414]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 16:13:3.72439]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 16:13:4.93467]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 16:13:5.00412]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 16:13:7.38644]	 {INFO}	 Close button pressed
+[2017-10-4 16:13:7.56213]	 {INFO}	 home mode matched
+[2017-10-4 16:13:8.43552]	 {INFO}	 setting on_off draw
+[2017-10-4 16:13:8.45734]	 {INFO}	 HueLamp 2 initial state is Off 
+[2017-10-4 16:13:8.45756]	 {INFO}	 HueLamp 2 initial level is 30 
+[2017-10-4 16:13:10.57824]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 16:13:13.37684]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 16:13:13.41841]	 {INFO}	 Device 2 index 2 is set to false value
+[2017-10-4 16:13:13.42868]	 {INFO}	 HueLamp 2 index 10 value received is true  
+[2017-10-4 16:13:14.32440]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 16:13:14.33691]	 {INFO}	 Device 2 index 2 is set to true value
+[2017-10-4 16:13:14.34789]	 {INFO}	 HueLamp 2 index 10 value received is true  
+[2017-10-4 16:13:14.36040]	 {INFO}	 notification received for on_off
+[2017-10-4 16:13:14.36612]	 {INFO}	 HueLamp 2 index 2 value received is true  
+[2017-10-4 16:13:15.26343]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 16:13:17.14366]	 {INFO}	 Close button pressed
+[2017-10-4 16:13:17.32276]	 {INFO}	 home mode matched
+[2017-10-4 16:13:18.21280]	 {INFO}	 setting on_off draw
+[2017-10-4 16:13:18.23434]	 {INFO}	 HueLamp 3 initial state is Off 
+[2017-10-4 16:13:18.23456]	 {INFO}	 HueLamp 3 initial level is 23 
+[2017-10-4 16:13:21.16769]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 16:13:21.23787]	 {INFO}	 Device 3 index 2 is set to false value
+[2017-10-4 16:13:21.24668]	 {INFO}	 HueLamp 3 index 10 value received is true  
+[2017-10-4 16:13:21.60507]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 16:13:21.64703]	 {INFO}	 Device 3 index 2 is set to true value
+[2017-10-4 16:13:21.65829]	 {INFO}	 HueLamp 3 index 10 value received is true  
+[2017-10-4 16:13:21.66932]	 {INFO}	 notification received for on_off
+[2017-10-4 16:13:21.67544]	 {INFO}	 HueLamp 3 index 2 value received is true  
+[2017-10-4 16:13:22.97567]	 {INFO}	 COLOUR CHANGE
+[2017-10-4 16:13:25.60072]	 {INFO}	 Close button pressed
+[2017-10-4 16:13:25.77686]	 {INFO}	 home mode matched
+[2017-10-4 16:13:37.71353]	 {INFO}	 ContactSwitch 8 initial state true 
+[2017-10-4 16:13:39.96413]	 {INFO}	 Close button pressed
+[2017-10-4 16:13:40.13975]	 {INFO}	 home mode matched
+[2017-10-4 16:13:45.56126]	 {INFO}	 Backhandler
+[2017-10-4 16:57:18.66250]	 {INFO}	 <===============================Connected_home started ==============================>
+[2017-10-4 16:57:18.67997]	 {INFO}	 Page No: 1 Cur:0
+[2017-10-4 16:57:18.90660]	 {INFO}	 home mode matched
+[2017-10-4 16:57:20.63100]	 {INFO}	 SecurifiSmartSwitch  5 initial state Off ActivePower: 0.000W Current: 0.000A Voltage: 0.000V 
+[2017-10-4 16:57:21.30922]	 {INFO}	 Device 5 index 1 is set to true value
+[2017-10-4 16:57:22.59982]	 {INFO}	 Close button pressed
+[2017-10-4 16:57:22.77516]	 {INFO}	 home mode matched
+[2017-10-4 16:57:24.27997]	 {INFO}	 Backhandler
+[2017-10-4 17:21:32.98120]	 {INFO}	 <===============================Connected_home started ==============================>
+[2017-10-4 17:21:32.99896]	 {INFO}	 Page No: 1 Cur:0
+[2017-10-4 17:21:33.22371]	 {INFO}	 home mode matched
+[2017-10-4 17:24:18.22720]	 {INFO}	 Drawing Generic device
+[2017-10-4 17:24:18.22741]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:24:18.22772]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:24:18.22804]	 {INFO}	 Two-3 row x_present:45 y_present:90 x_previous3:305 y_previous3:90
+[2017-10-4 17:24:18.22816]	 {INFO}	 Two-3 row x_next:45 y_next:140
+[2017-10-4 17:24:18.22831]	 {INFO}	 GenericDevice enum :3 area:0.666600 X:45 Y:90
+[2017-10-4 17:24:18.22842]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:24:18.22853]	 {INFO}	 GenericDevice gd2:0  gd2:0  gd2:0
+[2017-10-4 17:24:18.22863]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-4 17:24:18.24101]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:24:18.24119]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:24:18.24133]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:24:18.24145]	 {INFO}	 Two-3 row x_present:45 y_present:140 x_previous3:305 y_previous3:140
+[2017-10-4 17:24:18.24156]	 {INFO}	 Two-3 row x_next:45 y_next:190
+[2017-10-4 17:24:18.24167]	 {INFO}	 GenericDevice enum :3 area:0.666600 X:45 Y:140
+[2017-10-4 17:24:18.24178]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:24:18.24188]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:0
+[2017-10-4 17:24:18.24198]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-4 17:24:18.25398]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:24:18.25415]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:24:18.25427]	 {INFO}	 Assigning area to the IndexType:12
+[2017-10-4 17:24:18.25439]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:24:18.25450]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:0
+[2017-10-4 17:24:18.25460]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-4 17:24:18.25475]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:24:18.25486]	 {INFO}	 Assigning area to the IndexType:9
+[2017-10-4 17:24:18.25497]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:24:18.25507]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:0
+[2017-10-4 17:24:18.25517]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-4 17:24:18.25716]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:24:18.25729]	 {INFO}	 Assigning area to the IndexType:25
+[2017-10-4 17:24:18.25740]	 {INFO}	 One-3 Previous Space found
+[2017-10-4 17:24:18.25751]	 {INFO}	 one-third x_present:305 y_present:140 x_next:45 y_next:190
+[2017-10-4 17:24:18.25762]	 {INFO}	 GenericDevice enum :25 area:0.333300 X:305 Y:140
+[2017-10-4 17:24:18.25772]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:24:18.25783]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:24:18.25793]	 {INFO}	 GenericDevice gd3:0  gd3:0  gd3:0
+[2017-10-4 17:24:18.26129]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:24:18.26144]	 {INFO}	 Assigning area to the IndexType:27
+[2017-10-4 17:24:18.26156]	 {INFO}	 one-third x_present:45 y_present:190 x_next:175 y_next:190
+[2017-10-4 17:24:18.26167]	 {INFO}	 GenericDevice enum :27 area:0.333300 X:45 Y:190
+[2017-10-4 17:24:18.26178]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:24:18.26188]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:24:18.26198]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:24:18.26208]	 {INFO}	 Drawing humidity for generic device
+[2017-10-4 17:24:18.26489]	 {INFO}	 GenericDevice 6 HUMIDITY is 0.000000
+[2017-10-4 17:24:29.41522]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:24:29.41537]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:24:29.41548]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:24:29.41559]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:24:29.41569]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:24:29.42900]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:24:29.42915]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:25:26.95732]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:25:26.95748]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:25:26.95762]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:25:26.95774]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:25:26.95786]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:25:26.96986]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:25:26.97003]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:25:36.95671]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:25:36.95689]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:25:36.95701]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:25:36.95711]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:25:36.95725]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:25:36.96735]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:25:36.96753]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:25:38.28604]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:25:38.28618]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:25:38.28629]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:25:38.28640]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:25:38.28650]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:25:38.29860]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:25:38.29877]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:26:7.95488]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:26:7.95503]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:26:7.95517]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:26:7.95529]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:26:7.95540]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:26:7.96573]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:26:7.96590]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:26:16.74525]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:26:16.74541]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:26:16.74552]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:26:16.74563]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:26:16.74574]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:26:16.75803]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:26:16.75822]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:26:26.75644]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:26:26.75660]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:26:26.75673]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:26:26.75684]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:26:26.75694]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:26:26.76769]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:26:26.76787]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:26:28.80581]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:26:28.80595]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:26:28.80606]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:26:28.80617]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:26:28.80627]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:26:28.81934]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:26:28.81950]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:26:46.16507]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:26:46.16523]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:26:46.16535]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:26:46.16546]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:26:46.16557]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:26:46.17615]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:26:46.17629]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:26:52.92515]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:26:52.92530]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:26:52.92543]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:26:52.92554]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:26:52.92565]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:26:52.93827]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:26:52.93842]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:27:7.39503]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:27:7.39517]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:27:7.39528]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:27:7.39539]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:27:7.39549]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:27:7.40673]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:27:7.40687]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:27:14.82530]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:27:14.82543]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:27:14.82555]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:27:14.82565]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:27:14.82576]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:27:14.83805]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:27:14.83823]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:27:39.37539]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:27:39.37553]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:27:39.37565]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:27:39.37575]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:27:39.37586]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:27:39.38866]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:27:39.38881]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:27:57.71525]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:27:57.71540]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:27:57.71553]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:27:57.71564]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:27:57.71574]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:27:57.72787]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:27:57.72805]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:28:7.72646]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:28:7.72660]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:28:7.72671]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:28:7.72681]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:28:7.72692]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:28:7.73717]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:28:7.73742]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:29:16.68681]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:29:16.68699]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:29:16.68713]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:29:16.68725]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:29:16.68736]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:29:16.69955]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:29:16.69974]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:29:26.68445]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:29:26.68462]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:29:26.68474]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:29:26.68485]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:29:26.68499]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:29:26.69512]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:29:26.69529]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:29:27.19284]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:29:27.19301]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:29:27.19315]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:29:27.19326]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:29:27.19336]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:29:27.20601]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:29:27.20619]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:29:43.46245]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:29:43.46260]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:29:43.46272]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:29:43.46284]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:29:43.46295]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:29:43.47421]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:29:43.47436]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:29:47.82279]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:29:47.82292]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:29:47.82304]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:29:47.82315]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:29:47.82326]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:29:47.83534]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:29:47.83551]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:30:8.92289]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:30:8.92303]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:30:8.92314]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:30:8.92325]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:30:8.92337]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:30:8.93433]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:30:8.93451]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:30:20.56250]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:30:20.56266]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:30:20.56278]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:30:20.56290]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:30:20.56300]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:30:20.57510]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:30:20.57526]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:30:42.62250]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:30:42.62267]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:30:42.62280]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:30:42.62291]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:30:42.62302]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:30:42.63307]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:30:42.63324]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:30:43.23126]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:30:43.23145]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:30:43.23160]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:30:43.23171]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:30:43.23181]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:30:43.24424]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:30:43.24441]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:31:16.54254]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:31:16.54270]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:31:16.54284]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:31:16.54295]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:31:16.54305]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:31:16.55348]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:31:16.55363]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:31:31.22385]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:31:31.22401]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:31:31.22413]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:31:31.22423]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:31:31.22434]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:31:31.23657]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:31:31.23675]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:31:41.22250]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:31:41.22267]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:31:41.22279]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:31:41.22291]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:31:41.22302]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:31:41.23308]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:31:41.23328]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:31:43.27348]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:31:43.27362]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:31:43.27374]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:31:43.27384]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:31:43.27395]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:31:43.28605]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:31:43.28621]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:32:24.17245]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:32:24.17259]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:32:24.17270]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:32:24.17281]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:32:24.17291]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:32:24.18414]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:32:24.18428]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:32:34.40251]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:32:34.40268]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:32:34.40280]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:32:34.40291]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:32:34.40302]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:32:34.41560]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:32:34.41575]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:33:21.24249]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:33:21.24266]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:33:21.24279]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:33:21.24290]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:33:21.24301]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:33:21.25308]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:33:21.25323]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:33:48.14272]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:33:48.14287]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:33:48.14300]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:33:48.14311]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:33:48.14322]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:33:48.15529]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:33:48.15545]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:34:13.70244]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:34:13.70260]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:34:13.70274]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:34:13.70285]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:34:13.70296]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:34:13.71406]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:34:13.71423]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:34:28.97384]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:34:28.97399]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:34:28.97410]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:34:28.97420]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:34:28.97430]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:34:28.98751]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:34:28.98766]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:34:45.16467]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:34:45.16484]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:34:45.16498]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:34:45.16509]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:34:45.16520]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:34:45.17552]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:34:45.17570]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:34:46.99977]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:34:46.99994]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:34:47.00012]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:34:47.00025]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:34:47.00036]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:34:47.01259]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:34:47.01277]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:34:56.81279]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:34:56.81293]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:34:56.81306]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:34:56.81317]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:34:56.81328]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:34:56.82334]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:34:56.82349]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:35:54.15272]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:35:54.15287]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:35:54.15301]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:35:54.15311]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:35:54.15322]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:35:54.16529]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:35:54.16545]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:36:7.97217]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:36:7.97233]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:36:7.97247]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:36:7.97260]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:36:7.97271]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:36:7.98289]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:36:7.98307]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:41:31.24535]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:41:31.24550]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:41:31.24562]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:41:31.24573]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:41:31.24583]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:41:31.25792]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:41:31.25808]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:41:47.24515]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:41:47.24532]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:41:47.24544]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:41:47.24556]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:41:47.24566]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:41:47.25591]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:41:47.25606]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:41:52.53525]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:41:52.53542]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:41:52.53554]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:41:52.53565]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:41:52.53576]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:41:52.54784]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:41:52.54800]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:42:29.32556]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:42:29.32569]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:42:29.32581]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:42:29.32591]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:42:29.32602]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:42:29.33699]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:42:29.33717]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:42:57.05527]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:42:57.05541]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:42:57.05552]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:42:57.05563]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:42:57.05573]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:42:57.06795]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:42:57.06810]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:43:13.41516]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:43:13.41532]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:43:13.41545]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:43:13.41556]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:43:13.41567]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:43:13.42576]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:43:13.42593]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:47:46.76515]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:47:46.76531]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:47:46.76544]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:47:46.76555]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:47:46.76566]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:47:46.77770]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:47:46.77786]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:48:6.43530]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:48:6.43545]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:48:6.43557]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:48:6.43568]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:48:6.43579]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:48:6.44653]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:48:6.44676]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:48:16.43500]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:48:16.43516]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:48:16.43530]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:48:16.43541]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:48:16.43552]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:48:16.44769]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:48:16.44787]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:48:32.50537]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:48:32.50551]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:48:32.50563]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:48:32.50573]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:48:32.50583]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:48:32.51604]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:48:32.51621]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:49:10.04517]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:49:10.04533]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:49:10.04545]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:49:10.04556]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:49:10.04567]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:49:10.05801]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:49:10.05819]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:49:26.41160]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:49:26.41177]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:49:26.41189]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:49:26.41201]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:49:26.41211]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:49:26.42308]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:49:26.42323]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:49:29.07293]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:49:29.07306]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:49:29.07318]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:49:29.07331]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:49:29.07342]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:49:29.08552]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:49:29.08569]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:49:43.52155]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:49:43.52172]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:49:43.52184]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:49:43.52194]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:49:43.52204]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:49:43.53335]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:49:43.53349]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:49:44.03197]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:49:44.03213]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:49:44.03227]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:49:44.03238]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:49:44.03248]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:49:44.04463]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:49:44.04478]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:49:53.64156]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:49:53.64172]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:49:53.64185]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:49:53.64197]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:49:53.64207]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:49:53.65263]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:49:53.65278]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:50:10.51305]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:50:10.51323]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:50:10.51337]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:50:10.51348]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:50:10.51359]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:50:10.52568]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:50:10.52586]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:50:34.83161]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:50:34.83177]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:50:34.83191]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:50:34.83202]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:50:34.83213]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:50:34.84347]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:50:34.84361]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:50:55.69321]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:50:55.69339]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:50:55.69351]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:50:55.69362]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:50:55.69374]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:50:55.70584]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:50:55.70602]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:50:57.31845]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:50:57.31859]	 {INFO}	 Assigning area to the IndexType:27
+[2017-10-4 17:50:57.31871]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:50:57.31881]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:50:57.31892]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:50:57.31901]	 {INFO}	 Drawing humidity for generic device
+[2017-10-4 17:50:57.33174]	 {INFO}	 GenericDevice 6 HUMIDITY is 0.000000
+[2017-10-4 17:50:57.33190]	 {INFO}	 Updating index 6 value of GenericDevice
+[2017-10-4 17:51:14.12165]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:51:14.12181]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:51:14.12194]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:51:14.12206]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:51:14.12216]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:51:14.13362]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:51:14.13376]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:51:20.37159]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:51:20.37176]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:51:20.37188]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:51:20.37201]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:51:20.37213]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:51:20.38418]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:51:20.38434]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:51:30.38159]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:51:30.38175]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:51:30.38188]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:51:30.38199]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:51:30.38210]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:51:30.39221]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:51:30.39238]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:51:41.36173]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:51:41.36189]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:51:41.36201]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:51:41.36212]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:51:41.36223]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:51:41.37430]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:51:41.37446]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:51:51.37150]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:51:51.37166]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:51:51.37180]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:51:51.37191]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:51:51.37202]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:51:51.38229]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:51:51.38246]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:52:1.54165]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:52:1.54181]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:52:1.54193]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:52:1.54203]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:52:1.54215]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:52:1.55424]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:52:1.55442]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:52:19.13181]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:52:19.13195]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:52:19.13207]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:52:19.13218]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:52:19.13228]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:52:19.14234]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:52:19.14251]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:52:42.21157]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:52:42.21173]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:52:42.21185]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:52:42.21196]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:52:42.21207]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:52:42.22424]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:52:42.22441]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:53:6.84156]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:53:6.84171]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:53:6.84182]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:53:6.84193]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:53:6.84203]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:53:6.85333]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:53:6.85348]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:53:55.52188]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:53:55.52201]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:53:55.52213]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:53:55.52224]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:53:55.52234]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:53:55.53597]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:53:55.53613]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:54:5.53156]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:54:5.53173]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:54:5.53186]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:54:5.53198]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:54:5.53208]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:54:5.54245]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:54:5.54259]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:54:9.85170]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:54:9.85185]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:54:9.85197]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:54:9.85207]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:54:9.85218]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:54:9.86418]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:54:9.86436]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:54:55.19145]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:54:55.19161]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:54:55.19174]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:54:55.19185]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:54:55.19197]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:54:55.20218]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:54:55.20235]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:55:11.35159]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:55:11.35175]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:55:11.35188]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:55:11.35199]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:55:11.35210]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:55:11.36445]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:55:11.36463]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:55:21.35174]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:55:21.35190]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:55:21.35203]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:55:21.35214]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:55:21.35225]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:55:21.36365]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:55:21.36380]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:55:28.77189]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:55:28.77203]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:55:28.77216]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:55:28.77227]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:55:28.77237]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:55:28.78445]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:55:28.78462]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:55:38.78157]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:55:38.78173]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:55:38.78186]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:55:38.78197]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:55:38.78207]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:55:38.79237]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:55:38.79253]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:55:57.94163]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:55:57.94179]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:55:57.94191]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:55:57.94202]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:55:57.94213]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:55:57.95433]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:55:57.95449]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:56:7.94157]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:56:7.94172]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:56:7.94188]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:56:7.94199]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:56:7.94210]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:56:7.95321]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:56:7.95337]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:56:14.84173]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:56:14.84188]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:56:14.84200]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:56:14.84211]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:56:14.84221]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:56:14.85444]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:56:14.85462]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:56:24.84304]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:56:24.84322]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:56:24.84334]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:56:24.84345]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:56:24.84356]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:56:24.85372]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:56:24.85390]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:56:27.54176]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:56:27.54191]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:56:27.54204]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:56:27.54215]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:56:27.54237]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:56:27.55455]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:56:27.55472]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:56:37.55293]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:56:37.55311]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:56:37.55324]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:56:37.55336]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:56:37.55347]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:56:37.56360]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:56:37.56397]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:56:40.21159]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:56:40.21175]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:56:40.21189]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:56:40.21201]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:56:40.21212]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:56:40.22416]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:56:40.22432]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:57:30.67173]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:57:30.67188]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:57:30.67200]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:57:30.67210]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:57:30.67221]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:57:30.68234]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:57:30.68248]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:57:37.26375]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:57:37.26392]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:57:37.26405]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:57:37.26416]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:57:37.26427]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:57:37.27646]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:57:37.27664]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:57:52.82302]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:57:52.82315]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:57:52.82326]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:57:52.82337]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:57:52.82348]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:57:52.83407]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:57:52.83425]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:58:5.00325]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:58:5.00339]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:58:5.00351]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:58:5.00361]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:58:5.00371]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:58:5.01573]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:58:5.01590]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:58:35.94171]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:58:35.94187]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:58:35.94198]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:58:35.94209]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:58:35.94220]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:58:35.95381]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:58:35.95397]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:58:40.75166]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:58:40.75182]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:58:40.75194]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:58:40.75205]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:58:40.75216]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:58:40.76445]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:58:40.76462]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:58:50.76159]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:58:50.76175]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:58:50.76188]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:58:50.76199]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:58:50.76210]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:58:50.77216]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:58:50.77233]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:58:56.86159]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:58:56.86175]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:58:56.86188]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:58:56.86199]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:58:56.86209]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:58:56.87509]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:58:56.87524]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:59:11.09159]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:59:11.09183]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:59:11.09196]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:59:11.09207]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:59:11.09218]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:59:11.10245]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 17:59:11.10263]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 17:59:41.19534]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 17:59:41.19550]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 17:59:41.19563]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 17:59:41.19574]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 17:59:41.19588]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 17:59:41.20803]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 17:59:41.20821]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 18:0:5.08573]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 18:0:5.08586]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 18:0:5.08598]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 18:0:5.08608]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 18:0:5.08619]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 18:0:5.09637]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 18:0:5.09654]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 18:0:5.59920]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 18:0:5.59937]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 18:0:5.59949]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 18:0:5.59959]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 18:0:5.59969]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 18:0:5.61313]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 18:0:5.61331]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 18:0:15.16545]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 18:0:15.16562]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 18:0:15.16574]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 18:0:15.16586]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 18:0:15.16597]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 18:0:15.17609]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 18:0:15.17624]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 18:0:24.46543]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 18:0:24.46559]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 18:0:24.46572]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 18:0:24.46583]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 18:0:24.46596]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 18:0:24.47835]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 18:0:24.47852]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 18:0:39.67759]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 18:0:39.67776]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 18:0:39.67789]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 18:0:39.67800]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 18:0:39.67811]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 18:0:39.68816]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 18:0:39.68833]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 18:0:43.90709]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 18:0:43.90725]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 18:0:43.90737]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 18:0:43.90749]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 18:0:43.90762]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 18:0:43.91984]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 18:0:43.92002]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 18:0:53.91754]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 18:0:53.91770]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 18:0:53.91784]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 18:0:53.91796]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 18:0:53.91807]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 18:0:53.92812]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 18:0:53.92829]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 18:1:4.34679]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 18:1:4.34696]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 18:1:4.34710]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 18:1:4.34721]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 18:1:4.34731]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 18:1:4.35950]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 18:1:4.35967]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 18:1:17.58549]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 18:1:17.58565]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 18:1:17.58577]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 18:1:17.58588]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 18:1:17.58598]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 18:1:17.59607]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 18:1:17.59623]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 18:2:3.50542]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 18:2:3.50566]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 18:2:3.50578]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 18:2:3.50589]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 18:2:3.50600]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 18:2:3.51808]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 18:2:3.51824]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 18:2:19.36575]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 18:2:19.36590]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 18:2:19.36602]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 18:2:19.36613]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 18:2:19.36623]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 18:2:19.37653]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 18:2:19.37671]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 18:2:25.99674]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 18:2:25.99691]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 18:2:25.99704]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 18:2:25.99715]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 18:2:25.99725]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 18:2:26.00935]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 18:2:26.00952]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 18:2:36.00575]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 18:2:36.00590]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 18:2:36.00602]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 18:2:36.00612]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 18:2:36.00622]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 18:2:36.01629]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 18:2:36.01643]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 18:3:27.30552]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 18:3:27.30568]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 18:3:27.30580]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 18:3:27.30591]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 18:3:27.30602]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 18:3:27.31802]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 18:3:27.31819]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 18:3:37.30543]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 18:3:37.30559]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 18:3:37.30573]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 18:3:37.30584]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 18:3:37.30594]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 18:3:37.31607]	 {INFO}	 GenericDevice 6 Motion State:false
+[2017-10-4 18:3:37.31622]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 18:4:4.29744]	 {ERROR}	 drawGenericDevice...
+[2017-10-4 18:4:4.29760]	 {INFO}	 Assigning area to the IndexType:3
+[2017-10-4 18:4:4.29772]	 {INFO}	 GenericDevice gd1:3  gd1:3  gd1:0
+[2017-10-4 18:4:4.29784]	 {INFO}	 GenericDevice gd2:3  gd2:3  gd2:25
+[2017-10-4 18:4:4.29797]	 {INFO}	 GenericDevice gd3:27  gd3:0  gd3:0
+[2017-10-4 18:4:4.31001]	 {INFO}	 GenericDevice 6 Motion State:true
+[2017-10-4 18:4:4.31019]	 {INFO}	 Updating index 1 value of GenericDevice
+[2017-10-4 18:4:39.33958]	 {INFO}	 Close button pressed
+[2017-10-4 18:4:39.51463]	 {INFO}	 home mode matched
+[2017-10-4 18:4:40.94243]	 {INFO}	 SecurifiSmartSwitch  5 initial state On ActivePower: 0.000W Current: 0.000A Voltage: 0.000V 
+[2017-10-4 18:4:41.67981]	 {INFO}	 Device 5 index 1 is set to false value
+[2017-10-4 18:4:42.61290]	 {INFO}	 Close button pressed
+[2017-10-4 18:4:42.78809]	 {INFO}	 home mode matched
+[2017-10-4 18:35:37.37573]	 {PRINT}	 Received ClientLeft event
+[2017-10-5 16:40:44.34214]	 {INFO}	 SecurifiSmartSwitch  5 initial state Off ActivePower: 0.000W Current: 0.000A Voltage: 0.000V 
+[2017-10-5 16:40:45.04513]	 {INFO}	 Device 5 index 1 is set to true value
+[2017-10-5 16:43:6.57517]	 {PRINT}	 Received ClientUpdated event
+[2017-10-5 16:43:8.02169]	 {PRINT}	 Received ClientJoined event

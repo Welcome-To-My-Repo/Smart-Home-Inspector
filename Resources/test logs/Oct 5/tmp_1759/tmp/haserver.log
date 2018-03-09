@@ -1,0 +1,55 @@
+[2015-7-31 21:1:30.79345]	 {PRINT}	 <================================haserver started=================================>
+[2015-7-31 21:1:30.79496]	 {PRINT}	 Started RSC taskerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+[2015-7-31 21:1:30.79553]	 {PRINT}	 
+ === Waiting for message Haserver Assoc==== 
+
+[2015-7-31 21:1:30.94730]	 {INFO}	 current mode =1
+[2015-7-31 21:1:30.97696]	 {PRINT}	 https://weather.securifi.com:8080/GetMF/e4:71:85:31:aa:b8/98:de:d0:81:a8:64
+[2015-7-31 21:1:31.25064]	 {INFO}	 NaN
+[2015-7-31 21:1:31.25124]	 {PRINT}	 cmd_setClientActive
+[2015-7-31 21:1:31.79614]	 {PRINT}	 https://weather.securifi.com:8080/GetMF/e4:71:85:31:aa:b8/7c:dd:90:9d:d2:70
+[2015-7-31 21:1:31.79817]	 {INFO}	 NaN
+[2015-7-31 21:1:31.79851]	 {PRINT}	 https://weather.securifi.com:8080/GetMF/e4:71:85:31:aa:b8/e4:71:85:31:aa:bf
+[2015-7-31 21:1:31.80103]	 {INFO}	 NaN
+[2015-7-31 21:1:31.80147]	 {PRINT}	 cmd_setClientActive
+[2015-7-31 21:1:32.34719]	 {PRINT}	 https://weather.securifi.com:8080/GetMF/e4:71:85:31:aa:b8/98:de:d0:81:eb:0b
+[2015-7-31 21:1:32.34954]	 {INFO}	 NaN
+[2015-7-31 21:1:32.34999]	 {PRINT}	 https://weather.securifi.com:8080/GetMF/e4:71:85:31:aa:b8/64:b9:e8:6a:a7:47
+[2015-7-31 21:1:32.35198]	 {INFO}	 NaN
+[2015-7-31 21:1:32.51609]	 {PRINT}	 Received packet from zwave_server from device 1 (Notification)
+[2015-7-31 21:1:33.05680]	 {PRINT}	 Received packet from zwave_server from device 1 (Notification)
+[2015-7-31 21:1:33.15154]	 {PRINT}	 Received packet from zwave_server from device 1 (Notification)
+[2015-7-31 21:1:33.17243]	 {PRINT}	 Received packet from zwave_server from device 2 (Notification)
+[2015-7-31 21:1:33.52732]	 {PRINT}	 Received packet from zwave_server from device 2 (Notification)
+[2015-7-31 21:1:33.75860]	 {PRINT}	 Received packet from zwave_server from device 2 (Notification)
+[2015-7-31 21:1:33.77940]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:33.93866]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.19239]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.20629]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.21675]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.22723]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.23967]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.28785]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.29869]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.30919]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.31966]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.33023]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.37200]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.38237]	 {PRINT}	 Received packet from zwave_server from device 1 (Notification)
+[2015-7-31 21:1:34.61761]	 {PRINT}	 Received packet from zwave_server from device 0 (Notification)
+[2015-7-31 21:1:34.62813]	 {PRINT}	 Received packet from zwave_server from device 2 (Notification)
+[2015-7-31 21:1:34.63934]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.69565]	 {INFO}	  ..68.dhcp->flags = 0
+[2015-7-31 21:1:34.69587]	 {INFO}	 E4:71:85:31:AA:B9
+[2015-7-31 21:1:34.75566]	 {INFO}	  ..68.dhcp->flags = 0
+[2015-7-31 21:1:34.75591]	 {INFO}	 E4:71:85:31:AA:B9
+[2015-7-31 21:1:38.42054]	 {PRINT}	 Setting active ? ---- 7c:dd:90:9d:d2:70
+[2015-7-31 21:1:38.42099]	 {PRINT}	 cmd_setClientActive
+[2015-7-31 21:1:38.83825]	 {PRINT}	 Broadcasting ClientJoined to Endclients
+[2015-7-31 21:1:38.93918]	 {PRINT}	 Done Broadcasting ClientJoined to Endclients
+[2017-10-5 17:55:19.31140]	 {PRINT}	 Setting active ? ---- 98:de:d0:81:eb:0b
+[2017-10-5 17:55:19.31196]	 {PRINT}	 cmd_setClientActive
+[2017-10-5 17:55:19.71221]	 {PRINT}	 Broadcasting ClientJoined to Endclients
+[2017-10-5 17:55:19.81340]	 {PRINT}	 Done Broadcasting ClientJoined to Endclients
+[2017-10-5 17:56:2.52408]	 {INFO}	  ..68.dhcp->flags = 0
+[2017-10-5 17:56:2.52428]	 {INFO}	 7C:DD:90:9D:D2:70

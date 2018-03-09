@@ -1,0 +1,50 @@
+[2015-7-31 21:1:32.803156094]	 {INFO}	 <======================== zigbee_server started ====================>
+[2015-7-31 21:1:32.804223900]	 {INFO}	 Installed signal handler for Terminated (15).
+[2015-7-31 21:1:32.804492880]	 {INFO}	 Installed signal handler for Interrupt (2).
+[2015-7-31 21:1:32.804614360]	 {INFO}	 Installed signal handler for Broken pipe (13).
+[2015-7-31 21:1:32.804720353]	 {INFO}	 Installed signal handler for Segmentation fault (11).
+[2015-7-31 21:1:32.804826287]	 {INFO}	 Installed signal handler for Stack fault (16).
+[2015-7-31 21:1:32.823704967]	 {INFO}	 Installed signal handler for Terminated (15).
+[2015-7-31 21:1:32.824093913]	 {INFO}	 Installed signal handler for Interrupt (2).
+[2015-7-31 21:1:32.824243427]	 {INFO}	 Installed signal handler for Broken pipe (13).
+[2015-7-31 21:1:32.824375627]	 {INFO}	 Installed signal handler for Segmentation fault (11).
+[2015-7-31 21:1:32.824507307]	 {INFO}	 Installed signal handler for Stack fault (16).
+[2015-7-31 21:1:33.223717420]	 {PRINT}	 =========== Channel 25 ================
+[2015-7-31 21:1:33.223921073]	 {PRINT}	 =========== PAN ID: 0x615F================
+[2015-7-31 21:1:33.224111140]	 {PRINT}	 Extended panid: 79:4f:f1:7e:ce:7b:64:87
+[2017-10-5 17:20:17.971967460]	 {INFO}	   8 13  a  0  0 18  1
+[2017-10-5 17:20:17.972149407]	 {INFO}	 emberAfPreMessageReceivedCallback 91c0  and cluster 0x406 
+[2017-10-5 17:20:17.972312793]	 {INFO}	 Report attributes callback 0x91c0 and cluster 0x406 and attribute 0x 0
+[2017-10-5 17:20:17.972585833]	 {INFO}	 sending packet NOTIFICATION is success to Haserver
+[2017-10-5 17:20:21.351903240]	 {INFO}	  19 14  0 30  0  0  1  0  0
+[2017-10-5 17:20:21.352092540]	 {INFO}	 emberAfPreMessageReceivedCallback 91c0  and cluster 0x500 
+[2017-10-5 17:20:21.352243460]	 {INFO}	 status change 0x30 from device 0x91c0
+[2017-10-5 17:20:21.379001839]	 {INFO}	 sending packet NOTIFICATION is success to haserver
+[2017-10-5 17:20:57.661945047]	 {INFO}	  19 15  0 32  0  0  1  0  0
+[2017-10-5 17:20:57.662136547]	 {INFO}	 emberAfPreMessageReceivedCallback 91c0  and cluster 0x500 
+[2017-10-5 17:20:57.662261487]	 {INFO}	 status change 0x32 from device 0x91c0
+[2017-10-5 17:20:57.689219239]	 {INFO}	 sending packet NOTIFICATION is success to haserver
+[2017-10-5 17:21:10.681912493]	 {INFO}	  19 16  0 30  0  0  1  0  0
+[2017-10-5 17:21:10.682105860]	 {INFO}	 emberAfPreMessageReceivedCallback 91c0  and cluster 0x500 
+[2017-10-5 17:21:10.682234933]	 {INFO}	 status change 0x30 from device 0x91c0
+[2017-10-5 17:21:10.711841327]	 {INFO}	 sending packet NOTIFICATION is success to haserver
+[2017-10-5 17:21:14.331909100]	 {INFO}	  19 17  0 32  0  0  1  0  0
+[2017-10-5 17:21:14.332100073]	 {INFO}	 emberAfPreMessageReceivedCallback 91c0  and cluster 0x500 
+[2017-10-5 17:21:14.332222953]	 {INFO}	 status change 0x32 from device 0x91c0
+[2017-10-5 17:21:14.361838433]	 {INFO}	 sending packet NOTIFICATION is success to haserver
+[2017-10-5 17:21:30.341940367]	 {INFO}	  19 18  0 30  0  0  1  0  0
+[2017-10-5 17:21:30.342136960]	 {INFO}	 emberAfPreMessageReceivedCallback 91c0  and cluster 0x500 
+[2017-10-5 17:21:30.342261447]	 {INFO}	 status change 0x30 from device 0x91c0
+[2017-10-5 17:21:30.371848367]	 {INFO}	 sending packet NOTIFICATION is success to haserver
+[2017-10-5 17:23:6.821955007]	 {INFO}	  19 19  0 32  0  0  1  0  0
+[2017-10-5 17:23:6.822149153]	 {INFO}	 emberAfPreMessageReceivedCallback 91c0  and cluster 0x500 
+[2017-10-5 17:23:6.822275240]	 {INFO}	 status change 0x32 from device 0x91c0
+[2017-10-5 17:23:6.851694039]	 {INFO}	 sending packet NOTIFICATION is success to haserver
+[2017-10-5 17:23:21.911914273]	 {INFO}	  19 1a  0 30  0  0  1  0  0
+[2017-10-5 17:23:21.912105753]	 {INFO}	 emberAfPreMessageReceivedCallback 91c0  and cluster 0x500 
+[2017-10-5 17:23:21.912231400]	 {INFO}	 status change 0x30 from device 0x91c0
+[2017-10-5 17:23:21.941472812]	 {INFO}	 sending packet NOTIFICATION is success to haserver
+[2017-10-5 17:23:31.371914887]	 {INFO}	  19 1b  0 32  0  0  1  0  0
+[2017-10-5 17:23:31.372181407]	 {INFO}	 emberAfPreMessageReceivedCallback 91c0  and cluster 0x500 
+[2017-10-5 17:23:31.372355440]	 {INFO}	 status change 0x32 from device 0x91c0
+[2017-10-5 17:23:31.402058087]	 {INFO}	 sending packet NOTIFICATION is success to haserver

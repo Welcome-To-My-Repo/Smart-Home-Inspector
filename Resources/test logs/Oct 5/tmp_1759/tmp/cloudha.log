@@ -1,0 +1,25 @@
+[2015-7-31 21:1:37.46616]	 {INFO}	 ================CloudHA started===============
+[2015-7-31 21:1:37.46773]	 {INFO}	 CloudHA initialized with libAlmondHA...
+[2015-7-31 21:1:37.46937]	 {WARN}	 No Rule present or got Exception
+[2015-7-31 21:1:37.47276]	 {INFO}	 getSceneHash on process..
+[2015-7-31 21:1:37.51092]	 {INFO}	 No ZigBee or Z-wave devices connected
+[2015-7-31 21:1:37.51111]	 {INFO}	 Constructing Hash for Rules, Scenes, Clients and Devices are done
+[2015-7-31 21:1:37.51217]	 {INFO}	 ===cloudHAreceiver commandType 0==
+[2015-7-31 21:1:37.51232]	 {INFO}	 {"ConnectionCheck":"false"}
+[2015-7-31 21:1:37.51250]	 {INFO}	 init done
+[2015-7-31 21:1:38.93983]	 {INFO}	 ** Got event callback.. **
+[2015-7-31 21:1:38.97219]	 {PRINT}	 Got event for Client joined 
+[2015-7-31 21:1:38.97240]	 {INFO}	 7c:dd:90:9d:d2:70
+[2015-7-31 21:1:38.97252]	 {INFO}	 Joined Client mac 7c:dd:90:9d:d2:70 and ID 11
+[2015-7-31 21:1:38.97315]	 {INFO}	 Client got joined
+[2015-7-31 21:1:38.97379]	 {INFO}	 Client got joined
+[2015-7-31 21:1:38.97684]	 {INFO}	 {"CommandType":"DynamicClientJoined","Action":"update","Clients":{"11":{"Name":"7c:dd:90:9d:d2:70","Connection":"wireless","MAC":"7c:dd:90:9d:d2:70","Type":"laptop","LastKnownIP":"192.168.86.42","Active":"true","UseAsPresence":"true","LastActiveEpoch":"1507156536","Wait":"6","Block":"0","Schedule":"0,0,0,0,0,0,0","Manufacturer":"NaN","RSSI":"-38","ForceInActive":"0","CanBlock":"true","Category":"Others"}},"HashNow":"5e21a175a5fd0db1c6877dbb8ae0f27e"}
+[2015-7-31 21:1:38.97704]	 {INFO}	 Client details
+[2017-10-5 17:55:19.81380]	 {INFO}	 ** Got event callback.. **
+[2017-10-5 17:55:19.84638]	 {PRINT}	 Got event for Client joined 
+[2017-10-5 17:55:19.84659]	 {INFO}	 98:de:d0:81:eb:0b
+[2017-10-5 17:55:19.84671]	 {INFO}	 Joined Client mac 98:de:d0:81:eb:0b and ID 14
+[2017-10-5 17:55:19.84723]	 {INFO}	 Client got joined
+[2017-10-5 17:55:19.84772]	 {INFO}	 Client got joined
+[2017-10-5 17:55:19.85094]	 {INFO}	 {"CommandType":"DynamicClientJoined","Action":"update","Clients":{"14":{"Name":"98:de:d0:81:eb:0b","Connection":"wired","MAC":"98:de:d0:81:eb:0b","Type":"pc","LastKnownIP":"192.168.86.1","Active":"true","UseAsPresence":"true","LastActiveEpoch":"1505156732","Wait":"6","Block":"0","Schedule":"0,0,0,0,0,0,0","Manufacturer":"NaN","RSSI":"0","ForceInActive":"0","CanBlock":"false","Category":"Others"}},"HashNow":"2111c79328d2a37ce9be4d3e62bb7db1"}
+[2017-10-5 17:55:19.85110]	 {INFO}	 Client details

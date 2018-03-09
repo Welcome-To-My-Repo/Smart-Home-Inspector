@@ -1,0 +1,126 @@
+[2017-10-3 15:19:14.00207]	 {INFO}	 <=============================== association Started ===========================>
+[2017-10-3 15:19:17.30834]	 {PRINT}	 readarea
+[2017-10-3 15:19:17.38863]	 {INFO}	 Sending Association command to zwave_server and zigbee_server
+[2017-10-3 15:19:21.89983]	 {INFO}	 Sending cancel command to zigbee_server
+[2017-10-3 15:19:21.94936]	 {INFO}	 Device Basic Type:0x04, Generic Type:0x11, Specific Type:0x01
+[2017-10-3 15:19:21.94955]	 {INFO}	 Adding sensor (Z-wave)
+[2017-10-3 15:19:21.95078]	 {INFO}	 alarm set to 60 sec
+[2017-10-3 15:19:22.27106]	 {INFO}	 node 2 Supported Command Classes:0x26 0x27 0x73 0x70 0x86 0x72 0x77 
+[2017-10-3 15:19:22.27120]	 {INFO}	 Generic:zw_Multilevel_Switch , Specific:MS_Multilevel_Power_Switch
+[2017-10-3 15:19:22.27145]	 {INFO}	 Device Basic Type:0x00, Generic Type:0x00, Specific Type:0x00,Nodeid:2
+[2017-10-3 15:19:22.30154]	 {INFO}	 Getting sensor info (Z-wave),4 name MultilevelSwitch #4
+[2017-10-3 15:19:22.30279]	 {INFO}	 alarm set to 200 secs
+[2017-10-3 15:19:26.01874]	 {INFO}	 zw_createDevice is successful (Z-wave)
+[2017-10-3 15:19:26.16293]	 {INFO}	 Sensor got Associated (Z-wave)
+[2017-10-3 15:19:42.21578]	 {INFO}	 MultilevelSwitch subtype  MultilevelSwitch
+[2017-10-3 15:19:42.28110]	 {INFO}	 Sensor got Associated (Z-wave)
+[2017-10-3 15:20:35.44622]	 {INFO}	 dimmer plugjasco
+[2017-10-3 15:20:35.45238]	 {INFO}	 Sending Packet to Haserver Success
+[2017-10-3 15:24:11.02826]	 {INFO}	 <=============================== association Started ===========================>
+[2017-10-3 15:24:19.78916]	 {PRINT}	 readarea
+[2017-10-3 15:24:19.86888]	 {INFO}	 Sending Association command to zwave_server and zigbee_server
+[2017-10-3 15:24:21.06685]	 {INFO}	 device joined status 1 1  
+
+[2017-10-3 15:24:21.06702]	 {INFO}	 Sending cancel command to zwave_server
+[2017-10-3 15:24:21.12212]	 {INFO}	  Device got added (Zigbee)
+[2017-10-3 15:24:28.10500]	 {INFO}	 device joined status 6 6  
+
+[2017-10-3 15:24:31.13461]	 {INFO}	 Getting Sensor info (Zigbee)
+[2017-10-3 15:24:49.74244]	 {INFO}	 device joined status 10 10  
+
+[2017-10-3 15:24:49.74326]	 {INFO}	 collecting info of zigbee device
+[2017-10-3 15:24:49.74344]	 {INFO}	 M_name Securifi Ltd. and manufrId 1002 and Imagetype 5ec0
+[2017-10-3 15:24:49.74358]	 {INFO}	 Manu name Securifi Ltd. 
+
+[2017-10-3 15:24:49.74368]	 {INFO}	 No. of clusters found:2 and indexes:5 zonetype:0
+[2017-10-3 15:24:49.74382]	 {INFO}	 Peanut Plug #5
+[2017-10-3 15:24:49.97652]	 {INFO}	 Sensor got Associated (Zigbee)
+[2017-10-3 15:24:49.97671]	 {INFO}	 Sensor got Associated 5 name Peanut Plug #5 (Zigbee)
+[2017-10-3 15:25:21.84711]	 {INFO}	 Peanut Plug
+[2017-10-3 15:25:21.84743]	 {INFO}	 Sending Packet to HaServer Success
+[2017-10-3 15:25:21.84763]	 {INFO}	 Sending Packet to Haserver Success
+[2017-10-3 15:29:46.66348]	 {INFO}	 <=============================== association Started ===========================>
+[2017-10-3 15:29:49.91227]	 {PRINT}	 readarea
+[2017-10-3 15:29:49.99190]	 {INFO}	 Sending Association command to zwave_server and zigbee_server
+[2017-10-3 15:29:53.75413]	 {INFO}	 device joined status 1 1  
+
+[2017-10-3 15:29:53.75429]	 {INFO}	 Sending cancel command to zwave_server
+[2017-10-3 15:29:53.84013]	 {INFO}	  Device got added (Zigbee)
+[2017-10-3 15:29:55.87820]	 {INFO}	 device joined status 6 6  
+
+[2017-10-3 15:29:58.90745]	 {INFO}	 Getting Sensor info (Zigbee)
+[2017-10-3 15:30:15.46991]	 {INFO}	 device joined status 10 10  
+
+[2017-10-3 15:30:15.47074]	 {INFO}	 collecting info of zigbee device
+[2017-10-3 15:30:15.47090]	 {INFO}	 Last association device:0 Motion:11
+[2017-10-3 15:30:15.47113]	 {INFO}	 Device associated:MotionSensor 
+[2017-10-3 15:30:15.47124]	 {INFO}	 Detected as a motion sensor
+[2017-10-3 15:30:15.47135]	 {INFO}	 No. of clusters found:4 and indexes:6 zonetype:d
+[2017-10-3 15:30:15.47150]	 {INFO}	 GenericDevice #6
+[2017-10-3 15:30:15.70458]	 {INFO}	 Sensor got Associated (Zigbee)
+[2017-10-3 15:30:15.70478]	 {INFO}	 Sensor got Associated 6 name GenericDevice #6 (Zigbee)
+[2017-10-3 15:30:53.43056]	 {INFO}	 nyce ceiling
+[2017-10-3 15:30:53.43447]	 {INFO}	 Sending Packet to HaServer Success
+[2017-10-3 15:30:53.43489]	 {INFO}	 Sending Packet to Haserver Success
+[2017-10-3 15:39:18.56345]	 {INFO}	 <=============================== association Started ===========================>
+[2017-10-3 15:39:20.43896]	 {PRINT}	 readarea
+[2017-10-3 15:39:20.51961]	 {INFO}	 Sending Association command to zwave_server and zigbee_server
+[2017-10-3 15:39:39.98528]	 {INFO}	 Sending cancel command to zigbee_server
+[2017-10-3 15:39:40.04136]	 {INFO}	 Device Basic Type:0x04, Generic Type:0x07, Specific Type:0x01
+[2017-10-3 15:39:40.04155]	 {INFO}	 Adding sensor (Z-wave)
+[2017-10-3 15:39:40.04278]	 {INFO}	 alarm set to 60 sec
+[2017-10-3 15:39:44.56305]	 {INFO}	 node 3 Supported Command Classes:0x5e 0x85 0x59 0x22 0x20 0x80 0x70 0x56 0x5a 0x7a 0x72 0x8e 0x71 0x73 0x98 0x2b 0x9c 0x30 0x86 0x84 0xef 0x00 0x21 0x01 0xd8 0x07 0x11 0x90 0xc0 0x1c 
+[2017-10-3 15:39:44.56319]	 {INFO}	 Generic:zw_Notification_Sensor , Specific:NS_Notification_Sensor
+[2017-10-3 15:39:44.56341]	 {INFO}	 Device Basic Type:0x00, Generic Type:0x00, Specific Type:0x00,Nodeid:3
+[2017-10-3 15:39:44.59236]	 {INFO}	 Getting sensor info (Z-wave),7 name NotificationSensor #7
+[2017-10-3 15:39:44.59365]	 {INFO}	 alarm set to 200 secs
+[2017-10-3 15:39:53.47694]	 {INFO}	 zw_createDevice is successful (Z-wave)
+[2017-10-3 15:39:53.62479]	 {INFO}	 Sensor got Associated (Z-wave)
+[2017-10-3 15:41:25.30976]	 {INFO}	 Notification Sensor subtype DoorSensor
+[2017-10-3 15:41:25.37385]	 {INFO}	 Sensor got Associated (Z-wave)
+[2017-10-3 15:41:53.18127]	 {INFO}	 DoorSensor fibaro
+[2017-10-3 15:41:53.18543]	 {INFO}	 Sending Packet to Haserver Success
+[2017-10-3 15:48:36.21603]	 {INFO}	 <=============================== association Started ===========================>
+[2017-10-3 15:48:38.06746]	 {PRINT}	 readarea
+[2017-10-3 15:48:38.14732]	 {INFO}	 Sending Association command to zwave_server and zigbee_server
+[2017-10-3 15:48:41.58988]	 {INFO}	 device joined status 1 1  
+
+[2017-10-3 15:48:41.59006]	 {INFO}	 Sending cancel command to zwave_server
+[2017-10-3 15:48:41.68575]	 {INFO}	  Device got added (Zigbee)
+[2017-10-3 15:48:44.20424]	 {INFO}	 device joined status 6 6  
+
+[2017-10-3 15:48:47.23341]	 {INFO}	 Getting Sensor info (Zigbee)
+[2017-10-3 15:48:48.65265]	 {INFO}	 device joined status 10 10  
+
+[2017-10-3 15:48:48.65349]	 {INFO}	 collecting info of zigbee device
+[2017-10-3 15:48:48.65365]	 {INFO}	 Last association device:0 Motion:11
+[2017-10-3 15:48:48.65388]	 {INFO}	 Device associated:ContactSwitch 
+[2017-10-3 15:48:48.65400]	 {INFO}	 No. of clusters found:1 and indexes:3 zonetype:15
+[2017-10-3 15:48:48.65415]	 {INFO}	 ContactSwitch #8
+[2017-10-3 15:48:48.88818]	 {INFO}	 Sensor got Associated (Zigbee)
+[2017-10-3 15:48:48.88836]	 {INFO}	 Sensor got Associated 8 name ContactSwitch #8 (Zigbee)
+[2017-10-3 15:49:18.94797]	 {INFO}	 ContactSwitch nyce
+[2017-10-3 15:49:18.95094]	 {INFO}	 Sending Packet to HaServer Success
+[2017-10-3 15:49:18.95131]	 {INFO}	 Sending Packet to Haserver Success
+[2017-10-3 15:55:32.26630]	 {INFO}	 <=============================== association Started ===========================>
+[2017-10-3 15:55:33.78639]	 {PRINT}	 readarea
+[2017-10-3 15:55:33.86685]	 {INFO}	 Sending Association command to zwave_server and zigbee_server
+[2017-10-3 15:55:43.47243]	 {INFO}	 device joined status 1 1  
+
+[2017-10-3 15:55:43.47260]	 {INFO}	 Sending cancel command to zwave_server
+[2017-10-3 15:55:43.51823]	 {INFO}	  Device got added (Zigbee)
+[2017-10-3 15:55:45.60689]	 {INFO}	 device joined status 6 6  
+
+[2017-10-3 15:55:48.63597]	 {INFO}	 Getting Sensor info (Zigbee)
+[2017-10-3 15:55:50.04583]	 {INFO}	 device joined status 10 10  
+
+[2017-10-3 15:55:50.04665]	 {INFO}	 collecting info of zigbee device
+[2017-10-3 15:55:50.04681]	 {INFO}	 Last association device:0 Motion:11
+[2017-10-3 15:55:50.04703]	 {INFO}	 Device associated:ContactSwitch 
+[2017-10-3 15:55:50.04716]	 {INFO}	 No. of clusters found:1 and indexes:3 zonetype:15
+[2017-10-3 15:55:50.04729]	 {INFO}	 ContactSwitch #9
+[2017-10-3 15:55:50.28026]	 {INFO}	 Sensor got Associated (Zigbee)
+[2017-10-3 15:55:50.28044]	 {INFO}	 Sensor got Associated 9 name ContactSwitch #9 (Zigbee)
+[2017-10-3 15:56:40.57602]	 {INFO}	 mb ContactSwitch nyce
+[2017-10-3 15:56:40.57635]	 {INFO}	 Sending Packet to HaServer Success
+[2017-10-3 15:56:40.57657]	 {INFO}	 Sending Packet to Haserver Success

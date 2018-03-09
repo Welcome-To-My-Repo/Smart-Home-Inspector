@@ -1,0 +1,7 @@
+[2017-10-5 20:40:34.87939]	 {PRINT}	 Starting timer
+[2017-10-5 20:40:35.79053]	 {PRINT}	 fH8cb5SWL63jumXTU8lELICwJ3QYR9RW
+[2017-10-5 20:40:35.79075]	 {PRINT}	 Sending code request to cloud daemon
+[2017-10-5 20:40:36.93864]	 {PRINT}	 Affiliation code successfully retrieved from cloud.
+[2017-10-5 20:40:44.99586]	 {PRINT}	 Affiliation Successful
+[2017-10-5 20:44:43.46014]	 {PRINT}	 Starting timer
+[2017-10-5 20:44:43.68731]	 {INFO}	 Internet connection draw done

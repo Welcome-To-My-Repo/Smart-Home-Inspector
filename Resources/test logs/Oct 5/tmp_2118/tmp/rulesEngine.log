@@ -1,0 +1,2570 @@
+[2015-7-31 21:1:35.48860]	 {PRINT}	 <================================rulesEngine started=================================>
+[2015-7-31 21:1:35.49004]	 {PRINT}	 in runResult thread
+
+[2015-7-31 21:1:35.49556]	 {INFO}	 =======Inside weather trigger=======
+[2015-7-31 21:1:35.51686]	 {INFO}	 Default next observation
+[2015-7-31 21:1:38.88878]	 {PRINT}	 Received Callback in Rules Engine
+[2015-7-31 21:1:38.88903]	 {PRINT}	 7c:dd:90:9d:d2:70
+[2015-7-31 21:1:38.88915]	 {PRINT}	 Received ClientJoined event
+[2015-7-31 21:1:38.88983]	 {PRINT}	 Msg Received for Device 0,index:0,Value:7c:dd:90:9d:d2:70,EventType:16,ruleslist size:0,bytes read:48 
+[2015-7-31 21:1:38.88997]	 {PRINT}	 No Trigger is registered on this Index of Device
+[2015-7-31 21:1:38.89008]	 {PRINT}	 All Rules Done 
+
+[2017-10-5 17:55:15.83093]	 {PRINT}	 Scene Activated 1
+[2017-10-5 17:55:15.83119]	 {PRINT}	 Scene Deactivated 2
+[2017-10-5 17:55:15.83132]	 {PRINT}	 waiting for msg in scene validator
+[2017-10-5 17:55:19.76285]	 {PRINT}	 Received Callback in Rules Engine
+[2017-10-5 17:55:19.76305]	 {PRINT}	 98:de:d0:81:eb:0b
+[2017-10-5 17:55:19.76316]	 {PRINT}	 Received ClientJoined event
+[2017-10-5 17:55:19.76374]	 {PRINT}	 Msg Received for Device 0,index:0,Value:98:de:d0:81:eb:0b,EventType:16,ruleslist size:0,bytes read:48 
+[2017-10-5 17:55:19.76387]	 {PRINT}	 No Trigger is registered on this Index of Device
+[2017-10-5 17:55:19.76397]	 {PRINT}	 All Rules Done 
+
+[2017-10-5 18:1:1.84234]	 {PRINT}	 Received Callback in Rules Engine
+[2017-10-5 18:1:1.84252]	 {PRINT}	 00:17:88:2b:e8:31
+[2017-10-5 18:1:1.84262]	 {PRINT}	 Received ClientJoined event
+[2017-10-5 18:1:1.84320]	 {PRINT}	 Msg Received for Device 0,index:0,Value:00:17:88:2b:e8:31,EventType:16,ruleslist size:0,bytes read:48 
+[2017-10-5 18:1:1.84333]	 {PRINT}	 No Trigger is registered on this Index of Device
+[2017-10-5 18:1:1.84343]	 {PRINT}	 All Rules Done 
+
+[2017-10-5 18:1:19.59897]	 {PRINT}	 Received Callback in Rules Engine
+[2017-10-5 18:1:19.59916]	 {PRINT}	 Received DeviceAdded event
+[2017-10-5 18:1:19.87812]	 {PRINT}	 Received Callback in Rules Engine
+[2017-10-5 18:1:19.87830]	 {PRINT}	 Received DeviceAdded event
+[2017-10-5 18:1:20.15618]	 {PRINT}	 Received Callback in Rules Engine
+[2017-10-5 18:1:20.15640]	 {PRINT}	 Received DeviceAdded event
+[2017-10-5 18:2:9.11333]	 {PRINT}	 Received Callback in Rules Engine
+[2017-10-5 18:2:9.11350]	 {PRINT}	 Received DeviceAdded event
+[2017-10-5 18:3:3.53043]	 {PRINT}	 Received Callback in Rules Engine
+[2017-10-5 18:3:3.53061]	 {PRINT}	 Received DeviceAdded event
+[2017-10-5 18:22:2.92096]	 {PRINT}	 Received Callback in Rules Engine
+[2017-10-5 18:22:2.92117]	 {PRINT}	 Received DeviceAdded event
+[2017-10-5 18:23:40.34605]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:23:40.34675]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:23:40.34691]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:23:40.34709]	 {PRINT}	 Scene true
+[2017-10-5 18:23:40.34721]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:23:40.34737]	 {PRINT}	 Scene false
+[2017-10-5 18:23:40.34747]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:23:52.17593]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:23:52.17661]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:23:52.17678]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:23:52.17695]	 {PRINT}	 Scene true
+[2017-10-5 18:23:52.17706]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:23:52.17721]	 {PRINT}	 Scene false
+[2017-10-5 18:23:52.17731]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:24:2.19579]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:24:2.19653]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:24:2.19679]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:24:2.19703]	 {PRINT}	 Scene true
+[2017-10-5 18:24:2.19717]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:24:2.19735]	 {PRINT}	 Scene false
+[2017-10-5 18:24:2.19747]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:24:2.70037]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:24:2.70111]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:24:2.70134]	 {PRINT}	 Scene true
+[2017-10-5 18:24:2.70147]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:24:2.70162]	 {PRINT}	 Scene false
+[2017-10-5 18:24:2.70172]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:24:2.70187]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:24:52.72578]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:24:52.72650]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:24:52.72670]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:24:52.72693]	 {PRINT}	 Scene true
+[2017-10-5 18:24:52.72707]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:24:52.72725]	 {PRINT}	 Scene false
+[2017-10-5 18:24:52.72737]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:25:12.24577]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:25:12.24650]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:25:12.24670]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:25:12.24693]	 {PRINT}	 Scene true
+[2017-10-5 18:25:12.24707]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:25:12.24726]	 {PRINT}	 Scene false
+[2017-10-5 18:25:12.24737]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:25:53.12367]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:25:53.12438]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:25:53.12446]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:25:53.12465]	 {PRINT}	 Scene true
+[2017-10-5 18:25:53.12475]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:25:53.12490]	 {PRINT}	 Scene false
+[2017-10-5 18:25:53.12500]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:26:18.19374]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:26:18.19444]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:26:18.19447]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:26:18.19472]	 {PRINT}	 Scene true
+[2017-10-5 18:26:18.19485]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:26:18.19502]	 {PRINT}	 Scene false
+[2017-10-5 18:26:18.19515]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:26:20.67759]	 {PRINT}	 Callback Received for Device 15,Index:5,Value:82.4
+[2017-10-5 18:26:20.67823]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:26:20.67842]	 {PRINT}	 Scenes MSG Received for Device 15,index:5,Value:82.4,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:26:20.67862]	 {PRINT}	 Scene true
+[2017-10-5 18:26:20.67875]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:26:20.67897]	 {PRINT}	 Scene false
+[2017-10-5 18:26:20.67914]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:27:4.50367]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:27:4.50440]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:27:4.50443]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:27:4.50463]	 {PRINT}	 Scene true
+[2017-10-5 18:27:4.50474]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:27:4.50489]	 {PRINT}	 Scene false
+[2017-10-5 18:27:4.50499]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:27:24.38381]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:27:24.38451]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:27:24.38454]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:27:24.38476]	 {PRINT}	 Scene true
+[2017-10-5 18:27:24.38490]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:27:24.38507]	 {PRINT}	 Scene false
+[2017-10-5 18:27:24.38519]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:29:7.61419]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:29:7.61490]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:29:7.61493]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:29:7.61514]	 {PRINT}	 Scene true
+[2017-10-5 18:29:7.61524]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:29:7.61539]	 {PRINT}	 Scene false
+[2017-10-5 18:29:7.61550]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:29:8.48378]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:29:8.48448]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:29:8.48451]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:29:8.48476]	 {PRINT}	 Scene true
+[2017-10-5 18:29:8.48487]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:29:8.48502]	 {PRINT}	 Scene false
+[2017-10-5 18:29:8.48512]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:30:43.10397]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:30:43.10466]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:30:43.10470]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:30:43.10492]	 {PRINT}	 Scene true
+[2017-10-5 18:30:43.10506]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:30:43.10524]	 {PRINT}	 Scene false
+[2017-10-5 18:30:43.10535]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:30:50.88370]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:30:50.88441]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:30:50.88459]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:30:50.88480]	 {PRINT}	 Scene true
+[2017-10-5 18:30:50.88492]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:30:50.88510]	 {PRINT}	 Scene false
+[2017-10-5 18:30:50.88520]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:31:15.93393]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:31:15.93467]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:31:15.93489]	 {PRINT}	 Scene true
+[2017-10-5 18:31:15.93502]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:31:15.93518]	 {PRINT}	 Scene false
+[2017-10-5 18:31:15.93528]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:31:15.93539]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:31:18.47365]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:31:18.47439]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:31:18.47459]	 {PRINT}	 Scene true
+[2017-10-5 18:31:18.47472]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:31:18.47492]	 {PRINT}	 Scene false
+[2017-10-5 18:31:18.47504]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:31:18.47519]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:31:20.22762]	 {PRINT}	 Callback Received for Device 15,Index:5,Value:80.6
+[2017-10-5 18:31:20.22828]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:31:20.22848]	 {PRINT}	 Scenes MSG Received for Device 15,index:5,Value:80.6,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:31:20.22871]	 {PRINT}	 Scene true
+[2017-10-5 18:31:20.22886]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:31:20.22908]	 {PRINT}	 Scene false
+[2017-10-5 18:31:20.22922]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:31:20.35470]	 {PRINT}	 Callback Received for Device 15,Index:6,Value:40
+[2017-10-5 18:31:20.35543]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:31:20.35564]	 {PRINT}	 Scenes MSG Received for Device 15,index:6,Value:40,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:31:20.35587]	 {PRINT}	 Scene true
+[2017-10-5 18:31:20.35599]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:31:20.35616]	 {PRINT}	 Scene false
+[2017-10-5 18:31:20.35626]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:31:28.48372]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:31:28.48442]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:31:28.48463]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:31:28.48484]	 {PRINT}	 Scene true
+[2017-10-5 18:31:28.48495]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:31:28.48511]	 {PRINT}	 Scene false
+[2017-10-5 18:31:28.48522]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:31:53.49368]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:31:53.49438]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:31:53.49454]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:31:53.49471]	 {PRINT}	 Scene true
+[2017-10-5 18:31:53.49482]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:31:53.49497]	 {PRINT}	 Scene false
+[2017-10-5 18:31:53.49507]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:32:3.50409]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:32:3.50478]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:32:3.50495]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:32:3.50512]	 {PRINT}	 Scene true
+[2017-10-5 18:32:3.50522]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:32:3.50537]	 {PRINT}	 Scene false
+[2017-10-5 18:32:3.50547]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:32:5.08360]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:32:5.08435]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:32:5.08453]	 {PRINT}	 Scene true
+[2017-10-5 18:32:5.08466]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:32:5.08484]	 {PRINT}	 Scene false
+[2017-10-5 18:32:5.08499]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:32:5.08511]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:32:56.51369]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:32:56.51439]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:32:56.51456]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:32:56.51473]	 {PRINT}	 Scene true
+[2017-10-5 18:32:56.51483]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:32:56.51498]	 {PRINT}	 Scene false
+[2017-10-5 18:32:56.51508]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:33:3.66389]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:33:3.66459]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:33:3.66462]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:33:3.66485]	 {PRINT}	 Scene true
+[2017-10-5 18:33:3.66498]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:33:3.66515]	 {PRINT}	 Scene false
+[2017-10-5 18:33:3.66527]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:33:53.52369]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:33:53.52440]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:33:53.52458]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:33:53.52479]	 {PRINT}	 Scene true
+[2017-10-5 18:33:53.52493]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:33:53.52509]	 {PRINT}	 Scene false
+[2017-10-5 18:33:53.52519]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:34:11.95372]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:34:11.95441]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:34:11.95460]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:34:11.95480]	 {PRINT}	 Scene true
+[2017-10-5 18:34:11.95492]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:34:11.95507]	 {PRINT}	 Scene false
+[2017-10-5 18:34:11.95517]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:34:24.96244]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:34:24.96339]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:34:24.96362]	 {PRINT}	 Scene true
+[2017-10-5 18:34:24.96374]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:34:24.96390]	 {PRINT}	 Scene false
+[2017-10-5 18:34:24.96403]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:34:24.96417]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:34:33.98370]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:34:33.98440]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:34:33.98443]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:34:33.98463]	 {PRINT}	 Scene true
+[2017-10-5 18:34:33.98474]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:34:33.98489]	 {PRINT}	 Scene false
+[2017-10-5 18:34:33.98499]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:34:51.19368]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:34:51.19439]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:34:51.19456]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:34:51.19480]	 {PRINT}	 Scene true
+[2017-10-5 18:34:51.19492]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:34:51.19509]	 {PRINT}	 Scene false
+[2017-10-5 18:34:51.19519]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:34:56.03406]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:34:56.03477]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:34:56.03482]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:34:56.03501]	 {PRINT}	 Scene true
+[2017-10-5 18:34:56.03513]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:34:56.03528]	 {PRINT}	 Scene false
+[2017-10-5 18:34:56.03538]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:35:20.27403]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:35:20.27473]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:35:20.27476]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:35:20.27497]	 {PRINT}	 Scene true
+[2017-10-5 18:35:20.27508]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:35:20.27523]	 {PRINT}	 Scene false
+[2017-10-5 18:35:20.27532]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:35:27.01263]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:35:27.01332]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:35:27.01350]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:35:27.01371]	 {PRINT}	 Scene true
+[2017-10-5 18:35:27.01383]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:35:27.01400]	 {PRINT}	 Scene false
+[2017-10-5 18:35:27.01410]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:35:37.02264]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:35:37.02335]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:35:37.02355]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:35:37.02375]	 {PRINT}	 Scene true
+[2017-10-5 18:35:37.02386]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:35:37.02401]	 {PRINT}	 Scene false
+[2017-10-5 18:35:37.02411]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:35:40.66257]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:35:40.66335]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:35:40.66356]	 {PRINT}	 Scene true
+[2017-10-5 18:35:40.66367]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:35:40.66384]	 {PRINT}	 Scene false
+[2017-10-5 18:35:40.66397]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:35:40.66411]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:36:20.35885]	 {PRINT}	 Callback Received for Device 15,Index:5,Value:79.3
+[2017-10-5 18:36:20.35951]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:36:20.35972]	 {PRINT}	 Scenes MSG Received for Device 15,index:5,Value:79.3,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:36:20.35990]	 {PRINT}	 Scene true
+[2017-10-5 18:36:20.36001]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:36:20.36018]	 {PRINT}	 Scene false
+[2017-10-5 18:36:20.36030]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:36:45.49291]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:36:45.49366]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:36:45.49369]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:36:45.49392]	 {PRINT}	 Scene true
+[2017-10-5 18:36:45.49406]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:36:45.49423]	 {PRINT}	 Scene false
+[2017-10-5 18:36:45.49435]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:37:33.19234]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:37:33.19309]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:37:33.19327]	 {PRINT}	 Scene true
+[2017-10-5 18:37:33.19341]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:37:33.19359]	 {PRINT}	 Scene false
+[2017-10-5 18:37:33.19371]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:37:33.19382]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:37:46.23259]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:37:46.23329]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:37:46.23345]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:37:46.23362]	 {PRINT}	 Scene true
+[2017-10-5 18:37:46.23373]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:37:46.23388]	 {PRINT}	 Scene false
+[2017-10-5 18:37:46.23398]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:37:49.09270]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:37:49.09340]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:37:49.09357]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:37:49.09374]	 {PRINT}	 Scene true
+[2017-10-5 18:37:49.09384]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:37:49.09400]	 {PRINT}	 Scene false
+[2017-10-5 18:37:49.09410]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:38:8.41294]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:38:8.41373]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:38:8.41377]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:38:8.41398]	 {PRINT}	 Scene true
+[2017-10-5 18:38:8.41411]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:38:8.41428]	 {PRINT}	 Scene false
+[2017-10-5 18:38:8.41439]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:38:42.64119]	 {PRINT}	 Received Callback in Rules Engine
+[2017-10-5 18:38:42.64137]	 {PRINT}	 Received AlmondMode update event
+[2017-10-5 18:38:42.64148]	 {PRINT}	 Mode=3 NULL
+[2017-10-5 18:38:42.64172]	 {PRINT}	 Scenes MSG Received for Device 0,index:0,Value:away,EventType:15,ruleslist size:0,bytes read:48 
+[2017-10-5 18:38:42.64172]	 {PRINT}	 Msg Received for Device 0,index:0,Value:away,EventType:15,ruleslist size:0,bytes read:48 
+[2017-10-5 18:38:42.64189]	 {PRINT}	 Scene 1 Deactivated
+[2017-10-5 18:38:42.64190]	 {PRINT}	 No Trigger is registered on this Index of Device
+[2017-10-5 18:38:42.64209]	 {PRINT}	 All Rules Done 
+
+[2017-10-5 18:38:42.64329]	 {PRINT}	 Scene false
+[2017-10-5 18:38:42.64343]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:38:42.64356]	 {PRINT}	 Scene  2 Activated
+[2017-10-5 18:38:42.64458]	 {PRINT}	 Scene true
+[2017-10-5 18:38:42.64473]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:38:42.75264]	 {PRINT}	 Received Callback in Rules Engine
+[2017-10-5 18:38:42.75282]	 {PRINT}	 Received SceneDeactivated event
+[2017-10-5 18:38:42.85387]	 {PRINT}	 Received Callback in Rules Engine
+[2017-10-5 18:38:42.85406]	 {PRINT}	 Received SceneActivated event
+[2017-10-5 18:39:7.31694]	 {PRINT}	 Received Callback in Rules Engine
+[2017-10-5 18:39:7.31712]	 {PRINT}	 Received AlmondMode update event
+[2017-10-5 18:39:7.31723]	 {PRINT}	 Mode=2 NULL
+[2017-10-5 18:39:7.31739]	 {PRINT}	 Msg Received for Device 0,index:0,Value:home,EventType:15,ruleslist size:0,bytes read:48 
+[2017-10-5 18:39:7.31740]	 {PRINT}	 Scenes MSG Received for Device 0,index:0,Value:home,EventType:15,ruleslist size:0,bytes read:48 
+[2017-10-5 18:39:7.31753]	 {PRINT}	 No Trigger is registered on this Index of Device
+[2017-10-5 18:39:7.31759]	 {PRINT}	 Scene  1 Activated
+[2017-10-5 18:39:7.31764]	 {PRINT}	 All Rules Done 
+
+[2017-10-5 18:39:7.31859]	 {PRINT}	 Scene true
+[2017-10-5 18:39:7.31871]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:7.31884]	 {PRINT}	 Scene 2 Deactivated
+[2017-10-5 18:39:7.31992]	 {PRINT}	 Scene false
+[2017-10-5 18:39:7.32005]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:7.41820]	 {PRINT}	 Received Callback in Rules Engine
+[2017-10-5 18:39:7.41837]	 {PRINT}	 Received SceneActivated event
+[2017-10-5 18:39:7.51957]	 {PRINT}	 Received Callback in Rules Engine
+[2017-10-5 18:39:7.51973]	 {PRINT}	 Received SceneDeactivated event
+[2017-10-5 18:39:36.11134]	 {PRINT}	 Callback Received for Device 10,Index:10,Value:false
+[2017-10-5 18:39:36.11236]	 {PRINT}	 Scenes MSG Received for Device 10,index:10,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:39:36.11259]	 {PRINT}	 Scene true
+[2017-10-5 18:39:36.11271]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:36.11288]	 {PRINT}	 Scene false
+[2017-10-5 18:39:36.11302]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:36.11318]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:39:36.83360]	 {PRINT}	 Callback Received for Device 10,Index:10,Value:false
+[2017-10-5 18:39:36.83443]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:39:36.83460]	 {PRINT}	 Scenes MSG Received for Device 10,index:10,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:39:36.83477]	 {PRINT}	 Scene true
+[2017-10-5 18:39:36.83487]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:36.83502]	 {PRINT}	 Scene false
+[2017-10-5 18:39:36.83511]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:36.84608]	 {PRINT}	 Callback Received for Device 10,Index:2,Value:false
+[2017-10-5 18:39:36.84691]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:39:36.84708]	 {PRINT}	 Scenes MSG Received for Device 10,index:2,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:39:36.84726]	 {PRINT}	 Scene true
+[2017-10-5 18:39:36.84736]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:36.84751]	 {PRINT}	 Scene false
+[2017-10-5 18:39:36.84760]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:37.80314]	 {PRINT}	 Callback Received for Device 10,Index:10,Value:false
+[2017-10-5 18:39:37.80401]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:39:37.80782]	 {PRINT}	 Scenes MSG Received for Device 10,index:10,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:39:37.80801]	 {PRINT}	 Scene true
+[2017-10-5 18:39:37.80812]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:37.80827]	 {PRINT}	 Scene false
+[2017-10-5 18:39:37.80837]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:38.38883]	 {PRINT}	 Callback Received for Device 10,Index:10,Value:false
+[2017-10-5 18:39:38.38966]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:39:38.39070]	 {PRINT}	 Callback Received for Device 10,Index:2,Value:true
+[2017-10-5 18:39:38.39175]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:39:38.39201]	 {PRINT}	 Scenes MSG Received for Device 10,index:10,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:39:38.39222]	 {PRINT}	 Scene true
+[2017-10-5 18:39:38.39234]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:38.39250]	 {PRINT}	 Scene false
+[2017-10-5 18:39:38.39261]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:38.39275]	 {PRINT}	 Scenes MSG Received for Device 10,index:2,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:39:38.39291]	 {PRINT}	 Scene true
+[2017-10-5 18:39:38.39302]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:38.39317]	 {PRINT}	 Scene false
+[2017-10-5 18:39:38.39329]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:40.49782]	 {PRINT}	 Callback Received for Device 11,Index:10,Value:true
+[2017-10-5 18:39:40.50133]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:39:40.50161]	 {PRINT}	 Scenes MSG Received for Device 11,index:10,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:39:40.50180]	 {PRINT}	 Scene true
+[2017-10-5 18:39:40.50191]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:40.50213]	 {PRINT}	 Scene false
+[2017-10-5 18:39:40.50224]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:40.51142]	 {PRINT}	 Callback Received for Device 11,Index:2,Value:false
+[2017-10-5 18:39:40.51610]	 {PRINT}	 Scenes MSG Received for Device 11,index:2,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:39:40.51633]	 {PRINT}	 Scene true
+[2017-10-5 18:39:40.51645]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:40.51661]	 {PRINT}	 Scene false
+[2017-10-5 18:39:40.51671]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:40.51682]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:39:41.05421]	 {PRINT}	 Callback Received for Device 11,Index:10,Value:true
+[2017-10-5 18:39:41.05507]	 {PRINT}	 Scenes MSG Received for Device 11,index:10,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:39:41.05526]	 {PRINT}	 Scene true
+[2017-10-5 18:39:41.05537]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:41.05552]	 {PRINT}	 Scene false
+[2017-10-5 18:39:41.05562]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:41.05573]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:39:41.06613]	 {PRINT}	 Callback Received for Device 11,Index:2,Value:true
+[2017-10-5 18:39:41.06696]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:39:41.06713]	 {PRINT}	 Scenes MSG Received for Device 11,index:2,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:39:41.06730]	 {PRINT}	 Scene true
+[2017-10-5 18:39:41.06740]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:41.06755]	 {PRINT}	 Scene false
+[2017-10-5 18:39:41.06764]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:44.16832]	 {PRINT}	 Callback Received for Device 12,Index:10,Value:true
+[2017-10-5 18:39:44.16917]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:39:44.16931]	 {PRINT}	 Scenes MSG Received for Device 12,index:10,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:39:44.16953]	 {PRINT}	 Scene true
+[2017-10-5 18:39:44.16966]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:44.16983]	 {PRINT}	 Scene false
+[2017-10-5 18:39:44.16995]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:44.17979]	 {PRINT}	 Callback Received for Device 12,Index:2,Value:false
+[2017-10-5 18:39:44.18090]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:39:44.18296]	 {PRINT}	 Scenes MSG Received for Device 12,index:2,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:39:44.18318]	 {PRINT}	 Scene true
+[2017-10-5 18:39:44.18331]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:44.18347]	 {PRINT}	 Scene false
+[2017-10-5 18:39:44.18357]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:44.85359]	 {PRINT}	 Callback Received for Device 12,Index:10,Value:true
+[2017-10-5 18:39:44.85445]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:39:44.85449]	 {PRINT}	 Scenes MSG Received for Device 12,index:10,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:39:44.85471]	 {PRINT}	 Scene true
+[2017-10-5 18:39:44.85485]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:44.85502]	 {PRINT}	 Scene false
+[2017-10-5 18:39:44.85514]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:44.86607]	 {PRINT}	 Callback Received for Device 12,Index:2,Value:true
+[2017-10-5 18:39:44.86691]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:39:44.86708]	 {PRINT}	 Scenes MSG Received for Device 12,index:2,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:39:44.86727]	 {PRINT}	 Scene true
+[2017-10-5 18:39:44.86738]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:39:44.86753]	 {PRINT}	 Scene false
+[2017-10-5 18:39:44.86763]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:41:7.04549]	 {PRINT}	 Callback Received for Device 13,Index:1,Value:100
+[2017-10-5 18:41:7.04592]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:41:7.04734]	 {PRINT}	 Scenes MSG Received for Device 13,index:1,Value:100,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:41:7.04756]	 {PRINT}	 Scene true
+[2017-10-5 18:41:7.04768]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:41:7.04784]	 {PRINT}	 Scene false
+[2017-10-5 18:41:7.04795]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:41:12.63261]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:41:12.63332]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:41:12.63351]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:41:12.63371]	 {PRINT}	 Scene true
+[2017-10-5 18:41:12.63384]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:41:12.63399]	 {PRINT}	 Scene false
+[2017-10-5 18:41:12.63409]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:41:15.83459]	 {PRINT}	 Callback Received for Device 14,Index:1,Value:false
+[2017-10-5 18:41:15.83558]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:41:15.84050]	 {PRINT}	 Scenes MSG Received for Device 14,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:41:15.84073]	 {PRINT}	 Scene true
+[2017-10-5 18:41:15.84085]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:41:15.84102]	 {PRINT}	 Scene false
+[2017-10-5 18:41:15.84113]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:41:16.54433]	 {PRINT}	 Callback Received for Device 14,Index:1,Value:true
+[2017-10-5 18:41:16.54535]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:41:16.55024]	 {PRINT}	 Scenes MSG Received for Device 14,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:41:16.55046]	 {PRINT}	 Scene true
+[2017-10-5 18:41:16.55058]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:41:16.55075]	 {PRINT}	 Scene false
+[2017-10-5 18:41:16.55086]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:41:19.01887]	 {PRINT}	 Callback Received for Device 15,Index:6,Value:41
+[2017-10-5 18:41:19.01955]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:41:19.02183]	 {PRINT}	 Scenes MSG Received for Device 15,index:6,Value:41,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:41:19.02256]	 {PRINT}	 Scene true
+[2017-10-5 18:41:19.02267]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:41:19.02282]	 {PRINT}	 Scene false
+[2017-10-5 18:41:19.02292]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:41:20.47779]	 {PRINT}	 Callback Received for Device 15,Index:5,Value:78.4
+[2017-10-5 18:41:20.47853]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:41:20.47978]	 {PRINT}	 Scenes MSG Received for Device 15,index:5,Value:78.4,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:41:20.48000]	 {PRINT}	 Scene true
+[2017-10-5 18:41:20.48011]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:41:20.48026]	 {PRINT}	 Scene false
+[2017-10-5 18:41:20.48036]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:41:22.63256]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:41:22.63327]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:41:22.63471]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:41:22.63491]	 {PRINT}	 Scene true
+[2017-10-5 18:41:22.63502]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:41:22.63517]	 {PRINT}	 Scene false
+[2017-10-5 18:41:22.63527]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:42:38.42262]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:42:38.42329]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:42:38.42494]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:42:38.42515]	 {PRINT}	 Scene true
+[2017-10-5 18:42:38.42526]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:42:38.42541]	 {PRINT}	 Scene false
+[2017-10-5 18:42:38.42551]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:42:55.38301]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:42:55.38388]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:42:55.38407]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:42:55.38425]	 {PRINT}	 Scene true
+[2017-10-5 18:42:55.38435]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:42:55.38450]	 {PRINT}	 Scene false
+[2017-10-5 18:42:55.38461]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:42:58.67259]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:42:58.67325]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:42:58.67341]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:42:58.67358]	 {PRINT}	 Scene true
+[2017-10-5 18:42:58.67369]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:42:58.67384]	 {PRINT}	 Scene false
+[2017-10-5 18:42:58.67394]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:43:8.68290]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:43:8.68355]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:43:8.68372]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:43:8.68389]	 {PRINT}	 Scene true
+[2017-10-5 18:43:8.68400]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:43:8.68418]	 {PRINT}	 Scene false
+[2017-10-5 18:43:8.68428]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:43:43.41258]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:43:43.41325]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:43:43.41336]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:43:43.41357]	 {PRINT}	 Scene true
+[2017-10-5 18:43:43.41370]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:43:43.41389]	 {PRINT}	 Scene false
+[2017-10-5 18:43:43.41402]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:44:0.30263]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:44:0.30332]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:44:0.30351]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:44:0.30371]	 {PRINT}	 Scene true
+[2017-10-5 18:44:0.30381]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:44:0.30397]	 {PRINT}	 Scene false
+[2017-10-5 18:44:0.30406]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:44:53.30260]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:44:53.30327]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:44:53.30345]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:44:53.30366]	 {PRINT}	 Scene true
+[2017-10-5 18:44:53.30378]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:44:53.30394]	 {PRINT}	 Scene false
+[2017-10-5 18:44:53.30404]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:45:14.04263]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:45:14.04331]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:45:14.04334]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:45:14.04354]	 {PRINT}	 Scene true
+[2017-10-5 18:45:14.04365]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:45:14.04379]	 {PRINT}	 Scene false
+[2017-10-5 18:45:14.04389]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:45:14.75352]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:45:14.75421]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:45:14.75439]	 {PRINT}	 Scene true
+[2017-10-5 18:45:14.75450]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:45:14.75465]	 {PRINT}	 Scene false
+[2017-10-5 18:45:14.75475]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:45:14.75486]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:45:24.76269]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:45:24.76334]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:45:24.76352]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:45:24.76369]	 {PRINT}	 Scene true
+[2017-10-5 18:45:24.76379]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:45:24.76394]	 {PRINT}	 Scene false
+[2017-10-5 18:45:24.76404]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:45:32.34794]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:45:32.34860]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:45:32.34877]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:45:32.34896]	 {PRINT}	 Scene true
+[2017-10-5 18:45:32.34907]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:45:32.34922]	 {PRINT}	 Scene false
+[2017-10-5 18:45:32.34933]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:45:42.35795]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:45:42.35862]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:45:42.35887]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:45:42.35909]	 {PRINT}	 Scene true
+[2017-10-5 18:45:42.35920]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:45:42.35935]	 {PRINT}	 Scene false
+[2017-10-5 18:45:42.35946]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:45:54.14793]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:45:54.14861]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:45:54.14879]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:45:54.14900]	 {PRINT}	 Scene true
+[2017-10-5 18:45:54.14912]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:45:54.14927]	 {PRINT}	 Scene false
+[2017-10-5 18:45:54.14937]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:46:19.10542]	 {PRINT}	 Callback Received for Device 15,Index:6,Value:42
+[2017-10-5 18:46:19.10602]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:46:19.10619]	 {PRINT}	 Scenes MSG Received for Device 15,index:6,Value:42,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:46:19.10636]	 {PRINT}	 Scene true
+[2017-10-5 18:46:19.10646]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:46:19.10661]	 {PRINT}	 Scene false
+[2017-10-5 18:46:19.10671]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:46:26.15803]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:46:26.15870]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:46:26.15888]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:46:26.15906]	 {PRINT}	 Scene true
+[2017-10-5 18:46:26.15917]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:46:26.15931]	 {PRINT}	 Scene false
+[2017-10-5 18:46:26.15941]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:46:32.91794]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:46:32.91862]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:46:32.91881]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:46:32.91901]	 {PRINT}	 Scene true
+[2017-10-5 18:46:32.91913]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:46:32.91929]	 {PRINT}	 Scene false
+[2017-10-5 18:46:32.91939]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:46:49.31777]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:46:49.31856]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:46:49.31878]	 {PRINT}	 Scene true
+[2017-10-5 18:46:49.31888]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:46:49.31905]	 {PRINT}	 Scene false
+[2017-10-5 18:46:49.31918]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:46:49.31932]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:46:56.06795]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:46:56.06862]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:46:56.06874]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:46:56.06893]	 {PRINT}	 Scene true
+[2017-10-5 18:46:56.06904]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:46:56.06919]	 {PRINT}	 Scene false
+[2017-10-5 18:46:56.06929]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:47:6.07794]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:47:6.07860]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:47:6.07879]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:47:6.07900]	 {PRINT}	 Scene true
+[2017-10-5 18:47:6.07912]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:47:6.07927]	 {PRINT}	 Scene false
+[2017-10-5 18:47:6.07937]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:47:14.78797]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:47:14.78864]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:47:14.78887]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:47:14.78909]	 {PRINT}	 Scene true
+[2017-10-5 18:47:14.78919]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:47:14.78934]	 {PRINT}	 Scene false
+[2017-10-5 18:47:14.78945]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:47:24.79797]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:47:24.79864]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:47:24.79867]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:47:24.79891]	 {PRINT}	 Scene true
+[2017-10-5 18:47:24.79903]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:47:24.79921]	 {PRINT}	 Scene false
+[2017-10-5 18:47:24.79933]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:47:28.81823]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:47:28.81901]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:47:28.81920]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:47:28.81939]	 {PRINT}	 Scene true
+[2017-10-5 18:47:28.81950]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:47:28.81967]	 {PRINT}	 Scene false
+[2017-10-5 18:47:28.81979]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:47:38.82801]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:47:38.82867]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:47:38.82888]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:47:38.82906]	 {PRINT}	 Scene true
+[2017-10-5 18:47:38.82916]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:47:38.82931]	 {PRINT}	 Scene false
+[2017-10-5 18:47:38.82941]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:47:41.74789]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:47:41.74855]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:47:41.74858]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:47:41.74880]	 {PRINT}	 Scene true
+[2017-10-5 18:47:41.74894]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:47:41.74910]	 {PRINT}	 Scene false
+[2017-10-5 18:47:41.74922]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:47:51.75760]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:47:51.75831]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:47:51.75849]	 {PRINT}	 Scene true
+[2017-10-5 18:47:51.75863]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:47:51.75881]	 {PRINT}	 Scene false
+[2017-10-5 18:47:51.75893]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:47:51.75905]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:48:14.65792]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:48:14.65857]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:48:14.65875]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:48:14.65892]	 {PRINT}	 Scene true
+[2017-10-5 18:48:14.65902]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:48:14.65917]	 {PRINT}	 Scene false
+[2017-10-5 18:48:14.65927]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:48:27.66794]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:48:27.66862]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:48:27.66879]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:48:27.66900]	 {PRINT}	 Scene true
+[2017-10-5 18:48:27.66915]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:48:27.66932]	 {PRINT}	 Scene false
+[2017-10-5 18:48:27.66942]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:48:31.35811]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:48:31.35877]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:48:31.35881]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:48:31.35902]	 {PRINT}	 Scene true
+[2017-10-5 18:48:31.35915]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:48:31.35932]	 {PRINT}	 Scene false
+[2017-10-5 18:48:31.35944]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:48:41.36796]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:48:41.36863]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:48:41.36885]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:48:41.36908]	 {PRINT}	 Scene true
+[2017-10-5 18:48:41.36920]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:48:41.36935]	 {PRINT}	 Scene false
+[2017-10-5 18:48:41.36946]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:48:42.18792]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:48:42.18859]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:48:42.18862]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:48:42.18883]	 {PRINT}	 Scene true
+[2017-10-5 18:48:42.18894]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:48:42.18908]	 {PRINT}	 Scene false
+[2017-10-5 18:48:42.18918]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:48:57.01792]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:48:57.01859]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:48:57.01877]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:48:57.01898]	 {PRINT}	 Scene true
+[2017-10-5 18:48:57.01911]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:48:57.01929]	 {PRINT}	 Scene false
+[2017-10-5 18:48:57.01939]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:48:57.52795]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:48:57.52863]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:48:57.52866]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:48:57.52887]	 {PRINT}	 Scene true
+[2017-10-5 18:48:57.52898]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:48:57.52913]	 {PRINT}	 Scene false
+[2017-10-5 18:48:57.52923]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:49:7.43794]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:49:7.43861]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:49:7.43884]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:49:7.43905]	 {PRINT}	 Scene true
+[2017-10-5 18:49:7.43916]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:49:7.43931]	 {PRINT}	 Scene false
+[2017-10-5 18:49:7.43941]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:49:12.27799]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:49:12.27865]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:49:12.27868]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:49:12.27891]	 {PRINT}	 Scene true
+[2017-10-5 18:49:12.27904]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:49:12.27921]	 {PRINT}	 Scene false
+[2017-10-5 18:49:12.27934]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:50:31.10795]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:50:31.10862]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:50:31.10880]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:50:31.10901]	 {PRINT}	 Scene true
+[2017-10-5 18:50:31.10913]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:50:31.10929]	 {PRINT}	 Scene false
+[2017-10-5 18:50:31.10939]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:50:31.67808]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:50:31.67874]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:50:31.67877]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:50:31.67898]	 {PRINT}	 Scene true
+[2017-10-5 18:50:31.67910]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:50:31.67925]	 {PRINT}	 Scene false
+[2017-10-5 18:50:31.67936]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:50:45.08795]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:50:45.08861]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:50:45.08865]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:50:45.08886]	 {PRINT}	 Scene true
+[2017-10-5 18:50:45.08900]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:50:45.08917]	 {PRINT}	 Scene false
+[2017-10-5 18:50:45.08928]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:50:47.70792]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:50:47.70861]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:50:47.70865]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:50:47.70892]	 {PRINT}	 Scene true
+[2017-10-5 18:50:47.70906]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:50:47.70923]	 {PRINT}	 Scene false
+[2017-10-5 18:50:47.70935]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:50:55.03976]	 {PRINT}	 Callback Received for Device 14,Index:1,Value:false
+[2017-10-5 18:50:55.04089]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:50:55.04120]	 {PRINT}	 Scenes MSG Received for Device 14,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:50:55.04145]	 {PRINT}	 Scene true
+[2017-10-5 18:50:55.04161]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:50:55.04183]	 {PRINT}	 Scene false
+[2017-10-5 18:50:55.04197]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:51:17.71305]	 {PRINT}	 Callback Received for Device 15,Index:5,Value:77.5
+[2017-10-5 18:51:17.71383]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:51:17.71707]	 {PRINT}	 Scenes MSG Received for Device 15,index:5,Value:77.5,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:51:17.71780]	 {PRINT}	 Scene true
+[2017-10-5 18:51:17.71792]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:51:17.71808]	 {PRINT}	 Scene false
+[2017-10-5 18:51:17.71819]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:51:23.32793]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:51:23.32861]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:51:23.32979]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:51:23.32998]	 {PRINT}	 Scene true
+[2017-10-5 18:51:23.33009]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:51:23.33025]	 {PRINT}	 Scene false
+[2017-10-5 18:51:23.33037]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:52:5.32795]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:52:5.32864]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:52:5.32876]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:52:5.32896]	 {PRINT}	 Scene true
+[2017-10-5 18:52:5.32907]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:52:5.32922]	 {PRINT}	 Scene false
+[2017-10-5 18:52:5.32932]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:52:15.33792]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:52:15.33858]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:52:15.33875]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:52:15.33892]	 {PRINT}	 Scene true
+[2017-10-5 18:52:15.33902]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:52:15.33919]	 {PRINT}	 Scene false
+[2017-10-5 18:52:15.33929]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:52:33.56795]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:52:33.56864]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:52:33.56872]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:52:33.56893]	 {PRINT}	 Scene true
+[2017-10-5 18:52:33.56904]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:52:33.56919]	 {PRINT}	 Scene false
+[2017-10-5 18:52:33.56929]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:52:43.56785]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:52:43.56857]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:52:43.56882]	 {PRINT}	 Scene true
+[2017-10-5 18:52:43.56895]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:52:43.56914]	 {PRINT}	 Scene false
+[2017-10-5 18:52:43.56927]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:52:43.56942]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:52:44.07771]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:52:44.08035]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:52:44.08054]	 {PRINT}	 Scene true
+[2017-10-5 18:52:44.08064]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:52:44.08080]	 {PRINT}	 Scene false
+[2017-10-5 18:52:44.08090]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:52:44.08104]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:52:53.57795]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:52:53.57864]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:52:53.57896]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:52:53.57919]	 {PRINT}	 Scene true
+[2017-10-5 18:52:53.57933]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:52:53.57952]	 {PRINT}	 Scene false
+[2017-10-5 18:52:53.57964]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:52:55.97794]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:52:55.97859]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:52:55.97863]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:52:55.97887]	 {PRINT}	 Scene true
+[2017-10-5 18:52:55.97900]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:52:55.97917]	 {PRINT}	 Scene false
+[2017-10-5 18:52:55.97929]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:53:22.83795]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:53:22.83863]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:53:22.83882]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:53:22.83903]	 {PRINT}	 Scene true
+[2017-10-5 18:53:22.83917]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:53:22.83934]	 {PRINT}	 Scene false
+[2017-10-5 18:53:22.83945]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:53:39.96807]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:53:39.96873]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:53:39.96878]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:53:39.96898]	 {PRINT}	 Scene true
+[2017-10-5 18:53:39.96912]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:53:39.96929]	 {PRINT}	 Scene false
+[2017-10-5 18:53:39.96941]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:53:52.97794]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:53:52.97866]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:53:52.97887]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:53:52.97908]	 {PRINT}	 Scene true
+[2017-10-5 18:53:52.97920]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:53:52.97938]	 {PRINT}	 Scene false
+[2017-10-5 18:53:52.97948]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:53:59.90794]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:53:59.90863]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:53:59.90881]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:53:59.90901]	 {PRINT}	 Scene true
+[2017-10-5 18:53:59.90915]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:53:59.90934]	 {PRINT}	 Scene false
+[2017-10-5 18:53:59.90945]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:54:9.91795]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:54:9.91865]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:54:9.91889]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:54:9.91912]	 {PRINT}	 Scene true
+[2017-10-5 18:54:9.91925]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:54:9.91944]	 {PRINT}	 Scene false
+[2017-10-5 18:54:9.91955]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:54:12.79795]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:54:12.79865]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:54:12.79888]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:54:12.79912]	 {PRINT}	 Scene true
+[2017-10-5 18:54:12.79925]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:54:12.79942]	 {PRINT}	 Scene false
+[2017-10-5 18:54:12.79952]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:54:27.44799]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:54:27.44865]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:54:27.44869]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:54:27.44891]	 {PRINT}	 Scene true
+[2017-10-5 18:54:27.44906]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:54:27.44924]	 {PRINT}	 Scene false
+[2017-10-5 18:54:27.44936]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:54:30.29792]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:54:30.29860]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:54:30.29987]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:54:30.30008]	 {PRINT}	 Scene true
+[2017-10-5 18:54:30.30018]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:54:30.30034]	 {PRINT}	 Scene false
+[2017-10-5 18:54:30.30044]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:54:40.30790]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:54:40.30856]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:54:40.30873]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:54:40.30891]	 {PRINT}	 Scene true
+[2017-10-5 18:54:40.30902]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:54:40.30917]	 {PRINT}	 Scene false
+[2017-10-5 18:54:40.30926]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:54:52.29793]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:54:52.29859]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:54:52.29876]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:54:52.29893]	 {PRINT}	 Scene true
+[2017-10-5 18:54:52.29903]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:54:52.29922]	 {PRINT}	 Scene false
+[2017-10-5 18:54:52.29932]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:55:9.71902]	 {INFO}	 Default next observation
+[2017-10-5 18:55:10.88794]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:55:10.88861]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:55:10.88880]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:55:10.88902]	 {PRINT}	 Scene true
+[2017-10-5 18:55:10.88918]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:55:10.88936]	 {PRINT}	 Scene false
+[2017-10-5 18:55:10.88947]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:55:14.18798]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:55:14.18865]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:55:14.18868]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:55:14.18891]	 {PRINT}	 Scene true
+[2017-10-5 18:55:14.18904]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:55:14.18921]	 {PRINT}	 Scene false
+[2017-10-5 18:55:14.18932]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:55:47.74449]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:55:47.74514]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:55:47.74517]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:55:47.74538]	 {PRINT}	 Scene true
+[2017-10-5 18:55:47.74548]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:55:47.74564]	 {PRINT}	 Scene false
+[2017-10-5 18:55:47.74574]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:56:16.30982]	 {PRINT}	 Callback Received for Device 15,Index:6,Value:43
+[2017-10-5 18:56:16.31058]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:56:16.31282]	 {PRINT}	 Scenes MSG Received for Device 15,index:6,Value:43,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:56:16.31302]	 {PRINT}	 Scene true
+[2017-10-5 18:56:16.31313]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:56:16.31327]	 {PRINT}	 Scene false
+[2017-10-5 18:56:16.31337]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:56:19.76454]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:56:19.76520]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:56:19.76540]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:56:19.76562]	 {PRINT}	 Scene true
+[2017-10-5 18:56:19.76574]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:56:19.76592]	 {PRINT}	 Scene false
+[2017-10-5 18:56:19.76602]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:56:41.79462]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:56:41.79528]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:56:41.79547]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:56:41.79564]	 {PRINT}	 Scene true
+[2017-10-5 18:56:41.79575]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:56:41.79590]	 {PRINT}	 Scene false
+[2017-10-5 18:56:41.79600]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:56:45.47453]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:56:45.47523]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:56:45.47548]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:56:45.47570]	 {PRINT}	 Scene true
+[2017-10-5 18:56:45.47582]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:56:45.47599]	 {PRINT}	 Scene false
+[2017-10-5 18:56:45.47609]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:56:55.48459]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:56:55.48525]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:56:55.48529]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:56:55.48551]	 {PRINT}	 Scene true
+[2017-10-5 18:56:55.48564]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:56:55.48584]	 {PRINT}	 Scene false
+[2017-10-5 18:56:55.48597]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:57:39.88452]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:57:39.88520]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:57:39.88539]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:57:39.88560]	 {PRINT}	 Scene true
+[2017-10-5 18:57:39.88573]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:57:39.88591]	 {PRINT}	 Scene false
+[2017-10-5 18:57:39.88601]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:57:49.88462]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:57:49.88527]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:57:49.88531]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:57:49.88553]	 {PRINT}	 Scene true
+[2017-10-5 18:57:49.88567]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:57:49.88586]	 {PRINT}	 Scene false
+[2017-10-5 18:57:49.88599]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:57:52.87449]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:57:52.87516]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:57:52.87520]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:57:52.87541]	 {PRINT}	 Scene true
+[2017-10-5 18:57:52.87552]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:57:52.87571]	 {PRINT}	 Scene false
+[2017-10-5 18:57:52.87584]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:58:5.88449]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:58:5.88516]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:58:5.88519]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:58:5.88542]	 {PRINT}	 Scene true
+[2017-10-5 18:58:5.88555]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:58:5.88573]	 {PRINT}	 Scene false
+[2017-10-5 18:58:5.88589]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:58:14.75452]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 18:58:14.75521]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:58:14.75544]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:58:14.75566]	 {PRINT}	 Scene true
+[2017-10-5 18:58:14.75579]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:58:14.75597]	 {PRINT}	 Scene false
+[2017-10-5 18:58:14.75607]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:58:24.76452]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 18:58:24.76521]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 18:58:24.76524]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 18:58:24.76545]	 {PRINT}	 Scene true
+[2017-10-5 18:58:24.76555]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 18:58:24.76570]	 {PRINT}	 Scene false
+[2017-10-5 18:58:24.76580]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:0:12.33452]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 19:0:12.33522]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:0:12.33545]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:0:12.33569]	 {PRINT}	 Scene true
+[2017-10-5 19:0:12.33583]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:0:12.33602]	 {PRINT}	 Scene false
+[2017-10-5 19:0:12.33613]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:0:25.34451]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 19:0:25.34520]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:0:25.34538]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:0:25.34561]	 {PRINT}	 Scene true
+[2017-10-5 19:0:25.34575]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:0:25.34593]	 {PRINT}	 Scene false
+[2017-10-5 19:0:25.34604]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:2:45.21291]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 19:2:45.21362]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:2:45.21382]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:2:45.21406]	 {PRINT}	 Scene true
+[2017-10-5 19:2:45.21419]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:2:45.21437]	 {PRINT}	 Scene false
+[2017-10-5 19:2:45.21448]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:3:15.77452]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 19:3:15.77519]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:3:15.77538]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:3:15.77559]	 {PRINT}	 Scene true
+[2017-10-5 19:3:15.77572]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:3:15.77590]	 {PRINT}	 Scene false
+[2017-10-5 19:3:15.77600]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:3:33.57460]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 19:3:33.57529]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:3:33.57548]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:3:33.57568]	 {PRINT}	 Scene true
+[2017-10-5 19:3:33.57582]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:3:33.57602]	 {PRINT}	 Scene false
+[2017-10-5 19:3:33.57615]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:3:50.17448]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 19:3:50.17515]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:3:50.17518]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:3:50.17538]	 {PRINT}	 Scene true
+[2017-10-5 19:3:50.17549]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:3:50.17564]	 {PRINT}	 Scene false
+[2017-10-5 19:3:50.17574]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:3:54.68455]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 19:3:54.68523]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:3:54.68526]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:3:54.68547]	 {PRINT}	 Scene true
+[2017-10-5 19:3:54.68558]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:3:54.68573]	 {PRINT}	 Scene false
+[2017-10-5 19:3:54.68583]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:4:16.69451]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 19:4:16.69523]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:4:16.69543]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:4:16.69563]	 {PRINT}	 Scene true
+[2017-10-5 19:4:16.69576]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:4:16.69599]	 {PRINT}	 Scene false
+[2017-10-5 19:4:16.69614]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:4:20.51460]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 19:4:20.51528]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:4:20.51531]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:4:20.51554]	 {PRINT}	 Scene true
+[2017-10-5 19:4:20.51567]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:4:20.51586]	 {PRINT}	 Scene false
+[2017-10-5 19:4:20.51599]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:4:30.51451]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 19:4:30.51523]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:4:30.51547]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:4:30.51570]	 {PRINT}	 Scene true
+[2017-10-5 19:4:30.51584]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:4:30.51601]	 {PRINT}	 Scene false
+[2017-10-5 19:4:30.51612]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:4:32.26706]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 19:4:32.26767]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:4:32.26787]	 {PRINT}	 Scene true
+[2017-10-5 19:4:32.26800]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:4:32.26816]	 {PRINT}	 Scene false
+[2017-10-5 19:4:32.26826]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:4:32.26838]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:4:51.27446]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 19:4:51.27512]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:4:51.27515]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:4:51.27536]	 {PRINT}	 Scene true
+[2017-10-5 19:4:51.27546]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:4:51.27561]	 {PRINT}	 Scene false
+[2017-10-5 19:4:51.27571]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:4:58.35452]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 19:4:58.35522]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:4:58.35541]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:4:58.35563]	 {PRINT}	 Scene true
+[2017-10-5 19:4:58.35578]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:4:58.35597]	 {PRINT}	 Scene false
+[2017-10-5 19:4:58.35607]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:5:43.46123]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 19:5:43.46189]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:5:43.46192]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:5:43.46214]	 {PRINT}	 Scene true
+[2017-10-5 19:5:43.46227]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:5:43.46246]	 {PRINT}	 Scene false
+[2017-10-5 19:5:43.46259]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:5:53.32107]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 19:5:53.32176]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:5:53.32194]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:5:53.32216]	 {PRINT}	 Scene true
+[2017-10-5 19:5:53.32229]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:5:53.32248]	 {PRINT}	 Scene false
+[2017-10-5 19:5:53.32258]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:6:6.64107]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 19:6:6.64176]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:6:6.64194]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:6:6.64215]	 {PRINT}	 Scene true
+[2017-10-5 19:6:6.64228]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:6:6.64246]	 {PRINT}	 Scene false
+[2017-10-5 19:6:6.64257]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:6:11.44105]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 19:6:11.44172]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:6:11.44176]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:6:11.44198]	 {PRINT}	 Scene true
+[2017-10-5 19:6:11.44211]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:6:11.44229]	 {PRINT}	 Scene false
+[2017-10-5 19:6:11.44244]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:6:14.99640]	 {PRINT}	 Callback Received for Device 15,Index:6,Value:42
+[2017-10-5 19:6:14.99722]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:6:14.99738]	 {PRINT}	 Scenes MSG Received for Device 15,index:6,Value:42,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:6:14.99759]	 {PRINT}	 Scene true
+[2017-10-5 19:6:14.99772]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:6:14.99793]	 {PRINT}	 Scene false
+[2017-10-5 19:6:14.99805]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:6:26.05108]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 19:6:26.05176]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:6:26.05196]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:6:26.05216]	 {PRINT}	 Scene true
+[2017-10-5 19:6:26.05229]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:6:26.05250]	 {PRINT}	 Scene false
+[2017-10-5 19:6:26.05262]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:6:54.97106]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 19:6:54.97174]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:6:54.97193]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:6:54.97217]	 {PRINT}	 Scene true
+[2017-10-5 19:6:54.97231]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:6:54.97250]	 {PRINT}	 Scene false
+[2017-10-5 19:6:54.97260]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:7:32.94114]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 19:7:32.94182]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:7:32.94185]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:7:32.94205]	 {PRINT}	 Scene true
+[2017-10-5 19:7:32.94216]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:7:32.94231]	 {PRINT}	 Scene false
+[2017-10-5 19:7:32.94241]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:7:49.92110]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 19:7:49.92176]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:7:49.92181]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:7:49.92205]	 {PRINT}	 Scene true
+[2017-10-5 19:7:49.92219]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:7:49.92241]	 {PRINT}	 Scene false
+[2017-10-5 19:7:49.92254]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:8:44.07123]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 19:8:44.07195]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:8:44.07217]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:8:44.07238]	 {PRINT}	 Scene true
+[2017-10-5 19:8:44.07252]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:8:44.07271]	 {PRINT}	 Scene false
+[2017-10-5 19:8:44.07285]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:8:46.64107]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 19:8:46.64175]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:8:46.64192]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:8:46.64209]	 {PRINT}	 Scene true
+[2017-10-5 19:8:46.64220]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:8:46.64234]	 {PRINT}	 Scene false
+[2017-10-5 19:8:46.64244]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:9:2.23101]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 19:9:2.23166]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:9:2.23175]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:9:2.23196]	 {PRINT}	 Scene true
+[2017-10-5 19:9:2.23210]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:9:2.23227]	 {PRINT}	 Scene false
+[2017-10-5 19:9:2.23239]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:9:8.30109]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 19:9:8.30178]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:9:8.30196]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:9:8.30217]	 {PRINT}	 Scene true
+[2017-10-5 19:9:8.30230]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:9:8.30249]	 {PRINT}	 Scene false
+[2017-10-5 19:9:8.30260]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:9:22.32110]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 19:9:22.32179]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:9:22.32306]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:9:22.32328]	 {PRINT}	 Scene true
+[2017-10-5 19:9:22.32339]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:9:22.32354]	 {PRINT}	 Scene false
+[2017-10-5 19:9:22.32364]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:9:23.27573]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 19:9:23.27633]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:9:23.27755]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:9:23.27777]	 {PRINT}	 Scene true
+[2017-10-5 19:9:23.27789]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:9:23.27806]	 {PRINT}	 Scene false
+[2017-10-5 19:9:23.27816]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:9:38.24107]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 19:9:38.24174]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:9:38.24191]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:9:38.24209]	 {PRINT}	 Scene true
+[2017-10-5 19:9:38.24219]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:9:38.24234]	 {PRINT}	 Scene false
+[2017-10-5 19:9:38.24243]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:9:40.25107]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 19:9:40.25172]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:9:40.25189]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:9:40.25207]	 {PRINT}	 Scene true
+[2017-10-5 19:9:40.25218]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:9:40.25232]	 {PRINT}	 Scene false
+[2017-10-5 19:9:40.25243]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:9:53.76106]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 19:9:53.76177]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:9:53.76197]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:9:53.76218]	 {PRINT}	 Scene true
+[2017-10-5 19:9:53.76233]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:9:53.76252]	 {PRINT}	 Scene false
+[2017-10-5 19:9:53.76262]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:9:54.65186]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 19:9:54.65257]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:9:54.65276]	 {PRINT}	 Scene true
+[2017-10-5 19:9:54.65287]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:9:54.65306]	 {PRINT}	 Scene false
+[2017-10-5 19:9:54.65318]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:9:54.65331]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:10:24.90105]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 19:10:24.90173]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:10:24.90192]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:10:24.90213]	 {PRINT}	 Scene true
+[2017-10-5 19:10:24.90226]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:10:24.90244]	 {PRINT}	 Scene false
+[2017-10-5 19:10:24.90254]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:10:25.41103]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 19:10:25.41170]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:10:25.41192]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:10:25.41213]	 {PRINT}	 Scene true
+[2017-10-5 19:10:25.41225]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:10:25.41243]	 {PRINT}	 Scene false
+[2017-10-5 19:10:25.41253]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:10:38.13109]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 19:10:38.13177]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:10:38.13180]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:10:38.13201]	 {PRINT}	 Scene true
+[2017-10-5 19:10:38.13212]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:10:38.13226]	 {PRINT}	 Scene false
+[2017-10-5 19:10:38.13236]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:11:13.58628]	 {PRINT}	 Callback Received for Device 15,Index:5,Value:76.8
+[2017-10-5 19:11:13.58817]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:11:13.58839]	 {PRINT}	 Scenes MSG Received for Device 15,index:5,Value:76.8,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:11:13.58857]	 {PRINT}	 Scene true
+[2017-10-5 19:11:13.58868]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:11:13.58883]	 {PRINT}	 Scene false
+[2017-10-5 19:11:13.58895]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:11:20.87119]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 19:11:20.87185]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:11:20.87201]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:11:20.87218]	 {PRINT}	 Scene true
+[2017-10-5 19:11:20.87229]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:11:20.87244]	 {PRINT}	 Scene false
+[2017-10-5 19:11:20.87253]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:11:50.62125]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 19:11:50.62199]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:11:50.62270]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:11:50.62290]	 {PRINT}	 Scene true
+[2017-10-5 19:11:50.62303]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:11:50.62321]	 {PRINT}	 Scene false
+[2017-10-5 19:11:50.62332]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:11:56.65106]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 19:11:56.65175]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:11:56.65194]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:11:56.65215]	 {PRINT}	 Scene true
+[2017-10-5 19:11:56.65228]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:11:56.65249]	 {PRINT}	 Scene false
+[2017-10-5 19:11:56.65261]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:12:12.57111]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 19:12:12.57177]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:12:12.57180]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:12:12.57202]	 {PRINT}	 Scene true
+[2017-10-5 19:12:12.57216]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:12:12.57233]	 {PRINT}	 Scene false
+[2017-10-5 19:12:12.57245]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:12:18.56112]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 19:12:18.56181]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:12:18.56203]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:12:18.56225]	 {PRINT}	 Scene true
+[2017-10-5 19:12:18.56238]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:12:18.56257]	 {PRINT}	 Scene false
+[2017-10-5 19:12:18.56269]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:12:28.56105]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 19:12:28.56171]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:12:28.56174]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:12:28.56195]	 {PRINT}	 Scene true
+[2017-10-5 19:12:28.56206]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:12:28.56226]	 {PRINT}	 Scene false
+[2017-10-5 19:12:28.56238]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:13:2.38105]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 19:13:2.38172]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:13:2.38175]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:13:2.38197]	 {PRINT}	 Scene true
+[2017-10-5 19:13:2.38210]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:13:2.38230]	 {PRINT}	 Scene false
+[2017-10-5 19:13:2.38243]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:13:18.16103]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 19:13:18.16169]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:13:18.16172]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:13:18.16197]	 {PRINT}	 Scene true
+[2017-10-5 19:13:18.16210]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:13:18.16228]	 {PRINT}	 Scene false
+[2017-10-5 19:13:18.16240]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:14:28.05106]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 19:14:28.05171]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:14:28.05175]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:14:28.05195]	 {PRINT}	 Scene true
+[2017-10-5 19:14:28.05206]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:14:28.05221]	 {PRINT}	 Scene false
+[2017-10-5 19:14:28.05230]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:15:6.76128]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 19:15:6.76193]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:15:6.76196]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:15:6.76219]	 {PRINT}	 Scene true
+[2017-10-5 19:15:6.76232]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:15:6.76249]	 {PRINT}	 Scene false
+[2017-10-5 19:15:6.76261]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:21:12.23684]	 {PRINT}	 Callback Received for Device 15,Index:6,Value:41
+[2017-10-5 19:21:12.23751]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:21:12.23754]	 {PRINT}	 Scenes MSG Received for Device 15,index:6,Value:41,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:21:12.23775]	 {PRINT}	 Scene true
+[2017-10-5 19:21:12.23786]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:21:12.23803]	 {PRINT}	 Scene false
+[2017-10-5 19:21:12.23813]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:31:10.85664]	 {PRINT}	 Callback Received for Device 15,Index:5,Value:76.1
+[2017-10-5 19:31:10.85743]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:31:10.85873]	 {PRINT}	 Scenes MSG Received for Device 15,index:5,Value:76.1,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:31:10.85892]	 {PRINT}	 Scene true
+[2017-10-5 19:31:10.85903]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:31:10.85918]	 {PRINT}	 Scene false
+[2017-10-5 19:31:10.85928]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:31:10.97511]	 {PRINT}	 Callback Received for Device 15,Index:6,Value:42
+[2017-10-5 19:31:10.97584]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 19:31:10.97587]	 {PRINT}	 Scenes MSG Received for Device 15,index:6,Value:42,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 19:31:10.97614]	 {PRINT}	 Scene true
+[2017-10-5 19:31:10.97631]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:31:10.97652]	 {PRINT}	 Scene false
+[2017-10-5 19:31:10.97665]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 19:55:9.65527]	 {INFO}	 Default next observation
+[2017-10-5 20:34:23.81538]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:34:23.81606]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:34:23.81980]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:34:23.81999]	 {PRINT}	 Scene true
+[2017-10-5 20:34:23.82010]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:34:23.82025]	 {PRINT}	 Scene false
+[2017-10-5 20:34:23.82035]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:34:49.58866]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:34:49.58932]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:34:49.59062]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:34:49.59084]	 {PRINT}	 Scene true
+[2017-10-5 20:34:49.59095]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:34:49.59110]	 {PRINT}	 Scene false
+[2017-10-5 20:34:49.59120]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:34:54.31805]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:34:54.31869]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:34:54.32069]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:34:54.32089]	 {PRINT}	 Scene true
+[2017-10-5 20:34:54.32100]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:34:54.32115]	 {PRINT}	 Scene false
+[2017-10-5 20:34:54.32127]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:35:10.32844]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:35:10.32910]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:35:10.33080]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:35:10.33099]	 {PRINT}	 Scene true
+[2017-10-5 20:35:10.33110]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:35:10.33125]	 {PRINT}	 Scene false
+[2017-10-5 20:35:10.33135]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:35:13.33840]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:35:13.33905]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:35:13.34027]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:35:13.34049]	 {PRINT}	 Scene true
+[2017-10-5 20:35:13.34062]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:35:13.34077]	 {PRINT}	 Scene false
+[2017-10-5 20:35:13.34087]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:35:42.88717]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:35:42.88782]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:35:42.88986]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:35:42.89006]	 {PRINT}	 Scene true
+[2017-10-5 20:35:42.89016]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:35:42.89032]	 {PRINT}	 Scene false
+[2017-10-5 20:35:42.89045]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:35:43.83693]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:35:43.83757]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:35:43.83881]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:35:43.83904]	 {PRINT}	 Scene true
+[2017-10-5 20:35:43.83916]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:35:43.83932]	 {PRINT}	 Scene false
+[2017-10-5 20:35:43.83942]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:36:11.04727]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:36:11.04790]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:36:11.05009]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:36:11.05029]	 {PRINT}	 Scene true
+[2017-10-5 20:36:11.05039]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:36:11.05058]	 {PRINT}	 Scene false
+[2017-10-5 20:36:11.05070]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:36:23.13728]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:36:23.13795]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:36:23.13964]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:36:23.13983]	 {PRINT}	 Scene true
+[2017-10-5 20:36:23.13994]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:36:23.14009]	 {PRINT}	 Scene false
+[2017-10-5 20:36:23.14019]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:36:42.14714]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:36:42.14782]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:36:42.14993]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:36:42.15013]	 {PRINT}	 Scene true
+[2017-10-5 20:36:42.15024]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:36:42.15041]	 {PRINT}	 Scene false
+[2017-10-5 20:36:42.15054]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:36:48.24686]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:36:48.24751]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:36:48.24921]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:36:48.24941]	 {PRINT}	 Scene true
+[2017-10-5 20:36:48.24951]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:36:48.24966]	 {PRINT}	 Scene false
+[2017-10-5 20:36:48.24976]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:36:58.25687]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:36:58.25760]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:36:58.25935]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:36:58.25954]	 {PRINT}	 Scene true
+[2017-10-5 20:36:58.25964]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:36:58.25979]	 {PRINT}	 Scene false
+[2017-10-5 20:36:58.25989]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:37:20.82687]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:37:20.82754]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:37:20.82922]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:37:20.82942]	 {PRINT}	 Scene true
+[2017-10-5 20:37:20.82952]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:37:20.82967]	 {PRINT}	 Scene false
+[2017-10-5 20:37:20.82977]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:37:36.83704]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:37:36.83767]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:37:36.83962]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:37:36.83982]	 {PRINT}	 Scene true
+[2017-10-5 20:37:36.83993]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:37:36.84008]	 {PRINT}	 Scene false
+[2017-10-5 20:37:36.84019]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:37:39.56781]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:37:39.56846]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:37:39.57018]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:37:39.57037]	 {PRINT}	 Scene true
+[2017-10-5 20:37:39.57047]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:37:39.57062]	 {PRINT}	 Scene false
+[2017-10-5 20:37:39.57072]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:38:14.43689]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:38:14.43752]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:38:14.43923]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:38:14.43942]	 {PRINT}	 Scene true
+[2017-10-5 20:38:14.43953]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:38:14.43968]	 {PRINT}	 Scene false
+[2017-10-5 20:38:14.43977]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:38:15.68751]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:38:15.68815]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:38:15.69015]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:38:15.69036]	 {PRINT}	 Scene true
+[2017-10-5 20:38:15.69046]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:38:15.69061]	 {PRINT}	 Scene false
+[2017-10-5 20:38:15.69074]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:38:34.69723]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:38:34.69786]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:38:34.69986]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:38:34.70006]	 {PRINT}	 Scene true
+[2017-10-5 20:38:34.70017]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:38:34.70032]	 {PRINT}	 Scene false
+[2017-10-5 20:38:34.70046]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:38:35.21684]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:38:35.21747]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:38:35.21954]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:38:35.21974]	 {PRINT}	 Scene true
+[2017-10-5 20:38:35.21984]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:38:35.22001]	 {PRINT}	 Scene false
+[2017-10-5 20:38:35.22013]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:38:51.15736]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:38:51.15799]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:38:51.15993]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:38:51.16013]	 {PRINT}	 Scene true
+[2017-10-5 20:38:51.16024]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:38:51.16039]	 {PRINT}	 Scene false
+[2017-10-5 20:38:51.16050]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:39:36.85706]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:39:36.85774]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:39:36.86004]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:39:36.86025]	 {PRINT}	 Scene true
+[2017-10-5 20:39:36.86036]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:39:36.86054]	 {PRINT}	 Scene false
+[2017-10-5 20:39:36.86065]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:40:1.00698]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:40:1.00764]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:40:1.00883]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:40:1.00906]	 {PRINT}	 Scene true
+[2017-10-5 20:40:1.00918]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:40:1.00933]	 {PRINT}	 Scene false
+[2017-10-5 20:40:1.00944]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:40:11.39695]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:40:11.39758]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:40:11.39953]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:40:11.39980]	 {PRINT}	 Scene true
+[2017-10-5 20:40:11.39991]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:40:11.40007]	 {PRINT}	 Scene false
+[2017-10-5 20:40:11.40020]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:40:53.63691]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:40:53.63761]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:40:53.63858]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:40:53.63880]	 {PRINT}	 Scene true
+[2017-10-5 20:40:53.63893]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:40:53.63911]	 {PRINT}	 Scene false
+[2017-10-5 20:40:53.63921]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:41:3.82685]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:41:3.82753]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:41:3.82776]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:41:3.82799]	 {PRINT}	 Scene true
+[2017-10-5 20:41:3.82812]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:41:3.82830]	 {PRINT}	 Scene false
+[2017-10-5 20:41:3.82842]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:41:39.20689]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:41:39.20755]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:41:39.20778]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:41:39.20799]	 {PRINT}	 Scene true
+[2017-10-5 20:41:39.20811]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:41:39.20830]	 {PRINT}	 Scene false
+[2017-10-5 20:41:39.20841]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:41:42.90715]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:41:42.90781]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:41:42.90800]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:41:42.90817]	 {PRINT}	 Scene true
+[2017-10-5 20:41:42.90830]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:41:42.90851]	 {PRINT}	 Scene false
+[2017-10-5 20:41:42.90863]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:41:52.90705]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:41:52.90774]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:41:52.90797]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:41:52.90818]	 {PRINT}	 Scene true
+[2017-10-5 20:41:52.90831]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:41:52.90849]	 {PRINT}	 Scene false
+[2017-10-5 20:41:52.90860]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:42:8.82699]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:42:8.82768]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:42:8.82789]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:42:8.82807]	 {PRINT}	 Scene true
+[2017-10-5 20:42:8.82820]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:42:8.82838]	 {PRINT}	 Scene false
+[2017-10-5 20:42:8.82850]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:42:18.83729]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:42:18.83797]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:42:18.83817]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:42:18.83834]	 {PRINT}	 Scene true
+[2017-10-5 20:42:18.83845]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:42:18.83863]	 {PRINT}	 Scene false
+[2017-10-5 20:42:18.83876]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:42:32.15720]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:42:32.15789]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:42:32.15810]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:42:32.15831]	 {PRINT}	 Scene true
+[2017-10-5 20:42:32.15843]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:42:32.15858]	 {PRINT}	 Scene false
+[2017-10-5 20:42:32.15869]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:43:22.74712]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:43:22.74783]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:43:22.74804]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:43:22.74822]	 {PRINT}	 Scene true
+[2017-10-5 20:43:22.74835]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:43:22.74854]	 {PRINT}	 Scene false
+[2017-10-5 20:43:22.74865]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:43:25.29723]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:43:25.29792]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:43:25.29811]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:43:25.29833]	 {PRINT}	 Scene true
+[2017-10-5 20:43:25.29845]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:43:25.29862]	 {PRINT}	 Scene false
+[2017-10-5 20:43:25.29873]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:43:44.55702]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:43:44.55771]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:43:44.55789]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:43:44.55808]	 {PRINT}	 Scene true
+[2017-10-5 20:43:44.55820]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:43:44.55839]	 {PRINT}	 Scene false
+[2017-10-5 20:43:44.55853]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:43:48.05691]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:43:48.05763]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:43:48.05784]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:43:48.05805]	 {PRINT}	 Scene true
+[2017-10-5 20:43:48.05817]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:43:48.05832]	 {PRINT}	 Scene false
+[2017-10-5 20:43:48.05843]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:44:7.74697]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:44:7.74764]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:44:7.74783]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:44:7.74801]	 {PRINT}	 Scene true
+[2017-10-5 20:44:7.74814]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:44:7.74831]	 {PRINT}	 Scene false
+[2017-10-5 20:44:7.74843]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:44:18.89687]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:44:18.89754]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:44:18.89774]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:44:18.89791]	 {PRINT}	 Scene true
+[2017-10-5 20:44:18.89802]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:44:18.89822]	 {PRINT}	 Scene false
+[2017-10-5 20:44:18.89833]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:44:34.91681]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:44:34.91749]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:44:34.91768]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:44:34.91787]	 {PRINT}	 Scene true
+[2017-10-5 20:44:34.91800]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:44:34.91818]	 {PRINT}	 Scene false
+[2017-10-5 20:44:34.91832]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:44:35.42858]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:44:35.42931]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:44:35.42957]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:44:35.42982]	 {PRINT}	 Scene true
+[2017-10-5 20:44:35.42995]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:44:35.43013]	 {PRINT}	 Scene false
+[2017-10-5 20:44:35.43023]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:48:4.78061]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:48:4.78128]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:48:4.78148]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:48:4.78171]	 {PRINT}	 Scene true
+[2017-10-5 20:48:4.78183]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:48:4.78199]	 {PRINT}	 Scene false
+[2017-10-5 20:48:4.78210]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:48:17.83034]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:48:17.83343]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:48:17.83414]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:48:17.83440]	 {PRINT}	 Scene true
+[2017-10-5 20:48:17.83452]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:48:17.83467]	 {PRINT}	 Scene false
+[2017-10-5 20:48:17.83477]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:48:51.86039]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:48:51.86107]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:48:51.86203]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:48:51.86225]	 {PRINT}	 Scene true
+[2017-10-5 20:48:51.86238]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:48:51.86256]	 {PRINT}	 Scene false
+[2017-10-5 20:48:51.86267]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:49:52.39051]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:49:52.39118]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:49:52.39194]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:49:52.39212]	 {PRINT}	 Scene true
+[2017-10-5 20:49:52.39224]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:49:52.39242]	 {PRINT}	 Scene false
+[2017-10-5 20:49:52.39254]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:50:26.97041]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:50:26.97106]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:50:26.97205]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:50:26.97226]	 {PRINT}	 Scene true
+[2017-10-5 20:50:26.97239]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:50:26.97257]	 {PRINT}	 Scene false
+[2017-10-5 20:50:26.97267]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:50:29.29032]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:50:29.29345]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:50:29.29417]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:50:29.29437]	 {PRINT}	 Scene true
+[2017-10-5 20:50:29.29448]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:50:29.29463]	 {PRINT}	 Scene false
+[2017-10-5 20:50:29.29474]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:51:10.30693]	 {PRINT}	 Callback Received for Device 15,Index:6,Value:41
+[2017-10-5 20:51:10.30759]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:51:10.31015]	 {PRINT}	 Scenes MSG Received for Device 15,index:6,Value:41,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:51:10.31035]	 {PRINT}	 Scene true
+[2017-10-5 20:51:10.31046]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:51:10.31067]	 {PRINT}	 Scene false
+[2017-10-5 20:51:10.31081]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:51:27.31063]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:51:27.31133]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:51:27.31230]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:51:27.31252]	 {PRINT}	 Scene true
+[2017-10-5 20:51:27.31265]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:51:27.31283]	 {PRINT}	 Scene false
+[2017-10-5 20:51:27.31293]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:51:29.91024]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:51:29.91090]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:51:29.91113]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:51:29.91134]	 {PRINT}	 Scene true
+[2017-10-5 20:51:29.91148]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:51:29.91167]	 {PRINT}	 Scene false
+[2017-10-5 20:51:29.91178]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:51:49.06025]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:51:49.06095]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:51:49.06117]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:51:49.06137]	 {PRINT}	 Scene true
+[2017-10-5 20:51:49.06149]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:51:49.06165]	 {PRINT}	 Scene false
+[2017-10-5 20:51:49.06176]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:51:59.01030]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:51:59.01100]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:51:59.01119]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:51:59.01140]	 {PRINT}	 Scene true
+[2017-10-5 20:51:59.01154]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:51:59.01169]	 {PRINT}	 Scene false
+[2017-10-5 20:51:59.01179]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:52:30.48006]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:52:30.48072]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:52:30.48095]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:52:30.48115]	 {PRINT}	 Scene true
+[2017-10-5 20:52:30.48128]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:52:30.48146]	 {PRINT}	 Scene false
+[2017-10-5 20:52:30.48157]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:52:49.28043]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:52:49.28109]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:52:49.28132]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:52:49.28154]	 {PRINT}	 Scene true
+[2017-10-5 20:52:49.28168]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:52:49.28186]	 {PRINT}	 Scene false
+[2017-10-5 20:52:49.28197]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:53:16.59012]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:53:16.59079]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:53:16.59101]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:53:16.59122]	 {PRINT}	 Scene true
+[2017-10-5 20:53:16.59135]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:53:16.59153]	 {PRINT}	 Scene false
+[2017-10-5 20:53:16.59165]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:53:43.61036]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:53:43.61109]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:53:43.61130]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:53:43.61151]	 {PRINT}	 Scene true
+[2017-10-5 20:53:43.61164]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:53:43.61181]	 {PRINT}	 Scene false
+[2017-10-5 20:53:43.61191]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:53:53.62037]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:53:53.62103]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:53:53.62126]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:53:53.62148]	 {PRINT}	 Scene true
+[2017-10-5 20:53:53.62160]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:53:53.62175]	 {PRINT}	 Scene false
+[2017-10-5 20:53:53.62186]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:53:54.53008]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:53:54.53077]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:53:54.53095]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:53:54.53113]	 {PRINT}	 Scene true
+[2017-10-5 20:53:54.53126]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:53:54.53145]	 {PRINT}	 Scene false
+[2017-10-5 20:53:54.53157]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:54:31.73013]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:54:31.73081]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:54:31.73100]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:54:31.73118]	 {PRINT}	 Scene true
+[2017-10-5 20:54:31.73131]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:54:31.73152]	 {PRINT}	 Scene false
+[2017-10-5 20:54:31.73164]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:54:36.86043]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:54:36.86119]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:54:36.86140]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:54:36.86159]	 {PRINT}	 Scene true
+[2017-10-5 20:54:36.86170]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:54:36.86189]	 {PRINT}	 Scene false
+[2017-10-5 20:54:36.86201]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:54:55.93035]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:54:55.93105]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:54:55.93126]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:54:55.93148]	 {PRINT}	 Scene true
+[2017-10-5 20:54:55.93161]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:54:55.93180]	 {PRINT}	 Scene false
+[2017-10-5 20:54:55.93190]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:55:9.54642]	 {INFO}	 Default next observation
+[2017-10-5 20:55:12.28022]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:55:12.28092]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:55:12.28113]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:55:12.28134]	 {PRINT}	 Scene true
+[2017-10-5 20:55:12.28146]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:55:12.28161]	 {PRINT}	 Scene false
+[2017-10-5 20:55:12.28172]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:55:22.29047]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:55:22.29115]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:55:22.29138]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:55:22.29159]	 {PRINT}	 Scene true
+[2017-10-5 20:55:22.29173]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:55:22.29191]	 {PRINT}	 Scene false
+[2017-10-5 20:55:22.29203]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:55:30.34046]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:55:30.34114]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:55:30.34137]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:55:30.34158]	 {PRINT}	 Scene true
+[2017-10-5 20:55:30.34170]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:55:30.34189]	 {PRINT}	 Scene false
+[2017-10-5 20:55:30.34201]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:55:40.34005]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:55:40.34074]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:55:40.34093]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:55:40.34111]	 {PRINT}	 Scene true
+[2017-10-5 20:55:40.34124]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:55:40.34142]	 {PRINT}	 Scene false
+[2017-10-5 20:55:40.34154]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:56:30.63989]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:56:30.64058]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:56:30.64080]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:56:30.64099]	 {PRINT}	 Scene true
+[2017-10-5 20:56:30.64112]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:56:30.64132]	 {PRINT}	 Scene false
+[2017-10-5 20:56:30.64144]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:56:41.64832]	 {PRINT}	 Received Callback in Rules Engine
+[2017-10-5 20:56:41.64850]	 {PRINT}	 44:80:eb:ea:c3:89
+[2017-10-5 20:56:41.64860]	 {PRINT}	 Received ClientUpdated event
+[2017-10-5 20:56:43.09794]	 {PRINT}	 Received Callback in Rules Engine
+[2017-10-5 20:56:43.09812]	 {PRINT}	 44:80:eb:ea:c3:89
+[2017-10-5 20:56:43.09822]	 {PRINT}	 Received ClientJoined event
+[2017-10-5 20:56:43.09877]	 {PRINT}	 Msg Received for Device 0,index:0,Value:44:80:eb:ea:c3:89,EventType:16,ruleslist size:0,bytes read:48 
+[2017-10-5 20:56:43.09890]	 {PRINT}	 No Trigger is registered on this Index of Device
+[2017-10-5 20:56:43.09902]	 {PRINT}	 All Rules Done 
+
+[2017-10-5 20:56:54.60032]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:56:54.60101]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:56:54.60146]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:56:54.60170]	 {PRINT}	 Scene true
+[2017-10-5 20:56:54.60182]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:56:54.60200]	 {PRINT}	 Scene false
+[2017-10-5 20:56:54.60210]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:57:20.80991]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:57:20.81061]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:57:20.81086]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:57:20.81106]	 {PRINT}	 Scene true
+[2017-10-5 20:57:20.81117]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:57:20.81136]	 {PRINT}	 Scene false
+[2017-10-5 20:57:20.81148]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:57:30.82011]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:57:30.82080]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:57:30.82100]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:57:30.82121]	 {PRINT}	 Scene true
+[2017-10-5 20:57:30.82133]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:57:30.82149]	 {PRINT}	 Scene false
+[2017-10-5 20:57:30.82159]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:58:4.12332]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:58:4.12411]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:58:4.12438]	 {PRINT}	 Scene true
+[2017-10-5 20:58:4.12453]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:58:4.12474]	 {PRINT}	 Scene false
+[2017-10-5 20:58:4.12486]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:58:4.12509]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:58:22.32011]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:58:22.32083]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:58:22.32107]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:58:22.32129]	 {PRINT}	 Scene true
+[2017-10-5 20:58:22.32141]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:58:22.32161]	 {PRINT}	 Scene false
+[2017-10-5 20:58:22.32173]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:58:31.09017]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:58:31.09087]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:58:31.09106]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:58:31.09129]	 {PRINT}	 Scene true
+[2017-10-5 20:58:31.09141]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:58:31.09158]	 {PRINT}	 Scene false
+[2017-10-5 20:58:31.09168]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:58:44.09013]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:58:44.09082]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:58:44.09100]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:58:44.09118]	 {PRINT}	 Scene true
+[2017-10-5 20:58:44.09134]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:58:44.09152]	 {PRINT}	 Scene false
+[2017-10-5 20:58:44.09164]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:58:51.29025]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:58:51.29093]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:58:51.29112]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:58:51.29131]	 {PRINT}	 Scene true
+[2017-10-5 20:58:51.29144]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:58:51.29164]	 {PRINT}	 Scene false
+[2017-10-5 20:58:51.29176]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:58:56.81796]	 {PRINT}	 Callback Received for Device 14,Index:1,Value:true
+[2017-10-5 20:58:56.81893]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:58:56.81924]	 {PRINT}	 Scenes MSG Received for Device 14,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:58:56.81946]	 {PRINT}	 Scene true
+[2017-10-5 20:58:56.81958]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:58:56.81974]	 {PRINT}	 Scene false
+[2017-10-5 20:58:56.81984]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:59:10.31130]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 20:59:10.31190]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:59:10.31212]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:59:10.31232]	 {PRINT}	 Scene true
+[2017-10-5 20:59:10.31244]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:59:10.31264]	 {PRINT}	 Scene false
+[2017-10-5 20:59:10.31277]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:59:14.91803]	 {PRINT}	 Callback Received for Device 14,Index:1,Value:false
+[2017-10-5 20:59:14.91914]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:59:14.91940]	 {PRINT}	 Scenes MSG Received for Device 14,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:59:14.91962]	 {PRINT}	 Scene true
+[2017-10-5 20:59:14.91974]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:59:14.91995]	 {PRINT}	 Scene false
+[2017-10-5 20:59:14.92007]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:59:42.46843]	 {PRINT}	 Callback Received for Device 13,Index:1,Value:0
+[2017-10-5 20:59:42.46892]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:59:42.46910]	 {PRINT}	 Scenes MSG Received for Device 13,index:1,Value:0,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:59:42.46930]	 {PRINT}	 Scene true
+[2017-10-5 20:59:42.46941]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:59:42.46958]	 {PRINT}	 Scene false
+[2017-10-5 20:59:42.46968]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:59:52.40136]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 20:59:52.40198]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 20:59:52.40215]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 20:59:52.40232]	 {PRINT}	 Scene true
+[2017-10-5 20:59:52.40243]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 20:59:52.40259]	 {PRINT}	 Scene false
+[2017-10-5 20:59:52.40271]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:0:2.40087]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:0:2.40148]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:0:2.40164]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:0:2.40183]	 {PRINT}	 Scene true
+[2017-10-5 21:0:2.40194]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:0:2.40211]	 {PRINT}	 Scene false
+[2017-10-5 21:0:2.40224]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:0:5.31358]	 {PRINT}	 Callback Received for Device 13,Index:1,Value:100
+[2017-10-5 21:0:5.31514]	 {PRINT}	 Scenes MSG Received for Device 13,index:1,Value:100,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:0:5.31534]	 {PRINT}	 Scene true
+[2017-10-5 21:0:5.31544]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:0:5.31559]	 {PRINT}	 Scene false
+[2017-10-5 21:0:5.31569]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:0:5.31582]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:0:9.23168]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 21:0:9.23229]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:0:9.23246]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:0:9.23263]	 {PRINT}	 Scene true
+[2017-10-5 21:0:9.23274]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:0:9.23291]	 {PRINT}	 Scene false
+[2017-10-5 21:0:9.23304]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:0:19.23168]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:0:19.23229]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:0:19.23245]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:0:19.23263]	 {PRINT}	 Scene true
+[2017-10-5 21:0:19.23273]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:0:19.23290]	 {PRINT}	 Scene false
+[2017-10-5 21:0:19.23303]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:0:26.36130]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 21:0:26.36190]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:0:26.36207]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:0:26.36224]	 {PRINT}	 Scene true
+[2017-10-5 21:0:26.36235]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:0:26.36252]	 {PRINT}	 Scene false
+[2017-10-5 21:0:26.36265]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:0:40.28102]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:0:40.28163]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:0:40.28180]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:0:40.28197]	 {PRINT}	 Scene true
+[2017-10-5 21:0:40.28208]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:0:40.28224]	 {PRINT}	 Scene false
+[2017-10-5 21:0:40.28236]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:0:46.45113]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 21:0:46.45174]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:0:46.45191]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:0:46.45208]	 {PRINT}	 Scene true
+[2017-10-5 21:0:46.45219]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:0:46.45235]	 {PRINT}	 Scene false
+[2017-10-5 21:0:46.45247]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:0:56.96121]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:0:56.96181]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:0:56.96203]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:0:56.96221]	 {PRINT}	 Scene true
+[2017-10-5 21:0:56.96231]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:0:56.96250]	 {PRINT}	 Scene false
+[2017-10-5 21:0:56.96262]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:1:24.39094]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 21:1:24.39182]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:1:24.39239]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:1:24.39264]	 {PRINT}	 Scene true
+[2017-10-5 21:1:24.39287]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:1:24.39305]	 {PRINT}	 Scene false
+[2017-10-5 21:1:24.39317]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:1:34.40109]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:1:34.40170]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:1:34.40186]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:1:34.40204]	 {PRINT}	 Scene true
+[2017-10-5 21:1:34.40214]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:1:34.40231]	 {PRINT}	 Scene false
+[2017-10-5 21:1:34.40244]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:1:35.82164]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 21:1:35.82224]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:1:35.82241]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:1:35.82258]	 {PRINT}	 Scene true
+[2017-10-5 21:1:35.82269]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:1:35.82285]	 {PRINT}	 Scene false
+[2017-10-5 21:1:35.82297]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:2:23.50516]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:2:23.50647]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:2:23.50665]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:2:23.50748]	 {PRINT}	 Scene true
+[2017-10-5 21:2:23.50762]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:2:23.50810]	 {PRINT}	 Scene false
+[2017-10-5 21:2:23.50822]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:2:24.35372]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 21:2:24.35471]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:2:24.35492]	 {PRINT}	 Scene true
+[2017-10-5 21:2:24.35503]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:2:24.35519]	 {PRINT}	 Scene false
+[2017-10-5 21:2:24.35529]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:2:24.35540]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:2:34.35138]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:2:34.35199]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:2:34.35216]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:2:34.35234]	 {PRINT}	 Scene true
+[2017-10-5 21:2:34.35245]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:2:34.35261]	 {PRINT}	 Scene false
+[2017-10-5 21:2:34.35274]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:2:44.55124]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 21:2:44.55185]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:2:44.55202]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:2:44.55220]	 {PRINT}	 Scene true
+[2017-10-5 21:2:44.55230]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:2:44.55247]	 {PRINT}	 Scene false
+[2017-10-5 21:2:44.55260]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:3:0.28106]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:3:0.28167]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:3:0.28184]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:3:0.28201]	 {PRINT}	 Scene true
+[2017-10-5 21:3:0.28212]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:3:0.28228]	 {PRINT}	 Scene false
+[2017-10-5 21:3:0.28241]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:3:45.78131]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 21:3:45.78191]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:3:45.78216]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:3:45.78234]	 {PRINT}	 Scene true
+[2017-10-5 21:3:45.78245]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:3:45.78263]	 {PRINT}	 Scene false
+[2017-10-5 21:3:45.78276]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:4:18.57360]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:4:18.58529]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:4:18.58550]	 {PRINT}	 Scene true
+[2017-10-5 21:4:18.58561]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:4:18.58633]	 {PRINT}	 Scene false
+[2017-10-5 21:4:18.58659]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:4:18.58718]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:4:24.78009]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 21:4:24.78073]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:4:24.78393]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:4:24.78416]	 {PRINT}	 Scene true
+[2017-10-5 21:4:24.78427]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:4:24.78448]	 {PRINT}	 Scene false
+[2017-10-5 21:4:24.78460]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:4:34.79044]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:4:34.79109]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:4:34.79478]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:4:34.79497]	 {PRINT}	 Scene true
+[2017-10-5 21:4:34.79507]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:4:34.79522]	 {PRINT}	 Scene false
+[2017-10-5 21:4:34.79532]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:4:56.07027]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 21:4:56.07092]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:4:56.07474]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:4:56.07493]	 {PRINT}	 Scene true
+[2017-10-5 21:4:56.07504]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:4:56.07519]	 {PRINT}	 Scene false
+[2017-10-5 21:4:56.07530]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:5:6.06992]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:5:6.07059]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:5:6.07472]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:5:6.07492]	 {PRINT}	 Scene true
+[2017-10-5 21:5:6.07502]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:5:6.07517]	 {PRINT}	 Scene false
+[2017-10-5 21:5:6.07527]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:5:10.66625]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 21:5:10.66691]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:5:10.66708]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:5:10.66725]	 {PRINT}	 Scene true
+[2017-10-5 21:5:10.66736]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:5:10.66751]	 {PRINT}	 Scene false
+[2017-10-5 21:5:10.66762]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:5:33.14603]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:5:33.14663]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:5:33.14879]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:5:33.14904]	 {PRINT}	 Scene true
+[2017-10-5 21:5:33.14915]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:5:33.14930]	 {PRINT}	 Scene false
+[2017-10-5 21:5:33.14940]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:5:33.66565]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 21:5:33.66625]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:5:33.66878]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:5:33.66898]	 {PRINT}	 Scene true
+[2017-10-5 21:5:33.66909]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:5:33.66924]	 {PRINT}	 Scene false
+[2017-10-5 21:5:33.66934]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:5:57.59245]	 {PRINT}	 Callback Received for Device 14,Index:1,Value:true
+[2017-10-5 21:5:57.59335]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:5:57.59518]	 {PRINT}	 Scenes MSG Received for Device 14,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:5:57.59539]	 {PRINT}	 Scene true
+[2017-10-5 21:5:57.59550]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:5:57.59568]	 {PRINT}	 Scene false
+[2017-10-5 21:5:57.59581]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:6:15.37245]	 {PRINT}	 Callback Received for Device 14,Index:1,Value:false
+[2017-10-5 21:6:15.37336]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:6:15.37561]	 {PRINT}	 Scenes MSG Received for Device 14,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:6:15.37585]	 {PRINT}	 Scene true
+[2017-10-5 21:6:15.37602]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:6:15.37625]	 {PRINT}	 Scene false
+[2017-10-5 21:6:15.37635]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:6:47.73599]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:6:47.73659]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:6:47.73879]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:6:47.73905]	 {PRINT}	 Scene true
+[2017-10-5 21:6:47.73917]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:6:47.73934]	 {PRINT}	 Scene false
+[2017-10-5 21:6:47.73944]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:6:56.67936]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 21:6:56.68138]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:6:56.68917]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:6:56.68941]	 {PRINT}	 Scene true
+[2017-10-5 21:6:56.68976]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:6:56.69018]	 {PRINT}	 Scene false
+[2017-10-5 21:6:56.69029]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:7:5.66976]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:7:5.67103]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:7:5.67879]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:7:5.67902]	 {PRINT}	 Scene true
+[2017-10-5 21:7:5.67913]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:7:5.67929]	 {PRINT}	 Scene false
+[2017-10-5 21:7:5.67939]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:7:22.15573]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 21:7:22.15634]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:7:22.15879]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:7:22.15900]	 {PRINT}	 Scene true
+[2017-10-5 21:7:22.15911]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:7:22.15926]	 {PRINT}	 Scene false
+[2017-10-5 21:7:22.15936]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:7:32.15625]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:7:32.15686]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:7:32.15878]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:7:32.15903]	 {PRINT}	 Scene true
+[2017-10-5 21:7:32.15917]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:7:32.15934]	 {PRINT}	 Scene false
+[2017-10-5 21:7:32.15945]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:8:38.64607]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 21:8:38.64667]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:8:38.64879]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:8:38.64904]	 {PRINT}	 Scene true
+[2017-10-5 21:8:38.64916]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:8:38.64932]	 {PRINT}	 Scene false
+[2017-10-5 21:8:38.64942]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:8:48.65612]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:8:48.65673]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:8:48.65879]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:8:48.65904]	 {PRINT}	 Scene true
+[2017-10-5 21:8:48.65916]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:8:48.65934]	 {PRINT}	 Scene false
+[2017-10-5 21:8:48.65946]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:8:49.45608]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 21:8:49.45668]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:8:49.45879]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:8:49.45903]	 {PRINT}	 Scene true
+[2017-10-5 21:8:49.45915]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:8:49.45930]	 {PRINT}	 Scene false
+[2017-10-5 21:8:49.45941]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:9:14.47576]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:9:14.47637]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:9:14.47879]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:9:14.47901]	 {PRINT}	 Scene true
+[2017-10-5 21:9:14.47913]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:9:14.47942]	 {PRINT}	 Scene false
+[2017-10-5 21:9:14.47958]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:9:31.52554]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 21:9:31.52617]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:9:31.52935]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:9:31.52955]	 {PRINT}	 Scene true
+[2017-10-5 21:9:31.52966]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:9:31.52981]	 {PRINT}	 Scene false
+[2017-10-5 21:9:31.52992]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:9:41.52639]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:9:41.52700]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:9:41.52879]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:9:41.52900]	 {PRINT}	 Scene true
+[2017-10-5 21:9:41.52916]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:9:41.52934]	 {PRINT}	 Scene false
+[2017-10-5 21:9:41.52946]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:10:0.39013]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 21:10:0.39078]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:10:0.39880]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:10:0.39926]	 {PRINT}	 Scene true
+[2017-10-5 21:10:0.39940]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:10:0.39996]	 {PRINT}	 Scene false
+[2017-10-5 21:10:0.40008]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:10:10.34593]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:10:10.34654]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:10:10.34879]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:10:10.34903]	 {PRINT}	 Scene true
+[2017-10-5 21:10:10.34915]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:10:10.34930]	 {PRINT}	 Scene false
+[2017-10-5 21:10:10.34940]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:10:20.82579]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 21:10:20.82639]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:10:20.82879]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:10:20.82903]	 {PRINT}	 Scene true
+[2017-10-5 21:10:20.82914]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:10:20.82930]	 {PRINT}	 Scene false
+[2017-10-5 21:10:20.82940]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:10:44.54577]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:10:44.54636]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:10:44.54879]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:10:44.54900]	 {PRINT}	 Scene true
+[2017-10-5 21:10:44.54911]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:10:44.54926]	 {PRINT}	 Scene false
+[2017-10-5 21:10:44.54936]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:10:49.66569]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 21:10:49.66631]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:10:49.66880]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:10:49.66901]	 {PRINT}	 Scene true
+[2017-10-5 21:10:49.66912]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:10:49.66927]	 {PRINT}	 Scene false
+[2017-10-5 21:10:49.66937]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:11:12.23620]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:11:12.23679]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:11:12.23880]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:11:12.23904]	 {PRINT}	 Scene true
+[2017-10-5 21:11:12.23916]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:11:12.23932]	 {PRINT}	 Scene false
+[2017-10-5 21:11:12.23942]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:11:24.99599]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 21:11:24.99660]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:11:24.99880]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:11:24.99905]	 {PRINT}	 Scene true
+[2017-10-5 21:11:24.99915]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:11:24.99931]	 {PRINT}	 Scene false
+[2017-10-5 21:11:24.99941]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:11:44.04606]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:11:44.04667]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:11:44.04880]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:11:44.04907]	 {PRINT}	 Scene true
+[2017-10-5 21:11:44.04919]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:11:44.04935]	 {PRINT}	 Scene false
+[2017-10-5 21:11:44.04945]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:11:46.86587]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 21:11:46.86647]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:11:46.86879]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:11:46.86903]	 {PRINT}	 Scene true
+[2017-10-5 21:11:46.86913]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:11:46.86929]	 {PRINT}	 Scene false
+[2017-10-5 21:11:46.86939]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:12:16.50576]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:12:16.50637]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:12:16.50879]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:12:16.50901]	 {PRINT}	 Scene true
+[2017-10-5 21:12:16.50913]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:12:16.50928]	 {PRINT}	 Scene false
+[2017-10-5 21:12:16.50938]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:12:22.61594]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:true
+[2017-10-5 21:12:22.61658]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+
+[2017-10-5 21:12:22.61937]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:true,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:12:22.61961]	 {PRINT}	 Scene true
+[2017-10-5 21:12:22.61971]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:12:22.61987]	 {PRINT}	 Scene false
+[2017-10-5 21:12:22.61996]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:12:41.96861]	 {PRINT}	 Callback Received for Device 15,Index:1,Value:false
+[2017-10-5 21:12:41.97968]	 {PRINT}	 Scenes MSG Received for Device 15,index:1,Value:false,EventType:0,ruleslist size:0,bytes read:48 
+[2017-10-5 21:12:41.97989]	 {PRINT}	 Scene true
+[2017-10-5 21:12:41.98000]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:12:41.98015]	 {PRINT}	 Scene false
+[2017-10-5 21:12:41.98025]	 {PRINT}	 +++++++++++++++++++++++++++++++++++++++++++++++++++
+[2017-10-5 21:12:41.98276]	 {PRINT}	 No Trigger is registered on this Index of Device,so not queuing the msg
+

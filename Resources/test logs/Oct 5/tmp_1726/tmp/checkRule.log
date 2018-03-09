@@ -1,0 +1,29 @@
+[2015-7-31 21:1:3.28139]	 {PRINT}	 ClientBin invoked
+[2015-7-31 21:1:3.28203]	 {ERROR}	 No database found
+[2015-7-31 21:1:13.12248]	 {PRINT}	 ClientBin invoked
+[2015-7-31 21:1:13.12311]	 {ERROR}	 No database found
+[2015-7-31 21:1:33.57966]	 {PRINT}	 ClientBin invoked
+[2015-7-31 21:1:33.66686]	 {PRINT}	 Fri
+[2015-7-31 21:1:33.66717]	 {INFO}	 Day index Count=5
+[2015-7-31 21:1:33.67767]	 {INFO}	 Final mac's to block
+[2015-7-31 21:1:33.73550]	 {PRINT}	 Bin exit
+[2015-7-31 21:1:36.52467]	 {PRINT}	 ClientBin invoked
+[2015-7-31 21:1:36.57303]	 {PRINT}	 Fri
+[2015-7-31 21:1:36.57331]	 {INFO}	 Day index Count=5
+[2015-7-31 21:1:36.59144]	 {INFO}	 Final mac's to block
+[2015-7-31 21:1:36.62813]	 {PRINT}	 Bin exit
+[2015-7-31 21:1:38.18645]	 {PRINT}	 ClientBin invoked
+[2015-7-31 21:1:38.22085]	 {PRINT}	 Fri
+[2015-7-31 21:1:38.22111]	 {INFO}	 Day index Count=5
+[2015-7-31 21:1:38.23821]	 {INFO}	 Final mac's to block
+[2015-7-31 21:1:38.27240]	 {PRINT}	 Bin exit
+[2017-10-5 17:20:10.74940]	 {PRINT}	 ClientBin invoked
+[2017-10-5 17:20:11.00714]	 {PRINT}	 Thu
+[2017-10-5 17:20:11.00743]	 {INFO}	 Day index Count=4
+[2017-10-5 17:20:10.75979]	 {INFO}	 Final mac's to block
+[2017-10-5 17:20:10.84089]	 {PRINT}	 Bin exit
+[2017-10-5 17:20:21.07370]	 {PRINT}	 ClientBin invoked
+[2017-10-5 17:20:21.11043]	 {PRINT}	 Thu
+[2017-10-5 17:20:21.11069]	 {INFO}	 Day index Count=4
+[2017-10-5 17:20:21.13211]	 {INFO}	 Final mac's to block
+[2017-10-5 17:20:21.16797]	 {PRINT}	 Bin exit

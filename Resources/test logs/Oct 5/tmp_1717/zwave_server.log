@@ -1,0 +1,873 @@
+[2015-7-31 21:1:31.56791]	 {PRINT}	 <==============================zwave server started.================================>
+[2015-7-31 21:1:31.56836]	 {PRINT}	 opening Port:/dev/ttyS3
+[2015-7-31 21:1:31.56891]	 {INFO}	 Driver:network key from file:b0 d9 29 cd 55 30 56 77 26 3c 53 3a 01 70 8a af 
+[2015-7-31 21:1:32.56775]	 {PRINT}	 node info Read from config file:1
+[2015-7-31 21:1:32.56917]	 {PRINT}	 node info Read from config file:2
+[2015-7-31 21:1:32.57402]	 {PRINT}	 Driver:zwave chip type:0301
+[2015-7-31 21:1:32.59498]	 {PRINT}	 Not Sending Node 1 Type_NodeAdded(6) notification to haserver
+[2015-7-31 21:1:32.60535]	 {PRINT}	 Sending Node 1 Type_NodeProtocolInfo(8) packet to haserver
+[2015-7-31 21:1:32.63536]	 {PRINT}	 persisting zwcfg_home.xml file
+[2015-7-31 21:1:32.70363]	 {PRINT}	 Sending Node 1 Type_EssentialNodeQueriesComplete(21) packet to haserver
+[2015-7-31 21:1:32.71416]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:1,cmdcls:BASIC(0x20),valueType:byte,Index:0,Value:0,genre:0
+[2015-7-31 21:1:32.71435]	 {PRINT}	 Not Sending Node 1 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:32.72467]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:1,cmdcls:CONTROLLER REPLICATION(0x21),valueType:byte,Index:0,Value:0,genre:3
+[2015-7-31 21:1:32.72483]	 {PRINT}	 Not Sending Node 1 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:32.73514]	 {PRINT}	 ------------------m_items_size 4-----------------
+[2015-7-31 21:1:32.73539]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:1,cmdcls:CONTROLLER REPLICATION(0x21),valueType:list,Index:1,Value:Groups,genre:3
+[2015-7-31 21:1:32.73553]	 {PRINT}	 Not Sending Node 1 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:32.74582]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:1,cmdcls:CONTROLLER REPLICATION(0x21),valueType:button,Index:2,Value:False,genre:3
+[2015-7-31 21:1:32.74599]	 {PRINT}	 Not Sending Node 1 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:32.75629]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:1,cmdcls:VERSION(0x86),valueType:string,Index:0,Value:Unknown,genre:3
+[2015-7-31 21:1:32.75653]	 {PRINT}	 Not Sending Node 1 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:32.76687]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:1,cmdcls:VERSION(0x86),valueType:string,Index:1,Value:Unknown,genre:3
+[2015-7-31 21:1:32.76705]	 {PRINT}	 Not Sending Node 1 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:32.77737]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:1,cmdcls:VERSION(0x86),valueType:string,Index:2,Value:Unknown,genre:3
+[2015-7-31 21:1:32.77754]	 {PRINT}	 Not Sending Node 1 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:32.78782]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:1,cmdcls:SECURITY(0x98),valueType:bool,Index:0,Value:False,genre:1
+[2015-7-31 21:1:32.78800]	 {PRINT}	 Not Sending Node 1 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:32.79830]	 {PRINT}	 Sending Node 1 Type_NodeNaming(9) packet to haserver
+[2015-7-31 21:1:32.80873]	 {PRINT}	 Not Sending Node 2 Type_NodeAdded(6) notification to haserver
+[2015-7-31 21:1:32.81912]	 {PRINT}	 Sending Node 2 Type_NodeProtocolInfo(8) packet to haserver
+[2015-7-31 21:1:32.86769]	 {PRINT}	 persisting zwcfg_home.xml file
+[2015-7-31 21:1:33.06020]	 {PRINT}	 Sending Node 2 Type_EssentialNodeQueriesComplete(21) packet to haserver
+[2015-7-31 21:1:33.07079]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:BASIC(0x20),valueType:byte,Index:0,Value:0,genre:0
+[2015-7-31 21:1:33.07100]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.08134]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:0,genre:1
+[2015-7-31 21:1:33.08153]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.09183]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:button,Index:1,Value:False,genre:1
+[2015-7-31 21:1:33.09201]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.10231]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:button,Index:2,Value:False,genre:1
+[2015-7-31 21:1:33.10250]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.11284]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:bool,Index:3,Value:True,genre:3
+[2015-7-31 21:1:33.11310]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.12347]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:4,Value:0,genre:3
+[2015-7-31 21:1:33.12366]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.13394]	 {PRINT}	 ------------------m_items_size 4-----------------
+[2015-7-31 21:1:33.13416]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH ALL(0x27),valueType:list,Index:0,Value:On and Off Enabled,genre:3
+[2015-7-31 21:1:33.13428]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.14454]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2015-7-31 21:1:33.14478]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:list,Index:0,Value:Normal,genre:3
+[2015-7-31 21:1:33.14492]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.15522]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:1,Value:0,genre:3
+[2015-7-31 21:1:33.15540]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.16571]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:button,Index:2,Value:False,genre:3
+[2015-7-31 21:1:33.16591]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.17620]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:3,Value:0,genre:3
+[2015-7-31 21:1:33.17639]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.18665]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2015-7-31 21:1:33.18685]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:list,Index:4,Value:Normal,genre:3
+[2015-7-31 21:1:33.18697]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.19725]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:short,Index:5,Value:0,genre:3
+[2015-7-31 21:1:33.19744]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.20773]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:button,Index:6,Value:False,genre:3
+[2015-7-31 21:1:33.20791]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.21825]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:button,Index:7,Value:False,genre:3
+[2015-7-31 21:1:33.21848]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.22879]	 {PRINT}	 ------------------m_items_size 3-----------------
+[2015-7-31 21:1:33.22904]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:list,Index:8,Value:Failed,genre:3
+[2015-7-31 21:1:33.22919]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.23952]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:short,Index:9,Value:0,genre:3
+[2015-7-31 21:1:33.23972]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.25019]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:VERSION(0x86),valueType:string,Index:0,Value:6,genre:3
+[2015-7-31 21:1:33.25037]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.26071]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:VERSION(0x86),valueType:string,Index:1,Value:3.67,genre:3
+[2015-7-31 21:1:33.26092]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.27126]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:VERSION(0x86),valueType:string,Index:2,Value:3.34,genre:3
+[2015-7-31 21:1:33.27145]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.28177]	 {PRINT}	 Sending Node 2 Type_NodeNaming(9) packet to haserver
+[2015-7-31 21:1:33.29230]	 {PRINT}	 Sending Node 1 Type_EssentialNodeQueriesComplete(21) packet to haserver
+[2015-7-31 21:1:33.30267]	 {PRINT}	 all nodes queried
+[2015-7-31 21:1:33.32781]	 {PRINT}	 persisting zwcfg_home.xml file
+[2015-7-31 21:1:33.43475]	 {PRINT}	 Sending Node 0 Type_AllNodesQueried(25) packet to haserver
+[2015-7-31 21:1:33.44524]	 {PRINT}	 Sending Node 2 Type_EssentialNodeQueriesComplete(21) packet to haserver
+[2015-7-31 21:1:37.55845]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-3 15:18:55.23938]	 {PRINT}	 Driver:Removing Msg from Node 255 attempts:3
+[2017-10-3 15:18:55.25992]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-3 15:19:17.38910]	 {PRINT}	 Received Operation Code:Code_ControllerCommandOperation
+[2017-10-3 15:19:17.38926]	 {PRINT}	 Received ControllerCommandOperation:ControllerCommand_AddDevice
+[2017-10-3 15:19:17.40391]	 {PRINT}	 Driver:sending SoftReset to controller for ADD/REMOVE Device
+[2017-10-3 15:19:17.40409]	 {PRINT}	 Queuing (Controller) Add Device
+[2017-10-3 15:19:18.50031]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-3 15:19:21.89937]	 {PRINT}	 Sending packet to Association App sizeof ass pack 596
+[2017-10-3 15:19:21.90246]	 {PRINT}	 Driver:node add(2) received data: Basic:0x04,Generic:0x11,Specific:0x01: 0x26  0x27  0x73  0x70  0x86  0x72  0x77 
+[2017-10-3 15:19:22.26802]	 {PRINT}	 Driver:sending node 2 added to association
+[2017-10-3 15:19:22.26821]	 {PRINT}	 Sending packet to Association App sizeof ass pack 596
+[2017-10-3 15:19:22.27246]	 {PRINT}	 Node add done status received
+[2017-10-3 15:19:22.29292]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-3 15:19:22.30325]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-3 15:19:22.31350]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-3 15:19:22.32372]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-3 15:19:22.33394]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-3 15:19:22.34416]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-3 15:19:22.35439]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-3 15:19:22.36463]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-3 15:19:22.37487]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-3 15:19:22.38511]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-3 15:19:22.39533]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-3 15:19:22.40556]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-3 15:19:22.41580]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-3 15:19:22.42603]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-3 15:19:22.43624]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-3 15:19:22.44645]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-3 15:19:22.45667]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-3 15:19:22.46690]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-3 15:19:22.47714]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-3 15:19:22.48738]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-3 15:19:22.50303]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:19:22.56068]	 {PRINT}	 Not Sending Node 2 Type_NodeRemoved(7) notification to haserver
+[2017-10-3 15:19:22.57107]	 {PRINT}	 Not Sending Node 2 Type_NodeAdded(6) notification to haserver
+[2017-10-3 15:19:22.66184]	 {PRINT}	 received node protocol info to new node:2 
+[2017-10-3 15:19:22.66205]	 {PRINT}	 ====>version 4
+[2017-10-3 15:19:22.66218]	 {PRINT}	 Reading Device classes xml file
+[2017-10-3 15:19:22.69740]	 {PRINT}	 Sending Node 2 Type_NodeProtocolInfo(8) packet to haserver
+[2017-10-3 15:19:22.70824]	 {PRINT}	 Adding cmdclsInd : cmdcls:32 Index:0 k : 0 inst 1
+[2017-10-3 15:19:22.70842]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:BASIC(0x20),valueType:byte,Index:0,Value:0,genre:0
+[2017-10-3 15:19:22.70853]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:19:22.71890]	 {PRINT}	 Adding cmdclsInd : cmdcls:38 Index:0 k : 1 inst 1
+[2017-10-3 15:19:22.71906]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:0,genre:1
+[2017-10-3 15:19:22.71917]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:19:22.72939]	 {PRINT}	 Adding cmdclsInd : cmdcls:38 Index:1 k : 2 inst 1
+[2017-10-3 15:19:22.72953]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:button,Index:1,Value:False,genre:1
+[2017-10-3 15:19:22.72964]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:19:22.73985]	 {PRINT}	 Adding cmdclsInd : cmdcls:38 Index:2 k : 3 inst 1
+[2017-10-3 15:19:22.73999]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:button,Index:2,Value:False,genre:1
+[2017-10-3 15:19:22.74010]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:19:22.75031]	 {PRINT}	 Adding cmdclsInd : cmdcls:38 Index:3 k : 4 inst 1
+[2017-10-3 15:19:22.75045]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:bool,Index:3,Value:True,genre:3
+[2017-10-3 15:19:22.75055]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:19:22.76078]	 {PRINT}	 Adding cmdclsInd : cmdcls:38 Index:4 k : 5 inst 1
+[2017-10-3 15:19:22.76094]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:4,Value:0,genre:3
+[2017-10-3 15:19:22.76106]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:19:22.77126]	 {PRINT}	 ------------------m_items_size 4-----------------
+[2017-10-3 15:19:22.77142]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH ALL(0x27),valueType:list,Index:0,Value:Disabled,genre:3
+[2017-10-3 15:19:22.77154]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:19:22.78173]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2017-10-3 15:19:22.78187]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:list,Index:0,Value:Normal,genre:3
+[2017-10-3 15:19:22.78198]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:19:22.79221]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:1,Value:0,genre:3
+[2017-10-3 15:19:22.79233]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:19:22.80261]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:button,Index:2,Value:False,genre:3
+[2017-10-3 15:19:22.80276]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:19:22.81302]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:3,Value:0,genre:3
+[2017-10-3 15:19:22.81316]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:19:22.82337]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2017-10-3 15:19:22.82352]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:list,Index:4,Value:Normal,genre:3
+[2017-10-3 15:19:22.82365]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:19:22.83389]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:short,Index:5,Value:0,genre:3
+[2017-10-3 15:19:22.83401]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:19:22.84424]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:button,Index:6,Value:False,genre:3
+[2017-10-3 15:19:22.84436]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:19:22.85458]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:button,Index:7,Value:False,genre:3
+[2017-10-3 15:19:22.85471]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:19:22.86492]	 {PRINT}	 ------------------m_items_size 3-----------------
+[2017-10-3 15:19:22.86509]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:list,Index:8,Value:Failed,genre:3
+[2017-10-3 15:19:22.86521]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:19:22.87546]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:short,Index:9,Value:0,genre:3
+[2017-10-3 15:19:22.87559]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:19:22.88581]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:VERSION(0x86),valueType:string,Index:0,Value:Unknown,genre:3
+[2017-10-3 15:19:22.88593]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:19:22.89615]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:VERSION(0x86),valueType:string,Index:1,Value:Unknown,genre:3
+[2017-10-3 15:19:22.89627]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:19:22.90648]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:VERSION(0x86),valueType:string,Index:2,Value:Unknown,genre:3
+[2017-10-3 15:19:22.90660]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:19:23.18094]	 {PRINT}	 =======>ManufacturerName GE ProducrName 45602 Lamp Dimmer Module<========
+[2017-10-3 15:19:23.20534]	 {PRINT}	 Sending Node 2 Type_NodeNaming(9) packet to haserver
+[2017-10-3 15:19:23.35286]	 {PRINT}	 reading filege/dimmer_module.xmlfor new Node info
+[2017-10-3 15:19:23.56701]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:19:23.75568]	 {PRINT}	 Sending Node 2 Type_EssentialNodeQueriesComplete(21) packet to haserver
+[2017-10-3 15:19:23.94490]	 {PRINT}	 Value changed:Node:2,cmdcls:VERSION(0x86),valueType:string,Index:0,Value:6 unit  inst 1
+[2017-10-3 15:19:23.96008]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:19:24.09406]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:19:24.10459]	 {PRINT}	 Value changed:Node:2,cmdcls:VERSION(0x86),valueType:string,Index:1,Value:3.67 unit  inst 1
+[2017-10-3 15:19:24.11957]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:19:24.16976]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:19:24.18027]	 {PRINT}	 Value changed:Node:2,cmdcls:VERSION(0x86),valueType:string,Index:2,Value:3.34 unit  inst 1
+[2017-10-3 15:19:24.19543]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:19:24.24371]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:19:24.53377]	 {PRINT}	 ------------------m_items_size 4-----------------
+[2017-10-3 15:19:24.53397]	 {PRINT}	 Value changed:Node:2,cmdcls:SWITCH ALL(0x27),valueType:list,Index:0,Value:On and Off Enabled unit  inst 1
+[2017-10-3 15:19:24.54903]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:19:24.59751]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:19:24.60803]	 {PRINT}	 ------------------m_items_size 4-----------------
+[2017-10-3 15:19:24.60821]	 {PRINT}	 Value changed:Node:2,cmdcls:SWITCH ALL(0x27),valueType:list,Index:0,Value:On and Off Enabled unit  inst 1
+[2017-10-3 15:19:24.62321]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:19:24.70447]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:19:24.89364]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2017-10-3 15:19:24.89385]	 {PRINT}	 Value changed:Node:2,cmdcls:POWERLEVEL(0x73),valueType:list,Index:0,Value:Normal unit  inst 1
+[2017-10-3 15:19:24.90924]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:19:24.95656]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:19:24.96727]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2017-10-3 15:19:24.96747]	 {PRINT}	 Value changed:Node:2,cmdcls:POWERLEVEL(0x73),valueType:list,Index:0,Value:Normal unit  inst 1
+[2017-10-3 15:19:24.98251]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:19:25.03006]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:19:25.04081]	 {PRINT}	 Value changed:Node:2,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 15:19:25.05598]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:19:25.10351]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:19:25.29290]	 {PRINT}	 Sending Node 2 Type_NodeNaming(9) packet to haserver
+[2017-10-3 15:19:25.48212]	 {PRINT}	 Sending Node 2 Type_NodeNaming(9) packet to haserver
+[2017-10-3 15:19:25.68157]	 {PRINT}	 ......BASIC value : 1.....
+[2017-10-3 15:19:25.68178]	 {PRINT}	 Value changed:Node:2,cmdcls:BASIC(0x20),valueType:byte,Index:0,Value:1 unit  inst 1
+[2017-10-3 15:19:25.69672]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:19:25.74373]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:19:25.92490]	 {PRINT}	 ----------- data[1] : 1 dim value 255---------------
+[2017-10-3 15:19:25.94542]	 {PRINT}	 ......SWITCH_MULTILEVEL value : 1.....
+[2017-10-3 15:19:25.94559]	 {PRINT}	 Value changed:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:1 unit  inst 1
+[2017-10-3 15:19:25.96034]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:19:26.00681]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:19:26.01741]	 {PRINT}	 Sending packet to Association App sizeof ass pack 596
+[2017-10-3 15:19:26.01764]	 {PRINT}	 Node:sending query stage complete(Node 2)
+[2017-10-3 15:19:26.09933]	 {PRINT}	 Sending Node 2 Type_EssentialNodeQueriesComplete(21) packet to haserver
+[2017-10-3 15:20:50.03823]	 {PRINT}	 Received Operation Code:Code_SetValueOperation
+[2017-10-3 15:20:50.03845]	 {PRINT}	 home id :0xfe1b018e cmd cls:0x26,genre:1,index:0,instance:1,type:1
+[2017-10-3 15:20:50.03858]	 {PRINT}	 Setting value:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:34
+[2017-10-3 15:20:50.12436]	 {PRINT}	 Received Operation Code:Code_SetValueOperation
+[2017-10-3 15:20:50.12456]	 {PRINT}	 home id :0xfe1b018e cmd cls:0x26,genre:1,index:0,instance:1,type:1
+[2017-10-3 15:20:50.12469]	 {PRINT}	 Setting value:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:100
+[2017-10-3 15:20:50.33495]	 {PRINT}	 ----------- data[1] : 34 dim value 100---------------
+[2017-10-3 15:20:50.35546]	 {PRINT}	 Value changed:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:100 unit  inst 1
+[2017-10-3 15:20:50.37055]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:20:50.41767]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:20:50.74012]	 {PRINT}	 ----------- data[1] : 99 dim value 100---------------
+[2017-10-3 15:20:50.76062]	 {PRINT}	 Value changed:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:99 unit  inst 1
+[2017-10-3 15:20:50.77594]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:20:50.82355]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:20:51.63864]	 {PRINT}	 Received Operation Code:Code_SetValueOperation
+[2017-10-3 15:20:51.63885]	 {PRINT}	 home id :0xfe1b018e cmd cls:0x26,genre:1,index:0,instance:1,type:1
+[2017-10-3 15:20:51.63898]	 {PRINT}	 Setting value:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:18
+[2017-10-3 15:20:51.93110]	 {PRINT}	 ----------- data[1] : 18 dim value 18---------------
+[2017-10-3 15:20:51.95160]	 {PRINT}	 Value changed:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:18 unit  inst 1
+[2017-10-3 15:20:51.96658]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:20:52.01300]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:20:52.91929]	 {PRINT}	 Received Operation Code:Code_SetValueOperation
+[2017-10-3 15:20:52.91948]	 {PRINT}	 home id :0xfe1b018e cmd cls:0x26,genre:1,index:0,instance:1,type:1
+[2017-10-3 15:20:52.91961]	 {PRINT}	 Setting value:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:2
+[2017-10-3 15:20:53.25635]	 {PRINT}	 ----------- data[1] : 2 dim value 2---------------
+[2017-10-3 15:20:53.27698]	 {PRINT}	 Value changed:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:2 unit  inst 1
+[2017-10-3 15:20:53.29280]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:20:53.34336]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:20:54.77202]	 {PRINT}	 Received Operation Code:Code_SetValueOperation
+[2017-10-3 15:20:54.77221]	 {PRINT}	 home id :0xfe1b018e cmd cls:0x26,genre:1,index:0,instance:1,type:1
+[2017-10-3 15:20:54.77257]	 {PRINT}	 Setting value:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:0
+[2017-10-3 15:20:55.06449]	 {PRINT}	 ----------- data[1] : 0 dim value 0---------------
+[2017-10-3 15:20:55.08499]	 {PRINT}	 Value changed:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 15:20:55.10001]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:20:55.14640]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:20:55.79005]	 {PRINT}	 Received Operation Code:Code_SetValueOperation
+[2017-10-3 15:20:55.79021]	 {PRINT}	 home id :0xfe1b018e cmd cls:0x26,genre:1,index:0,instance:1,type:1
+[2017-10-3 15:20:55.79033]	 {PRINT}	 Setting value:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:100
+[2017-10-3 15:20:56.08600]	 {PRINT}	 ----------- data[1] : 99 dim value 100---------------
+[2017-10-3 15:20:56.10651]	 {PRINT}	 Value changed:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:100 unit  inst 1
+[2017-10-3 15:20:56.12157]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:20:56.16837]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:20:58.31048]	 {PRINT}	 Received Operation Code:Code_SetValueOperation
+[2017-10-3 15:20:58.31067]	 {PRINT}	 home id :0xfe1b018e cmd cls:0x26,genre:1,index:0,instance:1,type:1
+[2017-10-3 15:20:58.31080]	 {PRINT}	 Setting value:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:15
+[2017-10-3 15:20:58.65456]	 {PRINT}	 ----------- data[1] : 15 dim value 15---------------
+[2017-10-3 15:20:58.67508]	 {PRINT}	 Value changed:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:15 unit  inst 1
+[2017-10-3 15:20:58.69021]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:20:58.73658]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:20:59.27048]	 {PRINT}	 Received Operation Code:Code_SetValueOperation
+[2017-10-3 15:20:59.27064]	 {PRINT}	 home id :0xfe1b018e cmd cls:0x26,genre:1,index:0,instance:1,type:1
+[2017-10-3 15:20:59.27076]	 {PRINT}	 Setting value:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:16
+[2017-10-3 15:20:59.37633]	 {PRINT}	 Received Operation Code:Code_SetValueOperation
+[2017-10-3 15:20:59.37650]	 {PRINT}	 home id :0xfe1b018e cmd cls:0x26,genre:1,index:0,instance:1,type:1
+[2017-10-3 15:20:59.37663]	 {PRINT}	 Setting value:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:33
+[2017-10-3 15:20:59.56414]	 {PRINT}	 ----------- data[1] : 16 dim value 33---------------
+[2017-10-3 15:20:59.58465]	 {PRINT}	 Value changed:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:33 unit  inst 1
+[2017-10-3 15:20:59.59964]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:20:59.64662]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:20:59.97929]	 {PRINT}	 ----------- data[1] : 33 dim value 33---------------
+[2017-10-3 15:20:59.99981]	 {PRINT}	 Value changed:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:33 unit  inst 1
+[2017-10-3 15:21:0.01462]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:21:0.06064]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:24:19.86932]	 {PRINT}	 Received Operation Code:Code_ControllerCommandOperation
+[2017-10-3 15:24:19.86949]	 {PRINT}	 Received ControllerCommandOperation:ControllerCommand_AddDevice
+[2017-10-3 15:24:19.88425]	 {PRINT}	 Driver:sending SoftReset to controller for ADD/REMOVE Device
+[2017-10-3 15:24:19.88443]	 {PRINT}	 Queuing (Controller) Add Device
+[2017-10-3 15:24:20.97264]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-3 15:24:21.07245]	 {PRINT}	 Received Operation Code:Code_CancelCommandOperation
+[2017-10-3 15:24:21.07265]	 {PRINT}	 Cancel Add Node
+[2017-10-3 15:24:21.18702]	 {PRINT}	 Node add done status received
+[2017-10-3 15:29:49.99233]	 {PRINT}	 Received Operation Code:Code_ControllerCommandOperation
+[2017-10-3 15:29:49.99248]	 {PRINT}	 Received ControllerCommandOperation:ControllerCommand_AddDevice
+[2017-10-3 15:29:50.00721]	 {PRINT}	 Driver:sending SoftReset to controller for ADD/REMOVE Device
+[2017-10-3 15:29:50.00738]	 {PRINT}	 Queuing (Controller) Add Device
+[2017-10-3 15:29:51.09976]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-3 15:29:53.75975]	 {PRINT}	 Received Operation Code:Code_CancelCommandOperation
+[2017-10-3 15:29:53.75996]	 {PRINT}	 Cancel Add Node
+[2017-10-3 15:29:53.87432]	 {PRINT}	 Node add done status received
+[2017-10-3 15:39:20.52015]	 {PRINT}	 Received Operation Code:Code_ControllerCommandOperation
+[2017-10-3 15:39:20.52031]	 {PRINT}	 Received ControllerCommandOperation:ControllerCommand_AddDevice
+[2017-10-3 15:39:20.53550]	 {PRINT}	 Driver:sending SoftReset to controller for ADD/REMOVE Device
+[2017-10-3 15:39:20.53569]	 {PRINT}	 Queuing (Controller) Add Device
+[2017-10-3 15:39:21.63565]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-3 15:39:39.98466]	 {PRINT}	 Sending packet to Association App sizeof ass pack 596
+[2017-10-3 15:39:39.98542]	 {PRINT}	 Driver:node add(3) received data: Basic:0x04,Generic:0x07,Specific:0x01: 0x5e  0x85  0x59  0x22  0x20  0x80  0x70  0x56  0x5a  0x7a  0x72  0x8e  0x71  0x73  0x98  0x2b  0x9c  0x30  0x86  0x84 
+[2017-10-3 15:39:40.47000]	 {PRINT}	 Node add done status received
+[2017-10-3 15:39:40.49045]	 {PRINT}	 Not Sending Node 3 Type_NodeAdded(6) notification to haserver
+[2017-10-3 15:39:40.58115]	 {PRINT}	 received node protocol info to new node:3 
+[2017-10-3 15:39:40.58134]	 {PRINT}	 ====>version 4
+[2017-10-3 15:39:40.60269]	 {PRINT}	 Sending Node 3 Type_NodeProtocolInfo(8) packet to haserver
+[2017-10-3 15:39:40.61332]	 {PRINT}	 Adding cmdclsInd : cmdcls:32 Index:0 k : 0 inst 1
+[2017-10-3 15:39:40.61349]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:BASIC(0x20),valueType:byte,Index:0,Value:0,genre:0
+[2017-10-3 15:39:40.61361]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:40.62383]	 {PRINT}	 Adding cmdclsInd : cmdcls:128 Index:0 k : 1 inst 1
+[2017-10-3 15:39:40.62397]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:BATTERY(0x80),valueType:byte,Index:0,Value:100,genre:1
+[2017-10-3 15:39:40.62409]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:40.63430]	 {PRINT}	 Adding cmdclsInd : cmdcls:113 Index:0 k : 2 inst 1
+[2017-10-3 15:39:40.63444]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0,genre:1
+[2017-10-3 15:39:40.63455]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:40.64476]	 {PRINT}	 Adding cmdclsInd : cmdcls:113 Index:1 k : 3 inst 1
+[2017-10-3 15:39:40.64493]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0,genre:1
+[2017-10-3 15:39:40.64505]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:40.65527]	 {PRINT}	 Adding cmdclsInd : cmdcls:113 Index:2 k : 4 inst 1
+[2017-10-3 15:39:40.65545]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:ALARM(0x71),valueType:int,Index:2,Value:0,genre:1
+[2017-10-3 15:39:40.65556]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:40.66576]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2017-10-3 15:39:40.66590]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:list,Index:0,Value:Normal,genre:3
+[2017-10-3 15:39:40.66601]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:40.67623]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:1,Value:0,genre:3
+[2017-10-3 15:39:40.67635]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:40.68656]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:button,Index:2,Value:False,genre:3
+[2017-10-3 15:39:40.68668]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:40.69691]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:3,Value:0,genre:3
+[2017-10-3 15:39:40.69703]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:40.70724]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2017-10-3 15:39:40.70740]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:list,Index:4,Value:Normal,genre:3
+[2017-10-3 15:39:40.70752]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:40.71780]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:short,Index:5,Value:0,genre:3
+[2017-10-3 15:39:40.71794]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:40.72817]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:button,Index:6,Value:False,genre:3
+[2017-10-3 15:39:40.72830]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:40.73852]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:button,Index:7,Value:False,genre:3
+[2017-10-3 15:39:40.73864]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:40.74884]	 {PRINT}	 ------------------m_items_size 3-----------------
+[2017-10-3 15:39:40.74899]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:list,Index:8,Value:Failed,genre:3
+[2017-10-3 15:39:40.74910]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:40.75933]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:short,Index:9,Value:0,genre:3
+[2017-10-3 15:39:40.75946]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:40.76968]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:SECURITY(0x98),valueType:bool,Index:0,Value:False,genre:1
+[2017-10-3 15:39:40.76980]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:40.78001]	 {PRINT}	 Adding cmdclsInd : cmdcls:48 Index:0 k : 5 inst 1
+[2017-10-3 15:39:40.78015]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:SENSOR BINARY(0x30),valueType:bool,Index:0,Value:False,genre:1
+[2017-10-3 15:39:40.78025]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:40.79048]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:VERSION(0x86),valueType:string,Index:0,Value:Unknown,genre:3
+[2017-10-3 15:39:40.79063]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:40.80086]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:VERSION(0x86),valueType:string,Index:1,Value:Unknown,genre:3
+[2017-10-3 15:39:40.80101]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:40.81125]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:VERSION(0x86),valueType:string,Index:2,Value:Unknown,genre:3
+[2017-10-3 15:39:40.81139]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:40.82162]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:WAKE UP(0x84),valueType:int,Index:0,Value:3600,genre:3
+[2017-10-3 15:39:40.82175]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:42.73379]	 {PRINT}	 security:network key verify and sending supported get
+[2017-10-3 15:39:43.06165]	 {PRINT}	 Security:SECURITY_COMMANDS_SUPPORTED_GET:node-3
+[2017-10-3 15:39:44.55782]	 {PRINT}	 Security:received security supported commands from node:3
+[2017-10-3 15:39:44.55808]	 {PRINT}	 Received secure commands for node 3
+[2017-10-3 15:39:44.55845]	 {PRINT}	  0x5e 0x85 0x59 0x22 0x20 0x80 0x70 0x56 0x5a 0x7a 0x72 0x8e 0x71 0x73 0x98 0x2b 0x9c 0x30 0x86 0x84Sec: 0xef 0x00 0x21 0x01 0xd8 0x07 0x11 0x90 0xc0 0x1c 0xff
+[2017-10-3 15:39:44.55857]	 {PRINT}	 Sending packet to Association App sizeof ass pack 596
+[2017-10-3 15:39:44.56539]	 {ERROR}	 cmd not added :0x5a
+[2017-10-3 15:39:44.58611]	 {PRINT}	 Value changed:Node:3,cmdcls:SECURITY(0x98),valueType:bool,Index:0,Value:True unit  inst 1
+[2017-10-3 15:39:44.61390]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:39:44.68853]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:39:44.69975]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:SECURITY(0x98),valueType:raw,Index:1,Value:0x85 0x20 0x70 0x5a 0x8e 0x71 0x2b 0x9c 0x30 0x84,genre:1
+[2017-10-3 15:39:44.69988]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:45.13535]	 {PRINT}	 =======>ManufacturerName FIBARO System ProducrName Unknown: type=0701, id=2001<========
+[2017-10-3 15:39:45.15587]	 {PRINT}	 Sending Node 3 Type_NodeNaming(9) packet to haserver
+[2017-10-3 15:39:47.51811]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:WAKE UP(0x84),valueType:int,Index:1,Value:0,genre:3
+[2017-10-3 15:39:47.51831]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:47.52855]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:WAKE UP(0x84),valueType:int,Index:2,Value:0,genre:3
+[2017-10-3 15:39:47.52868]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:47.53891]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:WAKE UP(0x84),valueType:int,Index:3,Value:0,genre:3
+[2017-10-3 15:39:47.53909]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:47.54933]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:WAKE UP(0x84),valueType:int,Index:4,Value:0,genre:3
+[2017-10-3 15:39:47.54947]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:47.60932]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:39:47.72076]	 {PRINT}	 Sending Node 3 Type_EssentialNodeQueriesComplete(21) packet to haserver
+[2017-10-3 15:39:47.94117]	 {PRINT}	 Value changed:Node:3,cmdcls:VERSION(0x86),valueType:string,Index:0,Value:3 unit  inst 1
+[2017-10-3 15:39:47.97047]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:39:48.04520]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:39:48.05577]	 {PRINT}	 Value changed:Node:3,cmdcls:VERSION(0x86),valueType:string,Index:1,Value:4.05 unit  inst 1
+[2017-10-3 15:39:48.08426]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:39:48.15879]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:39:48.16932]	 {PRINT}	 Value changed:Node:3,cmdcls:VERSION(0x86),valueType:string,Index:2,Value:3.02 unit  inst 1
+[2017-10-3 15:39:48.19771]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:39:48.27225]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:39:50.03889]	 {PRINT}	 Adding cmdclsInd : cmdcls:113 Index:8 k : 6 inst 1
+[2017-10-3 15:39:50.03911]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:0,genre:1
+[2017-10-3 15:39:50.03924]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:50.04949]	 {PRINT}	 Adding cmdclsInd : cmdcls:113 Index:9 k : 7 inst 1
+[2017-10-3 15:39:50.04969]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:ALARM(0x71),valueType:int,Index:9,Value:0,genre:1
+[2017-10-3 15:39:50.04981]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:39:50.44896]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2017-10-3 15:39:50.44917]	 {PRINT}	 Value changed:Node:3,cmdcls:POWERLEVEL(0x73),valueType:list,Index:0,Value:Normal unit  inst 1
+[2017-10-3 15:39:50.47884]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:39:50.55772]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:39:50.56820]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2017-10-3 15:39:50.56838]	 {PRINT}	 Value changed:Node:3,cmdcls:POWERLEVEL(0x73),valueType:list,Index:0,Value:Normal unit  inst 1
+[2017-10-3 15:39:50.59818]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:39:50.67504]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:39:50.68582]	 {PRINT}	 Value changed:Node:3,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 15:39:50.71493]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:39:50.79175]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:39:51.04778]	 {PRINT}	 ......BATTERY value : 90.....
+[2017-10-3 15:39:51.04799]	 {PRINT}	 Value changed:Node:3,cmdcls:BATTERY(0x80),valueType:byte,Index:0,Value:90 unit  inst 1
+[2017-10-3 15:39:51.07748]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:39:51.15739]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:39:52.93174]	 {PRINT}	 Value changed:Node:3,cmdcls:WAKE UP(0x84),valueType:int,Index:1,Value:3600 unit  inst 1
+[2017-10-3 15:39:52.96096]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:39:53.03828]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:39:53.04883]	 {PRINT}	 Value changed:Node:3,cmdcls:WAKE UP(0x84),valueType:int,Index:2,Value:64800 unit  inst 1
+[2017-10-3 15:39:53.07802]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:39:53.15481]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:39:53.16538]	 {PRINT}	 Value changed:Node:3,cmdcls:WAKE UP(0x84),valueType:int,Index:3,Value:21600 unit  inst 1
+[2017-10-3 15:39:53.19445]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:39:53.27046]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:39:53.28100]	 {PRINT}	 Value changed:Node:3,cmdcls:WAKE UP(0x84),valueType:int,Index:4,Value:1 unit  inst 1
+[2017-10-3 15:39:53.31059]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:39:53.38647]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:39:53.47634]	 {PRINT}	 Sending packet to Association App sizeof ass pack 596
+[2017-10-3 15:39:53.47730]	 {PRINT}	 Node:sending query stage complete for security device(Node 3)
+[2017-10-3 15:39:53.60033]	 {PRINT}	 Sending Node 3 Type_EssentialNodeQueriesComplete(21) packet to haserver
+[2017-10-3 15:39:58.76853]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:SENSOR ALARM(0x9c),valueType:byte,Index:0,Value:0,genre:1
+[2017-10-3 15:39:58.76873]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-3 15:40:1.86496]	 {PRINT}	 Sending Node 3 Type_Group(4) packet to haserver
+[2017-10-3 15:40:7.76749]	 {PRINT}	 Value changed:Node:3,cmdcls:BASIC(0x20),valueType:byte,Index:0,Value:255 unit  inst 1
+[2017-10-3 15:40:7.79751]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:40:7.87799]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:40:10.76387]	 {PRINT}	 Value changed:Node:3,cmdcls:SENSOR BINARY(0x30),valueType:bool,Index:0,Value:True unit  inst 1
+[2017-10-3 15:40:10.79349]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:40:10.87428]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:40:16.74943]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:254,Status=255
+[2017-10-3 15:40:16.76998]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 15:40:16.79948]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:40:16.91020]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:40:16.92073]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 15:40:16.95018]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:40:17.02940]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:40:17.03993]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:65024 unit  inst 1
+[2017-10-3 15:40:17.06943]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:40:17.14607]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:40:22.76630]	 {PRINT}	 Sending Node 3 Type_Group(4) packet to haserver
+[2017-10-3 15:40:25.76923]	 {PRINT}	 Sending Node 3 Type_Group(4) packet to haserver
+[2017-10-3 15:40:28.76482]	 {PRINT}	 Sending Node 3 Type_Group(4) packet to haserver
+[2017-10-3 15:40:31.76802]	 {PRINT}	 Sending Node 3 Type_Group(4) packet to haserver
+[2017-10-3 15:40:34.76873]	 {PRINT}	 Sending Node 3 Type_Group(4) packet to haserver
+[2017-10-3 15:40:37.76634]	 {PRINT}	 Sending Node 3 Type_Group(4) packet to haserver
+[2017-10-3 15:40:40.75362]	 {PRINT}	 Adding the controller to group 1 node 3 
+[2017-10-3 15:40:40.77456]	 {PRINT}	 Sending Node 3 Type_Group(4) packet to haserver
+[2017-10-3 15:40:43.76784]	 {PRINT}	 Sending Node 3 Type_Group(4) packet to haserver
+[2017-10-3 15:40:49.76597]	 {PRINT}	 Sending Node 3 Type_Group(4) packet to haserver
+[2017-10-3 15:40:52.74569]	 {PRINT}	 Adding the controller to group 1 node 3 AutoMultiAssiciate
+[2017-10-3 15:40:52.76628]	 {PRINT}	 Sending Node 3 Type_Group(4) packet to haserver
+[2017-10-3 15:40:58.76542]	 {PRINT}	 Sending Node 3 Type_Group(4) packet to haserver
+[2017-10-3 15:42:17.62897]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:23,Status=255
+[2017-10-3 15:42:17.64952]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 15:42:17.68092]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:17.76266]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:17.77321]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 15:42:17.80479]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:17.88640]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:17.89694]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5888 unit  inst 1
+[2017-10-3 15:42:17.92738]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:18.00661]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:34.72971]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:22,Status=255
+[2017-10-3 15:42:34.75029]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 15:42:34.78139]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:34.86309]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:34.87370]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 15:42:34.90565]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:34.98733]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:34.99788]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5632 unit  inst 1
+[2017-10-3 15:42:35.02928]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:35.11094]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:36.48460]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:23,Status=255
+[2017-10-3 15:42:36.50519]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 15:42:36.53685]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:36.61855]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:36.62909]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 15:42:36.66207]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:37.01652]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:37.02733]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5888 unit  inst 1
+[2017-10-3 15:42:37.05862]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:37.14017]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:39.64946]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:22,Status=255
+[2017-10-3 15:42:39.67004]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 15:42:39.70130]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:39.78472]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:39.79557]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 15:42:39.82705]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:39.91057]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:39.92111]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5632 unit  inst 1
+[2017-10-3 15:42:39.95236]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:40.03668]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:43.70835]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:23,Status=255
+[2017-10-3 15:42:43.72893]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 15:42:43.76030]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:43.84205]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:43.85259]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 15:42:43.88410]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:43.96601]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:43.97655]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5888 unit  inst 1
+[2017-10-3 15:42:44.00798]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:44.08993]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:45.46322]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:23,Status=255
+[2017-10-3 15:42:45.48386]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 15:42:45.51508]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:45.59697]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:45.60753]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 15:42:45.63826]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:45.71774]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:45.72829]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5888 unit  inst 1
+[2017-10-3 15:42:45.75908]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:45.83830]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:47.21130]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:23,Status=255
+[2017-10-3 15:42:47.23187]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 15:42:47.26293]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:47.34267]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:47.35321]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 15:42:47.38767]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:47.69067]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:47.70124]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5888 unit  inst 1
+[2017-10-3 15:42:47.73588]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:47.81904]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:49.23758]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:22,Status=255
+[2017-10-3 15:42:49.25815]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 15:42:49.28959]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:49.37160]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:49.38212]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 15:42:49.41348]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:49.49620]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:49.50675]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5632 unit  inst 1
+[2017-10-3 15:42:49.53834]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:49.62021]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:52.28547]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:23,Status=255
+[2017-10-3 15:42:52.30604]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 15:42:52.33744]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:52.42137]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:52.43190]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 15:42:52.46346]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:52.54719]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:52.55773]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5888 unit  inst 1
+[2017-10-3 15:42:52.58894]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:52.66965]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:55.60538]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:22,Status=255
+[2017-10-3 15:42:55.62595]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 15:42:55.65707]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:55.74051]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:55.75105]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 15:42:55.78157]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:55.89554]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:55.90608]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5632 unit  inst 1
+[2017-10-3 15:42:55.93689]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:56.01617]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:58.01518]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:23,Status=255
+[2017-10-3 15:42:58.03590]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 15:42:58.07834]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:58.38486]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:58.39548]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 15:42:58.43105]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:58.51276]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:42:58.52439]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5888 unit  inst 1
+[2017-10-3 15:42:58.57019]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:42:58.65170]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:43:2.94434]	 {PRINT}	 Security:clearing security msglist of node:3
+[2017-10-3 15:43:2.97930]	 {PRINT}	 Not Sending Node 3 Type_Notification(26) notification to haserver
+[2017-10-3 15:43:4.12427]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:22,Status=255
+[2017-10-3 15:43:4.14484]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 15:43:4.17634]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:43:4.25867]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:43:4.26931]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 15:43:4.30092]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:43:4.38458]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:43:4.39512]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5632 unit  inst 1
+[2017-10-3 15:43:4.42683]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:43:4.50931]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:43:8.74922]	 {PRINT}	 Security:clearing security msglist of node:3
+[2017-10-3 15:43:8.79399]	 {PRINT}	 Not Sending Node 3 Type_Notification(26) notification to haserver
+[2017-10-3 15:43:10.78041]	 {PRINT}	 Not Sending Node 3 Type_Notification(26) notification to haserver
+[2017-10-3 15:43:12.00054]	 {ERROR}	 Security:PollThreadProcSecurity:nonce time out:10 sec
+[2017-10-3 15:43:13.79906]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:22,Status=255
+[2017-10-3 15:43:13.81963]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 15:43:13.85191]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:43:13.93383]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:43:13.94441]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 15:43:13.97603]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:43:14.05967]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:43:14.07021]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5632 unit  inst 1
+[2017-10-3 15:43:14.10176]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:43:14.18406]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:43:20.00178]	 {ERROR}	 Security:PollThreadProcSecurity:nonce time out:10 sec
+[2017-10-3 15:43:39.25868]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:23,Status=255
+[2017-10-3 15:43:39.27924]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 15:43:39.31044]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:43:39.39168]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:43:39.40221]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 15:43:39.43308]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:43:39.51454]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:43:39.52557]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5888 unit  inst 1
+[2017-10-3 15:43:39.55609]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:43:39.63690]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:43:53.12881]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:22,Status=255
+[2017-10-3 15:43:53.14943]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 15:43:53.18086]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:43:53.26406]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:43:53.27458]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 15:43:53.30513]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:43:53.41772]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:43:53.42824]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5632 unit  inst 1
+[2017-10-3 15:43:53.45896]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 15:43:53.53855]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 15:48:38.14777]	 {PRINT}	 Received Operation Code:Code_ControllerCommandOperation
+[2017-10-3 15:48:38.14793]	 {PRINT}	 Received ControllerCommandOperation:ControllerCommand_AddDevice
+[2017-10-3 15:48:38.16260]	 {PRINT}	 Driver:sending SoftReset to controller for ADD/REMOVE Device
+[2017-10-3 15:48:38.16278]	 {PRINT}	 Queuing (Controller) Add Device
+[2017-10-3 15:48:39.24668]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-3 15:48:41.59541]	 {PRINT}	 Received Operation Code:Code_CancelCommandOperation
+[2017-10-3 15:48:41.59565]	 {PRINT}	 Cancel Add Node
+[2017-10-3 15:48:41.71025]	 {PRINT}	 Node add done status received
+[2017-10-3 15:55:33.86726]	 {PRINT}	 Received Operation Code:Code_ControllerCommandOperation
+[2017-10-3 15:55:33.86743]	 {PRINT}	 Received ControllerCommandOperation:ControllerCommand_AddDevice
+[2017-10-3 15:55:33.88199]	 {PRINT}	 Driver:sending SoftReset to controller for ADD/REMOVE Device
+[2017-10-3 15:55:33.88216]	 {PRINT}	 Queuing (Controller) Add Device
+[2017-10-3 15:55:34.96300]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-3 15:55:43.47792]	 {PRINT}	 Received Operation Code:Code_CancelCommandOperation
+[2017-10-3 15:55:43.47813]	 {PRINT}	 Cancel Add Node
+[2017-10-3 15:55:43.60250]	 {PRINT}	 Node add done status received
+[2017-10-3 16:27:57.75732]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:23,Status=255
+[2017-10-3 16:27:57.77787]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 16:27:57.80943]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 16:27:57.89841]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 16:27:57.90898]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 16:27:57.94073]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 16:27:58.02390]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 16:27:58.03445]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5888 unit  inst 1
+[2017-10-3 16:27:58.06655]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 16:27:58.15024]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 16:38:56.61103]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:22,Status=255
+[2017-10-3 16:38:56.63161]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 16:38:56.66292]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 16:38:56.78092]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 16:38:56.79152]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 16:38:56.82264]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 16:38:56.90399]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 16:38:56.91463]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5632 unit  inst 1
+[2017-10-3 16:38:56.94510]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 16:38:57.02857]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 16:39:11.97781]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:23,Status=255
+[2017-10-3 16:39:11.99845]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 16:39:12.02991]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 16:39:12.11173]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 16:39:12.12225]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 16:39:12.15305]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 16:39:12.23447]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 16:39:12.24513]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5888 unit  inst 1
+[2017-10-3 16:39:12.27585]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 16:39:12.35660]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 16:51:1.16998]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:22,Status=255
+[2017-10-3 16:51:1.19067]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 16:51:1.22196]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 16:51:1.30548]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 16:51:1.31719]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 16:51:1.34906]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 16:51:1.43491]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 16:51:1.44543]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5632 unit  inst 1
+[2017-10-3 16:51:1.47771]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 16:51:1.56141]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 16:51:16.20944]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:23,Status=255
+[2017-10-3 16:51:16.23008]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 16:51:16.27194]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 16:51:16.36132]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 16:51:16.37194]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 16:51:16.40427]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 16:51:16.49504]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 16:51:16.50573]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5888 unit  inst 1
+[2017-10-3 16:51:16.53844]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 16:51:16.66866]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 17:20:8.63068]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:22,Status=255
+[2017-10-3 17:20:8.65127]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 17:20:8.68165]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 17:20:8.76135]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 17:20:8.77192]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 17:20:8.80234]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 17:20:8.88203]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 17:20:8.89258]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5632 unit  inst 1
+[2017-10-3 17:20:8.92318]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 17:20:9.00329]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 17:20:16.90783]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:23,Status=255
+[2017-10-3 17:20:16.92850]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-3 17:20:16.96342]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 17:20:17.04548]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 17:20:17.05610]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-3 17:20:17.09206]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 17:20:17.17294]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-3 17:20:17.18348]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5888 unit  inst 1
+[2017-10-3 17:20:17.21475]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-3 17:20:17.29576]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 9:59:3.57248]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:22,Status=255
+[2017-10-4 9:59:3.59304]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-4 9:59:3.62423]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 9:59:3.70667]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 9:59:3.71727]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-4 9:59:3.74856]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 9:59:3.83168]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 9:59:3.84224]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5632 unit  inst 1
+[2017-10-4 9:59:3.87307]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 9:59:3.98876]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 9:59:48.40121]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:23,Status=255
+[2017-10-4 9:59:48.42179]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-4 9:59:48.45230]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 9:59:48.53410]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 9:59:48.54461]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-4 9:59:48.57523]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 9:59:48.65607]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 9:59:48.66662]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5888 unit  inst 1
+[2017-10-4 9:59:48.69728]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 9:59:48.78289]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 10:3:12.92116]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:22,Status=255
+[2017-10-4 10:3:12.94173]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-4 10:3:12.98027]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 10:3:13.07152]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 10:3:13.08208]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-4 10:3:13.11391]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 10:3:13.19613]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 10:3:13.20667]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5632 unit  inst 1
+[2017-10-4 10:3:13.23813]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 10:3:13.32027]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 10:3:21.50220]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:23,Status=255
+[2017-10-4 10:3:21.52284]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-4 10:3:21.55401]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 10:3:21.63392]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 10:3:21.64446]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-4 10:3:21.67567]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 10:3:21.75847]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 10:3:21.76900]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5888 unit  inst 1
+[2017-10-4 10:3:21.80021]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 10:3:21.87992]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 10:4:43.01277]	 {PRINT}	 Received Operation Code:Code_SetValueOperation
+[2017-10-4 10:4:43.01297]	 {PRINT}	 home id :0xfe1b018e cmd cls:0x26,genre:1,index:0,instance:1,type:1
+[2017-10-4 10:4:43.01311]	 {PRINT}	 Setting value:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:91
+[2017-10-4 10:4:43.30649]	 {PRINT}	 ----------- data[1] : 91 dim value 91---------------
+[2017-10-4 10:4:43.32700]	 {PRINT}	 Value changed:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:91 unit  inst 1
+[2017-10-4 10:4:43.35831]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 10:4:43.43781]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-4 10:4:44.23251]	 {PRINT}	 Received Operation Code:Code_SetValueOperation
+[2017-10-4 10:4:44.23270]	 {PRINT}	 home id :0xfe1b018e cmd cls:0x26,genre:1,index:0,instance:1,type:1
+[2017-10-4 10:4:44.23283]	 {PRINT}	 Setting value:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:31
+[2017-10-4 10:4:44.56833]	 {PRINT}	 ----------- data[1] : 31 dim value 31---------------
+[2017-10-4 10:4:44.58887]	 {PRINT}	 Value changed:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:31 unit  inst 1
+[2017-10-4 10:4:44.62031]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 10:4:44.71348]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-4 10:4:44.85907]	 {PRINT}	 Received Operation Code:Code_SetValueOperation
+[2017-10-4 10:4:44.85923]	 {PRINT}	 home id :0xfe1b018e cmd cls:0x26,genre:1,index:0,instance:1,type:1
+[2017-10-4 10:4:44.85935]	 {PRINT}	 Setting value:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:0
+[2017-10-4 10:4:45.15171]	 {PRINT}	 ----------- data[1] : 27 dim value 0---------------
+[2017-10-4 10:4:45.17222]	 {PRINT}	 Value changed:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-4 10:4:45.20271]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 10:4:45.28565]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-4 10:4:53.26999]	 {PRINT}	 Received Operation Code:Code_SetValueOperation
+[2017-10-4 10:4:53.27017]	 {PRINT}	 home id :0xfe1b018e cmd cls:0x26,genre:1,index:0,instance:1,type:1
+[2017-10-4 10:4:53.27030]	 {PRINT}	 Setting value:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:44
+[2017-10-4 10:4:53.56319]	 {PRINT}	 ----------- data[1] : 44 dim value 44---------------
+[2017-10-4 10:4:53.58369]	 {PRINT}	 Value changed:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:44 unit  inst 1
+[2017-10-4 10:4:53.61533]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 10:4:53.70147]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-4 10:11:18.03569]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:22,Status=255
+[2017-10-4 10:11:18.05627]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-4 10:11:18.08734]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 10:11:18.20150]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 10:11:18.21206]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-4 10:11:18.24252]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 10:11:18.32181]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 10:11:18.33233]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5632 unit  inst 1
+[2017-10-4 10:11:18.36286]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 10:11:18.44208]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 10:11:27.01576]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:23,Status=255
+[2017-10-4 10:11:27.03633]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-4 10:11:27.06680]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 10:11:27.14851]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 10:11:27.15903]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-4 10:11:27.18966]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 10:11:27.26891]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 10:11:27.27945]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5888 unit  inst 1
+[2017-10-4 10:11:27.31000]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 10:11:27.38911]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 15:53:17.83536]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:22,Status=255
+[2017-10-4 15:53:17.85594]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-4 15:53:17.88712]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 15:53:17.99557]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 15:53:18.00615]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-4 15:53:18.03746]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 15:53:18.12651]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 15:53:18.13706]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5632 unit  inst 1
+[2017-10-4 15:53:18.16837]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 15:53:18.25278]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 16:48:22.81580]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:23,Status=255
+[2017-10-4 16:48:22.83639]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-4 16:48:22.86686]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 16:48:22.98222]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 16:48:22.99315]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-4 16:48:23.02371]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 16:48:23.10311]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 16:48:23.11365]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5888 unit  inst 1
+[2017-10-4 16:48:23.14406]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 16:48:23.23349]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 16:55:46.48942]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:22,Status=255
+[2017-10-4 16:55:46.51001]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-4 16:55:46.54053]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 16:55:46.62250]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 16:55:46.63304]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-4 16:55:46.66360]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 16:55:46.74457]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 16:55:46.75511]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5632 unit  inst 1
+[2017-10-4 16:55:46.78562]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 16:55:46.89913]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 18:15:38.41173]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:23,Status=255
+[2017-10-4 18:15:38.43231]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-4 18:15:38.46324]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 18:15:38.54749]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 18:15:38.55812]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-4 18:15:38.58916]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 18:15:38.67488]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 18:15:38.68568]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5888 unit  inst 1
+[2017-10-4 18:15:38.72253]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 18:15:38.80539]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 18:28:25.48816]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:22,Status=255
+[2017-10-4 18:28:25.50873]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-4 18:28:25.53960]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 18:28:25.61949]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 18:28:25.63006]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-4 18:28:25.66076]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 18:28:25.74080]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 18:28:25.75133]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5632 unit  inst 1
+[2017-10-4 18:28:25.78218]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 18:28:25.86261]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 18:32:38.54162]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:23,Status=255
+[2017-10-4 18:32:38.56227]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-4 18:32:38.59369]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 18:32:38.67796]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 18:32:38.68958]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-4 18:32:38.72105]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 18:32:38.80507]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-4 18:32:38.81562]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5888 unit  inst 1
+[2017-10-4 18:32:38.84691]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-4 18:32:38.93078]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 16:40:17.77404]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:22,Status=255
+[2017-10-5 16:40:17.79461]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-5 16:40:17.82525]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 16:40:17.90990]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 16:40:17.92046]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-5 16:40:17.95125]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 16:40:18.03260]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 16:40:18.04319]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5632 unit  inst 1
+[2017-10-5 16:40:18.07441]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 16:40:18.15641]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 16:40:22.89664]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:23,Status=255
+[2017-10-5 16:40:22.91721]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-5 16:40:22.94782]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 16:40:23.03931]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 16:40:23.04984]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-5 16:40:23.08076]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 16:40:23.16617]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 16:40:23.17672]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5888 unit  inst 1
+[2017-10-5 16:40:23.20714]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 16:40:23.28993]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver

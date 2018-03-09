@@ -1,0 +1,8 @@
+[UNTITLED_2]
+	path = /mnt/usb/UNTITLED_2
+	inherit permissions = yes
+	browsable = yes
+	public = yes
+	read only = no
+	guest ok = no
+	create mask = 0755

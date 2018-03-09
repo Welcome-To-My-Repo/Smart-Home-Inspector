@@ -1,0 +1,878 @@
+[2015-7-31 21:1:31.50692]	 {PRINT}	 <==============================zwave server started.================================>
+[2015-7-31 21:1:31.50740]	 {PRINT}	 opening Port:/dev/ttyS3
+[2015-7-31 21:1:31.50795]	 {INFO}	 Driver:network key from file:b0 d9 29 cd 55 30 56 77 26 3c 53 3a 01 70 8a af 
+[2015-7-31 21:1:32.46057]	 {PRINT}	 node info Read from config file:1
+[2015-7-31 21:1:32.46201]	 {PRINT}	 node info Read from config file:2
+[2015-7-31 21:1:32.46384]	 {PRINT}	 node info Read from config file:3
+[2015-7-31 21:1:32.47725]	 {PRINT}	 starting security thread read from xml for node 3
+[2015-7-31 21:1:32.47770]	 {PRINT}	 CommandClass:Node 3 security commands from xml:0x85 0x20 0x70 0x5a 0x8e 0x71 0x2b 0x9c 0x30 0x84,size:10
+[2015-7-31 21:1:32.47788]	 {PRINT}	 CommandClass:security cmds from xml: 0x85 0x20 0x70 0x5a 0x8e 0x71 0x2b 0x9c 0x30 0x84 
+[2015-7-31 21:1:32.48141]	 {PRINT}	 Driver:zwave chip type:0301
+[2015-7-31 21:1:32.50303]	 {PRINT}	 Not Sending Node 1 Type_NodeAdded(6) notification to haserver
+[2015-7-31 21:1:32.51561]	 {PRINT}	 Sending Node 1 Type_NodeProtocolInfo(8) packet to haserver
+[2015-7-31 21:1:32.58682]	 {PRINT}	 persisting zwcfg_home.xml file
+[2015-7-31 21:1:33.05642]	 {PRINT}	 Sending Node 1 Type_EssentialNodeQueriesComplete(21) packet to haserver
+[2015-7-31 21:1:33.06697]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:1,cmdcls:BASIC(0x20),valueType:byte,Index:0,Value:0,genre:0
+[2015-7-31 21:1:33.06716]	 {PRINT}	 Not Sending Node 1 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.07749]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:1,cmdcls:CONTROLLER REPLICATION(0x21),valueType:byte,Index:0,Value:0,genre:3
+[2015-7-31 21:1:33.07770]	 {PRINT}	 Not Sending Node 1 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.08802]	 {PRINT}	 ------------------m_items_size 4-----------------
+[2015-7-31 21:1:33.08823]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:1,cmdcls:CONTROLLER REPLICATION(0x21),valueType:list,Index:1,Value:Groups,genre:3
+[2015-7-31 21:1:33.08835]	 {PRINT}	 Not Sending Node 1 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.09868]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:1,cmdcls:CONTROLLER REPLICATION(0x21),valueType:button,Index:2,Value:False,genre:3
+[2015-7-31 21:1:33.09889]	 {PRINT}	 Not Sending Node 1 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.10921]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:1,cmdcls:VERSION(0x86),valueType:string,Index:0,Value:Unknown,genre:3
+[2015-7-31 21:1:33.10940]	 {PRINT}	 Not Sending Node 1 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.11969]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:1,cmdcls:VERSION(0x86),valueType:string,Index:1,Value:Unknown,genre:3
+[2015-7-31 21:1:33.11989]	 {PRINT}	 Not Sending Node 1 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.13016]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:1,cmdcls:VERSION(0x86),valueType:string,Index:2,Value:Unknown,genre:3
+[2015-7-31 21:1:33.13033]	 {PRINT}	 Not Sending Node 1 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.14066]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:1,cmdcls:SECURITY(0x98),valueType:bool,Index:0,Value:False,genre:1
+[2015-7-31 21:1:33.14087]	 {PRINT}	 Not Sending Node 1 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.15115]	 {PRINT}	 Sending Node 1 Type_NodeNaming(9) packet to haserver
+[2015-7-31 21:1:33.16163]	 {PRINT}	 Not Sending Node 2 Type_NodeAdded(6) notification to haserver
+[2015-7-31 21:1:33.17201]	 {PRINT}	 Sending Node 2 Type_NodeProtocolInfo(8) packet to haserver
+[2015-7-31 21:1:33.21966]	 {PRINT}	 persisting zwcfg_home.xml file
+[2015-7-31 21:1:33.52689]	 {PRINT}	 Sending Node 2 Type_EssentialNodeQueriesComplete(21) packet to haserver
+[2015-7-31 21:1:33.54020]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:BASIC(0x20),valueType:byte,Index:0,Value:1,genre:0
+[2015-7-31 21:1:33.54040]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.55072]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:44,genre:1
+[2015-7-31 21:1:33.55101]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.56139]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:button,Index:1,Value:False,genre:1
+[2015-7-31 21:1:33.56158]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.57192]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:button,Index:2,Value:False,genre:1
+[2015-7-31 21:1:33.57211]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.58245]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:bool,Index:3,Value:True,genre:3
+[2015-7-31 21:1:33.58266]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.59341]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:4,Value:0,genre:3
+[2015-7-31 21:1:33.59364]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.60393]	 {PRINT}	 ------------------m_items_size 4-----------------
+[2015-7-31 21:1:33.60416]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH ALL(0x27),valueType:list,Index:0,Value:On and Off Enabled,genre:3
+[2015-7-31 21:1:33.60432]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.61462]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2015-7-31 21:1:33.61485]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:list,Index:0,Value:Normal,genre:3
+[2015-7-31 21:1:33.61499]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.62571]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:1,Value:0,genre:3
+[2015-7-31 21:1:33.62596]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.63647]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:button,Index:2,Value:False,genre:3
+[2015-7-31 21:1:33.63669]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.65241]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:3,Value:0,genre:3
+[2015-7-31 21:1:33.65267]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.66297]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2015-7-31 21:1:33.66321]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:list,Index:4,Value:Normal,genre:3
+[2015-7-31 21:1:33.66334]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.67367]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:short,Index:5,Value:0,genre:3
+[2015-7-31 21:1:33.67388]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.68424]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:button,Index:6,Value:False,genre:3
+[2015-7-31 21:1:33.68446]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.69479]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:button,Index:7,Value:False,genre:3
+[2015-7-31 21:1:33.69502]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.70562]	 {PRINT}	 ------------------m_items_size 3-----------------
+[2015-7-31 21:1:33.70583]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:list,Index:8,Value:Failed,genre:3
+[2015-7-31 21:1:33.70595]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.71626]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:short,Index:9,Value:0,genre:3
+[2015-7-31 21:1:33.71647]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.72678]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:VERSION(0x86),valueType:string,Index:0,Value:6,genre:3
+[2015-7-31 21:1:33.72697]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.73726]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:VERSION(0x86),valueType:string,Index:1,Value:3.67,genre:3
+[2015-7-31 21:1:33.73745]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.74775]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:VERSION(0x86),valueType:string,Index:2,Value:3.34,genre:3
+[2015-7-31 21:1:33.74793]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.75822]	 {PRINT}	 Sending Node 2 Type_NodeNaming(9) packet to haserver
+[2015-7-31 21:1:33.76875]	 {PRINT}	 Not Sending Node 3 Type_NodeAdded(6) notification to haserver
+[2015-7-31 21:1:33.77909]	 {PRINT}	 Sending Node 3 Type_NodeProtocolInfo(8) packet to haserver
+[2015-7-31 21:1:33.83498]	 {PRINT}	 persisting zwcfg_home.xml file
+[2015-7-31 21:1:33.93825]	 {PRINT}	 Sending Node 3 Type_EssentialNodeQueriesComplete(21) packet to haserver
+[2015-7-31 21:1:33.94887]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:BASIC(0x20),valueType:byte,Index:0,Value:255,genre:0
+[2015-7-31 21:1:33.94910]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.95945]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:SENSOR BINARY(0x30),valueType:bool,Index:0,Value:True,genre:1
+[2015-7-31 21:1:33.95964]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.97000]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0,genre:1
+[2015-7-31 21:1:33.97022]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.98060]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0,genre:1
+[2015-7-31 21:1:33.98080]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:33.99116]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:ALARM(0x71),valueType:int,Index:2,Value:0,genre:1
+[2015-7-31 21:1:33.99137]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.00171]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5888,genre:1
+[2015-7-31 21:1:34.00192]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.01223]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:ALARM(0x71),valueType:int,Index:9,Value:0,genre:1
+[2015-7-31 21:1:34.01243]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.02274]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2015-7-31 21:1:34.02296]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:list,Index:0,Value:Normal,genre:3
+[2015-7-31 21:1:34.02309]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.03345]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:1,Value:0,genre:3
+[2015-7-31 21:1:34.03366]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.04401]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:button,Index:2,Value:False,genre:3
+[2015-7-31 21:1:34.04419]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.05449]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:3,Value:0,genre:3
+[2015-7-31 21:1:34.05472]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.06503]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2015-7-31 21:1:34.06526]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:list,Index:4,Value:Normal,genre:3
+[2015-7-31 21:1:34.06542]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.07580]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:short,Index:5,Value:0,genre:3
+[2015-7-31 21:1:34.07599]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.08632]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:button,Index:6,Value:False,genre:3
+[2015-7-31 21:1:34.08652]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.09685]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:button,Index:7,Value:False,genre:3
+[2015-7-31 21:1:34.09706]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.10734]	 {PRINT}	 ------------------m_items_size 3-----------------
+[2015-7-31 21:1:34.10755]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:list,Index:8,Value:Failed,genre:3
+[2015-7-31 21:1:34.10769]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.11806]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:short,Index:9,Value:0,genre:3
+[2015-7-31 21:1:34.11828]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.12860]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:BATTERY(0x80),valueType:byte,Index:0,Value:90,genre:1
+[2015-7-31 21:1:34.12879]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.13917]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:WAKE UP(0x84),valueType:int,Index:1,Value:3600,genre:3
+[2015-7-31 21:1:34.13939]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.14976]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:WAKE UP(0x84),valueType:int,Index:2,Value:64800,genre:3
+[2015-7-31 21:1:34.14997]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.16030]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:WAKE UP(0x84),valueType:int,Index:3,Value:21600,genre:3
+[2015-7-31 21:1:34.16050]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.17084]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:WAKE UP(0x84),valueType:int,Index:4,Value:1,genre:3
+[2015-7-31 21:1:34.17103]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.18131]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:WAKE UP(0x84),valueType:int,Index:0,Value:3600,genre:3
+[2015-7-31 21:1:34.18147]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.19182]	 {PRINT}	 Sending Node 3 Type_Group(4) packet to haserver
+[2015-7-31 21:1:34.20588]	 {PRINT}	 Sending Node 3 Type_Group(4) packet to haserver
+[2015-7-31 21:1:34.21632]	 {PRINT}	 Sending Node 3 Type_Group(4) packet to haserver
+[2015-7-31 21:1:34.22678]	 {PRINT}	 Sending Node 3 Type_Group(4) packet to haserver
+[2015-7-31 21:1:34.23907]	 {PRINT}	 Sending Node 3 Type_Group(4) packet to haserver
+[2015-7-31 21:1:34.25578]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:VERSION(0x86),valueType:string,Index:0,Value:3,genre:3
+[2015-7-31 21:1:34.25604]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.26640]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:VERSION(0x86),valueType:string,Index:1,Value:4.05,genre:3
+[2015-7-31 21:1:34.26660]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.27690]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:VERSION(0x86),valueType:string,Index:2,Value:3.02,genre:3
+[2015-7-31 21:1:34.27711]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.28753]	 {PRINT}	 Sending Node 3 Type_Group(4) packet to haserver
+[2015-7-31 21:1:34.29809]	 {PRINT}	 Sending Node 3 Type_Group(4) packet to haserver
+[2015-7-31 21:1:34.30862]	 {PRINT}	 Sending Node 3 Type_Group(4) packet to haserver
+[2015-7-31 21:1:34.31912]	 {PRINT}	 Sending Node 3 Type_Group(4) packet to haserver
+[2015-7-31 21:1:34.32966]	 {PRINT}	 Sending Node 3 Type_Group(4) packet to haserver
+[2015-7-31 21:1:34.34015]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:SECURITY(0x98),valueType:bool,Index:0,Value:True,genre:1
+[2015-7-31 21:1:34.34038]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.35073]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:SECURITY(0x98),valueType:raw,Index:1,Value:0x85 0x20 0x70 0x5a 0x8e 0x71 0x2b 0x9c 0x30 0x84,genre:1
+[2015-7-31 21:1:34.35092]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.36121]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:SENSOR ALARM(0x9c),valueType:byte,Index:0,Value:0,genre:1
+[2015-7-31 21:1:34.36141]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2015-7-31 21:1:34.37167]	 {PRINT}	 Sending Node 3 Type_NodeNaming(9) packet to haserver
+[2015-7-31 21:1:34.38207]	 {PRINT}	 Sending Node 1 Type_EssentialNodeQueriesComplete(21) packet to haserver
+[2015-7-31 21:1:34.39238]	 {PRINT}	 all nodes queried
+[2015-7-31 21:1:34.43475]	 {PRINT}	 persisting zwcfg_home.xml file
+[2015-7-31 21:1:34.61718]	 {PRINT}	 Sending Node 0 Type_AllNodesQueried(25) packet to haserver
+[2015-7-31 21:1:34.62773]	 {PRINT}	 Sending Node 2 Type_EssentialNodeQueriesComplete(21) packet to haserver
+[2015-7-31 21:1:34.63890]	 {PRINT}	 Sending Node 3 Type_EssentialNodeQueriesComplete(21) packet to haserver
+[2015-7-31 21:1:38.73573]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-5 17:55:17.08688]	 {PRINT}	 Driver:Removing Msg from Node 255 attempts:3
+[2017-10-5 17:55:17.10737]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-5 18:0:41.51980]	 {PRINT}	 Received Operation Code:Code_ControllerCommandOperation
+[2017-10-5 18:0:41.51999]	 {PRINT}	 Received ControllerCommandOperation:ControllerCommand_AddDevice
+[2017-10-5 18:0:41.53457]	 {PRINT}	 Driver:sending SoftReset to controller for ADD/REMOVE Device
+[2017-10-5 18:0:41.53475]	 {PRINT}	 Queuing (Controller) Add Device
+[2017-10-5 18:0:42.62681]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-5 18:0:46.89002]	 {PRINT}	 Received Operation Code:Code_CancelCommandOperation
+[2017-10-5 18:0:46.89021]	 {PRINT}	 Cancel Add Node
+[2017-10-5 18:0:47.01826]	 {PRINT}	 Node add done status received
+[2017-10-5 18:1:26.90981]	 {PRINT}	 Received Operation Code:Code_ControllerCommandOperation
+[2017-10-5 18:1:26.90997]	 {PRINT}	 Received ControllerCommandOperation:ControllerCommand_AddDevice
+[2017-10-5 18:1:26.92460]	 {PRINT}	 Driver:sending SoftReset to controller for ADD/REMOVE Device
+[2017-10-5 18:1:26.92476]	 {PRINT}	 Queuing (Controller) Add Device
+[2017-10-5 18:1:28.02356]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-5 18:1:37.63336]	 {PRINT}	 Sending packet to Association App sizeof ass pack 596
+[2017-10-5 18:1:37.63991]	 {PRINT}	 Driver:node add(2) received data: Basic:0x04,Generic:0x11,Specific:0x01: 0x26  0x27  0x73  0x70  0x86  0x72  0x77 
+[2017-10-5 18:1:38.00838]	 {PRINT}	 Driver:sending node 2 added to association
+[2017-10-5 18:1:38.00856]	 {PRINT}	 Sending packet to Association App sizeof ass pack 596
+[2017-10-5 18:1:38.01310]	 {PRINT}	 Node add done status received
+[2017-10-5 18:1:38.03355]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:1:38.04389]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:1:38.05413]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:1:38.06436]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:1:38.07458]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:1:38.08480]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:1:38.09502]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:1:38.10528]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:1:38.11553]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:1:38.12576]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:1:38.13601]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:1:38.14625]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:1:38.15647]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:1:38.16670]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:1:38.17695]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:1:38.18719]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:1:38.19741]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:1:38.20765]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:1:38.21789]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:1:38.22811]	 {PRINT}	 Not Sending Node 2 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:1:38.25985]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:1:38.31700]	 {PRINT}	 Not Sending Node 2 Type_NodeRemoved(7) notification to haserver
+[2017-10-5 18:1:38.32737]	 {PRINT}	 Not Sending Node 2 Type_NodeAdded(6) notification to haserver
+[2017-10-5 18:1:38.41811]	 {PRINT}	 received node protocol info to new node:2 
+[2017-10-5 18:1:38.41833]	 {PRINT}	 ====>version 4
+[2017-10-5 18:1:38.41846]	 {PRINT}	 Reading Device classes xml file
+[2017-10-5 18:1:38.44970]	 {PRINT}	 Sending Node 2 Type_NodeProtocolInfo(8) packet to haserver
+[2017-10-5 18:1:38.46053]	 {PRINT}	 Adding cmdclsInd : cmdcls:32 Index:0 k : 0 inst 1
+[2017-10-5 18:1:38.46069]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:BASIC(0x20),valueType:byte,Index:0,Value:0,genre:0
+[2017-10-5 18:1:38.46081]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:1:38.47104]	 {PRINT}	 Adding cmdclsInd : cmdcls:38 Index:0 k : 1 inst 1
+[2017-10-5 18:1:38.47119]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:0,genre:1
+[2017-10-5 18:1:38.47131]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:1:38.48153]	 {PRINT}	 Adding cmdclsInd : cmdcls:38 Index:1 k : 2 inst 1
+[2017-10-5 18:1:38.48167]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:button,Index:1,Value:False,genre:1
+[2017-10-5 18:1:38.48178]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:1:38.49199]	 {PRINT}	 Adding cmdclsInd : cmdcls:38 Index:2 k : 3 inst 1
+[2017-10-5 18:1:38.49212]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:button,Index:2,Value:False,genre:1
+[2017-10-5 18:1:38.49223]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:1:38.50247]	 {PRINT}	 Adding cmdclsInd : cmdcls:38 Index:3 k : 4 inst 1
+[2017-10-5 18:1:38.50263]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:bool,Index:3,Value:True,genre:3
+[2017-10-5 18:1:38.50275]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:1:38.51300]	 {PRINT}	 Adding cmdclsInd : cmdcls:38 Index:4 k : 5 inst 1
+[2017-10-5 18:1:38.51317]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:4,Value:0,genre:3
+[2017-10-5 18:1:38.51329]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:1:38.52350]	 {PRINT}	 ------------------m_items_size 4-----------------
+[2017-10-5 18:1:38.52367]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:SWITCH ALL(0x27),valueType:list,Index:0,Value:Disabled,genre:3
+[2017-10-5 18:1:38.52380]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:1:38.53402]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2017-10-5 18:1:38.53418]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:list,Index:0,Value:Normal,genre:3
+[2017-10-5 18:1:38.53429]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:1:38.54454]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:1,Value:0,genre:3
+[2017-10-5 18:1:38.54467]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:1:38.55490]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:button,Index:2,Value:False,genre:3
+[2017-10-5 18:1:38.55504]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:1:38.56527]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:3,Value:0,genre:3
+[2017-10-5 18:1:38.56540]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:1:38.57560]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2017-10-5 18:1:38.57574]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:list,Index:4,Value:Normal,genre:3
+[2017-10-5 18:1:38.57585]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:1:38.58607]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:short,Index:5,Value:0,genre:3
+[2017-10-5 18:1:38.58619]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:1:38.59642]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:button,Index:6,Value:False,genre:3
+[2017-10-5 18:1:38.59655]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:1:38.60678]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:button,Index:7,Value:False,genre:3
+[2017-10-5 18:1:38.60693]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:1:38.61715]	 {PRINT}	 ------------------m_items_size 3-----------------
+[2017-10-5 18:1:38.61733]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:list,Index:8,Value:Failed,genre:3
+[2017-10-5 18:1:38.61745]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:1:38.62769]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:POWERLEVEL(0x73),valueType:short,Index:9,Value:0,genre:3
+[2017-10-5 18:1:38.62782]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:1:38.63805]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:VERSION(0x86),valueType:string,Index:0,Value:Unknown,genre:3
+[2017-10-5 18:1:38.63818]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:1:38.64840]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:VERSION(0x86),valueType:string,Index:1,Value:Unknown,genre:3
+[2017-10-5 18:1:38.64853]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:1:38.65874]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:2,cmdcls:VERSION(0x86),valueType:string,Index:2,Value:Unknown,genre:3
+[2017-10-5 18:1:38.65887]	 {PRINT}	 Not Sending Node 2 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:1:38.93263]	 {PRINT}	 =======>ManufacturerName GE ProducrName 45602 Lamp Dimmer Module<========
+[2017-10-5 18:1:38.95700]	 {PRINT}	 Sending Node 2 Type_NodeNaming(9) packet to haserver
+[2017-10-5 18:1:39.10475]	 {PRINT}	 reading filege/dimmer_module.xmlfor new Node info
+[2017-10-5 18:1:39.33613]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:1:39.41854]	 {PRINT}	 Sending Node 2 Type_EssentialNodeQueriesComplete(21) packet to haserver
+[2017-10-5 18:1:39.60827]	 {PRINT}	 Value changed:Node:2,cmdcls:VERSION(0x86),valueType:string,Index:0,Value:6 unit  inst 1
+[2017-10-5 18:1:39.64011]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:1:39.72219]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:1:39.73271]	 {PRINT}	 Value changed:Node:2,cmdcls:VERSION(0x86),valueType:string,Index:1,Value:3.67 unit  inst 1
+[2017-10-5 18:1:39.76464]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:1:39.84391]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:1:39.85443]	 {PRINT}	 Value changed:Node:2,cmdcls:VERSION(0x86),valueType:string,Index:2,Value:3.34 unit  inst 1
+[2017-10-5 18:1:39.88510]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:1:39.96462]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:1:40.25464]	 {PRINT}	 ------------------m_items_size 4-----------------
+[2017-10-5 18:1:40.25485]	 {PRINT}	 Value changed:Node:2,cmdcls:SWITCH ALL(0x27),valueType:list,Index:0,Value:On and Off Enabled unit  inst 1
+[2017-10-5 18:1:40.28646]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:1:40.36832]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:1:40.37880]	 {PRINT}	 ------------------m_items_size 4-----------------
+[2017-10-5 18:1:40.37900]	 {PRINT}	 Value changed:Node:2,cmdcls:SWITCH ALL(0x27),valueType:list,Index:0,Value:On and Off Enabled unit  inst 1
+[2017-10-5 18:1:40.41065]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:1:40.49095]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:1:40.68068]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2017-10-5 18:1:40.68090]	 {PRINT}	 Value changed:Node:2,cmdcls:POWERLEVEL(0x73),valueType:list,Index:0,Value:Normal unit  inst 1
+[2017-10-5 18:1:40.71255]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:1:40.79444]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:1:40.80491]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2017-10-5 18:1:40.80510]	 {PRINT}	 Value changed:Node:2,cmdcls:POWERLEVEL(0x73),valueType:list,Index:0,Value:Normal unit  inst 1
+[2017-10-5 18:1:40.83656]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:1:40.91868]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:1:40.92923]	 {PRINT}	 Value changed:Node:2,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-5 18:1:40.95999]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:1:41.04106]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:1:41.23012]	 {PRINT}	 Sending Node 2 Type_NodeNaming(9) packet to haserver
+[2017-10-5 18:1:41.41907]	 {PRINT}	 Sending Node 2 Type_NodeNaming(9) packet to haserver
+[2017-10-5 18:1:41.61847]	 {PRINT}	 ......BASIC value : 0.....
+[2017-10-5 18:1:41.61869]	 {PRINT}	 Value changed:Node:2,cmdcls:BASIC(0x20),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-5 18:1:41.64998]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:1:41.74078]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:1:41.90958]	 {PRINT}	 ----------- data[1] : 0 dim value 255---------------
+[2017-10-5 18:1:41.93009]	 {PRINT}	 ......SWITCH_MULTILEVEL value : 0.....
+[2017-10-5 18:1:41.93029]	 {PRINT}	 Value changed:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-5 18:1:41.96288]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:1:42.04472]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:1:42.05532]	 {PRINT}	 Sending packet to Association App sizeof ass pack 596
+[2017-10-5 18:1:42.05557]	 {PRINT}	 Node:sending query stage complete(Node 2)
+[2017-10-5 18:1:42.17786]	 {PRINT}	 Sending Node 2 Type_EssentialNodeQueriesComplete(21) packet to haserver
+[2017-10-5 18:2:29.30098]	 {PRINT}	 Received Operation Code:Code_ControllerCommandOperation
+[2017-10-5 18:2:29.30115]	 {PRINT}	 Received ControllerCommandOperation:ControllerCommand_AddDevice
+[2017-10-5 18:2:29.31580]	 {PRINT}	 Driver:sending SoftReset to controller for ADD/REMOVE Device
+[2017-10-5 18:2:29.31597]	 {PRINT}	 Queuing (Controller) Add Device
+[2017-10-5 18:2:30.18302]	 {PRINT}	 Received Operation Code:Code_CancelCommandOperation
+[2017-10-5 18:2:30.18319]	 {PRINT}	 Cancel Add Node
+[2017-10-5 18:2:30.41852]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-5 18:2:30.58770]	 {PRINT}	 Node add done status received
+[2017-10-5 18:3:5.18514]	 {PRINT}	 Received Operation Code:Code_ControllerCommandOperation
+[2017-10-5 18:3:5.18530]	 {PRINT}	 Received ControllerCommandOperation:ControllerCommand_AddDevice
+[2017-10-5 18:3:5.19973]	 {PRINT}	 Driver:sending SoftReset to controller for ADD/REMOVE Device
+[2017-10-5 18:3:5.19989]	 {PRINT}	 Queuing (Controller) Add Device
+[2017-10-5 18:3:6.28633]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-5 18:3:23.00197]	 {ERROR}	 Security:PollThreadProcSecurity:nonce time out:10 sec
+[2017-10-5 18:3:38.00176]	 {ERROR}	 Security:PollThreadProcSecurity:nonce time out:10 sec
+[2017-10-5 18:3:43.00244]	 {ERROR}	 Security:PollThreadProcSecurity:nonce time out:10 sec
+[2017-10-5 18:3:52.00297]	 {ERROR}	 Security:PollThreadProcSecurity:nonce time out:10 sec
+[2017-10-5 18:3:57.00081]	 {ERROR}	 Security:PollThreadProcSecurity:nonce time out:10 sec
+[2017-10-5 18:4:11.00108]	 {ERROR}	 Security:PollThreadProcSecurity:nonce time out:10 sec
+[2017-10-5 18:4:17.00179]	 {ERROR}	 Security:PollThreadProcSecurity:nonce time out:10 sec
+[2017-10-5 18:4:35.19510]	 {PRINT}	 Received Operation Code:Code_CancelCommandOperation
+[2017-10-5 18:4:35.19530]	 {PRINT}	 Cancel Add Node
+[2017-10-5 18:4:35.30769]	 {PRINT}	 Node add done status received
+[2017-10-5 18:4:40.03729]	 {PRINT}	 Security:clearing security msglist of node:3
+[2017-10-5 18:4:40.07201]	 {PRINT}	 Not Sending Node 3 Type_Notification(26) notification to haserver
+[2017-10-5 18:4:40.72791]	 {PRINT}	 Not Sending Node 3 Type_Notification(26) notification to haserver
+[2017-10-5 18:5:11.33653]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:7 Event:3,Status=255
+[2017-10-5 18:5:11.35707]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-5 18:5:11.38814]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:11.50389]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:5:11.51442]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-5 18:5:11.54542]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:11.62466]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:5:11.63522]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:9,Value:768 unit  inst 1
+[2017-10-5 18:5:11.66582]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:11.74720]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:5:26.75240]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:7 Event:0,Status=255
+[2017-10-5 18:5:26.77294]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-5 18:5:26.80436]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:26.88615]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:5:26.89669]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-5 18:5:26.92865]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:27.01141]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:5:27.02194]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:9,Value:0 unit  inst 1
+[2017-10-5 18:5:27.05346]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:27.13516]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:5:29.95117]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:7 Event:3,Status=255
+[2017-10-5 18:5:29.97171]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-5 18:5:30.00276]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:30.08212]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:5:30.09265]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-5 18:5:30.12934]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:30.21342]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:5:30.22392]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:9,Value:768 unit  inst 1
+[2017-10-5 18:5:30.25456]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:30.33483]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:5:33.46425]	 {PRINT}	 Not Sending Node 3 Type_Notification(26) notification to haserver
+[2017-10-5 18:5:33.81942]	 {PRINT}	 Value changed:Node:3,cmdcls:BATTERY(0x80),valueType:byte,Index:0,Value:90 unit  inst 1
+[2017-10-5 18:5:33.85087]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:33.93283]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:5:35.71932]	 {PRINT}	 Value changed:Node:3,cmdcls:BASIC(0x20),valueType:byte,Index:0,Value:255 unit  inst 1
+[2017-10-5 18:5:35.75079]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:35.83276]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:5:35.94333]	 {PRINT}	 Sending Node 3 Type_EssentialNodeQueriesComplete(21) packet to haserver
+[2017-10-5 18:5:38.76574]	 {PRINT}	 Value changed:Node:3,cmdcls:SENSOR BINARY(0x30),valueType:bool,Index:0,Value:True unit  inst 1
+[2017-10-5 18:5:38.79657]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:38.87589]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:5:44.74639]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:254,Status=255
+[2017-10-5 18:5:44.76693]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-5 18:5:44.79806]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:44.87956]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:5:44.89008]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-5 18:5:44.92087]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:45.00053]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:5:45.01108]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:65024 unit  inst 1
+[2017-10-5 18:5:45.04204]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:45.12151]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:5:49.35214]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:23,Status=255
+[2017-10-5 18:5:49.37270]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-5 18:5:49.40363]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:49.48794]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:5:49.49848]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-5 18:5:49.52908]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:49.61038]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:5:49.62090]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5888 unit  inst 1
+[2017-10-5 18:5:49.65155]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:49.73186]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:5:51.51469]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:6 Event:22,Status=255
+[2017-10-5 18:5:51.53523]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-5 18:5:51.56650]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:51.65135]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:5:51.66186]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-5 18:5:51.69244]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:51.77524]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:5:51.78576]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:8,Value:5632 unit  inst 1
+[2017-10-5 18:5:51.81701]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:51.89765]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:5:55.81285]	 {PRINT}	 Received Alarm report: AlarmType=0,level=0, sensorSrcID=0,Z-wave alarmType:7 Event:3,Status=255
+[2017-10-5 18:5:55.83340]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-5 18:5:55.86468]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:55.97986]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:5:55.99038]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-5 18:5:56.02172]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:56.10165]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:5:56.11218]	 {PRINT}	 Value changed:Node:3,cmdcls:ALARM(0x71),valueType:int,Index:9,Value:768 unit  inst 1
+[2017-10-5 18:5:56.14312]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:5:56.22328]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:6:17.48203]	 {PRINT}	 Received Operation Code:Code_ControllerCommandOperation
+[2017-10-5 18:6:17.48220]	 {PRINT}	 Received ControllerCommandOperation:ControllerCommand_AddDevice
+[2017-10-5 18:6:17.51090]	 {PRINT}	 Driver:sending SoftReset to controller for ADD/REMOVE Device
+[2017-10-5 18:6:17.51104]	 {PRINT}	 Queuing (Controller) Add Device
+[2017-10-5 18:6:18.59121]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-5 18:6:44.30548]	 {PRINT}	 Sending packet to Association App sizeof ass pack 596
+[2017-10-5 18:6:44.30892]	 {PRINT}	 Driver:node add(3) received data: Basic:0x04,Generic:0x07,Specific:0x01: 0x5e  0x59  0x22  0x80  0x56  0x7a  0x72  0x73  0x98  0x86 
+[2017-10-5 18:6:44.46627]	 {PRINT}	 Node add done status received
+[2017-10-5 18:6:44.48673]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.49697]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.50720]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.51741]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.52763]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.53786]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.54812]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.55836]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.56860]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.57882]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.58904]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.59925]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.60948]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.61969]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.62990]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.64016]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.65041]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.66067]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.67091]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.68113]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.69135]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.70157]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.71179]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.72201]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.73223]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.74245]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.75272]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.76298]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.77323]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:6:44.79881]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:6:44.84708]	 {PRINT}	 Not Sending Node 3 Type_NodeRemoved(7) notification to haserver
+[2017-10-5 18:6:44.85749]	 {PRINT}	 Not Sending Node 3 Type_NodeAdded(6) notification to haserver
+[2017-10-5 18:6:44.94833]	 {PRINT}	 received node protocol info to new node:3 
+[2017-10-5 18:6:44.94853]	 {PRINT}	 ====>version 4
+[2017-10-5 18:6:44.96961]	 {PRINT}	 Sending Node 3 Type_NodeProtocolInfo(8) packet to haserver
+[2017-10-5 18:6:44.98023]	 {PRINT}	 Adding cmdclsInd : cmdcls:32 Index:0 k : 0 inst 1
+[2017-10-5 18:6:44.98039]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:BASIC(0x20),valueType:byte,Index:0,Value:0,genre:0
+[2017-10-5 18:6:44.98050]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:6:44.99077]	 {PRINT}	 Adding cmdclsInd : cmdcls:128 Index:0 k : 1 inst 1
+[2017-10-5 18:6:44.99091]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:BATTERY(0x80),valueType:byte,Index:0,Value:100,genre:1
+[2017-10-5 18:6:44.99102]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:6:45.00123]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2017-10-5 18:6:45.00137]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:list,Index:0,Value:Normal,genre:3
+[2017-10-5 18:6:45.00148]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:6:45.01170]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:1,Value:0,genre:3
+[2017-10-5 18:6:45.01182]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:6:45.02208]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:button,Index:2,Value:False,genre:3
+[2017-10-5 18:6:45.02220]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:6:45.03242]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:3,Value:0,genre:3
+[2017-10-5 18:6:45.03254]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:6:45.04274]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2017-10-5 18:6:45.04289]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:list,Index:4,Value:Normal,genre:3
+[2017-10-5 18:6:45.04300]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:6:45.05324]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:short,Index:5,Value:0,genre:3
+[2017-10-5 18:6:45.05344]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:6:45.06369]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:button,Index:6,Value:False,genre:3
+[2017-10-5 18:6:45.06383]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:6:45.07408]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:button,Index:7,Value:False,genre:3
+[2017-10-5 18:6:45.07421]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:6:45.08441]	 {PRINT}	 ------------------m_items_size 3-----------------
+[2017-10-5 18:6:45.08455]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:list,Index:8,Value:Failed,genre:3
+[2017-10-5 18:6:45.08466]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:6:45.09495]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:short,Index:9,Value:0,genre:3
+[2017-10-5 18:6:45.09507]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:6:45.10528]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:SECURITY(0x98),valueType:bool,Index:0,Value:False,genre:1
+[2017-10-5 18:6:45.10541]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:6:45.11562]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:VERSION(0x86),valueType:string,Index:0,Value:Unknown,genre:3
+[2017-10-5 18:6:45.11574]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:6:45.12596]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:VERSION(0x86),valueType:string,Index:1,Value:Unknown,genre:3
+[2017-10-5 18:6:45.12608]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:6:45.13629]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:VERSION(0x86),valueType:string,Index:2,Value:Unknown,genre:3
+[2017-10-5 18:6:45.13641]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:6:45.14664]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:WAKE UP(0x84),valueType:int,Index:0,Value:3600,genre:3
+[2017-10-5 18:6:45.14678]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:6:49.18228]	 {PRINT}	 Security:clearing security msglist of node:3
+[2017-10-5 18:6:49.21688]	 {PRINT}	 Not Sending Node 3 Type_Notification(26) notification to haserver
+[2017-10-5 18:6:53.20783]	 {PRINT}	 Security:clearing security msglist of node:3
+[2017-10-5 18:6:53.20804]	 {PRINT}	 Driver:Node 3 attempts:3
+[2017-10-5 18:6:53.20816]	 {PRINT}	 Security:clearing security msglist of node:3
+[2017-10-5 18:6:53.20827]	 {PRINT}	 Driver:Removing Msg from Node 3 attempts:3
+[2017-10-5 18:6:53.22858]	 {PRINT}	 Not Sending Node 3 Type_Notification(26) notification to haserver
+[2017-10-5 18:6:59.87253]	 {PRINT}	 Security:Security unknown responce received :113
+[2017-10-5 18:6:59.87274]	 {PRINT}	 security:data: 0x71  0x05  0x00  0x00  0x00  0xff  0x07 
+[2017-10-5 18:7:53.28985]	 {PRINT}	 Received Operation Code:Code_CancelCommandOperation
+[2017-10-5 18:8:1.41246]	 {PRINT}	 Received Operation Code:Code_ControllerCommandOperation
+[2017-10-5 18:8:1.41261]	 {PRINT}	 Received ControllerCommandOperation:ControllerCommand_AddDevice
+[2017-10-5 18:8:1.42714]	 {PRINT}	 Driver:sending SoftReset to controller for ADD/REMOVE Device
+[2017-10-5 18:8:1.42731]	 {PRINT}	 Queuing (Controller) Add Device
+[2017-10-5 18:8:2.52338]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-5 18:8:26.00268]	 {ERROR}	 Security:PollThreadProcSecurity:nonce time out:10 sec
+[2017-10-5 18:8:27.82230]	 {PRINT}	 Sending packet to Association App sizeof ass pack 596
+[2017-10-5 18:8:27.82894]	 {PRINT}	 Driver:node add(3) received data: Basic:0x04,Generic:0x07,Specific:0x01: 0x5e  0x59  0x22  0x80  0x56  0x7a  0x72  0x73  0x98  0x86 
+[2017-10-5 18:8:27.99421]	 {PRINT}	 Node add done status received
+[2017-10-5 18:8:28.01463]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:8:28.02490]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:8:28.03512]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:8:28.04536]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:8:28.05557]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:8:28.06580]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:8:28.07603]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:8:28.08626]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:8:28.09648]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:8:28.10670]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:8:28.11693]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:8:28.12715]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:8:28.13737]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:8:28.14758]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:8:28.15780]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:8:28.16802]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:8:28.17825]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:8:28.20364]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:8:28.25068]	 {PRINT}	 Not Sending Node 3 Type_NodeRemoved(7) notification to haserver
+[2017-10-5 18:8:28.26107]	 {PRINT}	 Not Sending Node 3 Type_NodeAdded(6) notification to haserver
+[2017-10-5 18:8:28.43397]	 {PRINT}	 received node protocol info to new node:3 
+[2017-10-5 18:8:28.43417]	 {PRINT}	 ====>version 4
+[2017-10-5 18:8:28.45519]	 {PRINT}	 Sending Node 3 Type_NodeProtocolInfo(8) packet to haserver
+[2017-10-5 18:8:28.46581]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:BASIC(0x20),valueType:byte,Index:0,Value:0,genre:0
+[2017-10-5 18:8:28.46596]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:8:28.47619]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:BATTERY(0x80),valueType:byte,Index:0,Value:100,genre:1
+[2017-10-5 18:8:28.47634]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:8:28.48656]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2017-10-5 18:8:28.48672]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:list,Index:0,Value:Normal,genre:3
+[2017-10-5 18:8:28.48684]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:8:28.49707]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:1,Value:0,genre:3
+[2017-10-5 18:8:28.49722]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:8:28.50747]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:button,Index:2,Value:False,genre:3
+[2017-10-5 18:8:28.50760]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:8:28.51782]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:3,Value:0,genre:3
+[2017-10-5 18:8:28.51795]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:8:28.52815]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2017-10-5 18:8:28.52828]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:list,Index:4,Value:Normal,genre:3
+[2017-10-5 18:8:28.52839]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:8:28.53861]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:short,Index:5,Value:0,genre:3
+[2017-10-5 18:8:28.53879]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:8:28.54902]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:button,Index:6,Value:False,genre:3
+[2017-10-5 18:8:28.54917]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:8:28.55939]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:button,Index:7,Value:False,genre:3
+[2017-10-5 18:8:28.55952]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:8:28.56971]	 {PRINT}	 ------------------m_items_size 3-----------------
+[2017-10-5 18:8:28.56985]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:list,Index:8,Value:Failed,genre:3
+[2017-10-5 18:8:28.56996]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:8:28.58019]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:short,Index:9,Value:0,genre:3
+[2017-10-5 18:8:28.58033]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:8:28.59056]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:SECURITY(0x98),valueType:bool,Index:0,Value:False,genre:1
+[2017-10-5 18:8:28.59070]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:8:28.60103]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:VERSION(0x86),valueType:string,Index:0,Value:Unknown,genre:3
+[2017-10-5 18:8:28.60116]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:8:28.61139]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:VERSION(0x86),valueType:string,Index:1,Value:Unknown,genre:3
+[2017-10-5 18:8:28.61151]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:8:28.62174]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:VERSION(0x86),valueType:string,Index:2,Value:Unknown,genre:3
+[2017-10-5 18:8:28.62193]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:8:28.63217]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:WAKE UP(0x84),valueType:int,Index:0,Value:3600,genre:3
+[2017-10-5 18:8:28.63231]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:8:32.66711]	 {PRINT}	 Security:clearing security msglist of node:3
+[2017-10-5 18:8:32.70194]	 {PRINT}	 Not Sending Node 3 Type_Notification(26) notification to haserver
+[2017-10-5 18:8:36.69256]	 {PRINT}	 Security:clearing security msglist of node:3
+[2017-10-5 18:8:36.69278]	 {PRINT}	 Driver:Node 3 attempts:3
+[2017-10-5 18:8:36.69290]	 {PRINT}	 Security:clearing security msglist of node:3
+[2017-10-5 18:8:36.69301]	 {PRINT}	 Driver:Removing Msg from Node 3 attempts:3
+[2017-10-5 18:8:36.71332]	 {PRINT}	 Not Sending Node 3 Type_Notification(26) notification to haserver
+[2017-10-5 18:8:45.38218]	 {PRINT}	 Security:Security unknown responce received :113
+[2017-10-5 18:8:45.38239]	 {PRINT}	 security:data: 0x71  0x05  0x00  0x00  0x00  0xff  0x07 
+[2017-10-5 18:10:43.59334]	 {PRINT}	 Security:Security unknown responce received :113
+[2017-10-5 18:10:43.59355]	 {PRINT}	 security:data: 0x71  0x05  0x00  0x00  0x00  0xff  0x06 
+[2017-10-5 18:11:57.34038]	 {PRINT}	 Received Operation Code:Code_CancelCommandOperation
+[2017-10-5 18:12:48.82510]	 {PRINT}	 Received Operation Code:Code_ControllerCommandOperation
+[2017-10-5 18:12:48.82526]	 {PRINT}	 Received ControllerCommandOperation:ControllerCommand_AddDevice
+[2017-10-5 18:12:48.83980]	 {PRINT}	 Driver:sending SoftReset to controller for ADD/REMOVE Device
+[2017-10-5 18:12:48.83996]	 {PRINT}	 Queuing (Controller) Add Device
+[2017-10-5 18:12:49.93936]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-5 18:14:18.83885]	 {PRINT}	 Received Operation Code:Code_CancelCommandOperation
+[2017-10-5 18:14:18.83905]	 {PRINT}	 Cancel Add Node
+[2017-10-5 18:14:18.95356]	 {PRINT}	 Node add done status received
+[2017-10-5 18:14:27.15372]	 {PRINT}	 Received Operation Code:Code_ControllerCommandOperation
+[2017-10-5 18:14:27.15388]	 {PRINT}	 Received ControllerCommandOperation:ControllerCommand_AddDevice
+[2017-10-5 18:14:27.16848]	 {PRINT}	 Driver:sending SoftReset to controller for ADD/REMOVE Device
+[2017-10-5 18:14:27.16866]	 {PRINT}	 Queuing (Controller) Add Device
+[2017-10-5 18:14:28.26419]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-5 18:15:57.13689]	 {PRINT}	 Received Operation Code:Code_CancelCommandOperation
+[2017-10-5 18:15:57.13709]	 {PRINT}	 Cancel Add Node
+[2017-10-5 18:15:57.26966]	 {PRINT}	 Node add done status received
+[2017-10-5 18:17:35.59297]	 {PRINT}	 Received Operation Code:Code_ControllerCommandOperation
+[2017-10-5 18:17:35.59313]	 {PRINT}	 Received ControllerCommandOperation:ControllerCommand_AddDevice
+[2017-10-5 18:17:35.60788]	 {PRINT}	 Driver:sending SoftReset to controller for ADD/REMOVE Device
+[2017-10-5 18:17:35.60806]	 {PRINT}	 Queuing (Controller) Add Device
+[2017-10-5 18:17:36.69864]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-5 18:19:3.58963]	 {PRINT}	 Received Operation Code:Code_CancelCommandOperation
+[2017-10-5 18:19:3.58980]	 {PRINT}	 Cancel Add Node
+[2017-10-5 18:19:3.72069]	 {PRINT}	 Node add done status received
+[2017-10-5 18:19:4.33795]	 {PRINT}	 Received Operation Code:Code_ControllerCommandOperation
+[2017-10-5 18:19:4.33810]	 {PRINT}	 Received ControllerCommandOperation:ControllerCommand_AddDevice
+[2017-10-5 18:19:4.35250]	 {PRINT}	 Driver:sending SoftReset to controller for ADD/REMOVE Device
+[2017-10-5 18:19:4.35265]	 {PRINT}	 Queuing (Controller) Add Device
+[2017-10-5 18:19:5.44552]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-5 18:19:56.84469]	 {PRINT}	 Received Operation Code:Code_CancelCommandOperation
+[2017-10-5 18:19:56.84485]	 {PRINT}	 Cancel Add Node
+[2017-10-5 18:19:56.97001]	 {PRINT}	 Node add done status received
+[2017-10-5 18:21:4.56324]	 {PRINT}	 Received Operation Code:Code_ControllerCommandOperation
+[2017-10-5 18:21:4.56341]	 {PRINT}	 Received ControllerCommandOperation:ControllerCommand_AddDevice
+[2017-10-5 18:21:4.57799]	 {PRINT}	 Driver:sending SoftReset to controller for ADD/REMOVE Device
+[2017-10-5 18:21:4.57817]	 {PRINT}	 Queuing (Controller) Add Device
+[2017-10-5 18:21:5.67557]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-5 18:21:17.34523]	 {PRINT}	 Received Operation Code:Code_CancelCommandOperation
+[2017-10-5 18:21:17.34545]	 {PRINT}	 Cancel Add Node
+[2017-10-5 18:21:17.46982]	 {PRINT}	 Node add done status received
+[2017-10-5 18:25:41.87712]	 {PRINT}	 Received Operation Code:Code_ControllerCommandOperation
+[2017-10-5 18:25:41.87729]	 {PRINT}	 Received ControllerCommandOperation:ControllerCommand_AddDevice
+[2017-10-5 18:25:41.90173]	 {PRINT}	 Driver:sending SoftReset to controller for ADD/REMOVE Device
+[2017-10-5 18:25:41.90189]	 {PRINT}	 Queuing (Controller) Add Device
+[2017-10-5 18:25:42.98473]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-5 18:26:1.06915]	 {PRINT}	 Sending packet to Association App sizeof ass pack 596
+[2017-10-5 18:26:1.07321]	 {PRINT}	 Driver:node add(3) received data: Basic:0x04,Generic:0x07,Specific:0x01: 0x5e  0x59  0x22  0x80  0x56  0x7a  0x72  0x73  0x98  0x86 
+[2017-10-5 18:26:1.22833]	 {PRINT}	 Node add done status received
+[2017-10-5 18:26:1.24876]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:26:1.25900]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:26:1.26921]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:26:1.27945]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:26:1.28970]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:26:1.29993]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:26:1.31014]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:26:1.32036]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:26:1.33058]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:26:1.34083]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:26:1.35105]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:26:1.36126]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:26:1.37147]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:26:1.38170]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:26:1.39194]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:26:1.40216]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:26:1.41237]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:26:1.43793]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:26:1.48554]	 {PRINT}	 Not Sending Node 3 Type_NodeRemoved(7) notification to haserver
+[2017-10-5 18:26:1.49593]	 {PRINT}	 Not Sending Node 3 Type_NodeAdded(6) notification to haserver
+[2017-10-5 18:26:1.66594]	 {PRINT}	 received node protocol info to new node:3 
+[2017-10-5 18:26:1.66615]	 {PRINT}	 ====>version 4
+[2017-10-5 18:26:1.68723]	 {PRINT}	 Sending Node 3 Type_NodeProtocolInfo(8) packet to haserver
+[2017-10-5 18:26:1.69798]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:BASIC(0x20),valueType:byte,Index:0,Value:0,genre:0
+[2017-10-5 18:26:1.69820]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:26:1.70845]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:BATTERY(0x80),valueType:byte,Index:0,Value:100,genre:1
+[2017-10-5 18:26:1.70858]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:26:1.71879]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2017-10-5 18:26:1.71894]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:list,Index:0,Value:Normal,genre:3
+[2017-10-5 18:26:1.71905]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:26:1.72928]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:1,Value:0,genre:3
+[2017-10-5 18:26:1.72948]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:26:1.73972]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:button,Index:2,Value:False,genre:3
+[2017-10-5 18:26:1.73986]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:26:1.75009]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:3,Value:0,genre:3
+[2017-10-5 18:26:1.75022]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:26:1.76042]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2017-10-5 18:26:1.76057]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:list,Index:4,Value:Normal,genre:3
+[2017-10-5 18:26:1.76068]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:26:1.77096]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:short,Index:5,Value:0,genre:3
+[2017-10-5 18:26:1.77109]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:26:1.78131]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:button,Index:6,Value:False,genre:3
+[2017-10-5 18:26:1.78143]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:26:1.79167]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:button,Index:7,Value:False,genre:3
+[2017-10-5 18:26:1.79183]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:26:1.80204]	 {PRINT}	 ------------------m_items_size 3-----------------
+[2017-10-5 18:26:1.80220]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:list,Index:8,Value:Failed,genre:3
+[2017-10-5 18:26:1.80233]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:26:1.81257]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:short,Index:9,Value:0,genre:3
+[2017-10-5 18:26:1.81270]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:26:1.82292]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:SECURITY(0x98),valueType:bool,Index:0,Value:False,genre:1
+[2017-10-5 18:26:1.82306]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:26:1.83329]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:VERSION(0x86),valueType:string,Index:0,Value:Unknown,genre:3
+[2017-10-5 18:26:1.83341]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:26:1.84362]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:VERSION(0x86),valueType:string,Index:1,Value:Unknown,genre:3
+[2017-10-5 18:26:1.84375]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:26:1.85396]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:VERSION(0x86),valueType:string,Index:2,Value:Unknown,genre:3
+[2017-10-5 18:26:1.85411]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:26:1.86435]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:WAKE UP(0x84),valueType:int,Index:0,Value:3600,genre:3
+[2017-10-5 18:26:1.86447]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:26:5.90005]	 {PRINT}	 Security:clearing security msglist of node:3
+[2017-10-5 18:26:5.93487]	 {PRINT}	 Not Sending Node 3 Type_Notification(26) notification to haserver
+[2017-10-5 18:26:9.92399]	 {PRINT}	 Security:clearing security msglist of node:3
+[2017-10-5 18:26:9.92421]	 {PRINT}	 Driver:Node 3 attempts:3
+[2017-10-5 18:26:9.92434]	 {PRINT}	 Security:clearing security msglist of node:3
+[2017-10-5 18:26:9.92445]	 {PRINT}	 Driver:Removing Msg from Node 3 attempts:3
+[2017-10-5 18:26:9.94477]	 {PRINT}	 Not Sending Node 3 Type_Notification(26) notification to haserver
+[2017-10-5 18:29:39.32354]	 {PRINT}	 =======>ManufacturerName FIBARO System ProducrName Unknown: type=0701, id=2001<========
+[2017-10-5 18:29:39.34555]	 {PRINT}	 Sending Node 3 Type_NodeNaming(9) packet to haserver
+[2017-10-5 18:29:39.54530]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:WAKE UP(0x84),valueType:int,Index:1,Value:0,genre:3
+[2017-10-5 18:29:39.54550]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:29:39.55574]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:WAKE UP(0x84),valueType:int,Index:2,Value:0,genre:3
+[2017-10-5 18:29:39.55587]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:29:39.56610]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:WAKE UP(0x84),valueType:int,Index:3,Value:0,genre:3
+[2017-10-5 18:29:39.56628]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:29:39.57651]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:WAKE UP(0x84),valueType:int,Index:4,Value:0,genre:3
+[2017-10-5 18:29:39.57664]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:29:39.63319]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:29:39.70547]	 {PRINT}	 Sending Node 3 Type_EssentialNodeQueriesComplete(21) packet to haserver
+[2017-10-5 18:29:43.77626]	 {PRINT}	 Not Sending Node 3 Type_Notification(26) notification to haserver
+[2017-10-5 18:29:47.76648]	 {PRINT}	 Driver:Removing Msg from Node 3 attempts:3
+[2017-10-5 18:29:47.78689]	 {PRINT}	 Not Sending Node 3 Type_Notification(26) notification to haserver
+[2017-10-5 18:29:47.97602]	 {PRINT}	 Value changed:Node:3,cmdcls:VERSION(0x86),valueType:string,Index:0,Value:3 unit  inst 1
+[2017-10-5 18:29:48.00230]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:29:48.07433]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:29:48.08485]	 {PRINT}	 Value changed:Node:3,cmdcls:VERSION(0x86),valueType:string,Index:1,Value:4.05 unit  inst 1
+[2017-10-5 18:29:48.11129]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:29:48.18316]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:29:48.19369]	 {PRINT}	 Value changed:Node:3,cmdcls:VERSION(0x86),valueType:string,Index:2,Value:3.02 unit  inst 1
+[2017-10-5 18:29:48.21916]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:29:48.28909]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:29:48.57788]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2017-10-5 18:29:48.57811]	 {PRINT}	 Value changed:Node:3,cmdcls:POWERLEVEL(0x73),valueType:list,Index:0,Value:Normal unit  inst 1
+[2017-10-5 18:29:48.60559]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:29:48.67793]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:29:48.68838]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2017-10-5 18:29:48.68856]	 {PRINT}	 Value changed:Node:3,cmdcls:POWERLEVEL(0x73),valueType:list,Index:0,Value:Normal unit  inst 1
+[2017-10-5 18:29:48.71459]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:29:48.78706]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:29:48.79758]	 {PRINT}	 Value changed:Node:3,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:1,Value:0 unit  inst 1
+[2017-10-5 18:29:48.82370]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:29:48.89342]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:29:52.96282]	 {PRINT}	 Not Sending Node 3 Type_Notification(26) notification to haserver
+[2017-10-5 18:29:56.95254]	 {PRINT}	 Driver:Removing Msg from Node 3 attempts:3
+[2017-10-5 18:29:56.97295]	 {PRINT}	 Not Sending Node 3 Type_Notification(26) notification to haserver
+[2017-10-5 18:30:1.05280]	 {PRINT}	 Not Sending Node 3 Type_Notification(26) notification to haserver
+[2017-10-5 18:30:4.19315]	 {PRINT}	 Received Operation Code:Code_CancelCommandOperation
+[2017-10-5 18:30:5.04296]	 {PRINT}	 Driver:Removing Msg from Node 3 attempts:3
+[2017-10-5 18:30:5.06346]	 {PRINT}	 Not Sending Node 3 Type_Notification(26) notification to haserver
+[2017-10-5 18:30:6.72795]	 {PRINT}	 Not Sending Node 3 Type_Notification(26) notification to haserver
+[2017-10-5 18:30:25.81179]	 {PRINT}	 Received Operation Code:Code_ControllerCommandOperation
+[2017-10-5 18:30:25.81200]	 {PRINT}	 Received ControllerCommandOperation:ControllerCommand_RemoveDevice
+[2017-10-5 18:30:25.83665]	 {PRINT}	 Driver:sending SoftReset to controller for ADD/REMOVE Device
+[2017-10-5 18:30:25.83683]	 {PRINT}	 Queuing (Controller) Remove Device
+[2017-10-5 18:30:26.91875]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-5 18:30:26.93560]	 {PRINT}	 Received Operation Code:Code_CancelCommandOperation
+[2017-10-5 18:30:26.93576]	 {PRINT}	 Cancel Remove Device
+[2017-10-5 18:30:27.91696]	 {PRINT}	 Received Operation Code:Code_ControllerCommandOperation
+[2017-10-5 18:30:27.91712]	 {PRINT}	 Received ControllerCommandOperation:ControllerCommand_AddDevice
+[2017-10-5 18:30:27.93181]	 {PRINT}	 Driver:sending SoftReset to controller for ADD/REMOVE Device
+[2017-10-5 18:30:27.93197]	 {PRINT}	 Queuing (Controller) Add Device
+[2017-10-5 18:30:29.01564]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-5 18:31:11.00299]	 {ERROR}	 Security:PollThreadProcSecurity:nonce time out:10 sec
+[2017-10-5 18:31:46.00167]	 {ERROR}	 Security:PollThreadProcSecurity:nonce time out:10 sec
+[2017-10-5 18:31:50.00174]	 {ERROR}	 Security:PollThreadProcSecurity:nonce time out:10 sec
+[2017-10-5 18:31:57.93309]	 {PRINT}	 Received Operation Code:Code_CancelCommandOperation
+[2017-10-5 18:31:57.93328]	 {PRINT}	 Cancel Add Node
+[2017-10-5 18:31:58.05809]	 {PRINT}	 Node add done status received
+[2017-10-5 18:32:2.20678]	 {PRINT}	 Security:clearing security msglist of node:3
+[2017-10-5 18:32:2.25141]	 {PRINT}	 Not Sending Node 3 Type_Notification(26) notification to haserver
+[2017-10-5 18:32:20.11014]	 {PRINT}	 Received Operation Code:Code_ControllerCommandOperation
+[2017-10-5 18:32:20.11033]	 {PRINT}	 Received ControllerCommandOperation:ControllerCommand_AddDevice
+[2017-10-5 18:32:20.12481]	 {PRINT}	 Driver:sending SoftReset to controller for ADD/REMOVE Device
+[2017-10-5 18:32:20.12498]	 {PRINT}	 Queuing (Controller) Add Device
+[2017-10-5 18:32:21.21677]	 {PRINT}	 Not Sending Node 255 Type_Notification(26) notification to haserver
+[2017-10-5 18:32:37.31491]	 {PRINT}	 ......BATTERY value : 100.....
+[2017-10-5 18:32:37.31512]	 {PRINT}	 Value changed:Node:3,cmdcls:BATTERY(0x80),valueType:byte,Index:0,Value:100 unit  inst 1
+[2017-10-5 18:32:37.34126]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:32:37.41071]	 {PRINT}	 Sending Node 3 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:32:44.00011]	 {ERROR}	 Security:PollThreadProcSecurity:nonce time out:10 sec
+[2017-10-5 18:33:10.25241]	 {PRINT}	 Sending packet to Association App sizeof ass pack 596
+[2017-10-5 18:33:10.25275]	 {PRINT}	 Driver:node add(3) received data: Basic:0x04,Generic:0x07,Specific:0x01: 0x5e  0x59  0x22  0x80  0x56  0x7a  0x72  0x73  0x98  0x86 
+[2017-10-5 18:33:10.41040]	 {PRINT}	 Node add done status received
+[2017-10-5 18:33:10.43085]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:33:10.44110]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:33:10.45133]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:33:10.46163]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:33:10.47197]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:33:10.48225]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:33:10.49248]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:33:10.50273]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:33:10.51294]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:33:10.52317]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:33:10.53341]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:33:10.54362]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:33:10.55384]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:33:10.56407]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:33:10.57432]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:33:10.58455]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:33:10.59478]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:33:10.60499]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:33:10.61521]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:33:10.62542]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:33:10.63563]	 {PRINT}	 Not Sending Node 3 Type_ValueRemoved(1) notification to haserver
+[2017-10-5 18:33:10.66129]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:33:10.70942]	 {PRINT}	 Not Sending Node 3 Type_NodeRemoved(7) notification to haserver
+[2017-10-5 18:33:10.71981]	 {PRINT}	 Not Sending Node 3 Type_NodeAdded(6) notification to haserver
+[2017-10-5 18:33:10.88935]	 {PRINT}	 received node protocol info to new node:3 
+[2017-10-5 18:33:10.88957]	 {PRINT}	 ====>version 4
+[2017-10-5 18:33:10.91059]	 {PRINT}	 Sending Node 3 Type_NodeProtocolInfo(8) packet to haserver
+[2017-10-5 18:33:10.92122]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:BASIC(0x20),valueType:byte,Index:0,Value:0,genre:0
+[2017-10-5 18:33:10.92136]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:33:10.93161]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:BATTERY(0x80),valueType:byte,Index:0,Value:100,genre:1
+[2017-10-5 18:33:10.93175]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:33:10.94196]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2017-10-5 18:33:10.94211]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:list,Index:0,Value:Normal,genre:3
+[2017-10-5 18:33:10.94223]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:33:10.95245]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:1,Value:0,genre:3
+[2017-10-5 18:33:10.95258]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:33:10.96282]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:button,Index:2,Value:False,genre:3
+[2017-10-5 18:33:10.96294]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:33:10.97319]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:byte,Index:3,Value:0,genre:3
+[2017-10-5 18:33:10.97333]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:33:10.98354]	 {PRINT}	 ------------------m_items_size 10-----------------
+[2017-10-5 18:33:10.98369]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:list,Index:4,Value:Normal,genre:3
+[2017-10-5 18:33:10.98380]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:33:10.99402]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:short,Index:5,Value:0,genre:3
+[2017-10-5 18:33:10.99415]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:33:11.00438]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:button,Index:6,Value:False,genre:3
+[2017-10-5 18:33:11.00451]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:33:11.01472]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:button,Index:7,Value:False,genre:3
+[2017-10-5 18:33:11.01485]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:33:11.02504]	 {PRINT}	 ------------------m_items_size 3-----------------
+[2017-10-5 18:33:11.02518]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:list,Index:8,Value:Failed,genre:3
+[2017-10-5 18:33:11.02529]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:33:11.03551]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:POWERLEVEL(0x73),valueType:short,Index:9,Value:0,genre:3
+[2017-10-5 18:33:11.03564]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:33:11.04586]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:SECURITY(0x98),valueType:bool,Index:0,Value:False,genre:1
+[2017-10-5 18:33:11.04599]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:33:11.05621]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:VERSION(0x86),valueType:string,Index:0,Value:Unknown,genre:3
+[2017-10-5 18:33:11.05633]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:33:11.06655]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:VERSION(0x86),valueType:string,Index:1,Value:Unknown,genre:3
+[2017-10-5 18:33:11.06667]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:33:11.07689]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:VERSION(0x86),valueType:string,Index:2,Value:Unknown,genre:3
+[2017-10-5 18:33:11.07704]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:33:11.08728]	 {PRINT}	 Value Added:Home :0xfe1b018e,,Node:3,cmdcls:WAKE UP(0x84),valueType:int,Index:0,Value:3600,genre:3
+[2017-10-5 18:33:11.08741]	 {PRINT}	 Not Sending Node 3 Type_ValueAdded(0) notification to haserver
+[2017-10-5 18:33:15.12218]	 {PRINT}	 Security:clearing security msglist of node:3
+[2017-10-5 18:33:15.15682]	 {PRINT}	 Not Sending Node 3 Type_Notification(26) notification to haserver
+[2017-10-5 18:33:19.14758]	 {PRINT}	 Security:clearing security msglist of node:3
+[2017-10-5 18:33:19.14780]	 {PRINT}	 Driver:Node 3 attempts:3
+[2017-10-5 18:33:19.14792]	 {PRINT}	 Security:clearing security msglist of node:3
+[2017-10-5 18:33:19.14802]	 {PRINT}	 Driver:Removing Msg from Node 3 attempts:3
+[2017-10-5 18:33:19.16834]	 {PRINT}	 Not Sending Node 3 Type_Notification(26) notification to haserver
+[2017-10-5 18:37:13.31774]	 {PRINT}	 Received Operation Code:Code_CancelCommandOperation
+[2017-10-5 18:41:6.60719]	 {PRINT}	 Received Operation Code:Code_SetValueOperation
+[2017-10-5 18:41:6.60741]	 {PRINT}	 home id :0xfe1b018e cmd cls:0x26,genre:1,index:0,instance:1,type:1
+[2017-10-5 18:41:6.60754]	 {PRINT}	 Setting value:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:100
+[2017-10-5 18:41:6.89926]	 {PRINT}	 ----------- data[1] : 99 dim value 100---------------
+[2017-10-5 18:41:6.91974]	 {PRINT}	 Value changed:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:100 unit  inst 1
+[2017-10-5 18:41:6.94351]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 18:41:7.04252]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-5 18:55:33.55698]	 {PRINT}	 Security:Security unknown responce received :113
+[2017-10-5 18:55:33.55719]	 {PRINT}	 security:data: 0x71  0x05  0x00  0x00  0x00  0xff  0x06 
+[2017-10-5 19:14:56.08336]	 {PRINT}	 Security:Security unknown responce received :113
+[2017-10-5 19:14:56.08357]	 {PRINT}	 security:data: 0x71  0x05  0x00  0x00  0x00  0xff  0x06 
+[2017-10-5 20:34:23.47510]	 {PRINT}	 Security:Security unknown responce received :113
+[2017-10-5 20:34:23.47531]	 {PRINT}	 security:data: 0x71  0x05  0x00  0x00  0x00  0xff  0x06 
+[2017-10-5 20:59:42.02612]	 {PRINT}	 Received Operation Code:Code_SetValueOperation
+[2017-10-5 20:59:42.02628]	 {PRINT}	 home id :0xfe1b018e cmd cls:0x26,genre:1,index:0,instance:1,type:1
+[2017-10-5 20:59:42.02641]	 {PRINT}	 Setting value:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:0
+[2017-10-5 20:59:42.35431]	 {PRINT}	 ----------- data[1] : 95 dim value 0---------------
+[2017-10-5 20:59:42.37483]	 {PRINT}	 Value changed:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:0 unit  inst 1
+[2017-10-5 20:59:42.39922]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 20:59:42.46560]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver
+[2017-10-5 21:0:4.90705]	 {PRINT}	 Received Operation Code:Code_SetValueOperation
+[2017-10-5 21:0:4.90720]	 {PRINT}	 home id :0xfe1b018e cmd cls:0x26,genre:1,index:0,instance:1,type:1
+[2017-10-5 21:0:4.90745]	 {PRINT}	 Setting value:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:100
+[2017-10-5 21:0:5.20022]	 {PRINT}	 ----------- data[1] : 99 dim value 100---------------
+[2017-10-5 21:0:5.22069]	 {PRINT}	 Value changed:Node:2,cmdcls:SWITCH MULTILEVEL(0x26),valueType:byte,Index:0,Value:100 unit  inst 1
+[2017-10-5 21:0:5.24501]	 {PRINT}	 persisting zwcfg_home.xml file
+[2017-10-5 21:0:5.31087]	 {PRINT}	 Sending Node 2 Type_ValueChanged(2) packet to haserver

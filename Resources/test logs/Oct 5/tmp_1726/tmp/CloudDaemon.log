@@ -1,0 +1,47 @@
+running ntpclient
+running ntpclient
+running ntpclient
+[2015-7-31 21:1:34.74494]	 {PRINT}	 Almond+ Daemon started.
+[2015-7-31 21:1:34.77984]	 {INFO}	 Current state : AFFILIATION_PENDING
+[2015-7-31 21:1:34.78008]	 {WARN}	 This Almond+ has not been affiliated yet. No cloud connection will be established until the Affiliation App is invoked.
+running ntpclient
+[2015-7-31 21:1:37.41354]	 {INFO}	 Inside INFOREQUEST
+running ntpclient
+running ntpclient
+running ntpclient
+[2017-10-5 17:20:5.47744]	 {PRINT}	 --------------------Data sending to cloud commandType=1500----------
+[2017-10-5 17:20:5.47763]	 {PRINT}	 {"CommandType":"DynamicClientJoined","Action":"update","Clients":{"14":{"Name":"98:de:d0:81:eb:0b","Connection":"wired","MAC":"98:de:d0:81:eb:0b","Type":"pc","LastKnownIP":"192.168.86.1","Active":"true","UseAsPresence":"true","LastActiveEpoch":"1505156732","Wait":"6","Block":"0","Schedule":"0,0,0,0,0,0,0","Manufacturer":"NaN","RSSI":"0","ForceInActive":"0","CanBlock":"false","Category":"Others"}},"HashNow":"58d9f2ad80eaba9a7c350bdce8fb0e4d"}
+[2017-10-5 17:20:5.47780]	 {PRINT}	 Almond not Affiliated and not connected. No need to store logs. Dropping packet...
+running ntpclient
+running ntpclient
+[2017-10-5 17:20:17.98061]	 {PRINT}	 --------------------Data sending to cloud commandType=1200----------
+[2017-10-5 17:20:17.98074]	 {PRINT}	 {"CommandType":"DynamicIndexUpdated","Action":"UpdateIndex","HashNow":"99ec4a3a6e4dc60daf96626618a5c4e8","Devices":{"6":{"DeviceValues":{"1":{"Name":"MOTION_STATE","Value":"true"}}}}}
+[2017-10-5 17:20:17.98086]	 {PRINT}	 Almond not Affiliated and not connected. No need to store logs. Dropping packet...
+running ntpclient
+[2017-10-5 17:20:21.38189]	 {PRINT}	 --------------------Data sending to cloud commandType=1200----------
+[2017-10-5 17:20:21.38204]	 {PRINT}	 {"CommandType":"DynamicIndexUpdated","Action":"UpdateIndex","HashNow":"c22551b9c80148d0667e8a274844740e","Devices":{"6":{"DeviceValues":{"1":{"Name":"MOTION_STATE","Value":"false"}}}}}
+[2017-10-5 17:20:21.38216]	 {PRINT}	 Almond not Affiliated and not connected. No need to store logs. Dropping packet...
+[2017-10-5 17:20:57.49009]	 {PRINT}	 --------------------Data sending to cloud commandType=1500----------
+[2017-10-5 17:20:57.49025]	 {PRINT}	 {"CommandType":"DynamicClientJoined","Action":"update","Clients":{"11":{"Name":"7c:dd:90:9d:d2:70","Connection":"wireless","MAC":"7c:dd:90:9d:d2:70","Type":"laptop","LastKnownIP":"192.168.86.42","Active":"true","UseAsPresence":"true","LastActiveEpoch":"1507156536","Wait":"6","Block":"0","Schedule":"0,0,0,0,0,0,0","Manufacturer":"NaN","RSSI":"-52","ForceInActive":"0","CanBlock":"true","Category":"Others"}},"HashNow":"2111c79328d2a37ce9be4d3e62bb7db1"}
+[2017-10-5 17:20:57.49037]	 {PRINT}	 Almond not Affiliated and not connected. No need to store logs. Dropping packet...
+[2017-10-5 17:20:57.69205]	 {PRINT}	 --------------------Data sending to cloud commandType=1200----------
+[2017-10-5 17:20:57.69220]	 {PRINT}	 {"CommandType":"DynamicIndexUpdated","Action":"UpdateIndex","HashNow":"99ec4a3a6e4dc60daf96626618a5c4e8","Devices":{"6":{"DeviceValues":{"1":{"Name":"MOTION_STATE","Value":"true"}}}}}
+[2017-10-5 17:20:57.69231]	 {PRINT}	 Almond not Affiliated and not connected. No need to store logs. Dropping packet...
+[2017-10-5 17:21:10.71155]	 {PRINT}	 --------------------Data sending to cloud commandType=1200----------
+[2017-10-5 17:21:10.71168]	 {PRINT}	 {"CommandType":"DynamicIndexUpdated","Action":"UpdateIndex","HashNow":"c22551b9c80148d0667e8a274844740e","Devices":{"6":{"DeviceValues":{"1":{"Name":"MOTION_STATE","Value":"false"}}}}}
+[2017-10-5 17:21:10.71206]	 {PRINT}	 Almond not Affiliated and not connected. No need to store logs. Dropping packet...
+[2017-10-5 17:21:14.36155]	 {PRINT}	 --------------------Data sending to cloud commandType=1200----------
+[2017-10-5 17:21:14.36168]	 {PRINT}	 {"CommandType":"DynamicIndexUpdated","Action":"UpdateIndex","HashNow":"99ec4a3a6e4dc60daf96626618a5c4e8","Devices":{"6":{"DeviceValues":{"1":{"Name":"MOTION_STATE","Value":"true"}}}}}
+[2017-10-5 17:21:14.36206]	 {PRINT}	 Almond not Affiliated and not connected. No need to store logs. Dropping packet...
+[2017-10-5 17:21:30.37190]	 {PRINT}	 --------------------Data sending to cloud commandType=1200----------
+[2017-10-5 17:21:30.37203]	 {PRINT}	 {"CommandType":"DynamicIndexUpdated","Action":"UpdateIndex","HashNow":"c22551b9c80148d0667e8a274844740e","Devices":{"6":{"DeviceValues":{"1":{"Name":"MOTION_STATE","Value":"false"}}}}}
+[2017-10-5 17:21:30.37218]	 {PRINT}	 Almond not Affiliated and not connected. No need to store logs. Dropping packet...
+[2017-10-5 17:23:6.85101]	 {PRINT}	 --------------------Data sending to cloud commandType=1200----------
+[2017-10-5 17:23:6.85118]	 {PRINT}	 {"CommandType":"DynamicIndexUpdated","Action":"UpdateIndex","HashNow":"99ec4a3a6e4dc60daf96626618a5c4e8","Devices":{"6":{"DeviceValues":{"1":{"Name":"MOTION_STATE","Value":"true"}}}}}
+[2017-10-5 17:23:6.85133]	 {PRINT}	 Almond not Affiliated and not connected. No need to store logs. Dropping packet...
+[2017-10-5 17:23:21.94077]	 {PRINT}	 --------------------Data sending to cloud commandType=1200----------
+[2017-10-5 17:23:21.94094]	 {PRINT}	 {"CommandType":"DynamicIndexUpdated","Action":"UpdateIndex","HashNow":"c22551b9c80148d0667e8a274844740e","Devices":{"6":{"DeviceValues":{"1":{"Name":"MOTION_STATE","Value":"false"}}}}}
+[2017-10-5 17:23:21.94108]	 {PRINT}	 Almond not Affiliated and not connected. No need to store logs. Dropping packet...
+[2017-10-5 17:23:31.40113]	 {PRINT}	 --------------------Data sending to cloud commandType=1200----------
+[2017-10-5 17:23:31.40129]	 {PRINT}	 {"CommandType":"DynamicIndexUpdated","Action":"UpdateIndex","HashNow":"99ec4a3a6e4dc60daf96626618a5c4e8","Devices":{"6":{"DeviceValues":{"1":{"Name":"MOTION_STATE","Value":"true"}}}}}
+[2017-10-5 17:23:31.40144]	 {PRINT}	 Almond not Affiliated and not connected. No need to store logs. Dropping packet...

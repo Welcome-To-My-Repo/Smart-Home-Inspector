@@ -1,0 +1,14 @@
+[2015-7-31 21:1:32.570843966]	 {INFO}	 <======================== zigbee_server started ====================>
+[2015-7-31 21:1:32.571912066]	 {INFO}	 Installed signal handler for Terminated (15).
+[2015-7-31 21:1:32.572189819]	 {INFO}	 Installed signal handler for Interrupt (2).
+[2015-7-31 21:1:32.572316353]	 {INFO}	 Installed signal handler for Broken pipe (13).
+[2015-7-31 21:1:32.572425393]	 {INFO}	 Installed signal handler for Segmentation fault (11).
+[2015-7-31 21:1:32.572530773]	 {INFO}	 Installed signal handler for Stack fault (16).
+[2015-7-31 21:1:32.576068700]	 {INFO}	 Installed signal handler for Terminated (15).
+[2015-7-31 21:1:32.576380740]	 {INFO}	 Installed signal handler for Interrupt (2).
+[2015-7-31 21:1:32.576597060]	 {INFO}	 Installed signal handler for Broken pipe (13).
+[2015-7-31 21:1:32.576707280]	 {INFO}	 Installed signal handler for Segmentation fault (11).
+[2015-7-31 21:1:32.576812433]	 {INFO}	 Installed signal handler for Stack fault (16).
+[2015-7-31 21:1:32.994730766]	 {PRINT}	 =========== Channel 25 ================
+[2015-7-31 21:1:32.994936652]	 {PRINT}	 =========== PAN ID: 0x615F================
+[2015-7-31 21:1:32.995144079]	 {PRINT}	 Extended panid: 79:4f:f1:7e:ce:7b:64:87

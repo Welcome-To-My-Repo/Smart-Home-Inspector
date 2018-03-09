@@ -1,0 +1,11 @@
+firewall.core=firewall_state
+firewall.core.lan_ipv4=1
+firewall.core.lan_ipv6=1
+firewall.core.wan_ipv4=1
+firewall.core.wan_ipv6=1
+firewall.core.wan_tcpmss=1
+firewall.core.zones=lan wan
+firewall.core.loaded=1
+firewall.core.lan_networks=lan
+firewall.core.lan_zone=lan
+firewall.core.lan_ifname=br-lan

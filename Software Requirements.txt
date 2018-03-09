@@ -1,0 +1,66 @@
+---------------------------------------------------------------------
+|
+|	Software requirements for:
+|
+|	Watchdog
+|
+|	(C) Dr Huw Read, Daniel (Robin) Smith
+|
+---------------------------------------------------------------------
+
+Program Name: 
+	Watchdog
+
+Function:
+	Watchdog reads log files from smart home hubs (such as the Almond+ ecosystem hub) and
+	displays the logged events graphically in real time.
+
+Purpose:
+	Watchdog saves time and makes log data more human-readable for easier forensic analysis
+
+Requirements:
+Watchdog should...
+
+	-	read log files from smart home hub devices
+
+	-	display events in a graphical environment
+
+	-	work on multiple OSs ( native on Linux portable to windows )
+
+	-	automatically identify the smart home devices being used:
+
+		*	Philips Hue Lamps
+
+		*	Jasco Dimmer Plug
+
+		*	Fibaro Door/Temperature sensor
+
+		*	NYCE Motion/Temperature/Humidity sensor
+
+		*	NYCE Door sensor
+
+	-	display a window showing events as they are recorded in the log file
+
+	-	display a window showing map of the home 
+
+	- 	show the locations of the devices in the map with unique icons 
+	
+	-	display a scrubber bar under the map window that controls the playback of the events
+
+	- 	maintain multiple unique protocols for parsing log files from different smart home devices
+
+Required Log File:
+	
+	for:
+	
+	Almond+
+	
+		-	/tmp/connected_home.log
+	
+		-	/tmp/association.log
+
+		-	/tmp/CloudDaemon.log
+
+		-	/tmp/autoip.json
+
+	[other devices should be listed below]

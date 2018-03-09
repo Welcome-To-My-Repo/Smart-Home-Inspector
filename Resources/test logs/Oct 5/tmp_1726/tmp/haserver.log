@@ -1,0 +1,214 @@
+[2015-7-31 21:1:31.04990]	 {PRINT}	 <================================haserver started=================================>
+[2015-7-31 21:1:31.05153]	 {PRINT}	 
+ === Waiting for message Haserver Assoc==== 
+
+[2015-7-31 21:1:31.05286]	 {PRINT}	 Started RSC taskerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+[2015-7-31 21:1:31.26193]	 {INFO}	 current mode =1
+[2015-7-31 21:1:31.29059]	 {PRINT}	 https://weather.securifi.com:8080/GetMF/e4:71:85:31:aa:b8/98:de:d0:81:a8:64
+[2015-7-31 21:1:31.52905]	 {INFO}	 NaN
+[2015-7-31 21:1:31.52958]	 {PRINT}	 cmd_setClientActive
+[2015-7-31 21:1:32.08642]	 {PRINT}	 cmd_setClientActive
+[2015-7-31 21:1:32.65679]	 {PRINT}	 https://weather.securifi.com:8080/GetMF/e4:71:85:31:aa:b8/7c:dd:90:9d:d2:70
+[2015-7-31 21:1:32.65916]	 {INFO}	 NaN
+[2015-7-31 21:1:32.65950]	 {PRINT}	 https://weather.securifi.com:8080/GetMF/e4:71:85:31:aa:b8/e4:71:85:31:aa:bf
+[2015-7-31 21:1:32.66151]	 {INFO}	 NaN
+[2015-7-31 21:1:32.66192]	 {PRINT}	 cmd_setClientActive
+[2015-7-31 21:1:33.01748]	 {PRINT}	 Received packet from zwave_server from device 1 (Notification)
+[2015-7-31 21:1:33.20358]	 {INFO}	  ..68.dhcp->flags = 0
+[2015-7-31 21:1:33.20381]	 {INFO}	 00:17:88:2B:E8:31
+[2015-7-31 21:1:33.23699]	 {INFO}	 Setting as wired
+[2015-7-31 21:1:33.23724]	 {INFO}	  ..68.dhcp->flags = 0
+[2015-7-31 21:1:33.23738]	 {INFO}	 00:17:88:2B:E8:31
+[2015-7-31 21:1:33.25577]	 {INFO}	 Setting as wired
+[2015-7-31 21:1:33.66367]	 {PRINT}	 https://weather.securifi.com:8080/GetMF/e4:71:85:31:aa:b8/98:de:d0:81:eb:0b
+[2015-7-31 21:1:33.66613]	 {INFO}	 NaN
+[2015-7-31 21:1:33.66656]	 {PRINT}	 https://weather.securifi.com:8080/GetMF/e4:71:85:31:aa:b8/64:b9:e8:6a:a7:47
+[2015-7-31 21:1:33.66854]	 {INFO}	 NaN
+[2015-7-31 21:1:33.72073]	 {PRINT}	 Received packet from zwave_server from device 1 (Notification)
+[2015-7-31 21:1:33.81905]	 {PRINT}	 Received packet from zwave_server from device 1 (Notification)
+[2015-7-31 21:1:33.84025]	 {PRINT}	 Received packet from zwave_server from device 2 (Notification)
+[2015-7-31 21:1:33.84046]	 {PRINT}	 Received packet from z-wave server from 2 (Notification) Device-MultilevelSwitch,
+[2015-7-31 21:1:33.84064]	 {PRINT}	 Updating ddb for zwave device
+[2015-7-31 21:1:33.84081]	 {PRINT}	 Update xml is done for zwave device
+[2015-7-31 21:1:33.97717]	 {PRINT}	 Received packet from zwave_server from device 2 (Notification)
+[2015-7-31 21:1:33.97734]	 {PRINT}	 Received packet from z-wave server from 2 (Notification) Device-MultilevelSwitch,
+[2015-7-31 21:1:33.97745]	 {PRINT}	 Updating ddb for zwave device
+[2015-7-31 21:1:33.97755]	 {PRINT}	 Update xml is done for zwave device
+[2015-7-31 21:1:34.19842]	 {PRINT}	 Received packet from zwave_server from device 2 (Notification)
+[2015-7-31 21:1:34.19862]	 {PRINT}	 Received packet from z-wave server from 2 (Notification) Device-MultilevelSwitch,
+[2015-7-31 21:1:34.19874]	 {PRINT}	 Updating ddb for zwave device
+[2015-7-31 21:1:34.19885]	 {PRINT}	 Update xml is done for zwave device
+[2015-7-31 21:1:34.21928]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.21945]	 {PRINT}	 Received packet from z-wave server from 3 (Notification) Device-DoorSensor,
+[2015-7-31 21:1:34.21957]	 {PRINT}	 Updating ddb for zwave device
+[2015-7-31 21:1:34.21972]	 {PRINT}	 Update xml is done for zwave device
+[2015-7-31 21:1:34.35488]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.35508]	 {PRINT}	 Received packet from z-wave server from 3 (Notification) Device-DoorSensor,
+[2015-7-31 21:1:34.35523]	 {PRINT}	 Updating ddb for zwave device
+[2015-7-31 21:1:34.35537]	 {PRINT}	 Update xml is done for zwave device
+[2015-7-31 21:1:34.63778]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.63797]	 {PRINT}	 Received packet from z-wave server from 3 (Notification) Device-DoorSensor,
+[2015-7-31 21:1:34.63810]	 {PRINT}	 Updating ddb for zwave device
+[2015-7-31 21:1:34.63821]	 {PRINT}	 Update xml is done for zwave device
+[2015-7-31 21:1:34.64854]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.64875]	 {PRINT}	 Received packet from z-wave server from 3 (Notification) Device-DoorSensor,
+[2015-7-31 21:1:34.64888]	 {PRINT}	 Updating ddb for zwave device
+[2015-7-31 21:1:34.64899]	 {PRINT}	 Update xml is done for zwave device
+[2015-7-31 21:1:34.66339]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.66357]	 {PRINT}	 Received packet from z-wave server from 3 (Notification) Device-DoorSensor,
+[2015-7-31 21:1:34.66371]	 {PRINT}	 Updating ddb for zwave device
+[2015-7-31 21:1:34.66382]	 {PRINT}	 Update xml is done for zwave device
+[2015-7-31 21:1:34.67379]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.67401]	 {PRINT}	 Received packet from z-wave server from 3 (Notification) Device-DoorSensor,
+[2015-7-31 21:1:34.67413]	 {PRINT}	 Updating ddb for zwave device
+[2015-7-31 21:1:34.67425]	 {PRINT}	 Update xml is done for zwave device
+[2015-7-31 21:1:34.68430]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.68449]	 {PRINT}	 Received packet from z-wave server from 3 (Notification) Device-DoorSensor,
+[2015-7-31 21:1:34.68461]	 {PRINT}	 Updating ddb for zwave device
+[2015-7-31 21:1:34.68471]	 {PRINT}	 Update xml is done for zwave device
+[2015-7-31 21:1:34.70293]	 {INFO}	  ..68.dhcp->flags = 0
+[2015-7-31 21:1:34.70330]	 {INFO}	 E4:71:85:31:AA:B9
+[2015-7-31 21:1:34.72654]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.72678]	 {PRINT}	 Received packet from z-wave server from 3 (Notification) Device-DoorSensor,
+[2015-7-31 21:1:34.72694]	 {PRINT}	 Updating ddb for zwave device
+[2015-7-31 21:1:34.72707]	 {PRINT}	 Update xml is done for zwave device
+[2015-7-31 21:1:34.73710]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.73734]	 {PRINT}	 Received packet from z-wave server from 3 (Notification) Device-DoorSensor,
+[2015-7-31 21:1:34.73748]	 {PRINT}	 Updating ddb for zwave device
+[2015-7-31 21:1:34.73760]	 {PRINT}	 Update xml is done for zwave device
+[2015-7-31 21:1:34.74769]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.74792]	 {PRINT}	 Received packet from z-wave server from 3 (Notification) Device-DoorSensor,
+[2015-7-31 21:1:34.74809]	 {PRINT}	 Updating ddb for zwave device
+[2015-7-31 21:1:34.74821]	 {PRINT}	 Update xml is done for zwave device
+[2015-7-31 21:1:34.75279]	 {INFO}	  ..68.dhcp->flags = 0
+[2015-7-31 21:1:34.75304]	 {INFO}	 E4:71:85:31:AA:B9
+[2015-7-31 21:1:34.75823]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.75842]	 {PRINT}	 Received packet from z-wave server from 3 (Notification) Device-DoorSensor,
+[2015-7-31 21:1:34.75854]	 {PRINT}	 Updating ddb for zwave device
+[2015-7-31 21:1:34.75865]	 {PRINT}	 Update xml is done for zwave device
+[2015-7-31 21:1:34.76950]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.76971]	 {PRINT}	 Received packet from z-wave server from 3 (Notification) Device-DoorSensor,
+[2015-7-31 21:1:34.76983]	 {PRINT}	 Updating ddb for zwave device
+[2015-7-31 21:1:34.76994]	 {PRINT}	 Update xml is done for zwave device
+[2015-7-31 21:1:34.81370]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:34.81387]	 {PRINT}	 Received packet from z-wave server from 3 (Notification) Device-DoorSensor,
+[2015-7-31 21:1:34.81399]	 {PRINT}	 Updating ddb for zwave device
+[2015-7-31 21:1:34.81411]	 {PRINT}	 Update xml is done for zwave device
+[2015-7-31 21:1:34.82684]	 {PRINT}	 Received packet from zwave_server from device 1 (Notification)
+[2015-7-31 21:1:34.99551]	 {PRINT}	 Received packet from zwave_server from device 0 (Notification)
+[2015-7-31 21:1:35.00590]	 {PRINT}	 Received packet from zwave_server from device 2 (Notification)
+[2015-7-31 21:1:35.00605]	 {PRINT}	 Received packet from z-wave server from 2 (Notification) Device-MultilevelSwitch,
+[2015-7-31 21:1:35.00616]	 {PRINT}	 Updating ddb for zwave device
+[2015-7-31 21:1:35.00628]	 {PRINT}	 Update xml is done for zwave device
+[2015-7-31 21:1:35.01639]	 {PRINT}	 Received packet from zwave_server from device 3 (Notification)
+[2015-7-31 21:1:35.01656]	 {PRINT}	 Received packet from z-wave server from 3 (Notification) Device-DoorSensor,
+[2015-7-31 21:1:35.01667]	 {PRINT}	 Updating ddb for zwave device
+[2015-7-31 21:1:35.01678]	 {PRINT}	 Update xml is done for zwave device
+[2017-10-5 17:20:4.93541]	 {PRINT}	 Setting active ? ---- 98:de:d0:81:eb:0b
+[2017-10-5 17:20:4.93588]	 {PRINT}	 cmd_setClientActive
+[2017-10-5 17:20:5.33584]	 {PRINT}	 Broadcasting ClientJoined to Endclients
+[2017-10-5 17:20:5.44759]	 {PRINT}	 Done Broadcasting ClientJoined to Endclients
+[2017-10-5 17:20:17.97267]	 {PRINT}	 Received packet from zigbee_server from device 91c0 (Notification)
+[2017-10-5 17:20:17.97288]	 {PRINT}	 Updating xml for zigbee device
+[2017-10-5 17:20:17.97353]	 {INFO}	 Updating generic device index values
+[2017-10-5 17:20:17.97368]	 {INFO}	 GenericDevice Occupancy status:true
+[2017-10-5 17:20:17.97400]	 {INFO}	 Notification Last update time DeviceId =6
+[2017-10-5 17:20:17.97483]	 {PRINT}	 Update xml is done for zigbee device
+[2017-10-5 17:20:20.67215]	 {PRINT}	 Persistence ddb is Done
+[2017-10-5 17:20:20.67239]	 {PRINT}	 In updateZnetwork,update is done Device Data Base
+[2017-10-5 17:20:21.37485]	 {PRINT}	 Received packet from zigbee_server from device 91c0 (Notification)
+[2017-10-5 17:20:21.37504]	 {PRINT}	 Updating xml for zigbee device
+[2017-10-5 17:20:21.37569]	 {INFO}	 Updating generic device index values
+[2017-10-5 17:20:21.37602]	 {INFO}	 Notification Last update time DeviceId =6
+[2017-10-5 17:20:21.37614]	 {INFO}	 Same in ddb:Skipping Device 6 LastKnownValue 3 Value false
+[2017-10-5 17:20:21.37630]	 {INFO}	 GenericDevice MotionState index 2:1 endpoint:1
+[2017-10-5 17:20:21.37658]	 {INFO}	 Notification Last update time DeviceId =6
+[2017-10-5 17:20:21.37679]	 {INFO}	 IAS Zone GenericDevice state false
+[2017-10-5 17:20:21.37757]	 {PRINT}	 Update xml is done for zigbee device
+[2017-10-5 17:20:25.96953]	 {PRINT}	 Persistence ddb is Done
+[2017-10-5 17:20:25.96977]	 {PRINT}	 In updateZnetwork,update is done Device Data Base
+[2017-10-5 17:20:55.50705]	 {INFO}	  ..68.dhcp->flags = 0
+[2017-10-5 17:20:55.50725]	 {INFO}	 7C:DD:90:9D:D2:70
+[2017-10-5 17:20:57.00943]	 {PRINT}	 Setting active ? ---- 7c:dd:90:9d:d2:70
+[2017-10-5 17:20:57.00988]	 {PRINT}	 cmd_setClientActive
+[2017-10-5 17:20:57.35336]	 {PRINT}	 cmd_setClientRssi
+[2017-10-5 17:20:57.35381]	 {PRINT}	 Sending RSC packet rscClient
+[2017-10-5 17:20:57.35407]	 {PRINT}	 Broadcasting ClientJoined to Endclients
+[2017-10-5 17:20:57.45496]	 {PRINT}	 Done Broadcasting ClientJoined to Endclients
+[2017-10-5 17:20:57.68517]	 {PRINT}	 Received packet from zigbee_server from device 91c0 (Notification)
+[2017-10-5 17:20:57.68536]	 {PRINT}	 Updating xml for zigbee device
+[2017-10-5 17:20:57.68601]	 {INFO}	 Updating generic device index values
+[2017-10-5 17:20:57.68633]	 {INFO}	 Notification Last update time DeviceId =6
+[2017-10-5 17:20:57.68645]	 {INFO}	 Same in ddb:Skipping Device 6 LastKnownValue 3 Value false
+[2017-10-5 17:20:57.68659]	 {INFO}	 GenericDevice MotionState index 1:1
+[2017-10-5 17:20:57.68686]	 {INFO}	 Notification Last update time DeviceId =6
+[2017-10-5 17:20:57.68707]	 {INFO}	 IAS Zone GenericDevice state true
+[2017-10-5 17:20:57.68784]	 {PRINT}	 Update xml is done for zigbee device
+[2017-10-5 17:21:2.75051]	 {PRINT}	 Persistence ddb is Done
+[2017-10-5 17:21:2.75074]	 {PRINT}	 In updateZnetwork,update is done Device Data Base
+[2017-10-5 17:21:10.70478]	 {PRINT}	 Received packet from zigbee_server from device 91c0 (Notification)
+[2017-10-5 17:21:10.70498]	 {PRINT}	 Updating xml for zigbee device
+[2017-10-5 17:21:10.70564]	 {INFO}	 Updating generic device index values
+[2017-10-5 17:21:10.70596]	 {INFO}	 Notification Last update time DeviceId =6
+[2017-10-5 17:21:10.70608]	 {INFO}	 Same in ddb:Skipping Device 6 LastKnownValue 3 Value false
+[2017-10-5 17:21:10.70622]	 {INFO}	 GenericDevice MotionState index 2:1 endpoint:1
+[2017-10-5 17:21:10.70651]	 {INFO}	 Notification Last update time DeviceId =6
+[2017-10-5 17:21:10.70674]	 {INFO}	 IAS Zone GenericDevice state false
+[2017-10-5 17:21:10.70755]	 {PRINT}	 Update xml is done for zigbee device
+[2017-10-5 17:21:13.05403]	 {PRINT}	 Persistence ddb is Done
+[2017-10-5 17:21:13.05426]	 {PRINT}	 In updateZnetwork,update is done Device Data Base
+[2017-10-5 17:21:14.35485]	 {PRINT}	 Received packet from zigbee_server from device 91c0 (Notification)
+[2017-10-5 17:21:14.35505]	 {PRINT}	 Updating xml for zigbee device
+[2017-10-5 17:21:14.35571]	 {INFO}	 Updating generic device index values
+[2017-10-5 17:21:14.35604]	 {INFO}	 Notification Last update time DeviceId =6
+[2017-10-5 17:21:14.35615]	 {INFO}	 Same in ddb:Skipping Device 6 LastKnownValue 3 Value false
+[2017-10-5 17:21:14.35629]	 {INFO}	 GenericDevice MotionState index 1:1
+[2017-10-5 17:21:14.35657]	 {INFO}	 Notification Last update time DeviceId =6
+[2017-10-5 17:21:14.35677]	 {INFO}	 IAS Zone GenericDevice state true
+[2017-10-5 17:21:14.35757]	 {PRINT}	 Update xml is done for zigbee device
+[2017-10-5 17:21:18.35486]	 {PRINT}	 Persistence ddb is Done
+[2017-10-5 17:21:18.35509]	 {PRINT}	 In updateZnetwork,update is done Device Data Base
+[2017-10-5 17:21:30.36521]	 {PRINT}	 Received packet from zigbee_server from device 91c0 (Notification)
+[2017-10-5 17:21:30.36541]	 {PRINT}	 Updating xml for zigbee device
+[2017-10-5 17:21:30.36608]	 {INFO}	 Updating generic device index values
+[2017-10-5 17:21:30.36640]	 {INFO}	 Notification Last update time DeviceId =6
+[2017-10-5 17:21:30.36652]	 {INFO}	 Same in ddb:Skipping Device 6 LastKnownValue 3 Value false
+[2017-10-5 17:21:30.36666]	 {INFO}	 GenericDevice MotionState index 2:1 endpoint:1
+[2017-10-5 17:21:30.36695]	 {INFO}	 Notification Last update time DeviceId =6
+[2017-10-5 17:21:30.36715]	 {INFO}	 IAS Zone GenericDevice state false
+[2017-10-5 17:21:30.36794]	 {PRINT}	 Update xml is done for zigbee device
+[2017-10-5 17:21:33.68550]	 {PRINT}	 Persistence ddb is Done
+[2017-10-5 17:21:33.68574]	 {PRINT}	 In updateZnetwork,update is done Device Data Base
+[2017-10-5 17:23:6.84500]	 {PRINT}	 Received packet from zigbee_server from device 91c0 (Notification)
+[2017-10-5 17:23:6.84519]	 {PRINT}	 Updating xml for zigbee device
+[2017-10-5 17:23:6.84585]	 {INFO}	 Updating generic device index values
+[2017-10-5 17:23:6.84618]	 {INFO}	 Notification Last update time DeviceId =6
+[2017-10-5 17:23:6.84629]	 {INFO}	 Same in ddb:Skipping Device 6 LastKnownValue 3 Value false
+[2017-10-5 17:23:6.84643]	 {INFO}	 GenericDevice MotionState index 1:1
+[2017-10-5 17:23:6.84672]	 {INFO}	 Notification Last update time DeviceId =6
+[2017-10-5 17:23:6.84692]	 {INFO}	 IAS Zone GenericDevice state true
+[2017-10-5 17:23:6.84780]	 {PRINT}	 Update xml is done for zigbee device
+[2017-10-5 17:23:9.11001]	 {PRINT}	 Persistence ddb is Done
+[2017-10-5 17:23:9.11025]	 {PRINT}	 In updateZnetwork,update is done Device Data Base
+[2017-10-5 17:23:21.93488]	 {PRINT}	 Received packet from zigbee_server from device 91c0 (Notification)
+[2017-10-5 17:23:21.93508]	 {PRINT}	 Updating xml for zigbee device
+[2017-10-5 17:23:21.93574]	 {INFO}	 Updating generic device index values
+[2017-10-5 17:23:21.93606]	 {INFO}	 Notification Last update time DeviceId =6
+[2017-10-5 17:23:21.93618]	 {INFO}	 Same in ddb:Skipping Device 6 LastKnownValue 3 Value false
+[2017-10-5 17:23:21.93632]	 {INFO}	 GenericDevice MotionState index 2:1 endpoint:1
+[2017-10-5 17:23:21.93661]	 {INFO}	 Notification Last update time DeviceId =6
+[2017-10-5 17:23:21.93681]	 {INFO}	 IAS Zone GenericDevice state false
+[2017-10-5 17:23:21.93761]	 {PRINT}	 Update xml is done for zigbee device
+[2017-10-5 17:23:24.42320]	 {PRINT}	 Persistence ddb is Done
+[2017-10-5 17:23:24.42344]	 {PRINT}	 In updateZnetwork,update is done Device Data Base
+[2017-10-5 17:23:31.39540]	 {PRINT}	 Received packet from zigbee_server from device 91c0 (Notification)
+[2017-10-5 17:23:31.39560]	 {PRINT}	 Updating xml for zigbee device
+[2017-10-5 17:23:31.39626]	 {INFO}	 Updating generic device index values
+[2017-10-5 17:23:31.39658]	 {INFO}	 Notification Last update time DeviceId =6
+[2017-10-5 17:23:31.39672]	 {INFO}	 Same in ddb:Skipping Device 6 LastKnownValue 3 Value false
+[2017-10-5 17:23:31.39686]	 {INFO}	 GenericDevice MotionState index 1:1
+[2017-10-5 17:23:31.39714]	 {INFO}	 Notification Last update time DeviceId =6
+[2017-10-5 17:23:31.39735]	 {INFO}	 IAS Zone GenericDevice state true
+[2017-10-5 17:23:31.39813]	 {PRINT}	 Update xml is done for zigbee device
+[2017-10-5 17:23:34.72817]	 {PRINT}	 Persistence ddb is Done
+[2017-10-5 17:23:34.72840]	 {PRINT}	 In updateZnetwork,update is done Device Data Base
