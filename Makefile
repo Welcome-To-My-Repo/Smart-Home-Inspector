@@ -1,7 +1,7 @@
 objs = watchdog.o window.o
 
 Watchdog: $(objs)
-	g++ -owatchdog $(objs)
+	g++ -owatchdog $(objs) -lX11
 
 watchdog.o: watchdog.cpp watchdog.h
 window.o: window.cpp window.h

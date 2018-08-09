@@ -9,6 +9,8 @@ int main (int argc, char **argv)
 
 {
 
+	OpenMainWdw ();
+
 	return 0;
 
 }
