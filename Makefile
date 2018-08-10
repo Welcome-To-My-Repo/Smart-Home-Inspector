@@ -1,14 +1,15 @@
-objs = watchdog.o window.o
+watchdog: watchdog.o window.o
+	@echo compiling...
+	@g++ -owatchdog watchdog.o window.o -lX11 -lxcb -Wall -O3
 
-Watchdog: $(objs)
-	g++ -owatchdog $(objs) -lX11
-
-watchdog.o: watchdog.cpp watchdog.h
-window.o: window.cpp window.h
+watchdog.o: watchdog.h watchdog.cpp
+window.o: window.h window.cpp
 
 clean:
-	rm $(objs)
+	@echo removing...
+	@rm -f $(objs) watchdog
 
 install:
-	mv watchdog /usr/local/bin
-	rm $(objs)
+	@echo installing...
+	@mv watchdog /usr/local/bin
+	@rm $(objs)

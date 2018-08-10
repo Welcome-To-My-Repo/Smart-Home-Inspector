@@ -1,4 +1,7 @@
+#ifndef WATCHDOG
+#define WATCHDOG
+#include "window.h"
+
 bool loading;
 
-int OpenSplashWdw ();
-int OpenMainWdw ();
+#endif
