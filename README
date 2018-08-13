@@ -1,5 +1,5 @@
 program name:
-	Watchdog
+	Smart Home Inspector
 
 what it does:
 	reads log files from smart home hubs
@@ -8,13 +8,13 @@ how to install:
 	make sure you have the Make utility installed
 	enter the command "make install" as the administrative user
 
-	Watchdog will be installed in the /usr/local/bin directory
+	SHI will be installed in the /usr/local/bin directory
 
 TODO:
 
 literally everything
 
-get qt working/main window running
+get gtk+ working/main window running
 
 NOTES:
 
