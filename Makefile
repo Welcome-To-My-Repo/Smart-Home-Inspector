@@ -1,8 +1,9 @@
-watchdog: watchdog.o window.o
+objs = shi.o window.o
+watchdog: $(objs)
 	@echo compiling...
-	@g++ -owatchdog watchdog.o window.o -lX11 -lxcb -Wall -O3
+	@g++ -owatchdog $(objs) -lX11 -lxcb -Wall -O3
 
-watchdog.o: watchdog.h watchdog.cpp
+shi.o: shi.h shi.cpp
 window.o: window.h window.cpp
 
 clean:

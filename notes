@@ -1,9 +1,9 @@
-MAIN IDEA OF WATCHDOG
+MAIN IDEA OF Smart Home Inspector
 
-watchdog is a program that will inspect the logfiles of smart home
+SHI is a program that will inspect the logfiles of smart home
 devices and display the logged events in a live generated video
 representation where a mockup of the devices' locations inside the
-building is drawn and as watchdog plays through the logfile events,
+building is drawn and as SHI plays through the logfile events,
 it will highlight icons showing which smart devices were activated and
 generate and display any other necessary event information.
 
@@ -26,7 +26,7 @@ WINDOW MOCKUP
 |								|
 \_______________________________________________________________/
 
-This is the main window of watchdog.
+This is the main window of SHI.
 
 The left sub-window, logfile events, displays logged events as they
 are written to the logfile. it highlights the event that it's
@@ -38,19 +38,19 @@ into the diagram noting the location of smart devices.
 
 
 
-SAMPLE BEHAVIOR OF WATCHDOG
+SAMPLE BEHAVIOR OF SHI
 
-start Watchdog
+start SHI
 
 open new logfile
 
 user inputs names of smart devices to be used as keywords
 
-watchdog gives each keyword an icon to use in the diagram
+SHI gives each keyword an icon to use in the diagram
 
-watchdog parses logfile
+SHI parses logfile
 
-watchdog sorts events by time and by smart device
+SHI sorts events by time and by smart device
 
 user draws building layout in event diagram window
 
@@ -62,7 +62,7 @@ logfile
 user saves their diagram, keywords, and referenced logfile as a .dog
 file
 
-watchdog can load .dog files to display previously inspected logfiles
+SHI can load .dog files to display previously inspected logfiles
 
 MISC
 
