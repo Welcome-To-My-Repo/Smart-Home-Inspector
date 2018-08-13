@@ -8,6 +8,8 @@ int main (int argc, char **argv)
 
 {
 
+	SplashScreen ();
+
 	return 0;
 
 }
