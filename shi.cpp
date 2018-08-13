@@ -2,7 +2,7 @@
 #include <cstdlib>
 #include <string>
 
-#include "watchdog.h"
+#include "shi.h"
 
 int main (int argc, char **argv)
 

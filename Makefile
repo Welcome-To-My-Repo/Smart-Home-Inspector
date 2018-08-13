@@ -1,7 +1,7 @@
 objs = shi.o window.o
 watchdog: $(objs)
 	@echo compiling...
-	@g++ -owatchdog $(objs) -lX11 -lxcb -Wall -O3
+	@g++ -owatchdog $(objs) `pkg-config --cflags gtk+-3.0 --libs gtk+-3.0`
 
 shi.o: shi.h shi.cpp
 window.o: window.h window.cpp

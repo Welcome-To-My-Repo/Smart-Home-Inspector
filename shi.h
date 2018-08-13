@@ -1,7 +1,8 @@
-#ifndef WATCHDOG
-#define WATCHDOG
+#ifndef SHI
+#define SHI
+
 #include "window.h"
 
-bool loading;
+
 
 #endif
