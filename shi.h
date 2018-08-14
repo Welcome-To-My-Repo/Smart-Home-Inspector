@@ -3,6 +3,4 @@
 
 #include "window.h"
 
-
-
 #endif

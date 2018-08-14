@@ -1,16 +1,17 @@
 objs = shi.o window.o
-watchdog: $(objs)
+shi: $(objs)
 	@echo compiling...
-	@g++ -owatchdog $(objs) `pkg-config --cflags gtk+-3.0 --libs gtk+-3.0`
+	#@g++ -oshi $(objs) `pkg-config --cflags gtk+-3.0 --libs gtk+-3.0`
+	@g++ -oshi shi.cpp shi.h `pkg-config --cflags gtk+-3.0 --libs gtk+-3.0`
 
 shi.o: shi.h shi.cpp
 window.o: window.h window.cpp
 
 clean:
 	@echo removing...
-	@rm -f $(objs) watchdog
+	@rm -f $(objs) shi
 
 install:
 	@echo installing...
-	@mv watchdog /usr/local/bin
+	@mv shi /usr/local/bin
 	@rm $(objs)

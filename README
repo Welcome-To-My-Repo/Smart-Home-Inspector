@@ -10,6 +10,9 @@ how to install:
 
 	SHI will be installed in the /usr/local/bin directory
 
+There's other empty c++ files but right now because the linker can
+only find gtk/gtk.h if all the code is in shi.cpp
+
 TODO:
 
 literally everything
@@ -18,6 +21,5 @@ get gtk+ working/main window running
 
 NOTES:
 
-using straight xorg code might be more efficient/better looking than using qt...
-
--
+using straight xorg code might be more efficient/better looking than
+using qt...

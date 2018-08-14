@@ -2,13 +2,11 @@
 #include <cstdlib>
 #include <string>
 
-#include "shi.h"
+#include <gtk/gtk.h>
 
 int main (int argc, char **argv)
 
 {
-
-	SplashScreen ();
 
 	return 0;
 
