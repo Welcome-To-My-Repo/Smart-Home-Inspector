@@ -1,19 +1,9 @@
-#ifndef WINDOW
-#define WINDOW
-
 #include <gtk/gtk.h>
-#include <unistd.h>
 
-struct splashscreen
+void mainwindow (int argc, char **argv);
+void mainwindowactivate (GtkApplication *app, gpointer user_data);
 
-{
-
-	GtkWidget *y, *z;
-
-};
-
-void splash (splashscreen a);
-void quitsplash (splashscreen a);
-void mainwindow ();
-
-#endif
+//compiles but segfaults don't use
+struct splash { GtkWidget *splash, *image; };
+void startsplashscreen (splash a);
+void quitsplashscreen (splash a);
