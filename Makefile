@@ -1,17 +1,20 @@
-objs = shi.o window.o
-shi: $(objs)
-	@echo compiling...
-	#@g++ -oshi $(objs) `pkg-config --cflags gtk+-3.0 --libs gtk+-3.0`
-	@g++ -oshi shi.cpp shi.h `pkg-config --cflags gtk+-3.0 --libs gtk+-3.0`
+OBJS = 		shi.o window.o
+NAME = 		shi
+CFLAGS = 	`pkg-config --cflags gtk+-3.0`
+LIBS = 		`pkg-config --libs gtk+-3.0`
 
-shi.o: shi.h shi.cpp
-window.o: window.h window.cpp
+shi: $(OBJS)
+	g++ -o$(NAME) $(OBJS) $(ALLFLAGS)
+
+shi.o: shi.cpp shi.h
+	g++ -c $*.cpp $(CFLAGS) $(LIBS)
+
+window.o: window.cpp window.h
+	g++ -c $*.cpp $(CFLAGS) $(LIBS)
 
 clean:
-	@echo removing...
-	@rm -f $(objs) shi
+	rm -f $(OBJS) $(OUT)
 
-install:
-	@echo installing...
-	@mv shi /usr/local/bin
-	@rm $(objs)
+install: shi
+	mv $(OUT) /usr/local/bin
+	rm -f $(OBJS)

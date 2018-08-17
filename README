@@ -10,9 +10,6 @@ how to install:
 
 	SHI will be installed in the /usr/local/bin directory
 
-There's other empty c++ files but right now because the linker can
-only find gtk/gtk.h if all the code is in shi.cpp
-
 TODO:
 
 literally everything
