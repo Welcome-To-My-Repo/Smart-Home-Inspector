@@ -22,6 +22,7 @@ void startsplash (GtkApplication *app, gpointer user_data)
 			*Image,
 			*QuitButton,
 			*Menu,
+			*MenuButtonCon,
 			*MenuButton,
 			*MenuBox,
 			*MenuBar,
@@ -44,27 +45,41 @@ void startsplash (GtkApplication *app, gpointer user_data)
 	Box = 		gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	Image = 	gtk_image_new_from_file ("logo.png");
 	Menu = 		gtk_menu_new ();
-	MenuButton = 	gtk_menu_item_new_with_label ("Menu");
+	MenuButtonCon =	gtk_menu_item_new ();
+	MenuButton = 	gtk_button_new_with_label ("Menu");
 	MenuBox = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	MenuBar = 	gtk_menu_bar_new ();
 	Recent = 	gtk_menu_item_new_with_label ("Recent Projects");
 	New = 		gtk_menu_item_new_with_label ("New");
-	Open = 		gtk_menu_item_new_with_label ("Open");
+	Open = 		gtk_menu_item_new_with_label ("Open Project");
 	QuitButton =	gtk_button_new_with_label ("Quit");
-
-	gtk_container_add (GTK_CONTAINER (Window), Box);
-
-	gtk_menu_item_set_submenu (GTK_MENU_ITEM (MenuButton), Menu);
-	gtk_menu_button_set_popup (GTK_MENU_BUTTON (Menu), MenuBox);
 
 	gtk_menu_shell_append (GTK_MENU_SHELL (Menu), New);
 	gtk_menu_shell_append (GTK_MENU_SHELL (Menu), Open);
 	gtk_menu_shell_append (GTK_MENU_SHELL (Menu), Recent);
-	gtk_menu_shell_append (GTK_MENU_SHELL (MenuBar), MenuButton);
+	gtk_menu_shell_append (GTK_MENU_SHELL (MenuBar), MenuButtonCon);
 
 	gtk_box_pack_start (GTK_BOX (Box), MenuBar, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (Box), Image, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (Box), QuitButton, FALSE, FALSE, 0);
+
+	gtk_container_add (GTK_CONTAINER (Window), Box);
+	gtk_container_add (GTK_CONTAINER (MenuButtonCon), MenuButton);
+
+	gtk_box_set_child_packing (GTK_BOX (Box), QuitButton, TRUE, FALSE, 0, GTK_PACK_END);
+	gtk_box_set_child_packing (GTK_BOX (Box), MenuBar, TRUE, FALSE, 0, GTK_PACK_START);
+	gtk_box_set_child_packing (GTK_BOX (Box), Image, TRUE, FALSE, 0, GTK_PACK_START);
+
+	gtk_box_set_center_widget (GTK_BOX (Box), Image);
+
+	gtk_widget_set_halign (GTK_WIDGET (Menu), GTK_ALIGN_CENTER);
+	gtk_widget_set_halign (GTK_WIDGET (MenuBar), GTK_ALIGN_CENTER);
+	gtk_widget_set_halign (GTK_WIDGET (QuitButton), GTK_ALIGN_CENTER);
+
+	gtk_box_set_baseline_position (GTK_BOX (MenuBox), GTK_BASELINE_POSITION_CENTER);
+
+	gtk_menu_item_set_submenu (GTK_MENU_ITEM (MenuButtonCon), Menu);
+	gtk_menu_button_set_popup (GTK_MENU_BUTTON (Menu), MenuBox);
 
 	g_signal_connect_swapped (New, "activate", G_CALLBACK (mainwindow), NULL);
 	g_signal_connect_swapped (QuitButton, "clicked", G_CALLBACK (gtk_widget_destroy), Window);
@@ -144,9 +159,9 @@ void mainwindowactivate (GtkApplication *app, gpointer user_data)
 	FileButton = 	gtk_menu_item_new_with_label ("File");
 	MenuBox = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	MenuBar = 	gtk_menu_bar_new ();
-	Open = 		gtk_menu_item_new_with_label ("Open");
-	Save = 		gtk_menu_item_new_with_label ("Save");
-	SaveAs = 	gtk_menu_item_new_with_label ("Save As");
+	Open = 		gtk_menu_item_new_with_label ("Open Log File");
+	Save = 		gtk_menu_item_new_with_label ("Save Project");
+	SaveAs = 	gtk_menu_item_new_with_label ("Save Project As");
 	Quit = 		gtk_menu_item_new_with_label ("Quit");
 
 	gtk_container_add (GTK_CONTAINER (Window), MainBox);
