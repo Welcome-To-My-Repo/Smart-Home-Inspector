@@ -3,7 +3,7 @@ LIBS = 		`pkg-config --libs gtk+-3.0`
 OBJS = 		shi.o window.o
 OUT = 		shi
 
-example: $(OBJS)
+shi: $(OBJS)
 	g++ -o$(OUT) $(OBJS) $(CFLAGS) $(LIBS)
 
 shi.o: shi.cpp shi.h
@@ -14,3 +14,8 @@ window.o: window.cpp window.h
 
 clean:
 	rm -f $(OBJS) $(OUT)
+
+install: shi
+
+	mkdir ~/.local/share/shi
+	mv shi /usr/local/bin

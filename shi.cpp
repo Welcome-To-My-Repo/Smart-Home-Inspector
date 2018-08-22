@@ -5,7 +5,8 @@ int main (int argc, char **argv)
 
 {
 
-	mainwindow (argc, argv);
+	splashscreen (argc, argv);
+	stopsplash ();
 
 	return 0;
 
