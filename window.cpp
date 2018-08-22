@@ -186,3 +186,11 @@ void mainwindowactivate (GtkApplication *app, gpointer user_data)
 	g_signal_connect_swapped (Quit, "activate", G_CALLBACK (gtk_widget_destroy), Window);
 
 }
+
+void drawing_area (GtkWidget *area)
+
+{
+
+	
+
+}
