@@ -12,5 +12,7 @@ void stopsplash ();
 void splash_choose_file ();
 void set_recent_files_menu (GtkMenu *menu);
 void drawing_area (GtkWidget *area);
+void open_project (int argc, char **argv);
+void open_file (int argc, char **argv);
 
 #endif

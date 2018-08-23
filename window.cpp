@@ -50,7 +50,7 @@ void startsplash (GtkApplication *app, gpointer user_data)
 	MenuBox = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	MenuBar = 	gtk_menu_bar_new ();
 	Recent = 	gtk_menu_item_new_with_label ("Recent Projects");
-	New = 		gtk_menu_item_new_with_label ("New");
+	New = 		gtk_menu_item_new_with_label ("New Project");
 	Open = 		gtk_menu_item_new_with_label ("Open Project");
 	QuitButton =	gtk_button_new_with_label ("Quit");
 
@@ -191,6 +191,6 @@ void drawing_area (GtkWidget *area)
 
 {
 
-	
+
 
 }
