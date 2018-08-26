@@ -1,6 +1,6 @@
 CFLAGS = 	`pkg-config --cflags gtk+-3.0`
 LIBS = 		`pkg-config --libs gtk+-3.0`
-OBJS = 		shi.o window.o
+OBJS = 		shi.o window.o func.o
 OUT = 		shi
 
 shi: $(OBJS)
@@ -9,7 +9,10 @@ shi: $(OBJS)
 shi.o: shi.cpp shi.h
 	g++ -c $*.cpp $(CFLAGS) $(LIBS) -g3
 
-window.o: window.cpp window.h
+window.o: window.cpp shi.h
+	g++ -c $*.cpp $(CFLAGS) $(LIBS) -g3
+
+func.o: func.cpp shi.h
 	g++ -c $*.cpp $(CFLAGS) $(LIBS) -g3
 
 clean:

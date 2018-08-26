@@ -1,7 +1,8 @@
-#include "window.h"
+#include "shi.h"
 #include <fstream>
 
 GtkApplication *MainWindow, *splashwindow;
+char *filename, *Log_File;
 
 void splashscreen ()
 
@@ -110,6 +111,7 @@ void mainwindowactivate (GtkApplication *app, char *filename)
 
 {
 
+
 	GtkWidget 	*Window,
 			*MainBox,
 			*SecondBox,
@@ -161,6 +163,7 @@ void mainwindowactivate (GtkApplication *app, char *filename)
 	gtk_widget_show_all (Window);
 
 	g_signal_connect_swapped (Quit, "activate", G_CALLBACK (gtk_widget_destroy), Window);
+
 
 }
 
