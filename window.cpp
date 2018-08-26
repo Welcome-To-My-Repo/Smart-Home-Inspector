@@ -3,18 +3,18 @@
 
 GtkApplication *MainWindow, *splashwindow;
 
-void splashscreen (int argc, char **argv)
+void splashscreen ()
 
 {
 
 	splashwindow = gtk_application_new ("temp.splash", G_APPLICATION_FLAGS_NONE);
 	g_signal_connect (splashwindow, "activate", G_CALLBACK (startsplash), NULL);
-	g_application_run (G_APPLICATION (splashwindow), argc, argv);
+	g_application_run (G_APPLICATION (splashwindow), 0, NULL);
 	g_object_unref (splashwindow);
 
 }
 
-void startsplash (GtkApplication *app, gpointer user_data)
+void startsplash (GtkApplication *app)
 
 {
 	GtkWidget	*Window,
@@ -26,7 +26,6 @@ void startsplash (GtkApplication *app, gpointer user_data)
 			*MenuButton,
 			*MenuBox,
 			*MenuBar,
-			*Open,
 			*Recent,
 			*RecentMenu,
 			*RecentBox,
@@ -49,13 +48,11 @@ void startsplash (GtkApplication *app, gpointer user_data)
 	MenuButton = 	gtk_button_new_with_label ("Menu");
 	MenuBox = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	MenuBar = 	gtk_menu_bar_new ();
-	Recent = 	gtk_menu_item_new_with_label ("Recent Projects");
+	Recent = 	gtk_menu_item_new_with_label ("Open Project");
 	New = 		gtk_menu_item_new_with_label ("New Project");
-	Open = 		gtk_menu_item_new_with_label ("Open Project");
 	QuitButton =	gtk_button_new_with_label ("Quit");
 
 	gtk_menu_shell_append (GTK_MENU_SHELL (Menu), New);
-	gtk_menu_shell_append (GTK_MENU_SHELL (Menu), Open);
 	gtk_menu_shell_append (GTK_MENU_SHELL (Menu), Recent);
 	gtk_menu_shell_append (GTK_MENU_SHELL (MenuBar), MenuButtonCon);
 
@@ -81,7 +78,8 @@ void startsplash (GtkApplication *app, gpointer user_data)
 	gtk_menu_item_set_submenu (GTK_MENU_ITEM (MenuButtonCon), Menu);
 	gtk_menu_button_set_popup (GTK_MENU_BUTTON (Menu), MenuBox);
 
-	g_signal_connect_swapped (New, "activate", G_CALLBACK (mainwindow), NULL);
+	g_signal_connect_swapped (New, "activate", G_CALLBACK (open_file), NULL);
+	g_signal_connect_swapped (Recent, "activate", G_CALLBACK (open_project), NULL);
 	g_signal_connect_swapped (QuitButton, "clicked", G_CALLBACK (gtk_widget_destroy), Window);
 
 
@@ -97,39 +95,18 @@ void stopsplash ()
 
 }
 
-void set_recent_files_menu (GtkMenu *menu)
+void mainwindow (char *filename)
 
 {
 
-	/*
-	(GtkWidget *recentfiles [7];
-	for (int i = 0; i < 7; i ++)
-
-	{
-
-		recentfiles [i] = gtk_menu_item_new_with_label ("Hello World!");
-		gtk_menu_attach (menu, recentfiles [i], -1, -1, -1, -1);
-
-	}
-	*/
-	GtkWidget *recentfile;
-	recentfile = gtk_menu_item_new_with_label ("recent file");
-	gtk_menu_attach (menu, recentfile, 1, 1, 1, 1);
-
-}
-
-void mainwindow (int argc, char **argv)
-
-{
-
-	MainWindow = gtk_application_new ("org.gtk.example", G_APPLICATION_FLAGS_NONE);
+	MainWindow = gtk_application_new ("org.app.shi", G_APPLICATION_FLAGS_NONE);
 	g_signal_connect (MainWindow, "activate", G_CALLBACK (mainwindowactivate), NULL);
-	g_application_run (G_APPLICATION (MainWindow), argc, argv);
+	g_application_run (G_APPLICATION (MainWindow), 0, NULL);
 	g_object_unref (MainWindow);
 
 }
 
-void mainwindowactivate (GtkApplication *app, gpointer user_data)
+void mainwindowactivate (GtkApplication *app, char *filename)
 
 {
 
@@ -149,7 +126,7 @@ void mainwindowactivate (GtkApplication *app, gpointer user_data)
 
 	Window = gtk_application_window_new (app);
 	gtk_window_set_title (GTK_WINDOW (Window), "window");
-	gtk_window_set_default_size (GTK_WINDOW (Window), 700, 500);
+	gtk_window_set_default_size (GTK_WINDOW (Window), 768, 512);
 
 	MainBox = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	SecondBox = 	gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
@@ -192,5 +169,53 @@ void drawing_area (GtkWidget *area)
 {
 
 
+
+}
+
+void open_project ()
+
+{
+
+
+
+}
+
+void open_file ()
+
+{
+
+	gint x;
+	char *File_Name;
+
+	GtkWidget	*Window,
+			*File_Chooser;
+
+	Window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
+	gtk_window_set_title (GTK_WINDOW (Window), "Open A Log File");
+	gtk_window_set_default_size (GTK_WINDOW (Window), 512, 256);
+
+	File_Chooser = gtk_file_chooser_dialog_new ("	Open A Log File",
+							GTK_WINDOW (Window),
+							GTK_FILE_CHOOSER_ACTION_OPEN,
+							("_Cancel"),
+							GTK_RESPONSE_CANCEL,
+							("Open"),
+							GTK_RESPONSE_ACCEPT,
+							NULL);
+
+	x = gtk_dialog_run (GTK_DIALOG (File_Chooser));
+	if (x == GTK_RESPONSE_ACCEPT)
+
+	{
+
+		char *File_Name;
+		GtkFileChooser *Choose = GTK_FILE_CHOOSER (File_Chooser);
+		File_Name = gtk_file_chooser_get_filename (Choose);
+
+	}
+
+	gtk_widget_destroy (File_Chooser);
+	mainwindow (File_Name);
+	g_free (File_Name);
 
 }
