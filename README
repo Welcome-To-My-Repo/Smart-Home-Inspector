@@ -1,22 +1,15 @@
 program name:
-	Smart Home Inspector
+	Smart Home Inspector 
+	(executable name: shi)
 
 what it does:
-	reads log files from smart home hubs
+	inspects log files from smart home hubs and displays the events in them in a video interface
 
 how to install:
-	make sure you have the Make utility installed
-	enter the command "make install" as the administrative user
+	
+	requires... 
+		C++ 11 or higher 
+		GTK+ 3.0 or higher
+		the latest version of the Make utility
 
-	SHI will be installed in the /usr/local/bin directory
-
-TODO:
-
-literally everything
-
-get gtk+ working/main window running
-
-NOTES:
-
-using straight xorg code might be more efficient/better looking than
-using qt...
+	navigate to the project folder in the command line and enter "make install" with root permissions. SHI will then be installed to the /usr/local/bin directory. 
