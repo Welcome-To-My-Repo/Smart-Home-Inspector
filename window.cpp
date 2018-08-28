@@ -1,17 +1,22 @@
 #include "shi.h"
 #include <fstream>
 
-GtkApplication *MainWindow, *splashwindow;
-char *filename, *Log_File;
+//all the GUI functions are defined in this file
 
+GtkApplication *MainWindow, *splashwindow;		//the global widgets to hold the splash and main windows
+char *filename, *Log_File;				//global strings to hold the path and the contents of the inspected logfile
+
+
+//the main function that starts the GUI. everything else is called
+//from this
 void splashscreen ()
 
 {
 
-	splashwindow = gtk_application_new ("temp.splash", G_APPLICATION_FLAGS_NONE);
-	g_signal_connect (splashwindow, "activate", G_CALLBACK (startsplash), NULL);
-	g_application_run (G_APPLICATION (splashwindow), 0, NULL);
-	g_object_unref (splashwindow);
+	splashwindow = gtk_application_new ("temp.splash", G_APPLICATION_FLAGS_NONE);	//assign a new wintow to splashscreen
+	g_signal_connect (splashwindow, "activate", G_CALLBACK (startsplash), NULL);	//assign signal handler to the "activate" signal
+	g_application_run (G_APPLICATION (splashwindow), 0, NULL);			//give the "activate" signal
+	g_object_unref (splashwindow);							//de references splashwindow
 
 }
 
@@ -33,7 +38,10 @@ void startsplash (GtkApplication *app)
 			*RecentFiles [8],
 			*New;
 
+//assign new window to Window
 	Window = gtk_application_window_new (app);
+
+//set Window properties
 	gtk_window_set_title (GTK_WINDOW (Window), "Smart Home Inspector");
 	gtk_window_set_decorated (GTK_WINDOW (Window), FALSE);
 	gtk_window_set_default_size (GTK_WINDOW (Window), 512, 512);
@@ -42,6 +50,7 @@ void startsplash (GtkApplication *app)
 	gtk_window_set_deletable (GTK_WINDOW (Window), FALSE);
 	gtk_window_set_skip_taskbar_hint (GTK_WINDOW (Window), TRUE);
 
+//assign elements to other widgets
 	Box = 		gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	Image = 	gtk_image_new_from_file ("logo.png");
 	Menu = 		gtk_menu_new ();
@@ -53,37 +62,47 @@ void startsplash (GtkApplication *app)
 	New = 		gtk_menu_item_new_with_label ("New Project");
 	QuitButton =	gtk_button_new_with_label ("Quit");
 
+//add buttons to menu container
 	gtk_menu_shell_append (GTK_MENU_SHELL (Menu), New);
 	gtk_menu_shell_append (GTK_MENU_SHELL (Menu), Recent);
 	gtk_menu_shell_append (GTK_MENU_SHELL (MenuBar), MenuButtonCon);
 
+//add the elements vertically into the window
 	gtk_box_pack_start (GTK_BOX (Box), MenuBar, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (Box), Image, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (Box), QuitButton, FALSE, FALSE, 0);
 
+//add menu elements to the window
 	gtk_container_add (GTK_CONTAINER (Window), Box);
 	gtk_container_add (GTK_CONTAINER (MenuButtonCon), MenuButton);
 
+//set orientation of the areas in the window
 	gtk_box_set_child_packing (GTK_BOX (Box), QuitButton, TRUE, FALSE, 0, GTK_PACK_END);
 	gtk_box_set_child_packing (GTK_BOX (Box), MenuBar, TRUE, FALSE, 0, GTK_PACK_START);
 	gtk_box_set_child_packing (GTK_BOX (Box), Image, TRUE, FALSE, 0, GTK_PACK_START);
 
+//set the element that goes in the center (possibly unnecessary)
 	gtk_box_set_center_widget (GTK_BOX (Box), Image);
 
+//center the three main elements in the window
 	gtk_widget_set_halign (GTK_WIDGET (Menu), GTK_ALIGN_CENTER);
 	gtk_widget_set_halign (GTK_WIDGET (MenuBar), GTK_ALIGN_CENTER);
 	gtk_widget_set_halign (GTK_WIDGET (QuitButton), GTK_ALIGN_CENTER);
 
+//center the primary container in the window (possibly unnecessary)
 	gtk_box_set_baseline_position (GTK_BOX (MenuBox), GTK_BASELINE_POSITION_CENTER);
 
+//set menu items to show on selection
 	gtk_menu_item_set_submenu (GTK_MENU_ITEM (MenuButtonCon), Menu);
 	gtk_menu_button_set_popup (GTK_MENU_BUTTON (Menu), MenuBox);
 
+//create signal handlers to call other functions on button press events
+//also set signal handlers to open file chooser dialogues
 	g_signal_connect_swapped (New, "activate", G_CALLBACK (open_file), NULL);
 	g_signal_connect_swapped (Recent, "activate", G_CALLBACK (open_project), NULL);
 	g_signal_connect_swapped (QuitButton, "clicked", G_CALLBACK (gtk_widget_destroy), Window);
 
-
+//display the elements on the window
 	gtk_widget_show_all (Window);
 
 }
@@ -92,7 +111,7 @@ void stopsplash ()
 
 {
 
-	g_application_quit (G_APPLICATION (splashwindow));
+	g_application_quit (G_APPLICATION (splashwindow));	//destroy the splash window
 
 }
 
@@ -100,10 +119,10 @@ void mainwindow (char *filename)
 
 {
 
-	MainWindow = gtk_application_new ("org.app.shi", G_APPLICATION_FLAGS_NONE);
-	g_signal_connect (MainWindow, "activate", G_CALLBACK (mainwindowactivate), NULL);
-	g_application_run (G_APPLICATION (MainWindow), 0, NULL);
-	g_object_unref (MainWindow);
+	MainWindow = gtk_application_new ("org.app.shi", G_APPLICATION_FLAGS_NONE);		//creates main window
+	g_signal_connect (MainWindow, "activate", G_CALLBACK (mainwindowactivate), NULL);	//creates signal handler for activating the window
+	g_application_run (G_APPLICATION (MainWindow), 0, NULL);				//runs the window
+	g_object_unref (MainWindow);								//de references the window
 
 }
 
@@ -125,11 +144,14 @@ void mainwindowactivate (GtkApplication *app, char *filename)
 			*Save,
 			*SaveAs,
 			*Quit;
-
+//assign new window to Window
 	Window = gtk_application_window_new (app);
+
+//set Window parameters
 	gtk_window_set_title (GTK_WINDOW (Window), "window");
 	gtk_window_set_default_size (GTK_WINDOW (Window), 768, 512);
 
+//assign elements to other widgets
 	MainBox = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	SecondBox = 	gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 	TextDisplay = 	gtk_text_view_new ();
@@ -143,25 +165,31 @@ void mainwindowactivate (GtkApplication *app, char *filename)
 	SaveAs = 	gtk_menu_item_new_with_label ("Save Project As");
 	Quit = 		gtk_menu_item_new_with_label ("Quit");
 
+//add primary container element to window
 	gtk_container_add (GTK_CONTAINER (Window), MainBox);
 
+//add menu elements to menu bar container
 	gtk_menu_item_set_submenu (GTK_MENU_ITEM (FileButton), FileMenu);
 	gtk_menu_button_set_popup (GTK_MENU_BUTTON (FileMenu), MenuBox);
 
+//add menu items to drop down menu
 	gtk_menu_shell_append (GTK_MENU_SHELL (FileMenu), Open);
 	gtk_menu_shell_append (GTK_MENU_SHELL (FileMenu), Save);
 	gtk_menu_shell_append (GTK_MENU_SHELL (FileMenu), SaveAs);
 	gtk_menu_shell_append (GTK_MENU_SHELL (FileMenu), Quit);
 	gtk_menu_shell_append (GTK_MENU_SHELL (MenuBar), FileButton);
 
+//add elements to primary container element
 	gtk_box_pack_start (GTK_BOX (MenuBox), MenuBar, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (MainBox), MenuBox, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (MainBox), SecondBox, TRUE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (SecondBox), TextDisplay, TRUE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (SecondBox), DrawDisplay, TRUE, FALSE, 0);
 
+//display all elements in window
 	gtk_widget_show_all (Window);
 
+//create signal handlers for button press events
 	g_signal_connect_swapped (Quit, "activate", G_CALLBACK (gtk_widget_destroy), Window);
 
 
@@ -187,6 +215,7 @@ void open_file ()
 
 {
 
+//this is a mess fix it later
 	gint x;
 	char *File_Name;
 

@@ -6,6 +6,9 @@
 #include <cstdlib>
 
 //GUI functions
+//"front end" stuff. These are all the primary functions that control
+//SHIs behavior. They call all the secondary functions (in the backend
+//that perform the underlying processes
 
 void mainwindow (char *filename);
 void mainwindowactivate (GtkApplication *app, gchar *filename);
@@ -19,6 +22,9 @@ void open_project ();
 void open_file ();
 
 //Backend Functions
+//none of these functions are used individually or called by
+//themselves. these are all used to provide the information to display
+//with the GUI functions
 
 char *Parse_Log_File (char *filename);
 

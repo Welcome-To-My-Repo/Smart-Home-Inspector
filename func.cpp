@@ -1,5 +1,7 @@
 #include "shi.h"
 
+//Backend functions are defined in this file
+
 char *Parse_Log_File (char *filename)
 
 {
