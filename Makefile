@@ -3,6 +3,8 @@ LIBS = 		`pkg-config --libs gtk+-3.0`
 OBJS = 		shi.o window.o func.o
 OUT = 		shi
 
+default: shi
+
 shi: $(OBJS)
 	g++ -o$(OUT) $(OBJS) $(CFLAGS) $(LIBS)
 
