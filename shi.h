@@ -27,5 +27,6 @@ void open_file ();
 //with the GUI functions
 
 char *Parse_Log_File (char *filename);
+const char mfin[] = "abc";
 
 #endif

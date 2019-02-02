@@ -6,7 +6,7 @@ OUT = 		shi
 default: shi
 
 shi: $(OBJS)
-	g++ -o$(OUT) $(OBJS) $(FLAGS) $(LIBS)
+	g++ $(OBJS) $(FLAGS) $(LIBS) -o$(OUT)
 
 shi.o: shi.cpp shi.h
 	g++ -c $*.cpp $(FLAGS) $(LIBS) -g3
