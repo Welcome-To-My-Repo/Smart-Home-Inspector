@@ -20,6 +20,7 @@ void splash_choose_file ();
 void drawing_area (GtkWidget *area);
 void open_project ();
 void open_file ();
+void save_project ();
 
 //Backend Functions
 //none of these functions are used individually or called by
