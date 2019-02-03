@@ -21,6 +21,7 @@ void mainwindowactivate (GtkApplication *app)
 	GtkWidget 	*Window,
 			*MainBox,
 			*SecondBox,
+			*Scrollbox,
 			*TextDisplay,
 			*DrawDisplay,
 			*FileMenu,
