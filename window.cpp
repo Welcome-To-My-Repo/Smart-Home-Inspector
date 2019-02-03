@@ -1,104 +1,20 @@
 #include "shi.h"
 #include <fstream>
-//all the GUI functions are defined in this file
-GtkApplication *MainWindow, *splashwindow;		//the global widgets to hold the splash and main windows
-char *filename, *Log_File;				//global strings to hold the path and the contents of the inspected logfile
-//the main function that starts the GUI. everything else is called
-//from this
-void splashscreen ()
+
+GtkApplication *MainWindow;
+char *filename, *Log_File;
+std::vector <GtkTextBuffer> Text_Files;	//a vecotr of buffers so that in the
+					//future multiple text files can be
+					//chosen
+void mainwindow ()
 {
-	splashwindow = gtk_application_new ("temp.splash", G_APPLICATION_FLAGS_NONE);	//assign a new wintow to splashscreen
-	g_signal_connect (splashwindow, "activate", G_CALLBACK (startsplash), NULL);	//assign signal handler to the "activate" signal
-	g_application_run (G_APPLICATION (splashwindow), 0, NULL);			//give the "activate" signal
-	g_object_unref (splashwindow);							//de references splashwindow
+	MainWindow = gtk_application_new ("org.app.shi", G_APPLICATION_FLAGS_NONE);
+	g_signal_connect (MainWindow, "activate", G_CALLBACK (mainwindowactivate), NULL);
+	g_application_run (G_APPLICATION (MainWindow), 0, NULL);
+	g_object_unref (MainWindow);
 }
 
-void startsplash (GtkApplication *app)
-{
-	GtkWidget	*Window,
-	 		*Box,
-			*Image,
-			*QuitButton,
-			*Menu,
-			*MenuButtonCon,
-			*MenuButton,
-			*MenuBox,
-			*MenuBar,
-			*Recent,
-			*RecentMenu,
-			*RecentBox,
-			*RecentFiles [7],
-			*New;
-//assign new window to Window
-	Window = gtk_application_window_new (app);
-//set Window properties
-	gtk_window_set_title (GTK_WINDOW (Window), "Smart Home Inspector");
-	gtk_window_set_decorated (GTK_WINDOW (Window), FALSE);
-	gtk_window_set_default_size (GTK_WINDOW (Window), 512, 512);
-	gtk_window_set_position (GTK_WINDOW (Window), GTK_WIN_POS_CENTER);
-	gtk_window_set_resizable (GTK_WINDOW (Window), FALSE);
-	gtk_window_set_deletable (GTK_WINDOW (Window), FALSE);
-	gtk_window_set_skip_taskbar_hint (GTK_WINDOW (Window), TRUE);
-//assign elements to other widgets
-	Box = 		gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	Image = 	gtk_image_new_from_file ("logo.png");
-	Menu = 		gtk_menu_new ();
-	MenuButtonCon =	gtk_menu_item_new ();
-	MenuButton = 	gtk_button_new_with_label ("Menu");
-	MenuBox = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	MenuBar = 	gtk_menu_bar_new ();
-	Recent = 	gtk_menu_item_new_with_label ("Recent Projects");
-	New = 		gtk_menu_item_new_with_label ("New Project");
-	QuitButton =	gtk_button_new_with_label ("Quit");
-//add buttons to menu container
-	gtk_menu_shell_append (GTK_MENU_SHELL (Menu), New);
-	gtk_menu_shell_append (GTK_MENU_SHELL (Menu), Recent);
-	gtk_menu_shell_append (GTK_MENU_SHELL (MenuBar), MenuButtonCon);
-//add the elements vertically into the window
-	gtk_box_pack_start (GTK_BOX (Box), MenuBar, FALSE, FALSE, 0);
-	gtk_box_pack_start (GTK_BOX (Box), Image, FALSE, FALSE, 0);
-	gtk_box_pack_start (GTK_BOX (Box), QuitButton, FALSE, FALSE, 0);
-//add menu elements to the window
-	gtk_container_add (GTK_CONTAINER (Window), Box);
-	gtk_container_add (GTK_CONTAINER (MenuButtonCon), MenuButton);
-//set orientation of the areas in the window
-	gtk_box_set_child_packing (GTK_BOX (Box), QuitButton, TRUE, FALSE, 0, GTK_PACK_END);
-	gtk_box_set_child_packing (GTK_BOX (Box), MenuBar, TRUE, FALSE, 0, GTK_PACK_START);
-	gtk_box_set_child_packing (GTK_BOX (Box), Image, TRUE, FALSE, 0, GTK_PACK_START);
-//set the element that goes in the center (possibly unnecessary)
-	gtk_box_set_center_widget (GTK_BOX (Box), Image);
-//center the three main elements in the window
-	gtk_widget_set_halign (GTK_WIDGET (Menu), GTK_ALIGN_CENTER);
-	gtk_widget_set_halign (GTK_WIDGET (MenuBar), GTK_ALIGN_CENTER);
-	gtk_widget_set_halign (GTK_WIDGET (QuitButton), GTK_ALIGN_CENTER);
-//center the primary container in the window (possibly unnecessary)
-	gtk_box_set_baseline_position (GTK_BOX (MenuBox), GTK_BASELINE_POSITION_CENTER);
-//set menu items to show on selection
-	gtk_menu_item_set_submenu (GTK_MENU_ITEM (MenuButtonCon), Menu);
-	gtk_menu_button_set_popup (GTK_MENU_BUTTON (Menu), MenuBox);
-//create signal handlers to call other functions on button press events
-//also set signal handlers to open file chooser dialogues
-	g_signal_connect_swapped (New, "activate", G_CALLBACK (open_file), NULL);
-	g_signal_connect_swapped (Recent, "activate", G_CALLBACK (open_project), NULL);
-	g_signal_connect_swapped (QuitButton, "clicked", G_CALLBACK (gtk_widget_destroy), Window);
-//display the elements on the window
-	gtk_widget_show_all (Window);
-}
-
-void stopsplash ()
-{
-	g_application_quit (G_APPLICATION (splashwindow));	//destroy the splash window
-}
-
-void mainwindow (char *filename)
-{
-	MainWindow = gtk_application_new ("org.app.shi", G_APPLICATION_FLAGS_NONE);		//creates main window
-	g_signal_connect (MainWindow, "activate", G_CALLBACK (mainwindowactivate), NULL);	//creates signal handler for activating the window
-	g_application_run (G_APPLICATION (MainWindow), 0, NULL);				//runs the window
-	g_object_unref (MainWindow);								//de references the window
-}
-
-void mainwindowactivate (GtkApplication *app, char *filename)
+void mainwindowactivate (GtkApplication *app)
 {
 	GtkWidget 	*Window,
 			*MainBox,
@@ -183,7 +99,6 @@ void open_project ()
 		filename = gtk_file_chooser_get_filename (Choose);
 	}
 	gtk_widget_destroy (File_Chooser);
-	mainwindow (filename);
 	g_free (filename);
 }
 
@@ -229,6 +144,5 @@ void open_file ()
 		File_Name = gtk_file_chooser_get_filename (Choose);
 	}
 	gtk_widget_destroy (File_Chooser);
-	mainwindow (File_Name);
 	g_free (File_Name);
 }

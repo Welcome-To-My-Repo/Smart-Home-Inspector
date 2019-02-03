@@ -4,23 +4,21 @@
 #include <gtk/gtk.h>
 #include <iostream>
 #include <cstdlib>
+#include <string>
+#include <vector>
 
 //GUI functions
 //"front end" stuff. These are all the primary functions that control
 //SHIs behavior. They call all the secondary functions (in the backend
 //that perform the underlying processes
 
-void mainwindow (char *filename);
-void mainwindowactivate (GtkApplication *app, gchar *filename);
-void print_hello (GtkWidget *widget, gpointer data);
-void splashscreen ();
-void startsplash (GtkApplication *app);
-void stopsplash ();
-void splash_choose_file ();
-void drawing_area (GtkWidget *area);
-void open_project ();
-void open_file ();
-void save_project ();
+void mainwindow ();	//function to start the shi window
+void mainwindowactivate (GtkApplication *app);	//actual code to run the shi window
+void drawing_area (GtkWidget *area);	//function to run the drawing area
+void open_project ();	//open file dialogue for project files
+void open_file ();	//open file dialogue for log files
+void save_project ();	//save file dialogue for project files
+void add_text_view ();	//add a new log file to the view
 
 //Backend Functions
 //none of these functions are used individually or called by
