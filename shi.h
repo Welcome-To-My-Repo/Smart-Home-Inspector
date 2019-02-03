@@ -3,8 +3,10 @@
 
 #include <gtk/gtk.h>
 #include <iostream>
+#include <fstream>
 #include <cstdlib>
 #include <string>
+#include <sstream>
 #include <vector>
 
 //GUI functions
@@ -19,6 +21,7 @@ void open_project ();	//open file dialogue for project files
 void open_file ();	//open file dialogue for log files
 void save_project ();	//save file dialogue for project files
 void add_text_view ();	//add a new log file to the view
+void update_text_view (char *filename);	//updates the text view with new log files
 
 //Backend Functions
 //none of these functions are used individually or called by
