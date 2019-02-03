@@ -98,6 +98,7 @@ void mainwindowactivate (GtkApplication *app)
 	g_signal_connect_swapped (SaveAs, "activate", G_CALLBACK (save_project), NULL);
 //display all elements in window
 	gtk_widget_show_all (Window);
+	drawing_area (DrawDisplay);
 }
 
 void drawing_area (GtkWidget *area)
