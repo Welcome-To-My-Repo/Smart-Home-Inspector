@@ -1,6 +1,6 @@
 #include "shi.h"
 #include <fstream>
-
+/*
 GtkApplication *MainWindow;
 char *filename, *Log_File;
 std::vector <GtkTextBuffer*> Text_Files;	//a vecotr of buffers so that in the
@@ -8,6 +8,7 @@ std::vector <GtkTextBuffer*> Text_Files;	//a vecotr of buffers so that in the
 						//chosen
 GtkTextBuffer *TextBuffer;	//default text buffer until multiple log files
 				//has been implemented
+*/
 void mainwindow ()
 {
 	MainWindow = gtk_application_new ("org.app.shi", G_APPLICATION_FLAGS_NONE);
@@ -101,8 +102,10 @@ void mainwindowactivate (GtkApplication *app)
 	drawing_area (DrawDisplay);
 }
 
+//everything to do with the drawing area happens in this function
 void drawing_area (GtkWidget *area)
 {
+
 }
 
 void open_project ()

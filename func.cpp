@@ -2,7 +2,7 @@
 
 //Backend functions are defined in this file
 
-char *Parse_Log_File (char *filename)
+char *Parse_Log_File (std::string log)
 
 {
 

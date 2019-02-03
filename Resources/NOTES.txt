@@ -1,0 +1,1 @@
+work on analysis and presentation aspect first as the method of fetching may not stay the smae long enough to have a proof of concept
