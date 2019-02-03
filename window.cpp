@@ -42,6 +42,7 @@ void mainwindowactivate (GtkApplication *app)
 	MainBox = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	SecondBox = 	gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 	TextDisplay = 	gtk_text_view_new_with_buffer (GTK_TEXT_BUFFER (TextBuffer));
+	Scrollbox = 	gtk_scrolled_window_new (NULL, NULL);
 	DrawDisplay = 	gtk_drawing_area_new ();
 	FileMenu = 	gtk_menu_new ();
 	FileButton = 	gtk_menu_item_new_with_label ("File");
@@ -56,7 +57,7 @@ void mainwindowactivate (GtkApplication *app)
 	gtk_text_view_set_cursor_visible (GTK_TEXT_VIEW (TextDisplay), false);
 	gtk_text_view_set_editable (GTK_TEXT_VIEW (TextDisplay), false);
 	gtk_text_view_set_accepts_tab (GTK_TEXT_VIEW (TextDisplay), false);
-	gtk_text_view_set_wrap_mode (GTK_TEXT_VIEW (TextDisplay), GTK_WRAP_WORD_CHAR);
+	gtk_text_view_set_wrap_mode (GTK_TEXT_VIEW (TextDisplay), GTK_WRAP_NONE);
 	gtk_text_view_set_monospace (GTK_TEXT_VIEW (TextDisplay), GTK_WRAP_NONE);
 	gtk_text_view_set_justification (GTK_TEXT_VIEW (TextDisplay), GTK_JUSTIFY_LEFT);
 	gtk_scrollable_set_vscroll_policy (GTK_SCROLLABLE (TextDisplay), GTK_SCROLL_NATURAL);
@@ -68,6 +69,7 @@ void mainwindowactivate (GtkApplication *app)
 	gtk_text_view_set_buffer (GTK_TEXT_VIEW (TextDisplay), GTK_TEXT_BUFFER (TextBuffer));
 //add primary container element to window
 	gtk_container_add (GTK_CONTAINER (Window), MainBox);
+	gtk_container_add (GTK_CONTAINER (Scrollbox), TextDisplay);
 //add menu elements to menu bar container
 	gtk_menu_item_set_submenu (GTK_MENU_ITEM (FileButton), FileMenu);
 	gtk_menu_button_set_popup (GTK_MENU_BUTTON (FileMenu), MenuBox);
@@ -82,11 +84,12 @@ void mainwindowactivate (GtkApplication *app)
 	gtk_box_pack_start (GTK_BOX (MenuBox), MenuBar, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (MainBox), MenuBox, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (MainBox), SecondBox, TRUE, FALSE, 0);
-	gtk_box_pack_start (GTK_BOX (SecondBox), TextDisplay, TRUE, TRUE, 0);
+	gtk_box_pack_start (GTK_BOX (SecondBox), Scrollbox, TRUE, TRUE, 0);
 	gtk_box_pack_start (GTK_BOX (SecondBox), gtk_separator_new (GTK_ORIENTATION_VERTICAL), false, false, 0);
 	gtk_box_pack_start (GTK_BOX (SecondBox), DrawDisplay, TRUE, TRUE, 0);
 //box child packing settings
-	gtk_box_set_child_packing (GTK_BOX (MainBox), SecondBox, true, true, 5, GTK_PACK_START);
+	gtk_box_set_child_packing (GTK_BOX (MainBox), SecondBox, true, true, 0, GTK_PACK_START);
+	gtk_box_set_child_packing (GTK_BOX (SecondBox), Scrollbox, TRUE, TRUE, 0, GTK_PACK_START);
 	//gtk_box_set_child_packing (GTK_BOX (SecondBox), TextDisplay, true, true, 5, GTK_PACK_START);
 	//gtk_box_set_child_packing (GTK_BOX (SecondBox), DrawDisplay, true, true, 5, GTK_PACK_START);
 //create signal handlers for button press events
