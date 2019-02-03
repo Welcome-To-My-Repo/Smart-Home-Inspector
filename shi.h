@@ -8,6 +8,7 @@
 #include <string>
 #include <sstream>
 #include <vector>
+#include <iterator>
 
 static GtkApplication *MainWindow;
 static char *filename, *Log_File;
@@ -41,10 +42,13 @@ class smart_dev
 public:
 	smart_dev ();
 	~smart_dev ();
-	void add_event ();
+	void add_event (std::string name);
 	int get_event_types ();
+	void remove_event (std::string name);
 	void remove_event (int event_type);
+	bool is_active (std::string name);
 	bool is_active (int event_type);
+	float get_event_value (std::string name);
 	float get_event_value (int event_type);
 private:
 //event_types holds the number of different events a smart device can have
@@ -53,10 +57,10 @@ private:
 //event types, an event_active signal, and a value from the event if it exists
 	struct event
 	{
-		event(int type) {event_type = type;}
-		int event_type;
-		bool event_active;
-		float event_value;
+		event(std::string name) {event_name = name;}
+		std::string event_name = "";
+		bool event_active = false;
+		float event_value = 0;
 	};
 //a vector of the diferent kinds of events.
 	std::vector <event> events;
