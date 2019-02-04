@@ -25,8 +25,10 @@ void mainwindowactivate (GtkApplication *app)
 			*Scrollbox,
 			*TextDisplay,
 			*Tabs,
+			*EventsPlayBox,
 			*DrawDisplay,
 			*DevList,
+			*DevListScroll,
 			*FileMenu,
 			*FileButton,
 			*MenuBox,
@@ -35,7 +37,11 @@ void mainwindowactivate (GtkApplication *app)
 			*Save,
 			*SaveAs,
 			*MenuSeparator,
-			*Quit;
+			*Quit,
+			*Playbar,
+			*PlayScrubber,
+			*PlayButton,
+			*StopButton;
 //assign new window to Window
 	Window = gtk_application_window_new (app);
 //set Window parameters
@@ -46,7 +52,11 @@ void mainwindowactivate (GtkApplication *app)
 	SecondBox = 	gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 	TextDisplay = 	gtk_text_view_new_with_buffer (GTK_TEXT_BUFFER (TextBuffer));
 	Scrollbox = 	gtk_scrolled_window_new (NULL, NULL);
+	Tabs = 		gtk_notebook_new ();
+	EventsPlayBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	DrawDisplay = 	gtk_drawing_area_new ();
+	DevList = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+	DevListScroll = gtk_scrolled_window_new (NULL, NULL);
 	FileMenu = 	gtk_menu_new ();
 	FileButton = 	gtk_menu_item_new_with_label ("File");
 	MenuBox = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
@@ -56,6 +66,10 @@ void mainwindowactivate (GtkApplication *app)
 	SaveAs = 	gtk_menu_item_new_with_label ("Save Project As");
 	MenuSeparator =	gtk_separator_menu_item_new ();
 	Quit = 		gtk_menu_item_new_with_label ("Quit");
+	Playbar = 	gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
+	PlayScrubber = 	gtk_scale_new_with_range (GTK_ORIENTATION_HORIZONTAL, 0, 100, 1);
+	PlayButton = 	gtk_button_new ();
+	StopButton = 	gtk_button_new ();
 //set text view properties
 	gtk_text_view_set_cursor_visible (GTK_TEXT_VIEW (TextDisplay), false);
 	gtk_text_view_set_editable (GTK_TEXT_VIEW (TextDisplay), false);
@@ -70,9 +84,25 @@ void mainwindowactivate (GtkApplication *app)
 					"There are no log files currently loaded",
 					-1);
 	gtk_text_view_set_buffer (GTK_TEXT_VIEW (TextDisplay), GTK_TEXT_BUFFER (TextBuffer));
+//create tab display
+	gtk_notebook_append_page (GTK_NOTEBOOK (Tabs), EventsPlayBox, NULL);
+	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (Tabs), EventsPlayBox, "Device Map");
+	gtk_notebook_append_page (GTK_NOTEBOOK (Tabs), DevListScroll, NULL);
+	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (Tabs), DevListScroll, "Device List");
+//create the playbar with scrubber
+	gtk_button_set_image (	GTK_BUTTON (PlayButton),
+				gtk_image_new_from_icon_name ("media-playback-start",
+				GTK_ICON_SIZE_SMALL_TOOLBAR));
+	gtk_button_set_image (	GTK_BUTTON (StopButton),
+				gtk_image_new_from_icon_name ("media-playback-stop",
+				GTK_ICON_SIZE_SMALL_TOOLBAR));
+	gtk_box_pack_start (GTK_BOX (Playbar), PlayButton, FALSE, FALSE, 0);
+	gtk_box_pack_start (GTK_BOX (Playbar), StopButton, FALSE, FALSE, 0);
+	gtk_box_pack_start (GTK_BOX (Playbar), PlayScrubber, TRUE, TRUE, 0);
 //add primary container element to window
 	gtk_container_add (GTK_CONTAINER (Window), MainBox);
 	gtk_container_add (GTK_CONTAINER (Scrollbox), TextDisplay);
+	gtk_container_add (GTK_CONTAINER (DevListScroll), DevList);
 //add menu elements to menu bar container
 	gtk_menu_item_set_submenu (GTK_MENU_ITEM (FileButton), FileMenu);
 	gtk_menu_button_set_popup (GTK_MENU_BUTTON (FileMenu), MenuBox);
@@ -88,8 +118,11 @@ void mainwindowactivate (GtkApplication *app)
 	gtk_box_pack_start (GTK_BOX (MainBox), MenuBox, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (MainBox), SecondBox, TRUE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (SecondBox), Scrollbox, TRUE, TRUE, 0);
-	gtk_box_pack_start (GTK_BOX (SecondBox), gtk_separator_new (GTK_ORIENTATION_VERTICAL), false, false, 0);
-	gtk_box_pack_start (GTK_BOX (SecondBox), DrawDisplay, TRUE, TRUE, 0);
+	gtk_box_pack_start (GTK_BOX (SecondBox), gtk_separator_new (GTK_ORIENTATION_VERTICAL), false, false, 7);
+	gtk_box_pack_start (GTK_BOX (SecondBox), Tabs, TRUE, TRUE, 0);
+	gtk_box_pack_start (GTK_BOX (EventsPlayBox), DrawDisplay, TRUE, TRUE, 0);
+	gtk_box_pack_start (GTK_BOX (EventsPlayBox), gtk_separator_new (GTK_ORIENTATION_HORIZONTAL), false, false, 7);
+	gtk_box_pack_start (GTK_BOX (EventsPlayBox), Playbar, FALSE, FALSE, 0);
 //box child packing settings
 	gtk_box_set_child_packing (GTK_BOX (MainBox), SecondBox, true, true, 0, GTK_PACK_START);
 	gtk_box_set_child_packing (GTK_BOX (SecondBox), Scrollbox, TRUE, TRUE, 0, GTK_PACK_START);
