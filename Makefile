@@ -1,4 +1,4 @@
-FLAGS = 	`pkg-config --cflags gtk+-3.0`
+FLAGS = 	`pkg-config --cflags gtk+-3.0` -std=gnu++17
 LIBS = 		`pkg-config --libs gtk+-3.0`
 OBJS = 		shi.o window.o func.o
 OUT = 		shi

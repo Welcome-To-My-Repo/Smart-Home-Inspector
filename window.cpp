@@ -211,6 +211,8 @@ void add_text_view (char *filename, GtkWidget *tabs)
 			*box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
 			*close = gtk_button_new ();
 	int *page = new int;
+	std::string str = filename, sub = "";
+	sub = str.substr (str.rfind ("/", std::string::npos) + 1, std::string::npos);
 	*page = gtk_notebook_get_n_pages (GTK_NOTEBOOK (tabs));
 	std::ifstream in;
 	std::string contents = "";
@@ -235,9 +237,9 @@ void add_text_view (char *filename, GtkWidget *tabs)
 	gtk_button_set_always_show_image (GTK_BUTTON (close), TRUE);
 	gtk_button_set_image (GTK_BUTTON (close), gtk_image_new_from_icon_name ("window-close", GTK_ICON_SIZE_SMALL_TOOLBAR));
 	gtk_box_pack_start (GTK_BOX (box), scroll, TRUE, TRUE, 0);
-	gtk_box_pack_start (GTK_BOX (box), close, FALSE, FALSE, 0);
+	gtk_box_pack_start (GTK_BOX (box), close, FALSE, TRUE, 0);
 	gtk_notebook_append_page (GTK_NOTEBOOK (tabs), box, NULL);
-	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (tabs), box, filename);
+	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (tabs), box, sub.c_str());
 
 	text = gtk_text_view_new_with_buffer (GTK_TEXT_BUFFER (Text_Files.back ()));
 
@@ -259,6 +261,9 @@ void add_text_view (char *filename, GtkWidget *tabs)
 
 void remove_page (int *page)
 {
-	gtk_notebook_remove_page (GTK_NOTEBOOK (TextTabs), *page - 1);
-	Text_Files.erase (Text_Files.begin () + *page - 1);
+	if (gtk_notebook_get_n_pages (GTK_NOTEBOOK (TextTabs)) > 1)
+	{
+		gtk_notebook_remove_page (GTK_NOTEBOOK (TextTabs), *page - 1);
+		Text_Files.erase (Text_Files.begin () + *page - 1);
+	}
 }

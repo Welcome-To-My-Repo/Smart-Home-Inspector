@@ -45,8 +45,6 @@ static GtkApplication *MainWindow;
 static char *filename, *Log_File;
 //vector of text buffer for future implementation of loading multiple log files
 static std::vector <GtkTextBuffer*> Text_Files;
-//default text buffer for loading single log files
-static GtkTextBuffer *TextBuffer;
 
 //GUI functions
 //"front end" stuff. These are all the primary functions that control
