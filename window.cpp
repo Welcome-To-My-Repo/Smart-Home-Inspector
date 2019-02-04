@@ -1,14 +1,29 @@
 #include "shi.h"
 #include <fstream>
-/*
-GtkApplication *MainWindow;
-char *filename, *Log_File;
-std::vector <GtkTextBuffer*> Text_Files;	//a vecotr of buffers so that in the
-						//future multiple text files can be
-						//chosen
-GtkTextBuffer *TextBuffer;	//default text buffer until multiple log files
-				//has been implemented
-*/
+
+GtkWidget 	*Window,
+		*MainBox,
+		*SecondBox,
+		*Tabs,
+		*TextTabs,
+		*EventsPlayBox,
+		*DrawDisplay,
+		*DevList,
+		*DevListScroll,
+		*FileMenu,
+		*FileButton,
+		*MenuBox,
+		*MenuBar,
+		*Open,
+		*Save,
+		*SaveAs,
+		*MenuSeparator,
+		*Quit,
+		*Playbar,
+		*PlayScrubber,
+		*PlayButton,
+		*StopButton;
+
 void mainwindow ()
 {
 	MainWindow = gtk_application_new ("org.app.shi", G_APPLICATION_FLAGS_NONE);
@@ -19,29 +34,7 @@ void mainwindow ()
 
 void mainwindowactivate (GtkApplication *app)
 {
-	GtkWidget 	*Window,
-			*MainBox,
-			*SecondBox,
-			*Scrollbox,
-			*TextDisplay,
-			*Tabs,
-			*EventsPlayBox,
-			*DrawDisplay,
-			*DevList,
-			*DevListScroll,
-			*FileMenu,
-			*FileButton,
-			*MenuBox,
-			*MenuBar,
-			*Open,
-			*Save,
-			*SaveAs,
-			*MenuSeparator,
-			*Quit,
-			*Playbar,
-			*PlayScrubber,
-			*PlayButton,
-			*StopButton;
+
 //assign new window to Window
 	Window = gtk_application_window_new (app);
 //set Window parameters
@@ -50,8 +43,7 @@ void mainwindowactivate (GtkApplication *app)
 //assign elements to other widgets
 	MainBox = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	SecondBox = 	gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-	TextDisplay = 	gtk_text_view_new_with_buffer (GTK_TEXT_BUFFER (TextBuffer));
-	Scrollbox = 	gtk_scrolled_window_new (NULL, NULL);
+	TextTabs = 	gtk_notebook_new ();
 	Tabs = 		gtk_notebook_new ();
 	EventsPlayBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	DrawDisplay = 	gtk_drawing_area_new ();
@@ -70,20 +62,15 @@ void mainwindowactivate (GtkApplication *app)
 	PlayScrubber = 	gtk_scale_new_with_range (GTK_ORIENTATION_HORIZONTAL, 0, 100, 1);
 	PlayButton = 	gtk_button_new ();
 	StopButton = 	gtk_button_new ();
-//set text view properties
-	gtk_text_view_set_cursor_visible (GTK_TEXT_VIEW (TextDisplay), false);
-	gtk_text_view_set_editable (GTK_TEXT_VIEW (TextDisplay), false);
-	gtk_text_view_set_accepts_tab (GTK_TEXT_VIEW (TextDisplay), false);
-	gtk_text_view_set_wrap_mode (GTK_TEXT_VIEW (TextDisplay), GTK_WRAP_NONE);
-	gtk_text_view_set_monospace (GTK_TEXT_VIEW (TextDisplay), GTK_WRAP_NONE);
-	gtk_text_view_set_justification (GTK_TEXT_VIEW (TextDisplay), GTK_JUSTIFY_LEFT);
-	gtk_scrollable_set_vscroll_policy (GTK_SCROLLABLE (TextDisplay), GTK_SCROLL_NATURAL);
-	gtk_scrollable_set_hscroll_policy (GTK_SCROLLABLE (TextDisplay), GTK_SCROLL_NATURAL);
-	TextBuffer = gtk_text_buffer_new (NULL);
-	gtk_text_buffer_set_text (GTK_TEXT_BUFFER (TextBuffer),
-					"There are no log files currently loaded",
-					-1);
-	gtk_text_view_set_buffer (GTK_TEXT_VIEW (TextDisplay), GTK_TEXT_BUFFER (TextBuffer));
+//set default text display
+	GtkWidget *tmp;
+	gtk_notebook_set_scrollable (GTK_NOTEBOOK (TextTabs), TRUE);
+	gtk_notebook_append_page (GTK_NOTEBOOK (TextTabs), tmp = gtk_scrolled_window_new (NULL, NULL), NULL);
+	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (TextTabs), tmp, "Blank");
+	Text_Files.resize (0);
+	Text_Files.push_back (gtk_text_buffer_new (NULL));
+	gtk_text_buffer_set_text (Text_Files.front (), "There are no log files currently loaded.", -1);
+	gtk_container_add (GTK_CONTAINER (tmp), gtk_text_view_new_with_buffer (Text_Files.front ()));
 //create tab display
 	gtk_notebook_append_page (GTK_NOTEBOOK (Tabs), EventsPlayBox, NULL);
 	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (Tabs), EventsPlayBox, "Device Map");
@@ -101,7 +88,7 @@ void mainwindowactivate (GtkApplication *app)
 	gtk_box_pack_start (GTK_BOX (Playbar), PlayScrubber, TRUE, TRUE, 0);
 //add primary container element to window
 	gtk_container_add (GTK_CONTAINER (Window), MainBox);
-	gtk_container_add (GTK_CONTAINER (Scrollbox), TextDisplay);
+	//gtk_container_add (GTK_CONTAINER (TextTabs), TextDisplay);
 	gtk_container_add (GTK_CONTAINER (DevListScroll), DevList);
 //add menu elements to menu bar container
 	gtk_menu_item_set_submenu (GTK_MENU_ITEM (FileButton), FileMenu);
@@ -117,7 +104,7 @@ void mainwindowactivate (GtkApplication *app)
 	gtk_box_pack_start (GTK_BOX (MenuBox), MenuBar, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (MainBox), MenuBox, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (MainBox), SecondBox, TRUE, FALSE, 0);
-	gtk_box_pack_start (GTK_BOX (SecondBox), Scrollbox, TRUE, TRUE, 0);
+	gtk_box_pack_start (GTK_BOX (SecondBox), TextTabs, TRUE, TRUE, 0);
 	gtk_box_pack_start (GTK_BOX (SecondBox),
 		gtk_separator_new (GTK_ORIENTATION_VERTICAL),
 		false, false, 7);
@@ -129,12 +116,12 @@ void mainwindowactivate (GtkApplication *app)
 	gtk_box_pack_start (GTK_BOX (EventsPlayBox), Playbar, FALSE, FALSE, 0);
 //box child packing settings
 	gtk_box_set_child_packing (GTK_BOX (MainBox), SecondBox, true, true, 0, GTK_PACK_START);
-	gtk_box_set_child_packing (GTK_BOX (SecondBox), Scrollbox, TRUE, TRUE, 0, GTK_PACK_START);
+	gtk_box_set_child_packing (GTK_BOX (SecondBox), TextTabs, TRUE, TRUE, 0, GTK_PACK_START);
 	//gtk_box_set_child_packing (GTK_BOX (SecondBox), TextDisplay, true, true, 5, GTK_PACK_START);
 	//gtk_box_set_child_packing (GTK_BOX (SecondBox), DrawDisplay, true, true, 5, GTK_PACK_START);
 //create signal handlers for button press events
 	g_signal_connect_swapped (Quit, "activate", G_CALLBACK (gtk_widget_destroy), Window);
-	g_signal_connect_swapped (Open, "activate", G_CALLBACK (open_file), NULL);
+	g_signal_connect_swapped (Open, "activate", G_CALLBACK (open_file), TextTabs);
 	g_signal_connect_swapped (SaveAs, "activate", G_CALLBACK (save_project), NULL);
 //display all elements in window
 	gtk_widget_show_all (Window);
@@ -191,7 +178,7 @@ void save_project ()
 	gtk_widget_destroy (File_Chooser);
 }
 
-void open_file ()
+void open_file (GtkWidget *tabs)
 {
 	GtkWidget *file_chooser, *window;
 	window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
@@ -211,24 +198,67 @@ void open_file ()
 		char *filename;
 		GtkFileChooser *a = GTK_FILE_CHOOSER (file_chooser);
 		filename = gtk_file_chooser_get_filename (a);
-		update_text_view (filename);
+		add_text_view (filename, tabs);
 		g_free (filename);
 	}
 	gtk_widget_destroy (file_chooser);
 }
 
-void update_text_view (char *filename)
+void add_text_view (char *filename, GtkWidget *tabs)
 {
+	GtkWidget 	*scroll = gtk_scrolled_window_new (NULL, NULL),
+			*text,
+			*box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
+			*close = gtk_button_new ();
+	int *page = new int;
+	*page = gtk_notebook_get_n_pages (GTK_NOTEBOOK (tabs));
 	std::ifstream in;
 	std::string contents = "";
 	std::stringstream buffer;
+
+	if (strcmp ("Blank", gtk_notebook_get_tab_label_text (GTK_NOTEBOOK (tabs), gtk_notebook_get_nth_page (GTK_NOTEBOOK (tabs), 0))) == 0)
+	{
+		Text_Files.resize (0);
+		gtk_notebook_remove_page (GTK_NOTEBOOK (tabs), 0);
+	}
 	in.open (filename);
 	if (in.is_open ())
 	{
 		buffer << in.rdbuf ();	//copy contents of ifstream buffer to stringstream
 		contents = buffer.str ();	//copy contents of stringstream to string
-		gtk_text_buffer_set_text (GTK_TEXT_BUFFER (TextBuffer),
+		Text_Files.push_back (gtk_text_buffer_new (NULL));
+		gtk_text_buffer_set_text (Text_Files.back(),
 					contents.c_str (),
 					-1);
 	}
+
+	gtk_button_set_always_show_image (GTK_BUTTON (close), TRUE);
+	gtk_button_set_image (GTK_BUTTON (close), gtk_image_new_from_icon_name ("window-close", GTK_ICON_SIZE_SMALL_TOOLBAR));
+	gtk_box_pack_start (GTK_BOX (box), scroll, TRUE, TRUE, 0);
+	gtk_box_pack_start (GTK_BOX (box), close, FALSE, FALSE, 0);
+	gtk_notebook_append_page (GTK_NOTEBOOK (tabs), box, NULL);
+	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (tabs), box, filename);
+
+	text = gtk_text_view_new_with_buffer (GTK_TEXT_BUFFER (Text_Files.back ()));
+
+
+	gtk_text_view_set_cursor_visible (GTK_TEXT_VIEW (text), false);
+	gtk_text_view_set_editable (GTK_TEXT_VIEW (text), false);
+	gtk_text_view_set_accepts_tab (GTK_TEXT_VIEW (text), false);
+	gtk_text_view_set_wrap_mode (GTK_TEXT_VIEW (text), GTK_WRAP_NONE);
+	gtk_text_view_set_monospace (GTK_TEXT_VIEW (text), GTK_WRAP_NONE);
+	gtk_text_view_set_justification (GTK_TEXT_VIEW (text), GTK_JUSTIFY_LEFT);
+	gtk_scrollable_set_vscroll_policy (GTK_SCROLLABLE (text), GTK_SCROLL_NATURAL);
+	gtk_scrollable_set_hscroll_policy (GTK_SCROLLABLE (text), GTK_SCROLL_NATURAL);
+	gtk_container_add (GTK_CONTAINER (scroll), text);
+	gtk_widget_show_all (tabs);
+
+	g_signal_connect_swapped (close, "clicked", G_CALLBACK (remove_page), page);
+
+}
+
+void remove_page (int *page)
+{
+	gtk_notebook_remove_page (GTK_NOTEBOOK (TextTabs), *page - 1);
+	Text_Files.erase (Text_Files.begin () + *page - 1);
 }

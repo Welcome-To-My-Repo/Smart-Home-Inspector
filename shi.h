@@ -9,34 +9,8 @@
 #include <sstream>
 #include <vector>
 #include <iterator>
-
-static GtkApplication *MainWindow;
-static char *filename, *Log_File;
-//vector of text buffer for future implementation of loading multiple log files
-static std::vector <GtkTextBuffer*> Text_Files;
-//default text buffer for loading single log files
-static GtkTextBuffer *TextBuffer;
-
-//GUI functions
-//"front end" stuff. These are all the primary functions that control
-//SHIs behavior. They call all the secondary functions (in the backend
-//that perform the underlying processes
-
-void mainwindow ();	//function to start the shi window
-void mainwindowactivate (GtkApplication *app);	//actual code to run the shi window
-void drawing_area (GtkWidget *area);	//function to run the drawing area
-void open_project ();	//open file dialogue for project files
-void open_file ();	//open file dialogue for log files
-void save_project ();	//save file dialogue for project files
-void add_text_view ();	//add a new log file to the view
-void update_text_view (char *filename);	//updates the text view with new log files
-
-//Backend Functions
-//none of these functions are used individually or called by
-//themselves. these are all used to provide the information to display
-//with the GUI functions
-
-char *Parse_Log_File (std::string log);
+#include <chrono>
+//class to manage smart devices and associated events
 class smart_dev
 {
 public:
@@ -65,5 +39,47 @@ private:
 //a vector of the diferent kinds of events.
 	std::vector <event> events;
 };
+
+#define default_text "There are no log files currently loaded."
+static GtkApplication *MainWindow;
+static char *filename, *Log_File;
+//vector of text buffer for future implementation of loading multiple log files
+static std::vector <GtkTextBuffer*> Text_Files;
+//default text buffer for loading single log files
+static GtkTextBuffer *TextBuffer;
+
+//GUI functions
+//"front end" stuff. These are all the primary functions that control
+//SHIs behavior. They call all the secondary functions (in the backend
+//that perform the underlying processes
+
+//function to start the main shi window
+void mainwindow ();
+//actual code to produce the main shi window
+void mainwindowactivate (GtkApplication *app);
+//function to run the drawing area
+void drawing_area (GtkWidget *area);
+//open file dialogue for project files
+void open_project ();
+//open file dialogue for log files
+void open_file (GtkWidget *tabs);
+//save file dialogue for project files
+void save_project ();
+//add a new log file to the view
+void add_text_view (char *filename, GtkWidget *tabs);
+//updates the text view with new log files
+void update_text_view (char *filename, GtkWidget *notepad);
+//reads the events from the next smallest time segment in the log file
+void read_time_segment (smart_dev devlist);
+//wrapper on the remove page function for gtk notebooks
+void remove_page (int *page);
+
+//Backend Functions
+//none of these functions are used individually or called by
+//themselves. these are all used to provide the information to display
+//with the GUI functions
+
+char *Parse_Log_File (std::string log);
+
 
 #endif
