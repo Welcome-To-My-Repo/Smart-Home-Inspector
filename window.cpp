@@ -118,10 +118,14 @@ void mainwindowactivate (GtkApplication *app)
 	gtk_box_pack_start (GTK_BOX (MainBox), MenuBox, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (MainBox), SecondBox, TRUE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (SecondBox), Scrollbox, TRUE, TRUE, 0);
-	gtk_box_pack_start (GTK_BOX (SecondBox), gtk_separator_new (GTK_ORIENTATION_VERTICAL), false, false, 7);
+	gtk_box_pack_start (GTK_BOX (SecondBox),
+		gtk_separator_new (GTK_ORIENTATION_VERTICAL),
+		false, false, 7);
 	gtk_box_pack_start (GTK_BOX (SecondBox), Tabs, TRUE, TRUE, 0);
 	gtk_box_pack_start (GTK_BOX (EventsPlayBox), DrawDisplay, TRUE, TRUE, 0);
-	gtk_box_pack_start (GTK_BOX (EventsPlayBox), gtk_separator_new (GTK_ORIENTATION_HORIZONTAL), false, false, 7);
+	gtk_box_pack_start (GTK_BOX (EventsPlayBox),
+		gtk_separator_new (GTK_ORIENTATION_HORIZONTAL),
+		false, false, 7);
 	gtk_box_pack_start (GTK_BOX (EventsPlayBox), Playbar, FALSE, FALSE, 0);
 //box child packing settings
 	gtk_box_set_child_packing (GTK_BOX (MainBox), SecondBox, true, true, 0, GTK_PACK_START);
