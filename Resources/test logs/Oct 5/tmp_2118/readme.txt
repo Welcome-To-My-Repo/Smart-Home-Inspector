@@ -1,1 +1,0 @@
-after 2nd reboot with all the device disconnected and cloud connected. 

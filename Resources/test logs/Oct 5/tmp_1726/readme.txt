@@ -1,1 +1,0 @@
-after 1st reboot with all the device connected. 

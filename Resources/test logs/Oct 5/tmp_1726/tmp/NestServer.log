@@ -1,5 +1,0 @@
-[2017-10-5 17:20:0.79545]	 {INFO}	 <===============================Nest server Started ===========================>
-[2017-10-5 17:20:0.79718]	 {PRINT}	 ++connect_to_servers++
-[2017-10-5 17:20:0.79762]	 {PRINT}	 ++checkNestExist++
-[2017-10-5 17:20:0.80874]	 {ERROR}	 checkNestExist : file does not exist
-[2017-10-5 17:20:0.80902]	 {PRINT}	 ++receiver++
