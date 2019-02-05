@@ -24,3 +24,6 @@ install: shi
 
 	mkdir ~/.local/share/shi
 	mv shi /usr/local/bin
+
+test:
+	./shi
