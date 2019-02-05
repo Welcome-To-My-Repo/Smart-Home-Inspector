@@ -10,6 +10,8 @@
 #include <vector>
 #include <iterator>
 #include <chrono>
+#include <regex>
+#include <filesystem>
 //class to manage smart devices and associated events
 class smart_dev
 {
