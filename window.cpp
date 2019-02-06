@@ -19,10 +19,13 @@ GtkWidget 	*Window,
 		*SaveAs,
 		*MenuSeparator,
 		*Quit,
+		*Inspect,
 		*Playbar,
 		*PlayScrubber,
 		*PlayButton,
-		*StopButton;
+		*StopButton,
+		*SkipRight,
+		*SkipLeft;
 
 void mainwindow ()
 {
@@ -58,10 +61,13 @@ void mainwindowactivate (GtkApplication *app)
 	SaveAs = 	gtk_menu_item_new_with_label ("Save Project As");
 	MenuSeparator =	gtk_separator_menu_item_new ();
 	Quit = 		gtk_menu_item_new_with_label ("Quit");
+	Inspect = 	gtk_button_new_with_label ("Inspect Log Files");
 	Playbar = 	gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 	PlayScrubber = 	gtk_scale_new_with_range (GTK_ORIENTATION_HORIZONTAL, 0, 100, 1);
 	PlayButton = 	gtk_button_new ();
 	StopButton = 	gtk_button_new ();
+	SkipRight = 	gtk_button_new ();
+	SkipLeft = 	gtk_button_new ();
 //set default text display
 	GtkWidget *tmp;
 	gtk_notebook_set_scrollable (GTK_NOTEBOOK (TextTabs), TRUE);

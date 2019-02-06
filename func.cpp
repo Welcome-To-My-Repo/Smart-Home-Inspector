@@ -58,8 +58,7 @@ float smart_dev::get_event_value (std::string name)
 	return it->event_value;
 }
 
-//Backend functions are defined in this file
-
+//main function to parse the log file
 char *Parse_Log_File (std::string log)
 
 {
@@ -73,3 +72,5 @@ char *Parse_Log_File (std::string log)
 	return Log_file;
 
 }
+
+void read_time_segment (smart_dev devlist)
