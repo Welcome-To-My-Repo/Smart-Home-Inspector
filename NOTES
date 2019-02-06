@@ -1,10 +1,10 @@
 MAIN IDEA OF Smart Home Inspector
 
-SHI is a program that will inspect the logfiles of smart home devices and display the logged events in a live generated display. 
-There are two areas in the main window. 
-The first gives a text view of the logfile and highlights the current logged event. 
-The second area is a drawing window where the user can create a diagram of the location of the smart home network devices and position icons to represent the devices. 
-The icons will light up to represent their activation during a logged event. 
+SHI is a program that will inspect the logfiles of smart home devices and display the logged events in a live generated display.
+There are two areas in the main window.
+The first gives a text view of the logfile and highlights the current logged event.
+The second area is a drawing window where the user can create a diagram of the location of the smart home network devices and position icons to represent the devices.
+The icons will light up to represent their activation during a logged event.
 At the bottom, there's a playbar to move through the logged events in real time.
 
 WINDOW MOCKUP
@@ -26,3 +26,23 @@ WINDOW MOCKUP
 
 
 Zigbee and ZWave possible syntax?
+
+stuff to add:
+	-class to manage multiple smart_dev objects
+	-Parse_Log_File_window () function to manage dialogue window for creating
+		syntax information
+	-struct TIME to keep track of current time state being displayed
+		struct TIME
+		{
+			int	day,
+				month,
+				year,
+				hours,
+				minutes,
+				seconds;
+		}
+	-add export_syntax_profile () and import_syntax_profile () to manage
+		creating and reading syntax profile JSON files
+	-add "name" string to smart_dev class
+	-Parse_Log_File () will be activated by either add_text_view () or by
+		the user manually clicking on the "inspect" button
