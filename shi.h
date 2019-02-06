@@ -29,6 +29,8 @@ public:
 private:
 //event_types holds the number of different events a smart device can have
 	int event_types = 0;
+//name of device
+	std::string device_name;
 //event structure with an event_type corresponding to the event number in
 //event types, an event_active signal, and a value from the event if it exists
 	struct event
@@ -41,6 +43,34 @@ private:
 //a vector of the diferent kinds of events.
 	std::vector <event> events;
 };
+
+class smart_network
+{
+public:
+	smart_network ();
+	~smart_network ();
+private:
+	std::vector <smart_dev> devices;
+}
+
+struct TIME
+{
+	int	day = 0,
+		month = 0,
+		year = 0,
+		hour = 0,
+		minute = 0,
+		second = 0;
+}
+
+class SYNTAX
+{
+public:
+	SYNTAX ();
+	~SYNTAX ();
+private:
+//vector of
+}
 
 #define default_text "There are no log files currently loaded."
 static GtkApplication *MainWindow;
@@ -79,7 +109,11 @@ void remove_page (int *page);
 //themselves. these are all used to provide the information to display
 //with the GUI functions
 
-char *Parse_Log_File (std::string log);
+//parses the log files and populates the device classes
+//it also calls the gtk parsing dialogue
+void Parse_Log_File (std::string log);
+//creates the parsing dialogue window
+void Parse_Log_File_window ();
 
 
 #endif
