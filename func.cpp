@@ -96,18 +96,25 @@ void Parse_Log_File_window ()
 	GtkWidget	*Window = gtk_window_new (GTK_WINDOW_TOPLEVEL),
 			*BigBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
 			*Notebook = gtk_notebook_new (),
-			*TabBox,
+			*AddCustomTabButton = gtk_button_new_with_label ("Add Custom"),
+			*DeleteCustomTabButton = gtk_button_new_with_label ("Erase Custom"),
+			*Apply_button = gtk_button_new_from_icon_name ("gtk-apply", GTK_ICON_SIZE_SMALL_TOOLBAR),
+			*NotebookTabBox,
 			*SectionBox,
-			*SectionScrollBox,
-			*Viewport,
-			*EntryButtonBox,
-			*AddCustomTab = gtk_button_new_with_label ("Add Custom"),
-			*EraseCustomTab = gtk_button_new_with_label ("Erase Custom"),
-			*Add_buttons,
-			*Close_buttons,
+			*AddExpressionButton,
+			*EntryScrolledBox,
+			*EntryViewport,
+			*EntryContainer,
+			*DeleteEntryButton,
+			*Entry,
+
+
+
+
+
+
 			*Close_image = gtk_image_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR),
 			*Apply_button = gtk_button_new_from_icon_name ("gtk-apply", GTK_ICON_SIZE_SMALL_TOOLBAR);
-			*EntryFieldBox,
 			*Radio_is_Device = gtk_radio_button_new_with_label (radiobuttons, "Device Syntax"),
 			*Radio_is_Event = gtk_radio_button_new_with_label (radiobuttons, "Event Syntax"),
 			*Radio_is_State = gtk_radio_button_new_with_label (radiobuttons, "State Syntax");
@@ -115,12 +122,18 @@ void Parse_Log_File_window ()
 	gtk_box_pack_start (GTK_BOX (BigBox), Notebook, TRUE, TRUE, 0);
 	gtk_box_pack_start (GTK_BOX (BigBox), Apply_button, TRUE, FALSE, 0);
 
-	TabBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+	NotebookTabBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	SectionBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	SectionScrollBox = gtk_scrolled_window_new ();
-	Viewport = gtk_viewport_new ();
-	EntryButtonBox = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-	EntryFieldBox = gtk_new_entry_new_with_buffer (NULL);
-	Add_buttons = gtk_button_new_with_label ("Add Date/Time Format");
+	AddExpressionButton = gtk_button_new_with_label ("Add Date/Time Format");
+	EntryScrolledBox = gtk_scrolled_window_new ();
+	EntryViewport = gtk_viewport_new ();
+	EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
+	DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
+	Entry = gtk_entry_new_with_buffer (NULL);
+
+	gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
+	gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
+
+	gtk_notebook_append_page (GTK_NOTEBOOK (Notebook), NotebookTabBox, NULL);
 
 }
