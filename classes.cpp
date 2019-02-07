@@ -70,5 +70,6 @@ SYNTAX::~SYNTAX ()
 
 void SYNTAX::remove_expression (std::string expression)
 {
-	
+	std::cout << "Removed " << expression << std::endl;
+
 }

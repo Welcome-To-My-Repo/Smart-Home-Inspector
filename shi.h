@@ -64,7 +64,7 @@ void Parse_Log_Files_window (GtkApplication *dialogue);
 //adds new expression entry box to the parse log file window
 void add_entry_box (GtkWidget *container);
 //removes an entry box from the parse log file window
-void remove_expression (GtkWidget *container);
+void remove_expression (GtkWidget *entry);
 //adds new "custom" tab to the parse log file window
 void add_custom_page (GtkWidget *notebook);
 
