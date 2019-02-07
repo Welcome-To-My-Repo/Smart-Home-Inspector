@@ -12,6 +12,9 @@ GtkWidget 	*Window,
 		*DevListScroll,
 		*FileMenu,
 		*FileButton,
+		*ActionsMenu,
+		*ActionsButton,
+		*ActionsBox,
 		*MenuBox,
 		*MenuBar,
 		*Open,
@@ -29,7 +32,7 @@ GtkWidget 	*Window,
 
 void mainwindow ()
 {
-	MainWindow = gtk_application_new ("org.app.shi", G_APPLICATION_FLAGS_NONE);
+	MainWindow = gtk_application_new ("app.shi", G_APPLICATION_FLAGS_NONE);
 	g_signal_connect (MainWindow, "activate", G_CALLBACK (mainwindowactivate), NULL);
 	g_application_run (G_APPLICATION (MainWindow), 0, NULL);
 	g_object_unref (MainWindow);
@@ -54,6 +57,9 @@ void mainwindowactivate (GtkApplication *app)
 	DevListScroll = gtk_scrolled_window_new (NULL, NULL);
 	FileMenu = 	gtk_menu_new ();
 	FileButton = 	gtk_menu_item_new_with_label ("File");
+	ActionsMenu = 	gtk_menu_new ();
+	ActionsButton = gtk_menu_item_new_with_label ("Actions");
+	ActionsBox = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	MenuBox = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	MenuBar = 	gtk_menu_bar_new ();
 	Open = 		gtk_menu_item_new_with_label ("Open Log File");
@@ -61,7 +67,7 @@ void mainwindowactivate (GtkApplication *app)
 	SaveAs = 	gtk_menu_item_new_with_label ("Save Project As");
 	MenuSeparator =	gtk_separator_menu_item_new ();
 	Quit = 		gtk_menu_item_new_with_label ("Quit");
-	Inspect = 	gtk_button_new_with_label ("Inspect Log Files");
+	Inspect = 	gtk_menu_item_new_with_label ("Inspect Log Files");
 	Playbar = 	gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 	PlayScrubber = 	gtk_scale_new_with_range (GTK_ORIENTATION_HORIZONTAL, 0, 100, 1);
 	PlayButton = 	gtk_button_new ();
@@ -99,6 +105,9 @@ void mainwindowactivate (GtkApplication *app)
 //add menu elements to menu bar container
 	gtk_menu_item_set_submenu (GTK_MENU_ITEM (FileButton), FileMenu);
 	gtk_menu_button_set_popup (GTK_MENU_BUTTON (FileMenu), MenuBox);
+	gtk_menu_item_set_submenu (GTK_MENU_ITEM (ActionsButton), ActionsMenu);
+	gtk_menu_button_set_popup (GTK_MENU_BUTTON (ActionsMenu), ActionsBox);
+
 //add menu items to drop down menu
 	gtk_menu_shell_append (GTK_MENU_SHELL (FileMenu), Open);
 	gtk_menu_shell_append (GTK_MENU_SHELL (FileMenu), Save);
@@ -106,6 +115,9 @@ void mainwindowactivate (GtkApplication *app)
 	gtk_menu_shell_append (GTK_MENU_SHELL (FileMenu), MenuSeparator);
 	gtk_menu_shell_append (GTK_MENU_SHELL (FileMenu), Quit);
 	gtk_menu_shell_append (GTK_MENU_SHELL (MenuBar), FileButton);
+
+	gtk_menu_shell_append (GTK_MENU_SHELL (ActionsMenu), Inspect);
+	gtk_menu_shell_append (GTK_MENU_SHELL (MenuBar), ActionsButton);
 //add elements to primary container element
 	gtk_box_pack_start (GTK_BOX (MenuBox), MenuBar, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (MainBox), MenuBox, FALSE, FALSE, 0);
@@ -129,6 +141,7 @@ void mainwindowactivate (GtkApplication *app)
 	g_signal_connect_swapped (Quit, "activate", G_CALLBACK (gtk_widget_destroy), Window);
 	g_signal_connect_swapped (Open, "activate", G_CALLBACK (open_file), TextTabs);
 	g_signal_connect_swapped (SaveAs, "activate", G_CALLBACK (save_project), NULL);
+	g_signal_connect_swapped (Inspect, "activate", G_CALLBACK (Parse_Log_Files), NULL);
 //display all elements in window
 	gtk_widget_show_all (Window);
 	drawing_area (DrawDisplay);
@@ -208,6 +221,7 @@ void open_file (GtkWidget *tabs)
 		g_free (filename);
 	}
 	gtk_widget_destroy (file_chooser);
+	Parse_Log_Files ();
 }
 
 void add_text_view (char *filename, GtkWidget *tabs)
