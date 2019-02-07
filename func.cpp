@@ -17,29 +17,30 @@ void read_time_segment (shi::smart_dev devlist)
 
 void add_entry_box (GtkWidget *container)
 {
-	GtkWidget *sidebox, *closebutton, *entry;
+	GtkWidget *sidebox, *closebutton, *Entry;
 	sidebox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 	closebutton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-	entry = gtk_entry_new_with_buffer (gtk_entry_buffer_new (NULL, -1));
+	Entry = gtk_entry_new_with_buffer (gtk_entry_buffer_new (NULL, -1));
 
 	gtk_box_pack_start (GTK_BOX (sidebox), closebutton, FALSE, FALSE, 0);
-	gtk_box_pack_start (GTK_BOX (sidebox), entry, TRUE, TRUE, 0);
+	gtk_box_pack_start (GTK_BOX (sidebox), Entry, TRUE, TRUE, 0);
 
 	gtk_box_pack_start (GTK_BOX (container), sidebox, TRUE, FALSE, 0);
 
-	g_signal_connect_swapped (closebutton, "clicked", G_CALLBACK (gtk_widget_destroy), sidebox);
-	g_signal_connect (entry, "destroy", G_CALLBACK (remove_expression), entry);
+	g_signal_connect_swapped (closebutton, "clicked", G_CALLBACK (remove_expression), Entry);
 
 	gtk_widget_show_all (container);
 }
 
 void remove_expression (GtkWidget *entry)
 {
-	std::string expression = "";
-	expression.append (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (gtk_entry_get_buffer (GTK_ENTRY (entry)))));
-	//std::cout << "Remove Expression Called!" << std::endl;
-	//std::cout << expression << std::endl;
-	log_file_syntax.remove_expression (expression);
+	std::string entrystring;
+	entrystring.append (
+		gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (
+				gtk_entry_get_buffer (GTK_ENTRY (entry)))));
+	//std::cout << "Removed " << entrystring << std::endl;
+	log_file_syntax.remove_expression (entrystring);
+	gtk_widget_destroy (gtk_widget_get_parent (entry));
 }
 
 void add_custom_page (GtkWidget *notebook)
@@ -106,8 +107,8 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 	gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
 	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box), EntryViewportBox);
-	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (gtk_widget_destroy), EntryContainer);
-	g_signal_connect (Entry, "destroy", G_CALLBACK (remove_expression), Entry);
+
+	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_expression), Entry);
 
 //Add Bounding Expression section
 	AddExpressionButton = gtk_button_new_with_label ("Add Bounding Expression");
@@ -127,8 +128,8 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 	gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
 	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box), EntryViewportBox);
-	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (gtk_widget_destroy), EntryContainer);
-	g_signal_connect (Entry, "destroy", G_CALLBACK (remove_expression), Entry);
+
+	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_expression), Entry);
 
 //Add Bounding Expression section
 	AddExpressionButton = gtk_button_new_with_label ("Add Preceding Expression");
@@ -148,8 +149,8 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 	gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
 	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box), EntryViewportBox);
-	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (gtk_widget_destroy), EntryContainer);
-	g_signal_connect (Entry, "destroy", G_CALLBACK (remove_expression), Entry);
+
+	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_expression), Entry);
 
 //Add Bounding Expression section
 	AddExpressionButton = gtk_button_new_with_label ("Add Following Expression");
@@ -169,8 +170,8 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 	gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
 	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box), EntryViewportBox);
-	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (gtk_widget_destroy), EntryContainer);
-	g_signal_connect (Entry, "destroy", G_CALLBACK (remove_expression), Entry);
+
+	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_expression), Entry);
 
 //make Device Notation tab
 	NotebookTabBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
@@ -195,8 +196,8 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 	gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
 	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box), EntryViewportBox);
-	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (gtk_widget_destroy), EntryContainer);
-	g_signal_connect (Entry, "destroy", G_CALLBACK (remove_expression), Entry);
+
+	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_expression), Entry);
 
 //Add Keywords section
 	AddExpressionButton = gtk_button_new_with_label ("Add Keywords");
@@ -216,8 +217,8 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 	gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
 	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box), EntryViewportBox);
-	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (gtk_widget_destroy), EntryContainer);
-	g_signal_connect (Entry, "destroy", G_CALLBACK (remove_expression), Entry);
+
+	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_expression), Entry);
 
 //Add Bounding Expression section
 	AddExpressionButton = gtk_button_new_with_label ("Add Bounding Expression");
@@ -237,8 +238,8 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 	gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
 	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box), EntryViewportBox);
-	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (gtk_widget_destroy), EntryContainer);
-	g_signal_connect (Entry, "destroy", G_CALLBACK (remove_expression), Entry);
+
+	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_expression), Entry);
 
 //Add Preceding Expression section
 	AddExpressionButton = gtk_button_new_with_label ("Add Preceding Expression");
@@ -258,8 +259,8 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 	gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
 	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box), EntryViewportBox);
-	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (gtk_widget_destroy), EntryContainer);
-	g_signal_connect (Entry, "destroy", G_CALLBACK (remove_expression), Entry);
+
+	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_expression), Entry);
 
 //Add Following Expression section
 	AddExpressionButton = gtk_button_new_with_label ("Add Following Expression");
@@ -279,8 +280,8 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 	gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
 	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box), EntryViewportBox);
-	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (gtk_widget_destroy), EntryContainer);
-	g_signal_connect (Entry, "destroy", G_CALLBACK (remove_expression), Entry);
+
+	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_expression), Entry);
 
 //make Event Notation tab
 	NotebookTabBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
@@ -305,8 +306,8 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 	gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
 	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box), EntryViewportBox);
-	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (gtk_widget_destroy), EntryContainer);
-	g_signal_connect (Entry, "destroy", G_CALLBACK (remove_expression), Entry);
+
+	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_expression), Entry);
 
 //Add Keywords section
 	AddExpressionButton = gtk_button_new_with_label ("Add Keywords");
@@ -326,8 +327,8 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 	gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
 	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box), EntryViewportBox);
-	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (gtk_widget_destroy), EntryContainer);
-	g_signal_connect (Entry, "destroy", G_CALLBACK (remove_expression), Entry);
+
+	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_expression), Entry);
 
 //Add Bounding Expression section
 	AddExpressionButton = gtk_button_new_with_label ("Add Bounding Expression");
@@ -347,8 +348,8 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 	gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
 	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box), EntryViewportBox);
-	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (gtk_widget_destroy), EntryContainer);
-	g_signal_connect (Entry, "destroy", G_CALLBACK (remove_expression), Entry);
+
+	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_expression), Entry);
 
 //Add Preceding Expression section
 	AddExpressionButton = gtk_button_new_with_label ("Add Preceding Expression");
@@ -368,8 +369,8 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 	gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
 	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box), EntryViewportBox);
-	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (gtk_widget_destroy), EntryContainer);
-	g_signal_connect (Entry, "destroy", G_CALLBACK (remove_expression), Entry);
+
+	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_expression), Entry);
 
 //Add Following Expression section
 	AddExpressionButton = gtk_button_new_with_label ("Add Following Expression");
@@ -389,8 +390,8 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 	gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
 	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box), EntryViewportBox);
-	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (gtk_widget_destroy), EntryContainer);
-	g_signal_connect (Entry, "destroy", G_CALLBACK (remove_expression), Entry);
+
+	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_expression), Entry);
 
 //make State Notation tab
 	NotebookTabBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
@@ -415,8 +416,8 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 	gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
 	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box), EntryViewportBox);
-	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (gtk_widget_destroy), EntryContainer);
-	g_signal_connect (Entry, "destroy", G_CALLBACK (remove_expression), Entry);
+
+	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_expression), Entry);
 
 //Add Keywords section
 	AddExpressionButton = gtk_button_new_with_label ("Add Keywords");
@@ -436,8 +437,8 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 	gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
 	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box), EntryViewportBox);
-	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (gtk_widget_destroy), EntryContainer);
-	g_signal_connect (Entry, "destroy", G_CALLBACK (remove_expression), Entry);
+
+	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_expression), Entry);
 
 //Add Bounding Expression section
 	AddExpressionButton = gtk_button_new_with_label ("Add Bounding Expression");
@@ -457,8 +458,8 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 	gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
 	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box), EntryViewportBox);
-	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (gtk_widget_destroy), EntryContainer);
-	g_signal_connect (Entry, "destroy", G_CALLBACK (remove_expression), Entry);
+
+	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_expression), Entry);
 
 //Add Preceding Expression section
 	AddExpressionButton = gtk_button_new_with_label ("Add Preceding Expression");
@@ -478,8 +479,8 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 	gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
 	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box), EntryViewportBox);
-	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (gtk_widget_destroy), EntryContainer);
-	g_signal_connect (Entry, "destroy", G_CALLBACK (remove_expression), Entry);
+
+	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_expression), Entry);
 
 //Add Following Expression section
 	AddExpressionButton = gtk_button_new_with_label ("Add Following Expression");
@@ -499,8 +500,8 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 	gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
 	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box), EntryViewportBox);
-	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (gtk_widget_destroy), EntryContainer);
-	g_signal_connect (Entry, "destroy", G_CALLBACK (remove_expression), Entry);
+
+	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_expression), Entry);
 
 	gtk_widget_show_all (Window);
 }
