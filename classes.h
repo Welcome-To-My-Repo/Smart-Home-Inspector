@@ -30,7 +30,7 @@ namespace shi
 			bool event_active = false;
 			float event_value = 0;
 		};
-	//a vector of the diferent kinds of events.
+	//a std::vector of the diferent kinds of events.
 		std::vector <event> events;
 	};
 
@@ -90,14 +90,14 @@ namespace shi
 	private:
 		struct Time_Notation
 		{
-			vector <GtkEntryBuffer*> 	Time_Fomat,
+			std::vector <GtkEntryBuffer*> 	Time_Fomat,
 							Bounding_Ex,
 							Preceding_Ex,
 							Following_Ex;
 		};
 		struct Device
 		{
-			vector <GtkEntryBuffer*>	Declarative_Ex,
+			std::vector <GtkEntryBuffer*>	Declarative_Ex,
 							Keywords,
 							Bounding_Ex,
 							Preceding_Ex,
@@ -105,7 +105,7 @@ namespace shi
 		};
 		struct Event
 		{
-			vector <GtkEntryBuffer*>	Declarative_Ex,
+			std::vector <GtkEntryBuffer*>	Declarative_Ex,
 							Keywords,
 							Bounding_Ex,
 							Preceding_Ex,
@@ -113,7 +113,7 @@ namespace shi
 		};
 		struct State
 		{
-			vector <GtkEntryBuffer*>	Declarative_Ex,
+			std::vector <GtkEntryBuffer*>	Declarative_Ex,
 							Keywords,
 							Bounding_Ex,
 							Preceding_Ex,
