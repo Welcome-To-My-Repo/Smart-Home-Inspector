@@ -68,8 +68,58 @@ SYNTAX::~SYNTAX ()
 
 }
 
-void SYNTAX::remove_expression (std::string expression)
+void SYNTAX::time_remove_ex (std::string expression)
 {
-	std::cout << "Removed " << expression << std::endl;
+	for (int i = 0; i < T.Time_Fomat.size (); i ++)
+	{
+		if (0 == strcmp (
+				gtk_entry_buffer_get_text(
+				GTK_ENTRY_BUFFER (T.Time_Format.at (i))),
+				expression.c_str ()))
+		{
+			T.Time_Format.erase (T.Time_Format.begin () + i);
+			return;
+		}
+	}
+	for (int i = 0; i < T.Bounding_Ex.size (); i ++)
+	{
+		if (0 == strcmp (
+				gtk_entry_buffer_get_text(
+				GTK_ENTRY_BUFFER (T.Bounding_Ex.at (i))),
+				expression.c_str ()))
+		{
+			T.Bounding_Ex.erase (T.Bounding_Ex.begin () + i);
+			return;
+		}
+	}
+	for (int i = 0; i < T.Preceding_Ex.size (); i ++)
+	{
+		if (0 == strcmp (
+				gtk_entry_buffer_get_text(
+				GTK_ENTRY_BUFFER (T.Preceding_Ex.at (i))),
+				expression.c_str ()))
+		{
+			T.Preceding_Ex.erase (T.Preceding_Ex.begin () + i);
+			return;
+		}
+	}
+	for (int i = 0; i < T.Following_Ex.size (); i ++)
+	{
+		if (0 == strcmp (
+				gtk_entry_buffer_get_text(
+				GTK_ENTRY_BUFFER (T.Following_Ex.at (i))),
+				expression.c_str ()))
+		{
+			T.Following_Ex.erase (T.Following_Ex.begin () + i);
+			return;
+		}
+	}
+}
 
+void SYNTAX::device_remove_ex (std::string expression)
+{
+	for (int i = 0; i < D.Declarative_Ex.size (); i++)
+	{
+		
+	}
 }
