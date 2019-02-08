@@ -286,7 +286,7 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 //make Event Notation tab
 	NotebookTabBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	gtk_notebook_append_page (GTK_NOTEBOOK (Notebook), NotebookTabBox, NULL);
-	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (Notebook), NotebookTabBox, "Device Notation");
+	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (Notebook), NotebookTabBox, "Event Notation");
 
 //Add Declarative Expression section
 	AddExpressionButton = gtk_button_new_with_label ("Add Declarative Expression");
@@ -396,7 +396,7 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 //make State Notation tab
 	NotebookTabBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	gtk_notebook_append_page (GTK_NOTEBOOK (Notebook), NotebookTabBox, NULL);
-	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (Notebook), NotebookTabBox, "Device Notation");
+	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (Notebook), NotebookTabBox, "State Notation");
 
 //Add Declarative Expression section
 	AddExpressionButton = gtk_button_new_with_label ("Add Declarative Expression");
