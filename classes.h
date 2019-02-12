@@ -59,70 +59,17 @@ namespace shi
 		SYNTAX ();
 		~SYNTAX ();
 
-		void time_remove_ex (std::string expression);
-		void device_remove_ex (std::string expression);
-		void event_remove_ex (std::string expression);
-		void state_remove_ex (std::string expression);
+		void time_remove_format (GtkEntryBuffer *expression);
+		void time_remove_ex (GtkEntryBuffer *expression);
+		void device_remove_ex (GtkEntryBuffer *expression);
+		void event_remove_ex (GtkEntryBuffer *expression);
+		void state_remove_ex (GtkEntryBuffer *expression);
 
-		GtkEntryBuffer* get_time_format ();
-		GtkEntryBuffer* get_time_bounding ();
-		GtkEntryBuffer* get_time_preceding ();
-		GtkEntryBuffer* get_time_following ();
-
-		GtkEntryBuffer* get_device_declarative ();
-		GtkEntryBuffer* get_device_keywords ();
-		GtkEntryBuffer* get_device_bounding ();
-		GtkEntryBuffer* get_device_preceding ();
-		GtkEntryBuffer* get_device_following ();
-
-		GtkEntryBuffer* get_event_declarative ();
-		GtkEntryBuffer* get_event_keywords ();
-		GtkEntryBuffer* get_event_bounding ();
-		GtkEntryBuffer* get_event_preceding ();
-		GtkEntryBuffer* get_event_following ();
-
-		GtkEntryBuffer* get_state_declarative ();
-		GtkEntryBuffer* get_state_keywords ();
-		GtkEntryBuffer* get_state_bounding ();
-		GtkEntryBuffer* get_state_preceding ();
-		GtkEntryBuffer* get_state_following ();
-
-	private:
-		struct Time_Notation
-		{
-			std::vector <GtkEntryBuffer*> 	Time_Fomat,
-							Bounding_Ex,
-							Preceding_Ex,
-							Following_Ex;
-		};
-		struct Device
-		{
-			std::vector <GtkEntryBuffer*>	Declarative_Ex,
-							Keywords,
-							Bounding_Ex,
-							Preceding_Ex,
-							Following_Ex;
-		};
-		struct Event
-		{
-			std::vector <GtkEntryBuffer*>	Declarative_Ex,
-							Keywords,
-							Bounding_Ex,
-							Preceding_Ex,
-							Following_Ex;
-		};
-		struct State
-		{
-			std::vector <GtkEntryBuffer*>	Declarative_Ex,
-							Keywords,
-							Bounding_Ex,
-							Preceding_Ex,
-							Following_Ex;
-		};
-		Time_Notation T;
-		Device D;
-		Event E;
-		State S;
+		std::vector <GtkEntryBuffer *> 	Time_Format,
+						Time_Regex,
+						Device_Regex,
+						Event_Regex,
+						State_Regex;
 	};
 
 };

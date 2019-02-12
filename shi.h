@@ -67,5 +67,17 @@ void add_entry_box (GtkWidget *container);
 void remove_expression (GtkWidget *entry);
 //adds new "custom" tab to the parse log file window
 void add_custom_page (GtkWidget *notebook);
+//add entry boxes for all syntax types
+void add_entry_box_time_format (GtkWidget *container);
+void add_entry_box_time_regex (GtkWidget *container);
+void add_entry_box_device_regex (GtkWidget *container);
+void add_entry_box_event_regex (GtkWidget *container);
+void add_entry_box_state_regex (GtkWidget *container);
+//remove entries from deleted entry boxes
+void remove_entry_time_format (GtkWidget *entry);
+void remove_entry_time_regex (GtkWidget *entry);
+void remove_entry_device_regex (GtkWidget *entry);
+void remove_entry_event_regex (GtkWidget *entry);
+void remove_entry_state_regex (GtkWidget *entry);
 
 #endif

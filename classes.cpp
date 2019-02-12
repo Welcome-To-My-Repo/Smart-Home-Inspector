@@ -68,58 +68,47 @@ SYNTAX::~SYNTAX ()
 
 }
 
-void SYNTAX::time_remove_ex (std::string expression)
+void SYNTAX::time_remove_format (GtkEntryBuffer *expression)
 {
-	for (int i = 0; i < T.Time_Fomat.size (); i ++)
+	for (int i = 0; i < Time_Format.size (); i ++)
 	{
-		if (0 == strcmp (
-				gtk_entry_buffer_get_text(
-				GTK_ENTRY_BUFFER (T.Time_Format.at (i))),
-				expression.c_str ()))
-		{
-			T.Time_Format.erase (T.Time_Format.begin () + i);
-			return;
-		}
-	}
-	for (int i = 0; i < T.Bounding_Ex.size (); i ++)
-	{
-		if (0 == strcmp (
-				gtk_entry_buffer_get_text(
-				GTK_ENTRY_BUFFER (T.Bounding_Ex.at (i))),
-				expression.c_str ()))
-		{
-			T.Bounding_Ex.erase (T.Bounding_Ex.begin () + i);
-			return;
-		}
-	}
-	for (int i = 0; i < T.Preceding_Ex.size (); i ++)
-	{
-		if (0 == strcmp (
-				gtk_entry_buffer_get_text(
-				GTK_ENTRY_BUFFER (T.Preceding_Ex.at (i))),
-				expression.c_str ()))
-		{
-			T.Preceding_Ex.erase (T.Preceding_Ex.begin () + i);
-			return;
-		}
-	}
-	for (int i = 0; i < T.Following_Ex.size (); i ++)
-	{
-		if (0 == strcmp (
-				gtk_entry_buffer_get_text(
-				GTK_ENTRY_BUFFER (T.Following_Ex.at (i))),
-				expression.c_str ()))
-		{
-			T.Following_Ex.erase (T.Following_Ex.begin () + i);
-			return;
-		}
+		if (Time_Format.at (i) == expression)
+			Time_Format.erase (Time_Format.begin () + i);
 	}
 }
 
-void SYNTAX::device_remove_ex (std::string expression)
+void SYNTAX::time_remove_ex (GtkEntryBuffer *expression)
 {
-	for (int i = 0; i < D.Declarative_Ex.size (); i++)
+	for (int i = 0; i < Time_Regex.size (); i ++)
 	{
-		
+		if (Time_Regex.at (i) == expression)
+			Time_Regex.erase (Time_Regex.begin () + i);
+	}
+}
+
+void SYNTAX::device_remove_ex (GtkEntryBuffer *expression)
+{
+	for (int i = 0; i < Device_Regex.size (); i ++)
+	{
+		if (Device_Regex.at (i) == expression)
+			Device_Regex.erase (Device_Regex.begin () + i);
+	}
+}
+
+void SYNTAX::event_remove_ex (GtkEntryBuffer *expression)
+{
+	for (int i = 0; i < Event_Regex.size (); i ++)
+	{
+		if (Event_Regex.at (i) == expression)
+			Event_Regex.erase (Event_Regex.begin () + i);
+	}
+}
+
+void SYNTAX::state_remove_ex (GtkEntryBuffer *expression)
+{
+	for (int i = 0; i < State_Regex.size (); i ++)
+	{
+		if (State_Regex.at (i) == expression);
+			State_Regex.erase (State_Regex.begin () + i);
 	}
 }
