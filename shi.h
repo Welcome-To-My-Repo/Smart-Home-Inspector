@@ -47,7 +47,7 @@ void add_text_view (char *filename, GtkWidget *tabs);
 //updates the text view with new log files
 void update_text_view (char *filename, GtkWidget *notepad);
 //reads the events from the next smallest time segment in the log file
-void read_time_segment (shi::smart_dev devlist);
+void read_time_segment ();
 //wrapper on the remove page function for gtk notebooks
 void remove_page (int *page);
 
@@ -79,5 +79,7 @@ void remove_entry_time_regex (GtkWidget *entry);
 void remove_entry_device_regex (GtkWidget *entry);
 void remove_entry_event_regex (GtkWidget *entry);
 void remove_entry_state_regex (GtkWidget *entry);
+
+void parse_time ();
 
 #endif

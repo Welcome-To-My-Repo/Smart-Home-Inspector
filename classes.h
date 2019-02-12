@@ -51,6 +51,7 @@ namespace shi
 			hour = 0,
 			minute = 0,
 			second = 0;
+		std::string earliest_time, latest_time;
 	};
 
 	class SYNTAX
