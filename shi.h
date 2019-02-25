@@ -17,13 +17,14 @@
 //all global classes initialized here
 static shi::smart_network log_file_devices;
 static shi::SYNTAX log_file_syntax;
-static shi::TIME log_file_time;
+static std::vector <shi::TIME> log_file_time;
 
 #define default_text "There are no log files currently loaded."
 static GtkApplication *MainWindow;
 static char *filename, *Log_File;
 //vector of text buffer for future implementation of loading multiple log files
 static std::vector <GtkTextBuffer*> Text_Files;
+
 
 //GUI functions
 //"front end" stuff. These are all the primary functions that control
@@ -73,6 +74,7 @@ void add_entry_box_time_regex (GtkWidget *container);
 void add_entry_box_device_regex (GtkWidget *container);
 void add_entry_box_event_regex (GtkWidget *container);
 void add_entry_box_state_regex (GtkWidget *container);
+
 //remove entries from deleted entry boxes
 void remove_entry_time_format (GtkWidget *entry);
 void remove_entry_time_regex (GtkWidget *entry);
@@ -80,6 +82,13 @@ void remove_entry_device_regex (GtkWidget *entry);
 void remove_entry_event_regex (GtkWidget *entry);
 void remove_entry_state_regex (GtkWidget *entry);
 
+//functions to highlight text buffers
+void find_start_time ();
+void advance_time ();
+
 void parse_time ();
+
+//creates error window
+void error_window (char *error_string);
 
 #endif

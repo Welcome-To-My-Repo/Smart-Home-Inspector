@@ -45,14 +45,18 @@ namespace shi
 
 	struct TIME
 	{
-		int	day = 0,
-			month = 0,
-			year = 0,
-			hour = 0,
-			minute = 0,
-			second = 0;
-		std::string earliest_time, latest_time;
+		std::string current_time, earliest_time, latest_time;
+		TIME ();
+		~TIME ();
+		bool operator > (TIME a);
+		bool operator < (TIME a);
+		bool operator = (TIME a);
+		void operator ++ (int);
+		void operator -- (int);
+
+
 	};
+	void TIMEsetvalue (int *a);
 
 	class SYNTAX
 	{

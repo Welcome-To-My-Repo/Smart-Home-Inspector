@@ -8,7 +8,8 @@ void Parse_Log_Files ()
 	g_signal_connect (dialogue, "activate", G_CALLBACK (Parse_Log_Files_window), dialogue);
 	g_application_run (G_APPLICATION (dialogue), 0, NULL);
 	g_object_unref (dialogue);
-	parse_time ();
+	//parse_time ();
+	find_start_time ();
 }
 
 void parse_time ()
@@ -24,21 +25,11 @@ void parse_time ()
 		delete tmp;
 	}
 
-}
+	for (int i = 0; i < Text_Files.size (); i ++)
+	{
 
-void add_entry_box_time_format (GtkWidget *container)
-{
-	GtkWidget *sidebox, *closebutton, *Entry;
-	sidebox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-	closebutton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-	log_file_syntax.Time_Format.push_back (gtk_entry_buffer_new (NULL, -1));
-	Entry = gtk_entry_new_with_buffer (log_file_syntax.Time_Format.back ());
+	}
 
-	gtk_box_pack_start (GTK_BOX (sidebox), closebutton, FALSE, FALSE, 0);
-	gtk_box_pack_start (GTK_BOX (sidebox), Entry, TRUE, TRUE, 0);
-	gtk_box_pack_start (GTK_BOX (container), sidebox, TRUE, TRUE, 0);
-	g_signal_connect_swapped (closebutton, "clicked", G_CALLBACK (remove_entry_time_format), Entry);
-	gtk_widget_show_all (container);
 }
 
 void add_entry_box_time_regex (GtkWidget *container)
@@ -98,12 +89,6 @@ void add_entry_box_state_regex (GtkWidget *container)
 	gtk_box_pack_start (GTK_BOX (container), sidebox, TRUE, TRUE, 0);
 	g_signal_connect_swapped (closebutton, "clicked", G_CALLBACK (remove_entry_state_regex), Entry);
 	gtk_widget_show_all (container);
-}
-
-void remove_entry_time_format (GtkWidget *entry)
-{
-	log_file_syntax.time_remove_format (gtk_entry_get_buffer (GTK_ENTRY (entry)));
-	gtk_widget_destroy (gtk_widget_get_parent (entry));
 }
 
 void remove_entry_time_regex (GtkWidget *entry)
@@ -170,32 +155,9 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 	gtk_box_pack_end (GTK_BOX (BigBox), Apply_button, FALSE, FALSE, 0);
 	g_signal_connect_swapped (Apply_button, "clicked", G_CALLBACK (gtk_widget_destroy), Window);
 
-//make Time Notation tab
 	NotebookTabBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	gtk_notebook_append_page (GTK_NOTEBOOK (Notebook), NotebookTabBox, NULL);
 	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (Notebook), NotebookTabBox, "Time Notation");
-
-//add Date/Time order
-	AddExpressionButton = gtk_button_new_with_label ("Add Date/Time format");
-	EntryScrolledBox = gtk_scrolled_window_new (NULL, NULL);
-	EntryViewport = gtk_viewport_new (NULL, NULL);
-	EntryViewportBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-	DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-	log_file_syntax.Time_Regex.push_back (gtk_entry_buffer_new ("Type an strftime format", -1));
-	Entry = gtk_entry_new_with_buffer (log_file_syntax.Time_Regex.back ());
-
-	gtk_box_pack_start (GTK_BOX (NotebookTabBox), AddExpressionButton, FALSE, TRUE, 0);
-	gtk_box_pack_start (GTK_BOX (NotebookTabBox), EntryScrolledBox, TRUE, TRUE, 0);
-	gtk_container_add (GTK_CONTAINER (EntryScrolledBox), EntryViewport);
-	gtk_container_add (GTK_CONTAINER (EntryViewport), EntryViewportBox);
-	gtk_box_pack_start (GTK_BOX (EntryViewportBox), EntryContainer, TRUE, TRUE, 0);
-	gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
-	gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
-
-	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box_time_format), EntryViewportBox);
-	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_entry_time_format), Entry);
-
 
 //Add Regex Section
 	AddExpressionButton = gtk_button_new_with_label ("Add Regex");
@@ -296,4 +258,67 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 
 
 	gtk_widget_show_all (Window);
+}
+
+void find_start_time ()
+{
+	for (int i = 0; i < Text_Files.size (); i ++)
+	{
+		//gtk_text_buffer_create_tag (Text_Files.at (i), "background", "yellow", NULL);
+		//gtk_text_buffer_remove_all_tags (Text_Files.at (i), start, end);)
+		//gtk_text_iter_set_offset ()
+
+		//set up stringstream buffer
+		std::string contents;
+		char tmp;
+		std::stringstream buffer;
+		GtkTextIter *start, *end;
+		gtk_text_buffer_get_iter_at_offset (GTK_TEXT_BUFFER (Text_Files.at(i)), start, 0);
+		gtk_text_buffer_get_iter_at_offset (GTK_TEXT_BUFFER (Text_Files.at(i)), end, -1);
+		contents = gtk_text_buffer_get_text (GTK_TEXT_BUFFER (Text_Files.at(i)), start, end, TRUE);
+		buffer.str (contents);
+		std::string first;
+		while (buffer.peek () != '\n')
+		{
+			buffer.get (tmp);
+			first.append (1, tmp);
+		}
+
+
+	}
+}
+
+void error_window_dialogue (char *error_warning);
+void error_window (char *error_string)
+{
+	/*
+	GtkApplication *warning = gtk_application_new ("app.shi.error", G_APPLICATION_FLAGS_NONE);
+	g_signal_connect (warning, "activate", G_CALLBACK (error_window_dialogue), warning);
+	g_application_run (G_APPLICATION (warning), 0, NULL);
+	g_object_unref (warning);
+	*/
+
+	GtkWidget	*window,
+			*error_label,
+			*ok_button;
+	window = gtk_window_new (GTK_WINDOW_POPUP);
+	error_label = gtk_label_new (error_string);
+	ok_button = gtk_button_new_with_label ("Ok");
+
+	gtk_container_add (GTK_CONTAINER (window), error_label);
+	gtk_container_add (GTK_CONTAINER (window), ok_button);
+
+	g_signal_connect_swapped (ok_button, "clicked", G_CALLBACK (gtk_widget_destroy), window);
+	gtk_widget_show_all (window);
+}
+
+void error_window_dialogue (GtkApplication *app, char *error_warning)
+{
+	GtkWidget	*window,
+			*error_label,
+			*ok_button;
+
+	window = gtk_application_window_new (app);
+	error_label = gtk_label_new (error_warning);
+
 }

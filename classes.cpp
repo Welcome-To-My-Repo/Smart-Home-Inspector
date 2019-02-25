@@ -112,3 +112,28 @@ void SYNTAX::state_remove_ex (GtkEntryBuffer *expression)
 			State_Regex.erase (State_Regex.begin () + i);
 	}
 }
+
+TIME::TIME ()
+{
+
+}
+
+TIME::~TIME ()
+{
+
+}
+
+
+bool TIME::operator = (TIME a)
+{
+	
+}
+
+void TIME::operator ++ (int)
+{
+
+}
+void TIME::operator -- (int)
+{
+
+}
