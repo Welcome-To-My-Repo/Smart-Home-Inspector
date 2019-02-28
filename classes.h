@@ -2,45 +2,46 @@
 namespace shi
 {
 
-	//class to manage smart devices and associated events
-	class smart_dev
+	struct DEVICE_STATS
 	{
-	public:
-		smart_dev ();
-		~smart_dev ();
-		void add_event (std::string name);
-		int get_event_types ();
-		void remove_event (std::string name);
-		void remove_event (int event_type);
-		bool is_active (std::string name);
-		bool is_active (int event_type);
-		float get_event_value (std::string name);
-		float get_event_value (int event_type);
-	private:
-	//event_types holds the number of different events a smart device can have
-		int event_types = 0;
-	//name of device
-		std::string device_name;
-	//event structure with an event_type corresponding to the event number in
-	//event types, an event_active signal, and a value from the event if it exists
-		struct event
-		{
-			event(std::string name) {event_name = name;}
-			std::string event_name = "";
-			bool event_active = false;
-			float event_value = 0;
-		};
-	//a std::vector of the diferent kinds of events.
-		std::vector <event> events;
+		std::string
+			device_name,
+			device_event_name,
+			device_state;
 	};
 
-	class smart_network
+	struct SEGMENT_POS
+	{
+		long int start, end;
+	};
+
+	class LOG_FILE_STATS
 	{
 	public:
-		smart_network ();
-		~smart_network ();
+		LOG_FILE_STATS ();
+		~LOG_FILE_STATS ();
+		void set_time (std::string _);
+		void add_device_stats_node (DEVICE_STATS _);
+		void add_segment_pos (SEGMENT_POS _);
+
 	private:
-		std::vector <smart_dev> devices;
+		std::string time;
+		std::vector <DEVICE_STATS> device_stats;
+		std::vector <SEGMENT_POS> segment_pos;
+		std::vector <GtkTextBuffer> log_files;
+	};
+
+	class LOG_FILES
+	{
+		friend class LOG_FILE_STATS;
+	public:
+		LOG_FILES ();
+		~LOG_FILES ();
+		void add_log_file_stats (LOG_FILE_STATS _);
+		void remove_log_file_stats (int a);
+	private:
+		std::vector <LOG_FILE_STATS> log_file_stats;
+
 	};
 
 	struct TIME

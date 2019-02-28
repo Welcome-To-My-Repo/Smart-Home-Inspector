@@ -15,7 +15,6 @@
 #include "classes.h"
 
 //all global classes initialized here
-static shi::smart_network log_file_devices;
 static shi::SYNTAX log_file_syntax;
 static std::vector <shi::TIME> log_file_time;
 

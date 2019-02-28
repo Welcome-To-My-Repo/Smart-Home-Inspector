@@ -280,24 +280,41 @@ void find_start_time ()
 		contents = gtk_text_buffer_get_text (GTK_TEXT_BUFFER (Text_Files.at(i)), start, end, TRUE);
 		buffer.str (contents);
 		std::string first;
+		//get time regex strings
+		std::vector <std::regex> patterns;
+		std::vector <std::regex> devices, states, events;
+		std::regex *tmp;
+		for (int i = 0; i < log_file_syntax.Tiem_Regex.size (); i ++)
+		{
+			temp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Time_Regex.at (i))));
+			patterns.push_back (*temp);
+			delete temp;
+		}
+		for (int i = 0; i < log_file_syntax.Device_Regex.size (); i ++)
+		{
+			temp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Device_Regex.at (i))));
+			devices.push_back (*temp);
+			delete temp;
+		}
+		for (int i = 0; i < log_file_syntax.Event_Regex.size (); i ++)
+		{
+			temp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Event_Regex.at (i))));
+			events.push_back (*temp);
+			delete temp;
+		}
+		for (int i = 0; i < log_file_syntax.State_Regex.size (); i ++)
+		{
+			temp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.State_Regex.at (i))));
+			state.push_back (*temp);
+			delete temp;
+		}
+		
 		//read first line from stringstream into string
 		while (buffer.peek () != '\n')
 		{
 			buffer.get (tmp);
 			first.append (1, tmp);
 		}
-		//use users regex expressions to find the time segment of the line
-		std::vector<std::regex> patterns;
-		std::regex *tmp;	//temporary regex to initialize using the gtk buffers
-		//add each of the user's regex patterns into the vector of regex's
-		for (int i = 0; i < log_file_syntax.Time_Regex.size (); i ++)
-		{
-			tmp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Time_Regex.at (i))));
-			patterns.push_back (*tmp);
-			delete tmp;
-		}
-
-
 
 	}
 }
