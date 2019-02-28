@@ -262,6 +262,7 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 
 void find_start_time ()
 {
+	//for loop so process gets repeated for each log file opened
 	for (int i = 0; i < Text_Files.size (); i ++)
 	{
 		//gtk_text_buffer_create_tag (Text_Files.at (i), "background", "yellow", NULL);
@@ -273,16 +274,29 @@ void find_start_time ()
 		char tmp;
 		std::stringstream buffer;
 		GtkTextIter *start, *end;
+		//put text buffer into stringstream
 		gtk_text_buffer_get_iter_at_offset (GTK_TEXT_BUFFER (Text_Files.at(i)), start, 0);
 		gtk_text_buffer_get_iter_at_offset (GTK_TEXT_BUFFER (Text_Files.at(i)), end, -1);
 		contents = gtk_text_buffer_get_text (GTK_TEXT_BUFFER (Text_Files.at(i)), start, end, TRUE);
 		buffer.str (contents);
 		std::string first;
+		//read first line from stringstream into string
 		while (buffer.peek () != '\n')
 		{
 			buffer.get (tmp);
 			first.append (1, tmp);
 		}
+		//use users regex expressions to find the time segment of the line
+		std::vector<std::regex> patterns;
+		std::regex *tmp;	//temporary regex to initialize using the gtk buffers
+		//add each of the user's regex patterns into the vector of regex's
+		for (int i = 0; i < log_file_syntax.Time_Regex.size (); i ++)
+		{
+			tmp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Time_Regex.at (i))));
+			patterns.push_back (*tmp);
+			delete tmp;
+		}
+
 
 
 	}
