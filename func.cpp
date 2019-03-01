@@ -9,7 +9,7 @@ void Parse_Log_Files ()
 	g_application_run (G_APPLICATION (dialogue), 0, NULL);
 	g_object_unref (dialogue);
 	//parse_time ();
-	find_start_time ();
+	initialize_log_file_stats ();
 }
 
 void parse_time ()
@@ -260,60 +260,121 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 	gtk_widget_show_all (Window);
 }
 
-void find_start_time ()
+void initialize_log_file_stats ()
 {
+	/*
 	//for loop so process gets repeated for each log file opened
+	std::string contents;
+	std::vector <std::stringstream> buffer;
+	std::stringstream *a;
+	char tmp;
+	GtkTextIter *start, *end;
 	for (int i = 0; i < Text_Files.size (); i ++)
 	{
+		gtk_text_buffer_get_iter_at_offset (GTK_TEXT_BUFFER (Text_Files.at (i)), start, 0);
+		gtk_text_buffer_get_iter_at_offset (GTK_TEXT_BUFFER (Text_Files.at (i)), end, -1);
+		contents = gtk_text_buffer_get_text (GTK_TEXT_BUFFER (Text_Files.at (i)), start, end, TRUE);
+		a->str (contents);
+		buffer.push_back (*a);
+		//delete a;
+	}
 		//gtk_text_buffer_create_tag (Text_Files.at (i), "background", "yellow", NULL);
 		//gtk_text_buffer_remove_all_tags (Text_Files.at (i), start, end);)
 		//gtk_text_iter_set_offset ()
-
-		//set up stringstream buffer
-		std::string contents;
-		char tmp;
+	std::vector <std::regex> patterns;
+	std::vector <std::regex> devices, states, events;
+	std::regex *temp;
+	for (int i = 0; i < log_file_syntax.Time_Regex.size (); i ++)
+	{
+		temp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Time_Regex.at (i))));
+		patterns.push_back (*temp);
+		delete temp;
+	}
+	for (int i = 0; i < log_file_syntax.Device_Regex.size (); i ++)
+	{
+		temp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Device_Regex.at (i))));
+		devices.push_back (*temp);
+		delete temp;
+	}
+	for (int i = 0; i < log_file_syntax.Event_Regex.size (); i ++)
+	{
+		temp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Event_Regex.at (i))));
+		events.push_back (*temp);
+		delete temp;
+	}
+	for (int i = 0; i < log_file_syntax.State_Regex.size (); i ++)
+	{
+		temp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.State_Regex.at (i))));
+		states.push_back (*temp);
+		delete temp;
+	}
+	std::string first;
+	//read first line from stringstream into string
+	//std::getline (buffer.at(i), first);
+	*/
+	for (int i = 0; i < Text_Files.size (); i ++)
+	{
+		std::string contents, line;
 		std::stringstream buffer;
 		GtkTextIter *start, *end;
-		//put text buffer into stringstream
-		gtk_text_buffer_get_iter_at_offset (GTK_TEXT_BUFFER (Text_Files.at(i)), start, 0);
-		gtk_text_buffer_get_iter_at_offset (GTK_TEXT_BUFFER (Text_Files.at(i)), end, -1);
-		contents = gtk_text_buffer_get_text (GTK_TEXT_BUFFER (Text_Files.at(i)), start, end, TRUE);
+		shi::SEGMENT_POS *pos;
+		std::vector <shi::SEGMENT_POS> all_pos;
+		shi::DEVICE_STATS *stats;
+		std::vector <shi::DEVICE_STATS> all_stats;
+		GtkTextBuffer *to_text = Text_Files.at (i);
+		gtk_text_buffer_get_iter_at_offset (GTK_TEXT_BUFFER (Text_Files.at (i)), start, 0);
+		gtk_text_buffer_get_iter_at_offset (GTK_TEXT_BUFFER (Text_Files.at (i)), end, -1);
+		contents = gtk_text_buffer_get_text (GTK_TEXT_BUFFER (Text_Files.at (i)), start, end, TRUE);
 		buffer.str (contents);
-		std::string first;
-		//get time regex strings
-		std::vector <std::regex> patterns;
-		std::vector <std::regex> devices, states, events;
-		std::regex *tmp;
-		for (int i = 0; i < log_file_syntax.Tiem_Regex.size (); i ++)
+		std::vector <std::regex> t, d, e, s, *tmp;
+		for (int i = 0; i < log_file_syntax.Time_Regex.size (); i++)
 		{
-			temp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Time_Regex.at (i))));
-			patterns.push_back (*temp);
-			delete temp;
+			tmp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Time_Regex.at (i))));
+			t.push_back (*tmp);
+			delete tmp;
 		}
 		for (int i = 0; i < log_file_syntax.Device_Regex.size (); i ++)
 		{
-			temp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Device_Regex.at (i))));
-			devices.push_back (*temp);
-			delete temp;
+			tmp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Device_Regex.at (i))));
+			d.push_back (*tmp);
+			delete tmp;
 		}
 		for (int i = 0; i < log_file_syntax.Event_Regex.size (); i ++)
 		{
-			temp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Event_Regex.at (i))));
-			events.push_back (*temp);
-			delete temp;
+			tmp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Event_Regex.at (i))));
+			d.push_back (*tmp);
+			delete tmp;
 		}
 		for (int i = 0; i < log_file_syntax.State_Regex.size (); i ++)
 		{
-			temp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.State_Regex.at (i))));
-			state.push_back (*temp);
-			delete temp;
+			tmp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.State_Regex.at (i))));
+			d.push_back (*tmp);
+			delete tmp;
 		}
-		
-		//read first line from stringstream into string
-		while (buffer.peek () != '\n')
+		std::smatch Tpatterns, Dpatterns, Epatterns, Spatterns;
+		while (!buffer.eof ())
 		{
-			buffer.get (tmp);
-			first.append (1, tmp);
+			pos = new shi::SEGMENT_POS;
+			pos->start = buffer.tellg ();
+			std::getline (buffer, line);
+			pos->end = buffer.tellg ();
+			all_pos.push_back (*pos);
+			int i = 0;
+			while (!std::regex_match (line, Tpatterns, t.at (i)));
+				i ++;
+			i = 0;
+			while (!std::regex_match (line, Dpatterns, d.at (i)));
+				i ++;
+			i = 0;
+			while (!std::regex_match (line, Epatterns, e.at (i)));
+				i ++;
+			i = 0;
+			while (!std::regex_match (line, Spatterns, s.at (i)));
+				i ++;
+			if (log_files.is_time_pattern (Tpatterns[0]))
+			{
+				
+			}
 		}
 
 	}

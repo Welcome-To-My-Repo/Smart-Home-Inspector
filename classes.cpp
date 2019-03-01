@@ -1,6 +1,31 @@
 #include "shi.h"
 using namespace shi;
 //member functions for smart_dev class
+LOG_FILE_STATS::LOG_FILE_STATS ()
+{
+
+}
+LOG_FILE_STATS::~LOG_FILE_STATS ()
+{
+
+}
+LOG_FILES::LOG_FILES ()
+{
+
+}
+LOG_FILES::~LOG_FILES ()
+{
+
+}
+void LOG_FILES::add_log_file_stats (LOG_FILE_STATS _)
+{
+
+}
+void LOG_FILES::remove_log_file_stats (int a)
+{
+
+}
+
 SYNTAX::SYNTAX ()
 {
 

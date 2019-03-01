@@ -17,6 +17,7 @@
 //all global classes initialized here
 static shi::SYNTAX log_file_syntax;
 static std::vector <shi::TIME> log_file_time;
+static shi::LOG_FILES log_files;
 
 #define default_text "There are no log files currently loaded."
 static GtkApplication *MainWindow;
@@ -82,7 +83,12 @@ void remove_entry_event_regex (GtkWidget *entry);
 void remove_entry_state_regex (GtkWidget *entry);
 
 //functions to highlight text buffers
-void find_start_time ();
+
+//creates a giant list of all events correlated to the time across all log files
+void initialize_log_file_stats ();
+//sorts all the times in chronological order
+void sort_times();
+//moves iterator to new time and
 void advance_time ();
 
 void parse_time ();

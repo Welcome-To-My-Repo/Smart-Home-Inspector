@@ -39,8 +39,17 @@ namespace shi
 		~LOG_FILES ();
 		void add_log_file_stats (LOG_FILE_STATS _);
 		void remove_log_file_stats (int a);
+		void set_it_begin ();
+		void set_it_end ();
+		void move_it_forward ();
+		void move_it_backward ();
+		long int get_number_of_elements ();
+		void move_to (long int pos);
+		bool is_time_pattern (std::string pattern);
+		long int find (std::string pattern);
 	private:
 		std::vector <LOG_FILE_STATS> log_file_stats;
+		std::vector <LOG_FILE_STATS>::iterator it;
 
 	};
 
