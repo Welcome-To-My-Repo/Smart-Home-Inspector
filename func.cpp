@@ -312,21 +312,26 @@ void initialize_log_file_stats ()
 	//read first line from stringstream into string
 	//std::getline (buffer.at(i), first);
 	*/
+//make the variables
+	std::string contents, line;
+	std::stringstream buffer;
+	GtkTextIter *start, *end;
+	shi::SEGMENT_POS *pos;
+	shi::DEVICE_STATS *stats;
+	std::vector <shi::DEVICE_STATS> all_stats;
+	GtkTextBuffer *to_text;
+	std::vector <std::regex> t, d, e, s;
+	std::regex *tmp;
+	std::smatch Tpatterns, Dpatterns, Epatterns, Spatterns;
 	for (int i = 0; i < Text_Files.size (); i ++)
 	{
-		std::string contents, line;
-		std::stringstream buffer;
-		GtkTextIter *start, *end;
-		shi::SEGMENT_POS *pos;
-		std::vector <shi::SEGMENT_POS> all_pos;
-		shi::DEVICE_STATS *stats;
-		std::vector <shi::DEVICE_STATS> all_stats;
-		GtkTextBuffer *to_text = Text_Files.at (i);
+		to_text = Text_Files.at (i);
+//make the text buffer
 		gtk_text_buffer_get_iter_at_offset (GTK_TEXT_BUFFER (Text_Files.at (i)), start, 0);
 		gtk_text_buffer_get_iter_at_offset (GTK_TEXT_BUFFER (Text_Files.at (i)), end, -1);
 		contents = gtk_text_buffer_get_text (GTK_TEXT_BUFFER (Text_Files.at (i)), start, end, TRUE);
 		buffer.str (contents);
-		std::vector <std::regex> t, d, e, s, *tmp;
+//loop creating regex's from the parse log file dialogue
 		for (int i = 0; i < log_file_syntax.Time_Regex.size (); i++)
 		{
 			tmp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Time_Regex.at (i))));
@@ -351,14 +356,13 @@ void initialize_log_file_stats ()
 			d.push_back (*tmp);
 			delete tmp;
 		}
-		std::smatch Tpatterns, Dpatterns, Epatterns, Spatterns;
+//create match patterns for applying the regexes
 		while (!buffer.eof ())
 		{
 			pos = new shi::SEGMENT_POS;
 			pos->start = buffer.tellg ();
 			std::getline (buffer, line);
 			pos->end = buffer.tellg ();
-			all_pos.push_back (*pos);
 			int i = 0;
 			while (!std::regex_match (line, Tpatterns, t.at (i)));
 				i ++;
@@ -373,7 +377,10 @@ void initialize_log_file_stats ()
 				i ++;
 			if (log_files.is_time_pattern (Tpatterns[0]))
 			{
-				
+				int a = log_files.find (Tpatterns[0]);
+				log_files.at (a).add_text_buffer_link (Text_Files.at (i));
+				log_files.at (a).add_segment_pos (*pos);
+
 			}
 		}
 

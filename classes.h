@@ -23,6 +23,7 @@ namespace shi
 		void set_time (std::string _);
 		void add_device_stats_node (DEVICE_STATS _);
 		void add_segment_pos (SEGMENT_POS _);
+		void add_text_buffer_link (GtkTextBuffer a);
 
 	private:
 		std::string time;
@@ -47,6 +48,7 @@ namespace shi
 		void move_to (long int pos);
 		bool is_time_pattern (std::string pattern);
 		long int find (std::string pattern);
+		LOG_FILE_STATS at (long int pos);
 	private:
 		std::vector <LOG_FILE_STATS> log_file_stats;
 		std::vector <LOG_FILE_STATS>::iterator it;
