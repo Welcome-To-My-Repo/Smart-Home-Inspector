@@ -23,7 +23,7 @@ namespace shi
 		void set_time (std::string _);
 		void add_device_stats_node (DEVICE_STATS _);
 		void add_segment_pos (SEGMENT_POS _);
-		void add_text_buffer_link (GtkTextBuffer a);
+		void add_text_buffer_link (GtkTextBuffer _);
 
 	private:
 		std::string time;
