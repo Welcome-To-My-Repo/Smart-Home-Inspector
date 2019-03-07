@@ -262,56 +262,6 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 
 void initialize_log_file_stats ()
 {
-	/*
-	//for loop so process gets repeated for each log file opened
-	std::string contents;
-	std::vector <std::stringstream> buffer;
-	std::stringstream *a;
-	char tmp;
-	GtkTextIter *start, *end;
-	for (int i = 0; i < Text_Files.size (); i ++)
-	{
-		gtk_text_buffer_get_iter_at_offset (GTK_TEXT_BUFFER (Text_Files.at (i)), start, 0);
-		gtk_text_buffer_get_iter_at_offset (GTK_TEXT_BUFFER (Text_Files.at (i)), end, -1);
-		contents = gtk_text_buffer_get_text (GTK_TEXT_BUFFER (Text_Files.at (i)), start, end, TRUE);
-		a->str (contents);
-		buffer.push_back (*a);
-		//delete a;
-	}
-		//gtk_text_buffer_create_tag (Text_Files.at (i), "background", "yellow", NULL);
-		//gtk_text_buffer_remove_all_tags (Text_Files.at (i), start, end);)
-		//gtk_text_iter_set_offset ()
-	std::vector <std::regex> patterns;
-	std::vector <std::regex> devices, states, events;
-	std::regex *temp;
-	for (int i = 0; i < log_file_syntax.Time_Regex.size (); i ++)
-	{
-		temp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Time_Regex.at (i))));
-		patterns.push_back (*temp);
-		delete temp;
-	}
-	for (int i = 0; i < log_file_syntax.Device_Regex.size (); i ++)
-	{
-		temp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Device_Regex.at (i))));
-		devices.push_back (*temp);
-		delete temp;
-	}
-	for (int i = 0; i < log_file_syntax.Event_Regex.size (); i ++)
-	{
-		temp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Event_Regex.at (i))));
-		events.push_back (*temp);
-		delete temp;
-	}
-	for (int i = 0; i < log_file_syntax.State_Regex.size (); i ++)
-	{
-		temp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.State_Regex.at (i))));
-		states.push_back (*temp);
-		delete temp;
-	}
-	std::string first;
-	//read first line from stringstream into string
-	//std::getline (buffer.at(i), first);
-	*/
 //make the variables
 	std::string contents, line;
 	std::stringstream buffer;
@@ -387,7 +337,7 @@ void initialize_log_file_stats ()
 			if (log_files.is_time_pattern (Tpatterns[0]))
 			{
 //find the identical time pattern
-				int a = log_files.find (Tpatterns[0]);
+				long int a = log_files.find (Tpatterns[0]);
 //add the pointer to the text buffer
 				log_files.at (a).add_text_buffer_link (Text_Files.at (i));
 //add the segment position to the vector
