@@ -359,27 +359,44 @@ void initialize_log_file_stats ()
 //create match patterns for applying the regexes
 		while (!buffer.eof ())
 		{
+//create a new segment position
 			pos = new shi::SEGMENT_POS;
+//get starting position
 			pos->start = buffer.tellg ();
+//get a single line from the buffer
 			std::getline (buffer, line);
+//get ending position
 			pos->end = buffer.tellg ();
 			int i = 0;
+//check all time regular expressions against the string until a hit
 			while (!std::regex_match (line, Tpatterns, t.at (i)));
 				i ++;
 			i = 0;
+//check all device regular expressions against the string until a hit
 			while (!std::regex_match (line, Dpatterns, d.at (i)));
 				i ++;
 			i = 0;
+//check all event regular expressions against the string until a hit
 			while (!std::regex_match (line, Epatterns, e.at (i)));
 				i ++;
 			i = 0;
+//check all state regular expressions against the string until a hit
 			while (!std::regex_match (line, Spatterns, s.at (i)));
 				i ++;
+//if the time pattern already esists in the string, do stuff
 			if (log_files.is_time_pattern (Tpatterns[0]))
 			{
+//find the identical time pattern
 				int a = log_files.find (Tpatterns[0]);
+//add the pointer to the text buffer
 				log_files.at (a).add_text_buffer_link (Text_Files.at (i));
+//add the segment position to the vector
 				log_files.at (a).add_segment_pos (*pos);
+
+			}
+//if the time pattern is new, do stuff
+			else
+			{
 
 			}
 		}

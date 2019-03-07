@@ -5,25 +5,29 @@ LOG_FILE_STATS::LOG_FILE_STATS ()
 {
 
 }
-LOG_FILE_STATS::~LOG_FILE_STATS
+LOG_FILE_STATS::~LOG_FILE_STATS ()
 {
 
 }
-void LOG_FILE_STATS::set_time (std::string _)
+void LOG_FILE_STATS::set_time_pattern (std::string _)
 {
-
+	time = _;
+}
+std::string LOG_FILE_STATS::get_time_patter ()
+{
+	return time;
 }
 void LOG_FILE_STATS::add_device_stats_node (DEVICE_STATS _)
 {
-
+	device_stats.push_back (_);
 }
 void LOG_FILE_STATS::add_segment_pos (SEGMENT_POS _)
 {
-
+	segment_pos.push_back (_);
 }
 void LOG_FILE_STATS::add_text_buffer_link (GtkTextBuffer _)
 {
-
+	log_files.push_back (_);
 }
 LOG_FILES::LOG_FILES ()
 {
@@ -35,39 +39,48 @@ LOG_FILES::~LOG_FILES ()
 }
 void LOG_FILES::add_log_file_stats (LOG_FILE_STATS _)
 {
-
+	log_file_stats.push_back (_);
 }
 void LOG_FILES::remove_log_file_stats (int a)
 {
-
+	log_file_stats.erase (log_file_stats.begin () + _);
 }
 void LOG_FILES::set_it_begin ()
 {
-
+	it = log_file_stats.begin ();
 }
 void LOG_FILES::set_it_end ()
 {
-
+	it = log_file_stats.end ();
 }
 void LOG_FILES::move_it_forward ()
 {
-
+	it ++;
 }
 void LOG_FILES::move_it_backward ()
 {
-
+	it --;
 }
 long int LOG_FILES::get_number_of_elements ()
 {
-
+	return log_file_stats.size ();
 }
 void LOG_FILES::move_to (long int pos)
 {
-
+	it = log_file_stats.begin ();
+	for (int i = 0; i < pos; i ++)
+	{
+		it ++;
+	}
 }
 bool LOG_FILES::is_time_pattern (std::string pattern)
 {
-
+	for (long int i = 0; i < log_files.size (); i ++)
+	{
+		if (pattern == log_file_stats.at(int(i)).get_time_pattern ())
+			return i;
+	}
+	return -1;
 }
 long int LOG_FILES::find (std::string pattern)
 {
@@ -75,7 +88,7 @@ long int LOG_FILES::find (std::string pattern)
 }
 LOG_FILE_STATS LOG_FILE_STATS::at (long int pos)
 {
-	
+
 }
 SYNTAX::SYNTAX ()
 {

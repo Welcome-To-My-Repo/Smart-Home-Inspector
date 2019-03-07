@@ -20,7 +20,8 @@ namespace shi
 	public:
 		LOG_FILE_STATS ();
 		~LOG_FILE_STATS ();
-		void set_time (std::string _);
+		void set_time_pattern (std::string _);
+		std::string get_time_pattern ();
 		void add_device_stats_node (DEVICE_STATS _);
 		void add_segment_pos (SEGMENT_POS _);
 		void add_text_buffer_link (GtkTextBuffer _);
@@ -49,6 +50,7 @@ namespace shi
 		bool is_time_pattern (std::string pattern);
 		long int find (std::string pattern);
 		LOG_FILE_STATS at (long int pos);
+		long int size ();
 	private:
 		std::vector <LOG_FILE_STATS> log_file_stats;
 		std::vector <LOG_FILE_STATS>::iterator it;
