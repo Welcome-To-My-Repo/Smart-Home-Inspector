@@ -194,6 +194,7 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 	{
 		EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 		DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
+		g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_entry_time_regex), Entry);
 		log_file_syntax.Time_Regex.push_back (gtk_entry_buffer_new ("Type a Regular Expression here", -1));
 		Entry = gtk_entry_new_with_buffer (log_file_syntax.Time_Regex.back ());
 		gtk_box_pack_start (GTK_BOX (EntryViewportBox), EntryContainer, TRUE, TRUE, 0);
@@ -207,6 +208,7 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 		{
 			EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 			DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
+			g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_entry_time_regex), Entry);
 			Entry = gtk_entry_new_with_buffer (log_file_syntax.Time_Regex.at (i));
 			gtk_box_pack_start (GTK_BOX (EntryViewportBox), EntryContainer, TRUE, TRUE, 0);
 			gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);

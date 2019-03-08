@@ -24,13 +24,13 @@ namespace shi
 		std::string get_time_pattern ();
 		void add_device_stats_node (DEVICE_STATS _);
 		void add_segment_pos (SEGMENT_POS _);
-		void add_text_buffer_link (GtkTextBuffer _);
+		void add_text_buffer_link (GtkTextBuffer *_);
 
 	private:
 		std::string time;
 		std::vector <DEVICE_STATS> device_stats;
 		std::vector <SEGMENT_POS> segment_pos;
-		std::vector <GtkTextBuffer> log_files;
+		std::vector <GtkTextBuffer*> log_files;
 	};
 
 	class LOG_FILES

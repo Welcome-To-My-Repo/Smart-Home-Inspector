@@ -13,7 +13,7 @@ void LOG_FILE_STATS::set_time_pattern (std::string _)
 {
 	time = _;
 }
-std::string LOG_FILE_STATS::get_time_patter ()
+std::string LOG_FILE_STATS::get_time_pattern ()
 {
 	return time;
 }
@@ -25,7 +25,7 @@ void LOG_FILE_STATS::add_segment_pos (SEGMENT_POS _)
 {
 	segment_pos.push_back (_);
 }
-void LOG_FILE_STATS::add_text_buffer_link (GtkTextBuffer _)
+void LOG_FILE_STATS::add_text_buffer_link (GtkTextBuffer *_)
 {
 	log_files.push_back (_);
 }
@@ -43,7 +43,7 @@ void LOG_FILES::add_log_file_stats (LOG_FILE_STATS _)
 }
 void LOG_FILES::remove_log_file_stats (int a)
 {
-	log_file_stats.erase (log_file_stats.begin () + _);
+	log_file_stats.erase (log_file_stats.begin () + a);
 }
 void LOG_FILES::set_it_begin ()
 {
@@ -75,7 +75,7 @@ void LOG_FILES::move_to (long int pos)
 }
 bool LOG_FILES::is_time_pattern (std::string pattern)
 {
-	for (long int i = 0; i < log_files.size (); i ++)
+	for (long int i = 0; i < log_file_stats.size (); i ++)
 	{
 		if (pattern == log_file_stats.at(int(i)).get_time_pattern ())
 			return i;
@@ -84,11 +84,11 @@ bool LOG_FILES::is_time_pattern (std::string pattern)
 }
 long int LOG_FILES::find (std::string pattern)
 {
-
+	return 0;
 }
-LOG_FILE_STATS LOG_FILE_STATS::at (long int pos)
+LOG_FILE_STATS LOG_FILES::at (long int pos)
 {
-
+	return log_file_stats.back ();
 }
 SYNTAX::SYNTAX ()
 {
