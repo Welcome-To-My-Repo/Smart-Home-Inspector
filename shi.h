@@ -76,8 +76,12 @@ void add_custom_page (GtkWidget *notebook);
 //add entry boxes for all syntax types:
 //they're different because each entry box needs to be linked with the proper
 //part of the SYNTAX class
-void add_entry_box_time_format (GtkWidget *container);
-void add_entry_box_time_regex (GtkWidget *container);
+void add_entry_box_year_regex (GtkWidget *container);
+void add_entry_box_month_regex (GtkWidget *container);
+void add_entry_box_day_regex (GtkWidget *container);
+void add_entry_box_hour_regex (GtkWidget *container);
+void add_entry_box_minute_regex (GtkWidget *container);
+void add_entry_box_second_regex (GtkWidget *container);
 void add_entry_box_device_regex (GtkWidget *container);
 void add_entry_box_event_regex (GtkWidget *container);
 void add_entry_box_state_regex (GtkWidget *container);
@@ -85,8 +89,12 @@ void add_entry_box_state_regex (GtkWidget *container);
 //remove entries from deleted entry boxes:
 //same deal as adding entry boxes, there needs to be a function for each type
 //of entry
-void remove_entry_time_format (GtkWidget *entry);
-void remove_entry_time_regex (GtkWidget *entry);
+void remove_entry_year_regex (GtkWidget *entry);
+void remove_entry_month_regex (GtkWidget *entry);
+void remove_entry_day_regex (GtkWidget *entry);
+void remove_entry_hour_regex (GtkWidget *entry);
+void remove_entry_minute_regex (GtkWidget *entry);
+void remove_entry_second_regex (GtkWidget *entry);
 void remove_entry_device_regex (GtkWidget *entry);
 void remove_entry_event_regex (GtkWidget *entry);
 void remove_entry_state_regex (GtkWidget *entry);

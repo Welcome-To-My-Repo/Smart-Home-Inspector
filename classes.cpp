@@ -100,21 +100,75 @@ SYNTAX::~SYNTAX ()
 
 }
 
-void SYNTAX::time_remove_format (GtkEntryBuffer *expression)
+void SYNTAX::year_remove_ex (GtkEntryBuffer *expression)
 {
-	for (int i = 0; i < Time_Format.size (); i ++)
+	for (int i = 0; i < Year_Regex.size (); i++)
 	{
-		if (Time_Format.at (i) == expression)
-			Time_Format.erase (Time_Format.begin () + i);
+		if (Year_Regex.at (i) == expression)
+		{
+			Year_Regex.erase (Year_Regex.begin () + i);
+			return;
+		}
 	}
 }
 
-void SYNTAX::time_remove_ex (GtkEntryBuffer *expression)
+void SYNTAX::month_remove_ex (GtkEntryBuffer *expression)
 {
-	for (int i = 0; i < Time_Regex.size (); i ++)
+	for (int i = 0; i < Month_Regex.size (); i ++)
 	{
-		if (Time_Regex.at (i) == expression)
-			Time_Regex.erase (Time_Regex.begin () + i);
+		if (Month_Regex.at (i) == expression)
+		{
+			Month_Regex.erase (Month_Regex.begin () + i);
+			return;
+		}
+	}
+}
+
+void SYNTAX::day_remove_ex (GtkEntryBuffer *expression)
+{
+	for (int i = 0; i < Day_Regex.size (); i ++)
+	{
+		if (Day_Regex.at (i) == expression)
+		{
+			Day_Regex.erase (Day_Regex.begin () + i);
+			return;
+		}
+	}
+}
+
+void SYNTAX::hour_remove_ex (GtkEntryBuffer *expression)
+{
+	for (int i = 0; i < Hour_Regex.size (); i ++)
+	{
+		if (Hour_Regex.at (i) == expression)
+		{
+			Hour_Regex.erase (Hour_Regex.begin () + i);
+			return;
+		}
+	}
+}
+
+void SYNTAX::minute_remove_ex (GtkEntryBuffer *expression)
+{
+	for (int i = 0; i < Minute_Regex.size (); i ++)
+	{
+		if (Minute_Regex.at (i) == expression)
+		{
+			Minute_Regex.erase (Minute_Regex.begin () + i);
+			return;
+		}
+	}
+}
+
+void SYNTAX::second_remove_ex (GtkEntryBuffer *expression)
+{
+	for (int i = 0; i < Second_Regex.size (); i ++)
+	{
+		if (Second_Regex.at (i) == expression)
+		{
+			Second_Regex.erase (Second_Regex.begin () + i);
+			return;
+		}
 	}
 }
 

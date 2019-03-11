@@ -81,14 +81,22 @@ namespace shi
 		SYNTAX ();
 		~SYNTAX ();
 
-		void time_remove_format (GtkEntryBuffer *expression);
-		void time_remove_ex (GtkEntryBuffer *expression);
+		void year_remove_ex (GtkEntryBuffer *expression);
+		void month_remove_ex (GtkEntryBuffer *expression);
+		void day_remove_ex (GtkEntryBuffer *expression);
+		void hour_remove_ex (GtkEntryBuffer *expression);
+		void minute_remove_ex (GtkEntryBuffer *expression);
+		void second_remove_ex (GtkEntryBuffer *expression);
 		void device_remove_ex (GtkEntryBuffer *expression);
 		void event_remove_ex (GtkEntryBuffer *expression);
 		void state_remove_ex (GtkEntryBuffer *expression);
 
-		std::vector <GtkEntryBuffer *> 	Time_Format,
-						Time_Regex,
+		std::vector <GtkEntryBuffer *> 	Year_Regex,
+						Month_Regex,
+						Day_Regex,
+						Hour_Regex,
+						Minute_Regex,
+						Second_Regex,
 						Device_Regex,
 						Event_Regex,
 						State_Regex;

@@ -70,10 +70,10 @@ void mainwindowactivate (GtkApplication *app)
 	Inspect = 	gtk_menu_item_new_with_label ("Inspect Log Files");
 	Playbar = 	gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 	PlayScrubber = 	gtk_scale_new_with_range (GTK_ORIENTATION_HORIZONTAL, 0, 100, 1);
-	PlayButton = 	gtk_button_new ();
-	StopButton = 	gtk_button_new ();
-	SkipRight = 	gtk_button_new ();
-	SkipLeft = 	gtk_button_new ();
+	PlayButton = 	gtk_button_new_from_icon_name ("gtk-media-play", GTK_ICON_SIZE_SMALL_TOOLBAR);
+	StopButton = 	gtk_button_new_from_icon_name ("gtk-media-stop", GTK_ICON_SIZE_SMALL_TOOLBAR);
+	SkipRight = 	gtk_button_new_from_icon_name ("gtk-media-rewind", GTK_ICON_SIZE_SMALL_TOOLBAR);
+	SkipLeft = 	gtk_button_new_from_icon_name ("gtk-media-forward", GTK_ICON_SIZE_SMALL_TOOLBAR);
 //set default text display
 	GtkWidget *tmp;
 	gtk_notebook_set_scrollable (GTK_NOTEBOOK (TextTabs), TRUE);
@@ -89,14 +89,10 @@ void mainwindowactivate (GtkApplication *app)
 	gtk_notebook_append_page (GTK_NOTEBOOK (Tabs), DevListScroll, NULL);
 	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (Tabs), DevListScroll, "Device List");
 //create the playbar with scrubber
-	gtk_button_set_image (	GTK_BUTTON (PlayButton),
-				gtk_image_new_from_icon_name ("media-playback-start",
-				GTK_ICON_SIZE_SMALL_TOOLBAR));
-	gtk_button_set_image (	GTK_BUTTON (StopButton),
-				gtk_image_new_from_icon_name ("media-playback-stop",
-				GTK_ICON_SIZE_SMALL_TOOLBAR));
+	gtk_box_pack_start (GTK_BOX (Playbar), SkipRight, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (Playbar), PlayButton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (Playbar), StopButton, FALSE, FALSE, 0);
+	gtk_box_pack_start (GTK_BOX (Playbar), SkipLeft, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (Playbar), PlayScrubber, TRUE, TRUE, 0);
 //add primary container element to window
 	gtk_container_add (GTK_CONTAINER (Window), MainBox);
@@ -131,7 +127,7 @@ void mainwindowactivate (GtkApplication *app)
 	gtk_box_pack_start (GTK_BOX (EventsPlayBox),
 		gtk_separator_new (GTK_ORIENTATION_HORIZONTAL),
 		false, false, 7);
-	gtk_box_pack_start (GTK_BOX (EventsPlayBox), Playbar, FALSE, FALSE, 0);
+	gtk_box_pack_start (GTK_BOX (MainBox), Playbar, FALSE, FALSE, 0);
 //box child packing settings
 	gtk_box_set_child_packing (GTK_BOX (MainBox), SecondBox, true, true, 0, GTK_PACK_START);
 	gtk_box_set_child_packing (GTK_BOX (SecondBox), TextTabs, TRUE, TRUE, 0, GTK_PACK_START);
