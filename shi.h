@@ -2,6 +2,9 @@
 #define SHI
 
 #include <gtk/gtk.h>
+
+#include <boost/regex.hpp>
+
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
@@ -20,7 +23,9 @@ static std::vector <shi::TIME> log_file_time;
 static shi::LOG_FILES log_files;
 
 #define default_text "There are no log files currently loaded."
+//global application
 static GtkApplication *MainWindow;
+//made these global, not sure why anymore
 static char *filename, *Log_File;
 //vector of text buffer for future implementation of loading multiple log files
 static std::vector <GtkTextBuffer*> Text_Files;
@@ -68,30 +73,33 @@ void add_entry_box (GtkWidget *container);
 void remove_expression (GtkWidget *entry);
 //adds new "custom" tab to the parse log file window
 void add_custom_page (GtkWidget *notebook);
-//add entry boxes for all syntax types
+//add entry boxes for all syntax types:
+//they're different because each entry box needs to be linked with the proper
+//part of the SYNTAX class
 void add_entry_box_time_format (GtkWidget *container);
 void add_entry_box_time_regex (GtkWidget *container);
 void add_entry_box_device_regex (GtkWidget *container);
 void add_entry_box_event_regex (GtkWidget *container);
 void add_entry_box_state_regex (GtkWidget *container);
 
-//remove entries from deleted entry boxes
+//remove entries from deleted entry boxes:
+//same deal as adding entry boxes, there needs to be a function for each type
+//of entry
 void remove_entry_time_format (GtkWidget *entry);
 void remove_entry_time_regex (GtkWidget *entry);
 void remove_entry_device_regex (GtkWidget *entry);
 void remove_entry_event_regex (GtkWidget *entry);
 void remove_entry_state_regex (GtkWidget *entry);
 
-//functions to highlight text buffers
-
+//functions to highlight text buffers:
 //creates a giant list of all events correlated to the time across all log files
 void initialize_log_file_stats ();
 //sorts all the times in chronological order
 void sort_times();
-//moves iterator to new time and
-void advance_time ();
-
-void parse_time ();
+//moves iterator to next time and adjusts UI accordingly
+void move_time_forward ();
+//moves iterator to previous time and adjusts UI accordingly
+void move_time_backward ();
 
 //creates error window
 void error_window (char *error_string);

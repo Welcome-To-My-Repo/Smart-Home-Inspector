@@ -12,26 +12,6 @@ void Parse_Log_Files ()
 	initialize_log_file_stats ();
 }
 
-void parse_time ()
-{
-//make a vector of regex patterns
-	std::vector<std::regex> patterns;
-	std::regex *tmp;	//temporary regex to initialize using the gtk buffers
-//add each of the user's regex patterns into the vector of regex's
-	for (int i = 0; i < log_file_syntax.Time_Regex.size (); i ++)
-	{
-		tmp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Time_Regex.at (i))));
-		patterns.push_back (*tmp);
-		delete tmp;
-	}
-
-	for (int i = 0; i < Text_Files.size (); i ++)
-	{
-
-	}
-
-}
-
 void add_entry_box_time_regex (GtkWidget *container)
 {
 	GtkWidget *sidebox, *closebutton, *Entry;
@@ -286,9 +266,9 @@ void initialize_log_file_stats ()
 	shi::DEVICE_STATS *stats;
 	std::vector <shi::DEVICE_STATS> all_stats;
 	GtkTextBuffer *to_text;
-	std::vector <std::regex> t, d, e, s;
-	std::regex *tmp;
-	std::smatch Tpatterns, Dpatterns, Epatterns, Spatterns;
+	std::vector <boost::regex> t, d, e, s;
+	boost::regex *tmp;
+	boost::smatch Tpatterns, Dpatterns, Epatterns, Spatterns;
 	for (int i = 0; i < Text_Files.size (); i ++)
 	{
 		to_text = Text_Files.at (i);
@@ -300,25 +280,25 @@ void initialize_log_file_stats ()
 //loop creating regex's from the parse log file dialogue
 		for (int i = 0; i < log_file_syntax.Time_Regex.size (); i++)
 		{
-			tmp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Time_Regex.at (i))));
+			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Time_Regex.at (i))));
 			t.push_back (*tmp);
 			delete tmp;
 		}
 		for (int i = 0; i < log_file_syntax.Device_Regex.size (); i ++)
 		{
-			tmp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Device_Regex.at (i))));
+			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Device_Regex.at (i))));
 			d.push_back (*tmp);
 			delete tmp;
 		}
 		for (int i = 0; i < log_file_syntax.Event_Regex.size (); i ++)
 		{
-			tmp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Event_Regex.at (i))));
+			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Event_Regex.at (i))));
 			d.push_back (*tmp);
 			delete tmp;
 		}
 		for (int i = 0; i < log_file_syntax.State_Regex.size (); i ++)
 		{
-			tmp = new std::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.State_Regex.at (i))));
+			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.State_Regex.at (i))));
 			d.push_back (*tmp);
 			delete tmp;
 		}
@@ -335,20 +315,48 @@ void initialize_log_file_stats ()
 			pos->end = buffer.tellg ();
 			int i = 0;
 //check all time regular expressions against the string until a hit
-			while (!std::regex_match (line, Tpatterns, t.at (i)));
-				i ++;
+			try
+			{
+				while (!boost::regex_search (line, Tpatterns, t.at (i)));
+					i ++;
+			}
+			catch (...)
+			{
+				error_window ("Regex Search Error!");
+			}
 			i = 0;
 //check all device regular expressions against the string until a hit
-			while (!std::regex_match (line, Dpatterns, d.at (i)));
-				i ++;
+			try
+			{
+				while (!boost::regex_search (line, Dpatterns, d.at (i)));
+					i ++;
+			}
+			catch (...)
+			{
+				error_window ("Regex Search Error!");
+			}
 			i = 0;
 //check all event regular expressions against the string until a hit
-			while (!std::regex_match (line, Epatterns, e.at (i)));
-				i ++;
+			try
+			{
+				while (!boost::regex_search (line, Epatterns, e.at (i)));
+					i ++;
+			}
+			catch (...)
+			{
+				error_window ("Regex Search Error!");
+			}
 			i = 0;
 //check all state regular expressions against the string until a hit
-			while (!std::regex_match (line, Spatterns, s.at (i)));
-				i ++;
+			try
+			{
+				while (!boost::regex_search (line, Spatterns, s.at (i)));
+					i ++;
+			}
+			catch (...)
+			{
+				error_window ("Regex Search Error!");
+			}
 //if the time pattern already esists in the string, do stuff
 			if (log_files.is_time_pattern (Tpatterns[0]))
 			{

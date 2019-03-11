@@ -27,5 +27,9 @@ WINDOW MOCKUP
 
 Zigbee and ZWave possible syntax?
 
-regex to extract stuff between curly braces: "/[^{\}]+(?=})/"
+regex to extract stuff between curly braces: "([^\[]).*(?=\])"
 use this to text for detecting the time
+
+TODO:
+	convert all regex manipulations to use Boost.Regex because C++11 is
+	"retarded" and uses ECMA's regex syntax.
