@@ -25,6 +25,9 @@ namespace shi
 		void add_device_stats_node (DEVICE_STATS _);
 		void add_segment_pos (SEGMENT_POS _);
 		void add_text_buffer_link (GtkTextBuffer *_);
+		SEGMENT_POS get_segment (long int pos);
+		GtkTextBuffer get_text_link (int pos);
+		DEVICE_STATS get_stats (long int pos);
 
 	private:
 		std::string time;
