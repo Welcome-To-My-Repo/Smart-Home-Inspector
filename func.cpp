@@ -258,6 +258,8 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 
 void initialize_log_file_stats ()
 {
+	std::cout << "initializing" << std::endl;
+	error_window ("initializing");
 //make the variables
 	std::string contents, line;
 	std::stringstream buffer;
@@ -389,14 +391,17 @@ void error_window (char *error_string)
 	*/
 
 	GtkWidget	*window,
+			*box,
 			*error_label,
 			*ok_button;
-	window = gtk_window_new (GTK_WINDOW_POPUP);
+	window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
+	box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	error_label = gtk_label_new (error_string);
 	ok_button = gtk_button_new_with_label ("Ok");
 
-	gtk_container_add (GTK_CONTAINER (window), error_label);
-	gtk_container_add (GTK_CONTAINER (window), ok_button);
+	gtk_container_add (GTK_CONTAINER (window), box);
+	gtk_container_add (GTK_CONTAINER (box), error_label);
+	gtk_container_add (GTK_CONTAINER (box), ok_button);
 
 	g_signal_connect_swapped (ok_button, "clicked", G_CALLBACK (gtk_widget_destroy), window);
 	gtk_widget_show_all (window);
