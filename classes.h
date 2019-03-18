@@ -29,8 +29,12 @@ namespace shi
 		GtkTextBuffer get_text_link (int pos);
 		DEVICE_STATS get_stats (long int pos);
 
-	private:
-		std::string time;
+		std::string 	year,
+				month,
+				day,
+				hour,
+				minute,
+				second;
 		std::vector <DEVICE_STATS> device_stats;
 		std::vector <SEGMENT_POS> segment_pos;
 		std::vector <GtkTextBuffer*> log_files;
@@ -50,11 +54,11 @@ namespace shi
 		void move_it_backward ();
 		long int get_number_of_elements ();
 		void move_to (long int pos);
-		bool is_time_pattern (std::string pattern);
-		long int find (std::string pattern);
+		bool is_time_pattern (std::string y, std::string m, std::string d, std::string h, std::string i, std::string s);
+		long int find (std::string y, std::string m, std::string d, std::string h, std::string i, std::string s);
 		LOG_FILE_STATS at (long int pos);
 		long int size ();
-	private:
+		
 		std::vector <LOG_FILE_STATS> log_file_stats;
 		std::vector <LOG_FILE_STATS>::iterator it;
 

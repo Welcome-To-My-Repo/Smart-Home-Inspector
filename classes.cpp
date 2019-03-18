@@ -11,11 +11,11 @@ LOG_FILE_STATS::~LOG_FILE_STATS ()
 }
 void LOG_FILE_STATS::set_time_pattern (std::string _)
 {
-	time = _;
+
 }
 std::string LOG_FILE_STATS::get_time_pattern ()
 {
-	return time;
+	return 0;
 }
 void LOG_FILE_STATS::add_device_stats_node (DEVICE_STATS _)
 {
@@ -73,18 +73,34 @@ void LOG_FILES::move_to (long int pos)
 		it ++;
 	}
 }
-bool LOG_FILES::is_time_pattern (std::string pattern)
+bool LOG_FILES::is_time_pattern (std::string y, std::string m, std::string d, std::string h, std::string i, std::string s)
 {
-	for (long int i = 0; i < log_file_stats.size (); i ++)
+	std::vector <LOG_FILE_STATS>::iterator it;
+	for (it = log_file_stats.begin (); it < log_file_stats.end () + 1; it ++)
 	{
-		if (pattern == log_file_stats.at(int(i)).get_time_pattern ())
-			return i;
+		if (it->year == y)
+			if (it->month == m)
+				if (it->day == d)
+					if (it->hour == h)
+						if (it->minute == i)
+							if (it->second == s)
+								return true;
+	}
+	return false;
+}
+long int LOG_FILES::find (std::string y, std::string m, std::string d, std::string h, std::string i, std::string s)
+{
+	for (long int j = 0; j < log_file_stats.size (); j ++)
+	{
+		if (log_file_stats.at (j).year == y)
+			if (log_file_stats.at (j).month == m)
+				if (log_file_stats.at (j).day == d)
+					if (log_file_stats.at (j).hour == h)
+						if (log_file_stats.at (j).minute == i)
+							if (log_file_stats.at (j).second == s)
+								return j;
 	}
 	return -1;
-}
-long int LOG_FILES::find (std::string pattern)
-{
-	return 0;
 }
 LOG_FILE_STATS LOG_FILES::at (long int pos)
 {

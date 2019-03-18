@@ -660,52 +660,62 @@ void initialize_log_file_stats ()
 			int i = 0;
 //check all time regular expressions against the string until a hit
 			try
-			{
-				while (!boost::regex_search (line, YearPatterns, year.at (i)));
-					i ++;
-			}
+			{while (!boost::regex_search (line, YearPatterns, year.at (i))); i ++;}
 			catch (...)
-			{
-				error_window ("Regex Search Error!");
-			}
+			{error_window ("Regex Search Error!");}
+			i = 0;
+
+			try
+			{while (!boost::regex_search (line, MonthPatterns, month.at (i))); i ++;}
+			catch (...)
+			{error_window ("Regex Search Error!");}
+			i = 0;
+
+			try
+			{while (!boost::regex_search (line, DayPatterns, day.at (i))); i ++;}
+			catch (...)
+			{error_window ("Regex Search Error!");}
+			i = 0;
+
+			try
+			{while (!boost::regex_search (line, HourPatterns, hour.at (i))); i ++;}
+			catch (...)
+			{error_window ("Regex Search Error!");}
+			i = 0;
+
+			try
+			{while (!boost::regex_search (line, MinutePatterns, minute.at (i))); i ++;}
+			catch (...)
+			{error_window ("Regex Search Error!");}
+			i = 0;
+
+			try
+			{while (!boost::regex_search (line, SecondPatterns, second.at (i))); i ++;}
+			catch (...)
+			{error_window ("Regex Search Error!");}
 			i = 0;
 //check all device regular expressions against the string until a hit
 			try
-			{
-				while (!boost::regex_search (line, Dpatterns, d.at (i)));
-					i ++;
-			}
+			{while (!boost::regex_search (line, Dpatterns, d.at (i))); i++;}
 			catch (...)
-			{
-				error_window ("Regex Search Error!");
-			}
+			{error_window ("Regex Search Error!");}
 			i = 0;
 //check all event regular expressions against the string until a hit
 			try
-			{
-				while (!boost::regex_search (line, Epatterns, e.at (i)));
-					i ++;
-			}
+			{while (!boost::regex_search (line, Epatterns, e.at (i))); i++;}
 			catch (...)
-			{
-				error_window ("Regex Search Error!");
-			}
+			{error_window ("Regex Search Error!");}
 			i = 0;
 //check all state regular expressions against the string until a hit
 			try
-			{
-				while (!boost::regex_search (line, Spatterns, s.at (i)));
-					i ++;
-			}
+			{while (!boost::regex_search (line, Spatterns, s.at (i))); i ++;}
 			catch (...)
-			{
-				error_window ("Regex Search Error!");
-			}
+			{error_window ("Regex Search Error!");}
 //if the time pattern already esists in the string, do stuff
-			if (log_files.is_time_pattern (YearPatterns[0]))
+			if (log_files.is_time_pattern (YearPatterns[0], MonthPatterns[0], DayPatterns[0], HourPatterns[0], MinutePatterns[0], SecondPatterns[0]))
 			{
 //find the identical time pattern
-				long int a = log_files.find (YearPatterns[0]);
+				long int a = log_files.find (YearPatterns[0], MonthPatterns[0], DayPatterns[0], HourPatterns[0], MinutePatterns[0], SecondPatterns[0]);
 //add the pointer to the text buffer
 				log_files.at (a).add_text_buffer_link (Text_Files.at (i));
 //add the segment position to the vector
@@ -715,7 +725,10 @@ void initialize_log_file_stats ()
 //if the time pattern is new, do stuff
 			else
 			{
-
+				shi::LOG_FILE_STATS x;
+				x.add_text_buffer_link (Text_Files.at (i));
+				x.add_segment_pos (*pos);
+				log_files.log_file_stats.push_back (x);
 			}
 		}
 
