@@ -18,9 +18,7 @@
 #include "classes.h"
 
 //all global classes initialized here
-static shi::SYNTAX log_file_syntax;
-static std::vector <shi::TIME> log_file_time;
-static shi::LOG_FILES log_files;
+static std::vector <LOG_FILE_DATA> log_files;
 
 #define default_text "There are no log files currently loaded."
 //global application
@@ -36,9 +34,7 @@ static std::vector <GtkTextBuffer*> Text_Files;
 //SHIs behavior. They call all the secondary functions (in the backend
 //that perform the underlying processes
 
-//function to start the main shi window
-void mainwindow ();
-//actual code to produce the main shi window
+//produces main window
 void mainwindowactivate (GtkApplication *app);
 //function to run the drawing area
 void drawing_area (GtkWidget *area);

@@ -5,7 +5,10 @@ int main (int argc, char **argv)
 {
 
 	//all the other functions of SHI explode out from calling
-	mainwindow();
+	GtkApplication *MainWindow = gtk_application_new ("app.shi", G_APPLICATION_FLAGS_NONE);
+	g_signal_connect (MainWindow, "activate", G_CALLBACK (mainwindowactivate), MainWindow);
+	g_application_run (G_APPLICATION (MainWindow), 0, NULL);
+	g_object_unref (MainWindow);
 
 	return 0;
 

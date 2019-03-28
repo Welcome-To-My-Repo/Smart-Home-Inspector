@@ -1,6 +1,6 @@
 #include "shi.h"
 #include <fstream>
-
+/*
 GtkWidget 	*Window,
 		*MainBox,
 		*SecondBox,
@@ -29,51 +29,45 @@ GtkWidget 	*Window,
 		*StopButton,
 		*SkipRight,
 		*SkipLeft;
-
-void mainwindow ()
-{
-	MainWindow = gtk_application_new ("app.shi", G_APPLICATION_FLAGS_NONE);
-	g_signal_connect (MainWindow, "activate", G_CALLBACK (mainwindowactivate), NULL);
-	g_application_run (G_APPLICATION (MainWindow), 0, NULL);
-	g_object_unref (MainWindow);
-}
-
+*/
 void mainwindowactivate (GtkApplication *app)
 {
 
 //assign new window to Window
-	Window = gtk_application_window_new (app);
+	GtkWidget *Window = gtk_application_window_new (app);
 //set Window parameters
 	gtk_window_set_title (GTK_WINDOW (Window), "window");
 	gtk_window_set_default_size (GTK_WINDOW (Window), 1536, 1024);
 //assign elements to other widgets
-	MainBox = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	SecondBox = 	gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-	TextTabs = 	gtk_notebook_new ();
-	Tabs = 		gtk_notebook_new ();
-	EventsPlayBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	DrawDisplay = 	gtk_drawing_area_new ();
-	DevList = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	DevListScroll = gtk_scrolled_window_new (NULL, NULL);
-	FileMenu = 	gtk_menu_new ();
-	FileButton = 	gtk_menu_item_new_with_label ("File");
-	ActionsMenu = 	gtk_menu_new ();
-	ActionsButton = gtk_menu_item_new_with_label ("Actions");
-	ActionsBox = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	MenuBox = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	MenuBar = 	gtk_menu_bar_new ();
-	Open = 		gtk_menu_item_new_with_label ("Open Log File");
-	Save = 		gtk_menu_item_new_with_label ("Save Project");
-	SaveAs = 	gtk_menu_item_new_with_label ("Save Project As");
-	MenuSeparator =	gtk_separator_menu_item_new ();
-	Quit = 		gtk_menu_item_new_with_label ("Quit");
-	Inspect = 	gtk_menu_item_new_with_label ("Inspect Log Files");
-	Playbar = 	gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-	PlayScrubber = 	gtk_scale_new_with_range (GTK_ORIENTATION_HORIZONTAL, 0, 100, 1);
-	PlayButton = 	gtk_button_new_from_icon_name ("gtk-media-play", GTK_ICON_SIZE_SMALL_TOOLBAR);
-	StopButton = 	gtk_button_new_from_icon_name ("gtk-media-stop", GTK_ICON_SIZE_SMALL_TOOLBAR);
-	SkipRight = 	gtk_button_new_from_icon_name ("gtk-media-rewind", GTK_ICON_SIZE_SMALL_TOOLBAR);
-	SkipLeft = 	gtk_button_new_from_icon_name ("gtk-media-forward", GTK_ICON_SIZE_SMALL_TOOLBAR);
+	GtkWidget
+	*MainBox = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
+	*SecondBox = 	gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0),
+	*TextTabs = 	gtk_notebook_new (),
+	*Tabs = 		gtk_notebook_new (),
+	*EventsPlayBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
+	*DrawDisplay = 	gtk_drawing_area_new (),
+	*DevList = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
+	*DevListScroll = gtk_scrolled_window_new (NULL, NULL),
+	*FileMenu = 	gtk_menu_new (),
+	*FileButton = 	gtk_menu_item_new_with_label ("File"),
+	*ActionsMenu = 	gtk_menu_new (),
+	*ActionsButton = gtk_menu_item_new_with_label ("Actions"),
+	*ActionsBox = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
+	*MenuBox = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
+	*MenuBar = 	gtk_menu_bar_new (),
+	*Open = 		gtk_menu_item_new_with_label ("Open Log File"),
+	*Save = 		gtk_menu_item_new_with_label ("Save Project"),
+	*SaveAs = 	gtk_menu_item_new_with_label ("Save Project As"),
+	*MenuSeparator =	gtk_separator_menu_item_new (),
+	*Quit = 		gtk_menu_item_new_with_label ("Quit"),
+	*Inspect = 	gtk_menu_item_new_with_label ("Inspect Log Files"),
+	*Playbar = 	gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0),
+	*PlayScrubber = 	gtk_scale_new_with_range (GTK_ORIENTATION_HORIZONTAL, 0, 100, 1),
+	*PlayButton = 	gtk_button_new_from_icon_name ("gtk-media-play", GTK_ICON_SIZE_SMALL_TOOLBAR),
+	*StopButton = 	gtk_button_new_from_icon_name ("gtk-media-stop", GTK_ICON_SIZE_SMALL_TOOLBAR),
+	*SkipRight = 	gtk_button_new_from_icon_name ("gtk-media-rewind", GTK_ICON_SIZE_SMALL_TOOLBAR),
+	*SkipLeft = 	gtk_button_new_from_icon_name ("gtk-media-forward", GTK_ICON_SIZE_SMALL_TOOLBAR);
+
 //set default text display
 	GtkWidget *tmp;
 	gtk_notebook_set_scrollable (GTK_NOTEBOOK (TextTabs), TRUE);
