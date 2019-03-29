@@ -7,6 +7,9 @@ public:
 	void add_text_file (GtkTextBuffer *_);
 	GtkTextBuffer *get_text_file ();
 
+	GtkEntryBuffer *add_regex (char type);
+	void remove_ex (char type, GtkEntryBuffer *expression);
+
 	GtkEntryBuffer *add_year_regex ();
 	GtkEntryBuffer *add_month_regex ();
 	GtkEntryBuffer *add_day_regex ();

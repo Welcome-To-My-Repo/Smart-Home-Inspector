@@ -264,15 +264,16 @@ void add_text_view (char *filename, GtkWidget *tabs)
 	gtk_container_add (GTK_CONTAINER (scroll), text);
 	gtk_widget_show_all (tabs);
 
-	GObject *to_remove = g_object_new (G_TYPE_OBJECT, "tabs", tabs, "page", page, NULL);
+	struct _ {GtkWidget *y; int z;};
+	_*to_remove = new _;
+	to_remove->y = tabs; to_remove->z = page;
 	g_signal_connect_swapped (close, "clicked", G_CALLBACK (remove_page), to_remove);
 
 }
 
 void remove_page (GObject *page)
 {
-	GtkWidget *tmp;
-	int a;
-	g_object_get (page, "tabs", tmp, "page", a, NULL);
-	gtk_notebook_remove_page (GTK_NOTEBOOK (tmp), a);
+	struct tmp {GtkWidget *y; int z;};
+	tmp *a = page;
+	gtk_notebook_remove_page (GTK_NOTEBOOK (a->y), a->z);
 }
