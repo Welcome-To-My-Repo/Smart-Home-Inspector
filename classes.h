@@ -1,4 +1,3 @@
-//avoid namespace collisions
 class LOG_FILE_DATA
 {
 public:
@@ -6,7 +5,14 @@ public:
 	LOG_FILE_DATA (GtkTextBuffer *_);
 	~LOG_FILE_DATA ();
 	void add_text_file (GtkTextBuffer *_);
+	GtkTextBuffer *get_text_file ();
 
+	GtkEntryBuffer *add_year_regex ();
+	GtkEntryBuffer *add_month_regex ();
+	GtkEntryBuffer *add_day_regex ();
+	GtkEntryBuffer *add_hour_regex ();
+	GtkEntryBuffer *add_minute_regex ();
+	GtkEntryBuffer *add_second_regex ();
 	void year_remove_ex (GtkEntryBuffer *expression);
 	void month_remove_ex (GtkEntryBuffer *expression);
 	void day_remove_ex (GtkEntryBuffer *expression);
@@ -16,7 +22,7 @@ public:
 	void device_remove_ex (GtkEntryBuffer *expression);
 	void event_remove_ex (GtkEntryBuffer *expression);
 	void state_remove_ex (GtkEntryBuffer *expression);
-	
+
 private:
 
 	struct SYNTAX
@@ -42,7 +48,8 @@ private:
 		};
 		std::vector <event> events;
 	};
-	GtkTextBuffer *Text_File;
+	GtkTextBuffer *Text_File = gtk_text_buffer_new (NULL);
+	long int current_data = -1;
 	std::vector <DATA> data;
 	SYNTAX syntax;
 };

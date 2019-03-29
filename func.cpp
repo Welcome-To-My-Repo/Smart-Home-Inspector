@@ -17,8 +17,7 @@ void add_entry_box_year_regex (GtkWidget *container)
 	GtkWidget *sidebox, *closebutton, *Entry;
 	sidebox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 	closebutton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-	log_file_syntax.Year_Regex.push_back (gtk_entry_buffer_new (NULL, -1));
-	Entry = gtk_entry_new_with_buffer (log_file_syntax.Year_Regex.back ());
+	Entry = gtk_entry_new_with_buffer (log_files.add_year_regex ());
 
 	gtk_box_pack_start (GTK_BOX (sidebox), closebutton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (sidebox), Entry, TRUE, TRUE, 0);
@@ -32,8 +31,7 @@ void add_entry_box_month_regex (GtkWidget *container)
 	GtkWidget *sidebox, *closebutton, *Entry;
 	sidebox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 	closebutton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-	log_file_syntax.Month_Regex.push_back (gtk_entry_buffer_new (NULL, -1));
-	Entry = gtk_entry_new_with_buffer (log_file_syntax.Month_Regex.back ());
+	Entry = gtk_entry_new_with_buffer (log_files.add_month_regex ());
 
 	gtk_box_pack_start (GTK_BOX (sidebox), closebutton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (sidebox), Entry, TRUE, TRUE, 0);

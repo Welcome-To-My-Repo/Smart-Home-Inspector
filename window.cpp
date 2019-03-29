@@ -219,7 +219,7 @@ void add_text_view (char *filename, GtkWidget *tabs)
 	GtkWidget 	*scroll = gtk_scrolled_window_new (NULL, NULL),
 			*text,
 			*box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
-			*close = gtk_button_new ();
+			*close = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
 	int *page = new int;
 	std::string str = filename, sub = "";
 	sub = str.substr (str.rfind ("/", std::string::npos) + 1, std::string::npos);
@@ -244,14 +244,13 @@ void add_text_view (char *filename, GtkWidget *tabs)
 					-1);
 	}
 
-	gtk_button_set_always_show_image (GTK_BUTTON (close), TRUE);
-	gtk_button_set_image (GTK_BUTTON (close), gtk_image_new_from_icon_name ("window-close", GTK_ICON_SIZE_SMALL_TOOLBAR));
 	gtk_box_pack_start (GTK_BOX (box), scroll, TRUE, TRUE, 0);
 	gtk_box_pack_start (GTK_BOX (box), close, FALSE, TRUE, 0);
 	gtk_notebook_append_page (GTK_NOTEBOOK (tabs), box, NULL);
 	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (tabs), box, sub.c_str());
 
-	text = gtk_text_view_new_with_buffer (GTK_TEXT_BUFFER (Text_Files.back ()));
+	log_files.push_back (LOG_FILE_DATA ());
+	text = gtk_text_view_new_with_buffer (GTK_TEXT_BUFFER (log_files.back ().get_text_file()));
 
 
 	gtk_text_view_set_cursor_visible (GTK_TEXT_VIEW (text), false);
@@ -265,15 +264,15 @@ void add_text_view (char *filename, GtkWidget *tabs)
 	gtk_container_add (GTK_CONTAINER (scroll), text);
 	gtk_widget_show_all (tabs);
 
-	g_signal_connect_swapped (close, "clicked", G_CALLBACK (remove_page), page);
+	GObject *to_remove = g_object_new (G_TYPE_OBJECT, "tabs", tabs, "page", page, NULL);
+	g_signal_connect_swapped (close, "clicked", G_CALLBACK (remove_page), to_remove);
 
 }
 
-void remove_page (int *page)
+void remove_page (GObject *page)
 {
-	if (gtk_notebook_get_n_pages (GTK_NOTEBOOK (TextTabs)) > 1)
-	{
-		gtk_notebook_remove_page (GTK_NOTEBOOK (TextTabs), *page - 1);
-		Text_Files.erase (Text_Files.begin () + *page - 1);
-	}
+	GtkWidget *tmp;
+	int a;
+	g_object_get (page, "tabs", tmp, "page", a, NULL);
+	gtk_notebook_remove_page (GTK_NOTEBOOK (tmp), a);
 }
