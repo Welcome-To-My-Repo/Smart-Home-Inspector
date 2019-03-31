@@ -1,38 +1,7 @@
 #include "shi.h"
-#include <fstream>
-/*
-GtkWidget 	*Window,
-		*MainBox,
-		*SecondBox,
-		*Tabs,
-		*TextTabs,
-		*EventsPlayBox,
-		*DrawDisplay,
-		*DevList,
-		*DevListScroll,
-		*FileMenu,
-		*FileButton,
-		*ActionsMenu,
-		*ActionsButton,
-		*ActionsBox,
-		*MenuBox,
-		*MenuBar,
-		*Open,
-		*Save,
-		*SaveAs,
-		*MenuSeparator,
-		*Quit,
-		*Inspect,
-		*Playbar,
-		*PlayScrubber,
-		*PlayButton,
-		*StopButton,
-		*SkipRight,
-		*SkipLeft;
-*/
+
 void mainwindowactivate (GtkApplication *app)
 {
-
 //assign new window to Window
 	GtkWidget *Window = gtk_application_window_new (app);
 //set Window parameters
@@ -43,7 +12,7 @@ void mainwindowactivate (GtkApplication *app)
 	*MainBox = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
 	*SecondBox = 	gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0),
 	*TextTabs = 	gtk_notebook_new (),
-	*Tabs = 		gtk_notebook_new (),
+	*Tabs = 	gtk_notebook_new (),
 	*EventsPlayBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
 	*DrawDisplay = 	gtk_drawing_area_new (),
 	*DevList = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
@@ -131,7 +100,7 @@ void mainwindowactivate (GtkApplication *app)
 	g_signal_connect_swapped (Quit, "activate", G_CALLBACK (gtk_widget_destroy), Window);
 	g_signal_connect_swapped (Open, "activate", G_CALLBACK (open_file), TextTabs);
 	g_signal_connect_swapped (SaveAs, "activate", G_CALLBACK (save_project), NULL);
-	g_signal_connect_swapped (Inspect, "activate", G_CALLBACK (Parse_Log_Files), NULL);
+	g_signal_connect_swapped (Inspect, "activate", G_CALLBACK (initialize_log_file_stats), NULL);
 //display all elements in window
 	gtk_widget_show_all (Window);
 	drawing_area (DrawDisplay);
@@ -211,7 +180,6 @@ void open_file (GtkWidget *tabs)
 		g_free (filename);
 	}
 	gtk_widget_destroy (file_chooser);
-	Parse_Log_Files ();
 }
 
 void add_text_view (char *filename, GtkWidget *tabs)
@@ -219,6 +187,7 @@ void add_text_view (char *filename, GtkWidget *tabs)
 	GtkWidget 	*scroll = gtk_scrolled_window_new (NULL, NULL),
 			*text,
 			*box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
+			*set_regex = gtk_button_new_with_label ("Set Regular Expressions"),
 			*close = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
 	int *page = new int;
 	std::string str = filename, sub = "";
@@ -230,7 +199,6 @@ void add_text_view (char *filename, GtkWidget *tabs)
 
 	if (strcmp ("Blank", gtk_notebook_get_tab_label_text (GTK_NOTEBOOK (tabs), gtk_notebook_get_nth_page (GTK_NOTEBOOK (tabs), 0))) == 0)
 	{
-		Text_Files.resize (0);
 		gtk_notebook_remove_page (GTK_NOTEBOOK (tabs), 0);
 	}
 	in.open (filename);
@@ -238,18 +206,17 @@ void add_text_view (char *filename, GtkWidget *tabs)
 	{
 		buffer << in.rdbuf ();	//copy contents of ifstream buffer to stringstream
 		contents = buffer.str ();	//copy contents of stringstream to string
-		Text_Files.push_back (gtk_text_buffer_new (NULL));
-		gtk_text_buffer_set_text (Text_Files.back(),
-					contents.c_str (),
-					-1);
+		LOG_FILE_DATA tmp;
+		gtk_text_buffer_set_text (tmp.get_text_file (), contents.c_str (), -1);
+		log_files.push_back (tmp);
+		std::cout << log_files.size () << std::endl;
 	}
-
+	gtk_box_pack_start (GTK_BOX (box), set_regex, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (box), scroll, TRUE, TRUE, 0);
 	gtk_box_pack_start (GTK_BOX (box), close, FALSE, TRUE, 0);
 	gtk_notebook_append_page (GTK_NOTEBOOK (tabs), box, NULL);
 	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (tabs), box, sub.c_str());
 
-	log_files.push_back (LOG_FILE_DATA ());
 	text = gtk_text_view_new_with_buffer (GTK_TEXT_BUFFER (log_files.back ().get_text_file()));
 
 
@@ -264,16 +231,18 @@ void add_text_view (char *filename, GtkWidget *tabs)
 	gtk_container_add (GTK_CONTAINER (scroll), text);
 	gtk_widget_show_all (tabs);
 
-	struct _ {GtkWidget *y; int z;};
+	struct _ {GtkWidget *y; int *z;};
 	_*to_remove = new _;
 	to_remove->y = tabs; to_remove->z = page;
 	g_signal_connect_swapped (close, "clicked", G_CALLBACK (remove_page), to_remove);
-
+	int *pos = new int;
+	*pos = gtk_notebook_get_current_page (GTK_NOTEBOOK (tabs));
+	g_signal_connect_swapped (set_regex, "clicked", G_CALLBACK (set_regular_expressions), pos);
 }
 
-void remove_page (GObject *page)
+void remove_page (void *page)
 {
-	struct tmp {GtkWidget *y; int z;};
-	tmp *a = page;
-	gtk_notebook_remove_page (GTK_NOTEBOOK (a->y), a->z);
+	struct tmp {GtkWidget *y; int *z;};
+	tmp *a = (tmp*)page;
+	gtk_notebook_remove_page (GTK_NOTEBOOK (a->y), *a->z);
 }

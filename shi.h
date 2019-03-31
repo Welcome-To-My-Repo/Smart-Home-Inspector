@@ -51,7 +51,7 @@ void update_text_view (char *filename, GtkWidget *notepad);
 //reads the events from the next smallest time segment in the log file
 void read_time_segment ();
 //wrapper on the remove page function for gtk notebooks
-void remove_page (int *page);
+void remove_page (void *page);
 
 //Backend Functions
 //none of these functions are used individually or called by
@@ -60,40 +60,20 @@ void remove_page (int *page);
 
 //parses the log files and populates the device classes
 //it also calls the gtk parsing dialogue
-void Parse_Log_Files ();
+void set_regular_expressions (int *pos);
 //creates the parsing dialogue window
-void Parse_Log_Files_window (GtkApplication *dialogue);
+void set_regex_window (void *_);
 //adds new expression entry box to the parse log file window
 void add_entry_box (GtkWidget *container);
 //removes an entry box from the parse log file window
 void remove_expression (GtkWidget *entry);
 //adds new "custom" tab to the parse log file window
 void add_custom_page (GtkWidget *notebook);
-//add entry boxes for all syntax types:
-//they're different because each entry box needs to be linked with the proper
-//part of the SYNTAX class
-void add_entry_box_year_regex (GtkWidget *container);
-void add_entry_box_month_regex (GtkWidget *container);
-void add_entry_box_day_regex (GtkWidget *container);
-void add_entry_box_hour_regex (GtkWidget *container);
-void add_entry_box_minute_regex (GtkWidget *container);
-void add_entry_box_second_regex (GtkWidget *container);
-void add_entry_box_device_regex (GtkWidget *container);
-void add_entry_box_event_regex (GtkWidget *container);
-void add_entry_box_state_regex (GtkWidget *container);
+//add entry boxes for syntax types:
+void add_entry_box_regex (void *_);
 
 //remove entries from deleted entry boxes:
-//same deal as adding entry boxes, there needs to be a function for each type
-//of entry
-void remove_entry_year_regex (GtkWidget *entry);
-void remove_entry_month_regex (GtkWidget *entry);
-void remove_entry_day_regex (GtkWidget *entry);
-void remove_entry_hour_regex (GtkWidget *entry);
-void remove_entry_minute_regex (GtkWidget *entry);
-void remove_entry_second_regex (GtkWidget *entry);
-void remove_entry_device_regex (GtkWidget *entry);
-void remove_entry_event_regex (GtkWidget *entry);
-void remove_entry_state_regex (GtkWidget *entry);
+void remove_entry_regex (void *a);
 
 //functions to highlight text buffers:
 //creates a giant list of all events correlated to the time across all log files

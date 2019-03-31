@@ -1,42 +1,51 @@
 #include "shi.h"
 
 //main function to parse the log file
-void Parse_Log_Files ()
+void set_regular_expressions (int *pos)
 {
 	//initialize and activate parse log file dialogue window
 	GtkApplication *dialogue = gtk_application_new ("app.shi.syntax_dialogue", G_APPLICATION_FLAGS_NONE);
-	g_signal_connect (dialogue, "activate", G_CALLBACK (Parse_Log_Files_window), dialogue);
+
+	struct WindowArgs {GtkApplication *a; int b;};
+	WindowArgs *z = new WindowArgs;
+	z->a = dialogue;
+	z->b = *pos;
+	g_signal_connect (dialogue, "activate", G_CALLBACK (set_regex_window), z);
 	g_application_run (G_APPLICATION (dialogue), 0, NULL);
 	g_object_unref (dialogue);
-	//parse_time ();
-	initialize_log_file_stats ();
 }
-void add_entry_box_regex (char type, GtkWidget *container)
+void add_entry_box_regex (void *_)
 {
+	struct RegexArgs {char a; GtkWidget *b; int log_file;};
+	RegexArgs *z = (RegexArgs*)_;
 	GtkWidget *sidebox, *closebutton, *Entry;
 	sidebox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 	closebutton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-	Entry = gtk_entry_new_with_buffer (log_files.add_regex (type));
+	Entry = gtk_entry_new_with_buffer (log_files.at(z->log_file).add_regex (z->a));
 
 	gtk_box_pack_start (GTK_BOX (sidebox), closebutton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (sidebox), Entry, TRUE, TRUE, 0);
-	gtk_box_pack_start (GTK_BOX (container), sidebox, TRUE, TRUE, 0);
-	struct remove {char a; GtkWidget b;};
+	gtk_box_pack_start (GTK_BOX (z->b), sidebox, TRUE, TRUE, 0);
+	struct remove {char a; GtkWidget *b;};
 	remove *tmp = new remove;
-	tmp->a = type; tmp->b = Entry;
+	tmp->a = z->a; tmp->b = Entry;
 	g_signal_connect_swapped (closebutton, "clicked", G_CALLBACK (remove_entry_regex), tmp);
-	gtk_widget_show_all (container);
+	gtk_widget_show_all (z->b);
 }
 void remove_entry_regex (void *a)
 {
-	struct tmp = {char a; GtkWidget b;};
-	tmp *z = a;
-	log_files.remove_ex (z->a, GTK_ENTRY(z->b));
+	struct RemoveArgs {char a; GtkWidget *b; int log_file;};
+	RemoveArgs *z = (RemoveArgs*)a;
+	log_files.at (z->log_file).remove_ex (z->a, GTK_ENTRY_BUFFER(z->b));
 	gtk_widget_destroy (gtk_widget_get_parent (z->b));
 }
 
-void Parse_Log_Files_window (GtkApplication *dialogue)
+void set_regex_window (void *_)
 {
+	struct tmp {GtkApplication *a; int b;};
+	tmp *z = (tmp*)_;
+	GtkApplication *dialogue = z->a;
+	int pos = z->b;
 	GtkWidget	*Window = gtk_application_window_new (dialogue),
 			*BigBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
 			*Notebook = gtk_notebook_new (),
@@ -85,336 +94,45 @@ void Parse_Log_Files_window (GtkApplication *dialogue)
 	gtk_box_pack_start (GTK_BOX (subbox), EntryScrolledBox, TRUE, TRUE, 0);
 	gtk_container_add (GTK_CONTAINER (EntryScrolledBox), EntryViewport);
 	gtk_container_add (GTK_CONTAINER (EntryViewport), EntryViewportBox);
-	if (log_file_syntax.Year_Regex.size () == 0)
+	if (log_files.at (pos).get_regex_list_size ('y') == 0)
 	{
 		EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 		DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-		g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_entry_year_regex), Entry);
-		log_file_syntax.Year_Regex.push_back (gtk_entry_buffer_new ("Type a Regular Expression here", -1));
-		Entry = gtk_entry_new_with_buffer (log_file_syntax.Year_Regex.back ());
-		gtk_box_pack_start (GTK_BOX (EntryViewportBox), EntryContainer, TRUE, TRUE, 0);
-		gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
-		gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
-
-	}
-	else
-	{
-		for (int i = 0; i < log_file_syntax.Year_Regex.size (); i ++)
-		{
-			EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-			DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-			g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_entry_year_regex), Entry);
-			Entry = gtk_entry_new_with_buffer (log_file_syntax.Year_Regex.at (i));
-			gtk_box_pack_start (GTK_BOX (EntryViewportBox), EntryContainer, TRUE, TRUE, 0);
-			gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
-			gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
-		}
-	}
-	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box_year_regex), EntryViewportBox);
-
-//month regex entry
-	AddExpressionButton = gtk_button_new_with_label ("Add Month Regex");
-	EntryScrolledBox = gtk_scrolled_window_new (NULL, NULL);
-	EntryViewport = gtk_viewport_new (NULL, NULL);
-	EntryViewportBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	gtk_box_pack_start (GTK_BOX (subbox), AddExpressionButton, FALSE, TRUE, 0);
-	gtk_box_pack_start (GTK_BOX (subbox), EntryScrolledBox, TRUE, TRUE, 0);
-	gtk_container_add (GTK_CONTAINER (EntryScrolledBox), EntryViewport);
-	gtk_container_add (GTK_CONTAINER (EntryViewport), EntryViewportBox);
-	if (log_file_syntax.Month_Regex.size () == 0)
-	{
-		EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-		DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-		g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_entry_month_regex), Entry);
-		log_file_syntax.Month_Regex.push_back (gtk_entry_buffer_new ("Type a Regular Expression here", -1));
-		Entry = gtk_entry_new_with_buffer (log_file_syntax.Month_Regex.back ());
-		gtk_box_pack_start (GTK_BOX (EntryViewportBox), EntryContainer, TRUE, TRUE, 0);
-		gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
-		gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
-
-	}
-	else
-	{
-		for (int i = 0; i < log_file_syntax.Month_Regex.size (); i ++)
-		{
-			EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-			DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-			g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_entry_month_regex), Entry);
-			Entry = gtk_entry_new_with_buffer (log_file_syntax.Month_Regex.at (i));
-			gtk_box_pack_start (GTK_BOX (EntryViewportBox), EntryContainer, TRUE, TRUE, 0);
-			gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
-			gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
-		}
-	}
-	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box_month_regex), EntryViewportBox);
-
-//day regex entry
-	AddExpressionButton = gtk_button_new_with_label ("Add Day Regex");
-	EntryScrolledBox = gtk_scrolled_window_new (NULL, NULL);
-	EntryViewport = gtk_viewport_new (NULL, NULL);
-	EntryViewportBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	gtk_box_pack_start (GTK_BOX (subbox), AddExpressionButton, FALSE, TRUE, 0);
-	gtk_box_pack_start (GTK_BOX (subbox), EntryScrolledBox, TRUE, TRUE, 0);
-	gtk_container_add (GTK_CONTAINER (EntryScrolledBox), EntryViewport);
-	gtk_container_add (GTK_CONTAINER (EntryViewport), EntryViewportBox);
-	if (log_file_syntax.Day_Regex.size () == 0)
-	{
-		EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-		DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-		g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_entry_day_regex), Entry);
-		log_file_syntax.Day_Regex.push_back (gtk_entry_buffer_new ("Type a Regular Expression here", -1));
-		Entry = gtk_entry_new_with_buffer (log_file_syntax.Day_Regex.back ());
-		gtk_box_pack_start (GTK_BOX (EntryViewportBox), EntryContainer, TRUE, TRUE, 0);
-		gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
-		gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
-
-	}
-	else
-	{
-		for (int i = 0; i < log_file_syntax.Day_Regex.size (); i ++)
-		{
-			EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-			DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-			g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_entry_day_regex), Entry);
-			Entry = gtk_entry_new_with_buffer (log_file_syntax.Day_Regex.at (i));
-			gtk_box_pack_start (GTK_BOX (EntryViewportBox), EntryContainer, TRUE, TRUE, 0);
-			gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
-			gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
-		}
-	}
-	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box_day_regex), EntryViewportBox);
-
-//hour regex entry
-	AddExpressionButton = gtk_button_new_with_label ("Add Hour Regex");
-	EntryScrolledBox = gtk_scrolled_window_new (NULL, NULL);
-	EntryViewport = gtk_viewport_new (NULL, NULL);
-	EntryViewportBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	gtk_box_pack_start (GTK_BOX (subbox), AddExpressionButton, FALSE, TRUE, 0);
-	gtk_box_pack_start (GTK_BOX (subbox), EntryScrolledBox, TRUE, TRUE, 0);
-	gtk_container_add (GTK_CONTAINER (EntryScrolledBox), EntryViewport);
-	gtk_container_add (GTK_CONTAINER (EntryViewport), EntryViewportBox);
-	if (log_file_syntax.Hour_Regex.size () == 0)
-	{
-		EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-		DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-		g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_entry_hour_regex), Entry);
-		log_file_syntax.Hour_Regex.push_back (gtk_entry_buffer_new ("Type a Regular Expression here", -1));
-		Entry = gtk_entry_new_with_buffer (log_file_syntax.Hour_Regex.back ());
-		gtk_box_pack_start (GTK_BOX (EntryViewportBox), EntryContainer, TRUE, TRUE, 0);
-		gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
-		gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
-
-	}
-	else
-	{
-		for (int i = 0; i < log_file_syntax.Hour_Regex.size (); i ++)
-		{
-			EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-			DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-			g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_entry_hour_regex), Entry);
-			Entry = gtk_entry_new_with_buffer (log_file_syntax.Hour_Regex.at (i));
-			gtk_box_pack_start (GTK_BOX (EntryViewportBox), EntryContainer, TRUE, TRUE, 0);
-			gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
-			gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
-		}
-	}
-	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box_hour_regex), EntryViewportBox);
-
-//minute regex entry
-	AddExpressionButton = gtk_button_new_with_label ("Add Minute Regex");
-	EntryScrolledBox = gtk_scrolled_window_new (NULL, NULL);
-	EntryViewport = gtk_viewport_new (NULL, NULL);
-	EntryViewportBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	gtk_box_pack_start (GTK_BOX (subbox), AddExpressionButton, FALSE, TRUE, 0);
-	gtk_box_pack_start (GTK_BOX (subbox), EntryScrolledBox, TRUE, TRUE, 0);
-	gtk_container_add (GTK_CONTAINER (EntryScrolledBox), EntryViewport);
-	gtk_container_add (GTK_CONTAINER (EntryViewport), EntryViewportBox);
-	if (log_file_syntax.Minute_Regex.size () == 0)
-	{
-		EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-		DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-		g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_entry_minute_regex), Entry);
-		log_file_syntax.Minute_Regex.push_back (gtk_entry_buffer_new ("Type a Regular Expression here", -1));
-		Entry = gtk_entry_new_with_buffer (log_file_syntax.Minute_Regex.back ());
-		gtk_box_pack_start (GTK_BOX (EntryViewportBox), EntryContainer, TRUE, TRUE, 0);
-		gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
-		gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
-
-	}
-	else
-	{
-		for (int i = 0; i < log_file_syntax.Minute_Regex.size (); i ++)
-		{
-			EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-			DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-			g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_entry_minute_regex), Entry);
-			Entry = gtk_entry_new_with_buffer (log_file_syntax.Minute_Regex.at (i));
-			gtk_box_pack_start (GTK_BOX (EntryViewportBox), EntryContainer, TRUE, TRUE, 0);
-			gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
-			gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
-		}
-	}
-	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box_minute_regex), EntryViewportBox);
-
-//second regex entry
-	AddExpressionButton = gtk_button_new_with_label ("Add Second Regex");
-	EntryScrolledBox = gtk_scrolled_window_new (NULL, NULL);
-	EntryViewport = gtk_viewport_new (NULL, NULL);
-	EntryViewportBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	gtk_box_pack_start (GTK_BOX (subbox), AddExpressionButton, FALSE, TRUE, 0);
-	gtk_box_pack_start (GTK_BOX (subbox), EntryScrolledBox, TRUE, TRUE, 0);
-	gtk_container_add (GTK_CONTAINER (EntryScrolledBox), EntryViewport);
-	gtk_container_add (GTK_CONTAINER (EntryViewport), EntryViewportBox);
-	if (log_file_syntax.Second_Regex.size () == 0)
-	{
-		EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-		DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-		g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_entry_second_regex), Entry);
-		log_file_syntax.Second_Regex.push_back (gtk_entry_buffer_new ("Type a Regular Expression here", -1));
-		Entry = gtk_entry_new_with_buffer (log_file_syntax.Second_Regex.back ());
-		gtk_box_pack_start (GTK_BOX (EntryViewportBox), EntryContainer, TRUE, TRUE, 0);
-		gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
-		gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
-
-	}
-	else
-	{
-		for (int i = 0; i < log_file_syntax.Second_Regex.size (); i ++)
-		{
-			EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-			DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-			g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_entry_second_regex), Entry);
-			Entry = gtk_entry_new_with_buffer (log_file_syntax.Second_Regex.at (i));
-			gtk_box_pack_start (GTK_BOX (EntryViewportBox), EntryContainer, TRUE, TRUE, 0);
-			gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
-			gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
-		}
-	}
-	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box_second_regex), EntryViewportBox);
-
-//make Device Notation tab
-	NotebookTabBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	gtk_notebook_append_page (GTK_NOTEBOOK (Notebook), NotebookTabBox, NULL);
-	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (Notebook), NotebookTabBox, "Device Notation");
-
-//make device regex entry
-	AddExpressionButton = gtk_button_new_with_label ("Add Device Regex");
-	EntryScrolledBox = gtk_scrolled_window_new (NULL, NULL);
-	EntryViewport = gtk_viewport_new (NULL, NULL);
-	EntryViewportBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	gtk_box_pack_start (GTK_BOX (NotebookTabBox), AddExpressionButton, FALSE, FALSE, 0);
-	gtk_box_pack_start (GTK_BOX (NotebookTabBox), EntryScrolledBox, TRUE, TRUE, 0);
-	gtk_container_add (GTK_CONTAINER (EntryScrolledBox), EntryViewport);
-	gtk_container_add (GTK_CONTAINER (EntryViewport), EntryViewportBox);
-	if (log_file_syntax.Device_Regex.size () == 0)
-	{
-		EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-		DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-		g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_entry_device_regex), Entry);
-		log_file_syntax.Device_Regex.push_back (gtk_entry_buffer_new ("Type a Regular Expression here", -1));
-		Entry = gtk_entry_new_with_buffer (log_file_syntax.Device_Regex.back ());
+		Entry = gtk_entry_new_with_buffer (log_files.at (pos).add_regex ('y'));
 		gtk_box_pack_start (GTK_BOX (EntryViewportBox), EntryContainer, TRUE, TRUE, 0);
 		gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
 		gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
 	}
 	else
 	{
-		for (int i = 0; i < log_file_syntax.Device_Regex.size (); i++)
+		for (int i = 0; i < log_files.at (pos).get_regex_list_size ('y'); i ++)
 		{
 			EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 			DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-			g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_entry_device_regex), Entry);
-			Entry = gtk_entry_new_with_buffer (log_file_syntax.Device_Regex.at (i));
+			Entry = gtk_entry_new_with_buffer (log_files.at (pos).get_regex ('y', i));
 			gtk_box_pack_start (GTK_BOX (EntryViewportBox), EntryContainer, TRUE, TRUE, 0);
 			gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
 			gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
 		}
 	}
-	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box_device_regex), EntryViewportBox);
-
-//make Event Notation tab
-	NotebookTabBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	gtk_notebook_append_page (GTK_NOTEBOOK (Notebook), NotebookTabBox, NULL);
-	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (Notebook), NotebookTabBox, "Event Notation");
-
-	AddExpressionButton = gtk_button_new_with_label ("Add Event Regex");
-	EntryScrolledBox = gtk_scrolled_window_new (NULL, NULL);
-	EntryViewport = gtk_viewport_new (NULL, NULL);
-	EntryViewportBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	gtk_box_pack_start (GTK_BOX (NotebookTabBox), AddExpressionButton, FALSE, FALSE, 0);
-	gtk_box_pack_start (GTK_BOX (NotebookTabBox), EntryScrolledBox, TRUE, TRUE, 0);
-	gtk_container_add (GTK_CONTAINER (EntryScrolledBox), EntryViewport);
-	gtk_container_add (GTK_CONTAINER (EntryViewport), EntryViewportBox);
-	if (log_file_syntax.Event_Regex.size () == 0)
-	{
-		EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-		DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-		g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_entry_event_regex), Entry);
-		log_file_syntax.Event_Regex.push_back (gtk_entry_buffer_new ("Type a Regular Expression here", -1));
-		Entry = gtk_entry_new_with_buffer (log_file_syntax.Event_Regex.back ());
-		gtk_box_pack_start (GTK_BOX (EntryViewportBox), EntryContainer, TRUE, TRUE, 0);
-		gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
-		gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
-	}
-	else
-	{
-		for (int i = 0; i < log_file_syntax.Event_Regex.size (); i++)
-		{
-			EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-			DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-			g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_entry_event_regex), Entry);
-			Entry = gtk_entry_new_with_buffer (log_file_syntax.Event_Regex.at (i));
-			gtk_box_pack_start (GTK_BOX (EntryViewportBox), EntryContainer, TRUE, TRUE, 0);
-			gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
-			gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
-		}
-	}
-	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box_event_regex), EntryViewportBox);
-
-//make State Notation tab
-	NotebookTabBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	gtk_notebook_append_page (GTK_NOTEBOOK (Notebook), NotebookTabBox, NULL);
-	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (Notebook), NotebookTabBox, "State Notation");
-
-	AddExpressionButton = gtk_button_new_with_label ("Add State Regex");
-	EntryScrolledBox = gtk_scrolled_window_new (NULL, NULL);
-	EntryViewport = gtk_viewport_new (NULL, NULL);
-	EntryViewportBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	gtk_box_pack_start (GTK_BOX (NotebookTabBox), AddExpressionButton, FALSE, FALSE, 0);
-	gtk_box_pack_start (GTK_BOX (NotebookTabBox), EntryScrolledBox, TRUE, TRUE, 0);
-	gtk_container_add (GTK_CONTAINER (EntryScrolledBox), EntryViewport);
-	gtk_container_add (GTK_CONTAINER (EntryViewport), EntryViewportBox);
-	if (log_file_syntax.State_Regex.size () == 0)
-	{
-		EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-		DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-		g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_entry_state_regex), Entry);
-		log_file_syntax.State_Regex.push_back (gtk_entry_buffer_new ("Type a Regular Expression here", -1));
-		Entry = gtk_entry_new_with_buffer (log_file_syntax.State_Regex.back ());
-		gtk_box_pack_start (GTK_BOX (EntryViewportBox), EntryContainer, TRUE, TRUE, 0);
-		gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
-		gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
-	}
-	else
-	{
-		for (int i = 0; i < log_file_syntax.State_Regex.size (); i++)
-		{
-			EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-			DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-			g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_entry_state_regex), Entry);
-			Entry = gtk_entry_new_with_buffer (log_file_syntax.State_Regex.at (i));
-			gtk_box_pack_start (GTK_BOX (EntryViewportBox), EntryContainer, TRUE, TRUE, 0);
-			gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
-			gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
-		}
-	}
-	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box_state_regex), EntryViewportBox);
+	struct RemoveEntry {char a; GtkWidget *b; int c;};
+	RemoveEntry *x = new RemoveEntry;
+	x->a = 'y';
+	x->b = Entry;
+	x->c = pos;
+	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_entry_regex), x);
+	RemoveEntry* y = new RemoveEntry;
+	y->a = 'y';
+	y->b = EntryViewportBox;
+	y->c = pos;
+	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box_regex), y);
 
 	gtk_widget_show_all (Window);
 }
 
 void initialize_log_file_stats ()
 {
+	/*
 	std::cout << "initializing" << std::endl;
 //make the variables
 	std::string contents, line;
@@ -563,7 +281,7 @@ void initialize_log_file_stats ()
 		}
 
 	}
-
+*/
 }
 
 void error_window_dialogue (char *error_warning);
