@@ -60,7 +60,7 @@ void remove_page (void *page);
 
 //parses the log files and populates the device classes
 //it also calls the gtk parsing dialogue
-void set_regular_expressions (int *pos);
+void set_regular_expressions (GtkTextBuffer *_);
 //creates the parsing dialogue window
 void set_regex_window (void *_);
 //adds new expression entry box to the parse log file window

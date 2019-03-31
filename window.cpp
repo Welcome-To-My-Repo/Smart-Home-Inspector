@@ -237,7 +237,7 @@ void add_text_view (char *filename, GtkWidget *tabs)
 	g_signal_connect_swapped (close, "clicked", G_CALLBACK (remove_page), to_remove);
 	int *pos = new int;
 	*pos = gtk_notebook_get_current_page (GTK_NOTEBOOK (tabs));
-	g_signal_connect_swapped (set_regex, "clicked", G_CALLBACK (set_regular_expressions), pos);
+	g_signal_connect_swapped (set_regex, "clicked", G_CALLBACK (set_regular_expressions), log_files.back ().get_text_file ());
 }
 
 void remove_page (void *page)

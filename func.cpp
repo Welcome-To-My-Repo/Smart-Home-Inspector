@@ -1,7 +1,7 @@
 #include "shi.h"
 
 //main function to parse the log file
-void set_regular_expressions (int *pos)
+void set_regular_expressions (GtkTextBuffer *_)
 {
 	//initialize and activate parse log file dialogue window
 	GtkApplication *dialogue = gtk_application_new ("app.shi.syntax_dialogue", G_APPLICATION_FLAGS_NONE);
@@ -9,7 +9,12 @@ void set_regular_expressions (int *pos)
 	struct WindowArgs {GtkApplication *a; int b;};
 	WindowArgs *z = new WindowArgs;
 	z->a = dialogue;
-	z->b = *pos;
+	for (int i = 0; i < log_files.size (); i ++)
+	{
+		if (log_files.at (i).get_text_file () == _)
+			z->b = i;
+	}
+	std::cout << z->b << std::endl;
 	g_signal_connect (dialogue, "activate", G_CALLBACK (set_regex_window), z);
 	g_application_run (G_APPLICATION (dialogue), 0, NULL);
 	g_object_unref (dialogue);
