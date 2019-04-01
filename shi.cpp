@@ -1,5 +1,5 @@
 #include "shi.h"
-
+std::vector <LOG_FILE_DATA> log_files;
 int main (int argc, char **argv)
 
 {

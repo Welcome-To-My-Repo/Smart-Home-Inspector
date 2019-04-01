@@ -18,7 +18,7 @@
 #include "classes.h"
 
 //all global classes initialized here
-static std::vector <LOG_FILE_DATA> log_files;
+extern std::vector <LOG_FILE_DATA> log_files;
 
 #define default_text "There are no log files currently loaded."
 //GUI functions
@@ -33,12 +33,12 @@ void drawing_area (GtkWidget *area);
 //open file dialogue for project files
 void open_project ();
 //open file dialogue for log files
-struct open_file_params {GtkWidget *tabs; std::vector <LOG_FILE_DATA> *log_files;};
+struct open_file_params {GtkWidget *tabs;};
 void open_file (open_file_params *_);
 //save file dialogue for project files
 void save_project ();
 //add a new log file to the view
-void add_text_view (char *filename, GtkWidget *tabs, std::vector <LOG_FILE_DATA> log_files);
+void add_text_view (char *filename, GtkWidget *tabs);
 //updates the text view with new log files
 void update_text_view (char *filename, GtkWidget *notepad);
 //reads the events from the next smallest time segment in the log file
@@ -53,16 +53,16 @@ void remove_page (void *page);
 
 //parses the log files and populates the device classes
 //it also calls the gtk parsing dialogue
-struct to_regex {std::vector <LOG_FILE_DATA> *log_files; int pos;};
+struct to_regex {int pos;};
 void set_regular_expressions (to_regex *_);
 //creates the parsing dialogue window
-struct to_regex_window {GtkApplication *a; int b; std::vector <LOG_FILE_DATA> *log_files;};
+struct to_regex_window {GtkApplication *a; int b;};
 void set_regex_window (to_regex_window *_);
 //removes an entry box from the parse log file window
-struct to_remove_entry {char a; GtkWidget *b; int pos; std::vector <LOG_FILE_DATA> *log_files;};
+struct to_remove_entry {char a; GtkWidget *b; int pos;};
 void remove_expression (to_remove_entry *_);
 //add entry boxes for syntax types:
-struct to_add_entry {char a; GtkWidget *b; int pos; std::vector <LOG_FILE_DATA> *log_files;};
+struct to_add_entry {char a; GtkWidget *b; int pos;};
 void add_entry_box_regex (to_add_entry *_);
 
 //functions to highlight text buffers:

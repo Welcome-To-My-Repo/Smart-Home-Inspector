@@ -1,8 +1,6 @@
 #include "shi.h"
 
 void mainwindowactivate (GtkApplication *app)
-{
-	std::vector <LOG_FILE_DATA> log_files;
 //assign new window to Window
 	GtkWidget *Window = gtk_application_window_new (app);
 //set Window parameters
@@ -100,7 +98,6 @@ void mainwindowactivate (GtkApplication *app)
 	g_signal_connect_swapped (Quit, "activate", G_CALLBACK (gtk_widget_destroy), Window);
 	open_file_params *j = new open_file_params;
 	j->tabs = TextTabs;
-	j->log_files = &log_files;
 	g_signal_connect_swapped (Open, "activate", G_CALLBACK (open_file), j);
 	g_signal_connect_swapped (SaveAs, "activate", G_CALLBACK (save_project), NULL);
 	g_signal_connect_swapped (Inspect, "activate", G_CALLBACK (initialize_log_file_stats), NULL);
@@ -178,13 +175,15 @@ void open_file (open_file_params *_)
 		char *filename;
 		GtkFileChooser *a = GTK_FILE_CHOOSER (file_chooser);
 		filename = gtk_file_chooser_get_filename (a);
-		add_text_view (filename, _->tabs, *_->log_files);
+		add_text_view (filename, _->tabs);
 		g_free (filename);
 	}
 	gtk_widget_destroy (file_chooser);
+	std::cout << "open file function finished" << std::endl;
+
 }
 
-void add_text_view (char *filename, GtkWidget *tabs, std::vector <LOG_FILE_DATA> log_files)
+void add_text_view (char *filename, GtkWidget *tabs, std::vector <LOG_FILE_DATA> *log_files)
 {
 	GtkWidget 	*scroll = gtk_scrolled_window_new (NULL, NULL),
 			*text,
@@ -219,7 +218,7 @@ void add_text_view (char *filename, GtkWidget *tabs, std::vector <LOG_FILE_DATA>
 	gtk_notebook_append_page (GTK_NOTEBOOK (tabs), box, NULL);
 	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (tabs), box, sub.c_str());
 
-	text = gtk_text_view_new_with_buffer (GTK_TEXT_BUFFER (log_files.back ().get_text_file()));
+	text = gtk_text_view_new_with_buffer (GTK_TEXT_BUFFER (log_files->back ().get_text_file()));
 
 
 	gtk_text_view_set_cursor_visible (GTK_TEXT_VIEW (text), false);
@@ -238,9 +237,9 @@ void add_text_view (char *filename, GtkWidget *tabs, std::vector <LOG_FILE_DATA>
 	to_remove->y = tabs; to_remove->z = page;
 	g_signal_connect_swapped (close, "clicked", G_CALLBACK (remove_page), to_remove);
 	to_regex *i = new to_regex;
-	i->log_files = &log_files;
 	i->pos = page - 1;
 	g_signal_connect_swapped (set_regex, "clicked", G_CALLBACK (set_regular_expressions), i);
+	std::cout << "add text view function finished" << std::endl;
 }
 
 void remove_page (void *page)

@@ -8,7 +8,6 @@ void set_regular_expressions (to_regex *_)
 	to_regex_window *z;
 	z->a = dialogue;
 	z->b = _->pos;
-	z->log_files = _->log_files;
 
 	g_signal_connect (dialogue, "activate", G_CALLBACK (set_regex_window), z);
 	g_application_run (G_APPLICATION (dialogue), 0, NULL);
@@ -17,7 +16,6 @@ void set_regular_expressions (to_regex *_)
 void add_entry_box_regex (to_add_entry *_)
 {
 	to_add_entry *z = _;
-	std::vector <LOG_FILE_DATA> log_files = *z->log_files;
 	GtkWidget *sidebox, *closebutton, *Entry;
 	sidebox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 	closebutton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
@@ -30,23 +28,19 @@ void add_entry_box_regex (to_add_entry *_)
 	tmp->a = _->a;
 	tmp->b = Entry;
 	tmp->pos = _->pos;
-	tmp->log_files = _->log_files;
 	g_signal_connect_swapped (closebutton, "clicked", G_CALLBACK (remove_expression), tmp);
 	gtk_widget_show_all (z->b);
 }
 void remove_expression (to_remove_entry *_)
 {
 	to_remove_entry *z = _;
-	std::vector <LOG_FILE_DATA> log_files = *z->log_files;
 	log_files.at (z->pos).remove_ex (z->a, GTK_ENTRY_BUFFER(z->b));
 	gtk_widget_destroy (gtk_widget_get_parent (z->b));
 }
 
 void set_regex_window (to_regex_window *_)
 {
-	std::vector <LOG_FILE_DATA> log_files = *_->log_files;
 	int pos = _->b;
-	std::cout << log_files.size () << " " << _->log_files->size () << std::endl;
 	GtkWidget	*Window = gtk_application_window_new (_->a),
 			*BigBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
 			*Notebook = gtk_notebook_new (),
