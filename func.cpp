@@ -1,63 +1,60 @@
 #include "shi.h"
 
 //main function to parse the log file
-void set_regular_expressions (GtkTextBuffer *_)
+void set_regular_expressions (to_regex *_)
 {
-	//initialize and activate parse log file dialogue window
 	GtkApplication *dialogue = gtk_application_new ("app.shi.syntax_dialogue", G_APPLICATION_FLAGS_NONE);
 
-	struct WindowArgs {GtkApplication *a; int b;};
-	WindowArgs *z = new WindowArgs;
+	to_regex_window *z;
 	z->a = dialogue;
-	for (int i = 0; i < log_files.size (); i ++)
-	{
-		if (log_files.at (i).get_text_file () == _)
-			z->b = i;
-	}
-	std::cout << z->b << std::endl;
+	z->b = _->pos;
+	z->log_files = _->log_files;
+
 	g_signal_connect (dialogue, "activate", G_CALLBACK (set_regex_window), z);
 	g_application_run (G_APPLICATION (dialogue), 0, NULL);
 	g_object_unref (dialogue);
 }
-void add_entry_box_regex (void *_)
+void add_entry_box_regex (to_add_entry *_)
 {
-	struct RegexArgs {char a; GtkWidget *b; int log_file;};
-	RegexArgs *z = (RegexArgs*)_;
+	to_add_entry *z = _;
+	std::vector <LOG_FILE_DATA> log_files = *z->log_files;
 	GtkWidget *sidebox, *closebutton, *Entry;
 	sidebox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 	closebutton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-	Entry = gtk_entry_new_with_buffer (log_files.at(z->log_file).add_regex (z->a));
+	Entry = gtk_entry_new_with_buffer (log_files.at(z->pos).add_regex (z->a));
 
 	gtk_box_pack_start (GTK_BOX (sidebox), closebutton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (sidebox), Entry, TRUE, TRUE, 0);
 	gtk_box_pack_start (GTK_BOX (z->b), sidebox, TRUE, TRUE, 0);
-	struct remove {char a; GtkWidget *b;};
-	remove *tmp = new remove;
-	tmp->a = z->a; tmp->b = Entry;
-	g_signal_connect_swapped (closebutton, "clicked", G_CALLBACK (remove_entry_regex), tmp);
+	to_remove_entry *tmp = new to_remove_entry;
+	tmp->a = _->a;
+	tmp->b = Entry;
+	tmp->pos = _->pos;
+	tmp->log_files = _->log_files;
+	g_signal_connect_swapped (closebutton, "clicked", G_CALLBACK (remove_expression), tmp);
 	gtk_widget_show_all (z->b);
 }
-void remove_entry_regex (void *a)
+void remove_expression (to_remove_entry *_)
 {
-	struct RemoveArgs {char a; GtkWidget *b; int log_file;};
-	RemoveArgs *z = (RemoveArgs*)a;
-	log_files.at (z->log_file).remove_ex (z->a, GTK_ENTRY_BUFFER(z->b));
+	to_remove_entry *z = _;
+	std::vector <LOG_FILE_DATA> log_files = *z->log_files;
+	log_files.at (z->pos).remove_ex (z->a, GTK_ENTRY_BUFFER(z->b));
 	gtk_widget_destroy (gtk_widget_get_parent (z->b));
 }
 
-void set_regex_window (void *_)
+void set_regex_window (to_regex_window *_)
 {
-	struct tmp {GtkApplication *a; int b;};
-	tmp *z = (tmp*)_;
-	GtkApplication *dialogue = z->a;
-	int pos = z->b;
-	GtkWidget	*Window = gtk_application_window_new (dialogue),
+	std::vector <LOG_FILE_DATA> log_files = *_->log_files;
+	int pos = _->b;
+	std::cout << log_files.size () << " " << _->log_files->size () << std::endl;
+	GtkWidget	*Window = gtk_application_window_new (_->a),
 			*BigBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
 			*Notebook = gtk_notebook_new (),
 			*NotebookEndAction = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
 			*AddCustomTabButton = gtk_button_new_with_label ("Add Custom"),
 			*DeleteCustomTabButton = gtk_button_new_with_label ("Erase Custom"),
 			*Apply_button = gtk_button_new_from_icon_name ("gtk-apply", GTK_ICON_SIZE_SMALL_TOOLBAR),
+			*ChooseTextFile = gtk_combo_box_new (),
 			*NotebookTabBox,
 			*AddExpressionButton,
 			*EntryScrolledBox,
@@ -67,14 +64,7 @@ void set_regex_window (void *_)
 			*DeleteEntryButton,
 			*Entry,
 			*SecondEntry,
-			*Close_image,
-			*Radio_is_Device,
-			*Radio_is_Event,
-			*Radio_is_State;
-
-	Radio_is_Device = gtk_radio_button_new_with_label (NULL, "Device Syntax");
-	Radio_is_Event = gtk_radio_button_new_with_label_from_widget (GTK_RADIO_BUTTON (Radio_is_Device), "Event Syntax");
-	Radio_is_State = gtk_radio_button_new_with_label_from_widget (GTK_RADIO_BUTTON (Radio_is_Device), "State Syntax");
+			*Close_image;
 
 	gtk_container_add (GTK_CONTAINER (Window), BigBox);
 	gtk_box_pack_start (GTK_BOX (NotebookEndAction), AddCustomTabButton, FALSE, FALSE, 0);
@@ -99,7 +89,7 @@ void set_regex_window (void *_)
 	gtk_box_pack_start (GTK_BOX (subbox), EntryScrolledBox, TRUE, TRUE, 0);
 	gtk_container_add (GTK_CONTAINER (EntryScrolledBox), EntryViewport);
 	gtk_container_add (GTK_CONTAINER (EntryViewport), EntryViewportBox);
-	if (log_files.at (pos).get_regex_list_size ('y') == 0)
+	if (log_files.at (0).get_regex_list_size ('y') == 0)
 	{
 		EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 		DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
@@ -107,10 +97,16 @@ void set_regex_window (void *_)
 		gtk_box_pack_start (GTK_BOX (EntryViewportBox), EntryContainer, TRUE, TRUE, 0);
 		gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
 		gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
+		to_remove_entry *x = new to_remove_entry;
+		x->a = 'y';
+		x->b = Entry;
+		x->pos = pos;
+		x->log_files = &log_files;
+		g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_expression), x);
 	}
 	else
 	{
-		for (int i = 0; i < log_files.at (pos).get_regex_list_size ('y'); i ++)
+		for (int i = 0; i < log_files.at (0).get_regex_list_size ('y'); i ++)
 		{
 			EntryContainer = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 			DeleteEntryButton = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
@@ -118,18 +114,19 @@ void set_regex_window (void *_)
 			gtk_box_pack_start (GTK_BOX (EntryViewportBox), EntryContainer, TRUE, TRUE, 0);
 			gtk_box_pack_start (GTK_BOX (EntryContainer), DeleteEntryButton, FALSE, FALSE, 0);
 			gtk_box_pack_start (GTK_BOX (EntryContainer), Entry, TRUE, TRUE, 0);
+			to_remove_entry *x = new to_remove_entry;
+			x->a = 'y';
+			x->b = Entry;
+			x->pos = pos;
+			x->log_files = &log_files;
+			g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_expression), x);
 		}
 	}
-	struct RemoveEntry {char a; GtkWidget *b; int c;};
-	RemoveEntry *x = new RemoveEntry;
-	x->a = 'y';
-	x->b = Entry;
-	x->c = pos;
-	g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_entry_regex), x);
-	RemoveEntry* y = new RemoveEntry;
+	to_add_entry* y = new to_add_entry;
 	y->a = 'y';
 	y->b = EntryViewportBox;
-	y->c = pos;
+	y->pos = pos;
+	y->log_files = &log_files;
 	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box_regex), y);
 
 	gtk_widget_show_all (Window);

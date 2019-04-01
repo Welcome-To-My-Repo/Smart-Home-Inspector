@@ -21,14 +21,6 @@
 static std::vector <LOG_FILE_DATA> log_files;
 
 #define default_text "There are no log files currently loaded."
-//global application
-static GtkApplication *MainWindow;
-//made these global, not sure why anymore
-static char *filename, *Log_File;
-//vector of text buffer for future implementation of loading multiple log files
-static std::vector <GtkTextBuffer*> Text_Files;
-
-
 //GUI functions
 //"front end" stuff. These are all the primary functions that control
 //SHIs behavior. They call all the secondary functions (in the backend
@@ -41,11 +33,12 @@ void drawing_area (GtkWidget *area);
 //open file dialogue for project files
 void open_project ();
 //open file dialogue for log files
-void open_file (GtkWidget *tabs);
+struct open_file_params {GtkWidget *tabs; std::vector <LOG_FILE_DATA> *log_files;};
+void open_file (open_file_params *_);
 //save file dialogue for project files
 void save_project ();
 //add a new log file to the view
-void add_text_view (char *filename, GtkWidget *tabs);
+void add_text_view (char *filename, GtkWidget *tabs, std::vector <LOG_FILE_DATA> log_files);
 //updates the text view with new log files
 void update_text_view (char *filename, GtkWidget *notepad);
 //reads the events from the next smallest time segment in the log file
@@ -60,20 +53,17 @@ void remove_page (void *page);
 
 //parses the log files and populates the device classes
 //it also calls the gtk parsing dialogue
-void set_regular_expressions (GtkTextBuffer *_);
+struct to_regex {std::vector <LOG_FILE_DATA> *log_files; int pos;};
+void set_regular_expressions (to_regex *_);
 //creates the parsing dialogue window
-void set_regex_window (void *_);
-//adds new expression entry box to the parse log file window
-void add_entry_box (GtkWidget *container);
+struct to_regex_window {GtkApplication *a; int b; std::vector <LOG_FILE_DATA> *log_files;};
+void set_regex_window (to_regex_window *_);
 //removes an entry box from the parse log file window
-void remove_expression (GtkWidget *entry);
-//adds new "custom" tab to the parse log file window
-void add_custom_page (GtkWidget *notebook);
+struct to_remove_entry {char a; GtkWidget *b; int pos; std::vector <LOG_FILE_DATA> *log_files;};
+void remove_expression (to_remove_entry *_);
 //add entry boxes for syntax types:
-void add_entry_box_regex (void *_);
-
-//remove entries from deleted entry boxes:
-void remove_entry_regex (void *a);
+struct to_add_entry {char a; GtkWidget *b; int pos; std::vector <LOG_FILE_DATA> *log_files;};
+void add_entry_box_regex (to_add_entry *_);
 
 //functions to highlight text buffers:
 //creates a giant list of all events correlated to the time across all log files

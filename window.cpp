@@ -2,6 +2,7 @@
 
 void mainwindowactivate (GtkApplication *app)
 {
+	std::vector <LOG_FILE_DATA> log_files;
 //assign new window to Window
 	GtkWidget *Window = gtk_application_window_new (app);
 //set Window parameters
@@ -42,10 +43,9 @@ void mainwindowactivate (GtkApplication *app)
 	gtk_notebook_set_scrollable (GTK_NOTEBOOK (TextTabs), TRUE);
 	gtk_notebook_append_page (GTK_NOTEBOOK (TextTabs), tmp = gtk_scrolled_window_new (NULL, NULL), NULL);
 	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (TextTabs), tmp, "Blank");
-	Text_Files.resize (0);
-	Text_Files.push_back (gtk_text_buffer_new (NULL));
-	gtk_text_buffer_set_text (Text_Files.front (), "There are no log files currently loaded.", -1);
-	gtk_container_add (GTK_CONTAINER (tmp), gtk_text_view_new_with_buffer (Text_Files.front ()));
+	GtkTextBuffer *a = gtk_text_buffer_new (NULL);
+	gtk_text_buffer_set_text (a, default_text, -1);
+	gtk_container_add (GTK_CONTAINER (tmp), gtk_text_view_new_with_buffer (a));
 //create tab display
 	gtk_notebook_append_page (GTK_NOTEBOOK (Tabs), EventsPlayBox, NULL);
 	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (Tabs), EventsPlayBox, "Device Map");
@@ -98,12 +98,14 @@ void mainwindowactivate (GtkApplication *app)
 	//gtk_box_set_child_packing (GTK_BOX (SecondBox), DrawDisplay, true, true, 5, GTK_PACK_START);
 //create signal handlers for button press events
 	g_signal_connect_swapped (Quit, "activate", G_CALLBACK (gtk_widget_destroy), Window);
-	g_signal_connect_swapped (Open, "activate", G_CALLBACK (open_file), TextTabs);
+	open_file_params *j = new open_file_params;
+	j->tabs = TextTabs;
+	j->log_files = &log_files;
+	g_signal_connect_swapped (Open, "activate", G_CALLBACK (open_file), j);
 	g_signal_connect_swapped (SaveAs, "activate", G_CALLBACK (save_project), NULL);
 	g_signal_connect_swapped (Inspect, "activate", G_CALLBACK (initialize_log_file_stats), NULL);
 //display all elements in window
 	gtk_widget_show_all (Window);
-	drawing_area (DrawDisplay);
 }
 
 //everything to do with the drawing area happens in this function
@@ -155,13 +157,13 @@ void save_project ()
 							NULL);
 	gtk_widget_destroy (File_Chooser);
 }
-
-void open_file (GtkWidget *tabs)
+//		GtkWidget *tabs
+void open_file (open_file_params *_)
 {
 	GtkWidget *file_chooser, *window;
 	window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
 	gtk_window_set_title (GTK_WINDOW (window), "Open a log file");
-	gint _;
+	gint i;
 	file_chooser = gtk_file_chooser_dialog_new (	"Open a log file",
 							GTK_WINDOW (window),
 							GTK_FILE_CHOOSER_ACTION_OPEN,
@@ -170,29 +172,29 @@ void open_file (GtkWidget *tabs)
 							("_Open"),
 							GTK_RESPONSE_ACCEPT,
 							NULL);
-	_ = gtk_dialog_run (GTK_DIALOG (file_chooser));
-	if (_ == GTK_RESPONSE_ACCEPT)
+	i = gtk_dialog_run (GTK_DIALOG (file_chooser));
+	if (i == GTK_RESPONSE_ACCEPT)
 	{
 		char *filename;
 		GtkFileChooser *a = GTK_FILE_CHOOSER (file_chooser);
 		filename = gtk_file_chooser_get_filename (a);
-		add_text_view (filename, tabs);
+		add_text_view (filename, _->tabs, *_->log_files);
 		g_free (filename);
 	}
 	gtk_widget_destroy (file_chooser);
 }
 
-void add_text_view (char *filename, GtkWidget *tabs)
+void add_text_view (char *filename, GtkWidget *tabs, std::vector <LOG_FILE_DATA> log_files)
 {
 	GtkWidget 	*scroll = gtk_scrolled_window_new (NULL, NULL),
 			*text,
 			*box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
 			*set_regex = gtk_button_new_with_label ("Set Regular Expressions"),
 			*close = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-	int *page = new int;
+	int page;
 	std::string str = filename, sub = "";
 	sub = str.substr (str.rfind ("/", std::string::npos) + 1, std::string::npos);
-	*page = gtk_notebook_get_n_pages (GTK_NOTEBOOK (tabs));
+	page = gtk_notebook_get_n_pages (GTK_NOTEBOOK (tabs));
 	std::ifstream in;
 	std::string contents = "";
 	std::stringstream buffer;
@@ -231,18 +233,19 @@ void add_text_view (char *filename, GtkWidget *tabs)
 	gtk_container_add (GTK_CONTAINER (scroll), text);
 	gtk_widget_show_all (tabs);
 
-	struct _ {GtkWidget *y; int *z;};
+	struct _ {GtkWidget *y; int z;};
 	_*to_remove = new _;
 	to_remove->y = tabs; to_remove->z = page;
 	g_signal_connect_swapped (close, "clicked", G_CALLBACK (remove_page), to_remove);
-	int *pos = new int;
-	*pos = gtk_notebook_get_current_page (GTK_NOTEBOOK (tabs));
-	g_signal_connect_swapped (set_regex, "clicked", G_CALLBACK (set_regular_expressions), log_files.back ().get_text_file ());
+	to_regex *i = new to_regex;
+	i->log_files = &log_files;
+	i->pos = page - 1;
+	g_signal_connect_swapped (set_regex, "clicked", G_CALLBACK (set_regular_expressions), i);
 }
 
 void remove_page (void *page)
 {
-	struct tmp {GtkWidget *y; int *z;};
+	struct tmp {GtkWidget *y; int z;};
 	tmp *a = (tmp*)page;
-	gtk_notebook_remove_page (GTK_NOTEBOOK (a->y), *a->z);
+	gtk_notebook_remove_page (GTK_NOTEBOOK (a->y), a->z);
 }
