@@ -180,7 +180,6 @@ void open_file (open_file_params *_)
 		g_free (filename);
 	}
 	gtk_widget_destroy (file_chooser);
-	std::cout << "open file function finished" << std::endl;
 
 }
 
@@ -210,7 +209,6 @@ void add_text_view (char *filename, GtkWidget *tabs)
 		LOG_FILE_DATA tmp;
 		gtk_text_buffer_set_text (tmp.get_text_file (), contents.c_str (), -1);
 		log_files.push_back (tmp);
-		std::cout << log_files.size () << std::endl;
 	}
 	gtk_box_pack_start (GTK_BOX (box), set_regex, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (box), scroll, TRUE, TRUE, 0);
@@ -239,9 +237,7 @@ void add_text_view (char *filename, GtkWidget *tabs)
 
 	to_regex *i = new to_regex;
 	i->pos = page - 1;
-	std::cout << "page number\t" << page << std::endl;
 	g_signal_connect_swapped (set_regex, "clicked", G_CALLBACK (set_regular_expressions), i);
-	std::cout << "add text view function finished" << std::endl;
 }
 
 void remove_page (void *page)

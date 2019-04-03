@@ -57,13 +57,13 @@ struct to_regex {int pos;};
 void set_regular_expressions (to_regex *_);
 //creates the parsing dialogue window
 struct to_regex_window {GtkApplication *a; int b;};
-void set_regex_window (to_regex_window *_);
+void set_regex_window (GtkApplication *app);
 //removes an entry box from the parse log file window
 struct to_remove_entry {char a; GtkWidget *b; int pos;};
-void remove_expression (to_remove_entry *_);
+void remove_expression (GtkEntry *Entry);
 //add entry boxes for syntax types:
 struct to_add_entry {char a; GtkWidget *b; int pos;};
-void add_entry_box_regex (to_add_entry *_);
+void add_entry_box_regex (GtkWidget *container);
 
 //functions to highlight text buffers:
 //creates a giant list of all events correlated to the time across all log files
