@@ -232,11 +232,11 @@ void add_text_view (char *filename, GtkWidget *tabs)
 
 	struct _ {GtkWidget *y; int z;};
 	_*to_remove = new _;
-	to_remove->y = tabs; to_remove->z = page;
+	to_remove->y = tabs; to_remove->z = page - 1;
 	g_signal_connect_swapped (close, "clicked", G_CALLBACK (remove_page), to_remove);
 
 	to_regex *i = new to_regex;
-	i->pos = page;
+	i->pos = page -1;
 	g_signal_connect_swapped (set_regex, "clicked", G_CALLBACK (set_regular_expressions), i);
 }
 
@@ -244,5 +244,6 @@ void remove_page (void *page)
 {
 	struct tmp {GtkWidget *y; int z;};
 	tmp *a = (tmp*)page;
-	gtk_notebook_remove_page (GTK_NOTEBOOK (a->y), a->z);
+	if (gtk_notebook_get_n_pages (GTK_NOTEBOOK (a->y)) > 1)
+		gtk_notebook_remove_page (GTK_NOTEBOOK (a->y), a->z);
 }
