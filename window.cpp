@@ -236,7 +236,7 @@ void add_text_view (char *filename, GtkWidget *tabs)
 	g_signal_connect_swapped (close, "clicked", G_CALLBACK (remove_page), to_remove);
 
 	to_regex *i = new to_regex;
-	i->pos = page - 1;
+	i->pos = page;
 	g_signal_connect_swapped (set_regex, "clicked", G_CALLBACK (set_regular_expressions), i);
 }
 
