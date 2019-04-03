@@ -468,35 +468,161 @@ void set_regex_window (GtkApplication *app)
 
 void initialize_log_file_stats ()
 {
-	/*
-	std::cout << "initializing" << std::endl;
-//make the variables
-	std::string contents, line;
-	std::stringstream buffer;
-	GtkTextIter *start, *end;
-	shi::SEGMENT_POS *pos;
-	shi::DEVICE_STATS *stats;
-	std::vector <shi::DEVICE_STATS> all_stats;
-	GtkTextBuffer *to_text;
-	std::vector <boost::regex> 	year,
+	std::vector <boost::regex>	year,
 					month,
 					day,
 					hour,
 					minute,
 					second,
-					d,
-					e,
-					s;
+					device,
+					event,
+					state;
 	boost::regex *tmp;
-	boost::smatch 	YearPatterns,
-			MonthPatterns,
-			DayPatterns,
-			HourPatterns,
-			MinutePatterns,
-			SecondPatterns,
-			Dpatterns,
-			Epatterns,
-			Spatterns;
+	boost::smatch	YearP,
+			MonthP,
+			DayP,
+			HourP,
+			MinuteP,
+			SecondP,
+			DeviceP,
+			EventP,
+			StateP;
+	std::string contents, line;
+	std::stringstream buffer;
+	GtkTextIter *start, *end;
+	GtkTextBuffer *TextBuffer;
+	DATA *check = new DATA;
+	EVENT *E = new EVENT;
+	for (int i = 0; i < log_files.size (); i ++)
+	{
+//copy text from text buffer into string stream
+		TextBuffer = log_files.at (i).get_text_file ();
+		gtk_text_buffer_get_iter_at_offset (TextBuffer, start, 0);
+		gtk_text_buffer_get_iter_at_offset (TextBuffer, end, -1);
+		contents = gtk_text_buffer_get_text (TextBuffer, start, end, TRUE);
+		buffer.str (contents);
+//create regex expressions
+		for (int i = 0; i < log_files.at (i).Year_Regex.size (); i ++)
+		{
+			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Year_Regex.at (i))));
+			year.push_back (*tmp);
+			delete tmp;
+		}
+		for (int i = 0; i < log_files.at (i).Month_Regex.size (); i ++)
+		{
+			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Month_Regex.at (i))));
+			month.push_back (*tmp);
+			delete tmp;
+		}
+		for (int i = 0; i < log_files.at (i).Day_Regex.size (); i ++)
+		{
+			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Day_Regex.at (i))));
+			day.push_back (*tmp);
+			delete tmp;
+		}
+		for (int i = 0; i < log_files.at (i).Hour_Regex.size (); i ++)
+		{
+			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Hour_Regex.at (i))));
+			hour.push_back (*tmp);
+			delete tmp;
+		}
+		for (int i = 0; i < log_files.at (i).Minute_Regex.size (); i ++)
+		{
+			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Minute_Regex.at (i))));
+			minute.push_back (*tmp);
+			delete tmp;
+		}
+		for (int i = 0; i < log_files.at (i).Second_Regex.size (); i ++)
+		{
+			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Second_Regex.at (i))));
+			second.push_back (*tmp);
+			delete tmp;
+		}
+		for (int i = 0; i < log_files.at (i).Device_Regex.size (); i ++)
+		{
+			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Device_Regex.at (i))));
+			device.push_back (*tmp);
+			delete tmp;
+		}
+		for (int i = 0; i < log_files.at (i).Event_Regex.size (); i ++)
+		{
+			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Event_Regex.at (i))));
+			event.push_back (*tmp);
+			delete tmp;
+		}
+		for (int i = 0; i < log_files.at (i).State_Regex.size (); i ++)
+		{
+			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).State_Regex.at (i))));
+			state.push_back (*tmp);
+			delete tmp;
+		}
+//create match patterns for applying the regexes
+		while (!buffer.eof ())
+		{
+			check = new DATA;
+			E = new EVENT;
+			check->start = buffer.tellg ();
+			std::getline (buffer, line);
+			check->end = buffer.tellg ();
+			int k = 0;
+			while (!boost::regex_search (line, YearP, year.at (i)));
+				k++;
+			k = 0;
+			while (!boost::regex_search (line, MonthP, month.at (i)));
+				k ++;
+			k = 0;
+			while (!boost::regex_search (line, DayP, day.at (i)));
+				k ++;
+			k = 0;
+			while (!boost::regex_search (line, HourP, hour.at (i)));
+				k ++;
+			k = 0;
+			while (!boost::regex_search (line, MinuteP, minute.at (i)));
+				k ++;
+			k = 0;
+			while (!boost::regex_search (line, SecondP, second.at (i)));
+				k ++;
+			k = 0;
+			while (!boost::regex_search (line, DeviceP, device.at (i)));
+				k ++;
+			k = 0;
+			while (!boost::regex_search (line, EventP, event.at (i)));
+				k ++;
+			k = 0;
+			while (!boost::regex_search (line, StateP, state.at (i)));
+				k ++;
+
+			check->year = YearP[0];
+			check->month = MonthP[0];
+			check->day = DayP[0];
+			check->hour = HourP[0];
+			check->minute = MinuteP[0];
+			check->second = SecondP[0];
+			E->device_name = DeviceP[0];
+			E->event_name = EventP[0];
+			E->state = StateP[0];
+			check->events.push_back (*E);
+			if (log_files.at (i).data.size () == 0)
+			{
+				log_files.at (i).data.push_back (*check);
+			}
+			else
+			{
+				long int CheckPos = log_files.at (i).is_same_data (*check);
+				if (CheckPos != -1)
+				{
+					log_files.at (i).merge_data (CheckPos, *check);
+				}
+				else
+				{
+					log_files.at (i).data.push_back (*check);
+				}
+			}
+			delete check;
+			delete E;
+		}
+	}
+	/*
 	for (int i = 0; i < Text_Files.size (); i ++)
 	{
 		to_text = Text_Files.at (i);
@@ -512,30 +638,9 @@ void initialize_log_file_stats ()
 			year.push_back (*tmp);
 			delete tmp;
 		}
-		for (int i = 0; i < log_file_syntax.Device_Regex.size (); i ++)
-		{
-			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Device_Regex.at (i))));
-			d.push_back (*tmp);
-			delete tmp;
-		}
-		for (int i = 0; i < log_file_syntax.Event_Regex.size (); i ++)
-		{
-			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Event_Regex.at (i))));
-			d.push_back (*tmp);
-			delete tmp;
-		}
-		for (int i = 0; i < log_file_syntax.State_Regex.size (); i ++)
-		{
-			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.State_Regex.at (i))));
-			d.push_back (*tmp);
-			delete tmp;
-		}
 //create match patterns for applying the regexes
 		while (!buffer.eof ())
 		{
-//create a new segment position
-			pos = new shi::SEGMENT_POS;
-//get starting position
 			pos->start = buffer.tellg ();
 //get a single line from the buffer
 			std::getline (buffer, line);
@@ -549,35 +654,6 @@ void initialize_log_file_stats ()
 			{error_window ("Regex Search Error!");}
 			i = 0;
 
-			try
-			{while (!boost::regex_search (line, MonthPatterns, month.at (i))); i ++;}
-			catch (...)
-			{error_window ("Regex Search Error!");}
-			i = 0;
-
-			try
-			{while (!boost::regex_search (line, DayPatterns, day.at (i))); i ++;}
-			catch (...)
-			{error_window ("Regex Search Error!");}
-			i = 0;
-
-			try
-			{while (!boost::regex_search (line, HourPatterns, hour.at (i))); i ++;}
-			catch (...)
-			{error_window ("Regex Search Error!");}
-			i = 0;
-
-			try
-			{while (!boost::regex_search (line, MinutePatterns, minute.at (i))); i ++;}
-			catch (...)
-			{error_window ("Regex Search Error!");}
-			i = 0;
-
-			try
-			{while (!boost::regex_search (line, SecondPatterns, second.at (i))); i ++;}
-			catch (...)
-			{error_window ("Regex Search Error!");}
-			i = 0;
 //check all device regular expressions against the string until a hit
 			try
 			{while (!boost::regex_search (line, Dpatterns, d.at (i))); i++;}

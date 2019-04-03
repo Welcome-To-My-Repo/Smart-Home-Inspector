@@ -262,3 +262,38 @@ int LOG_FILE_DATA::get_regex_list_size (char type)
 		}
 	};
 }
+
+long int LOG_FILE_DATA::get_current_data ()
+{
+	return current_data;
+}
+void LOG_FILE_DATA::set_current_data (long int pos)
+{
+	if (pos > data.size ())
+		current_data = pos;
+}
+long int LOG_FILE_DATA::is_same_data (DATA _)
+{
+	for (long int i = 0; i < data.size (); i ++)
+	{
+		if (data.at(i).year == _.year
+			and data.at (i).month == _.month
+			and data.at (i).day == _.day
+			and data.at (i).hour == _.hour
+			and data.at (i).minute == _.minute
+			and data.at (i).second == _.second)
+			return i;
+		else
+			return -1;
+	}
+}
+void LOG_FILE_DATA::merge_data (long int data_pos, DATA _)
+{
+	if (data.at (data_pos).start > _.start)
+		data.at (data_pos).start = _.start;
+	if (data.at (data_pos).end > _.end)
+		data.at (data_pos).end = _.end;
+	data.at (data_pos).events.insert (data.at (data_pos).events.end (),
+	_.events.begin (),
+	_.events.end ());
+}

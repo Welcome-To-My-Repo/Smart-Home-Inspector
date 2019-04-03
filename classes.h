@@ -1,3 +1,21 @@
+struct EVENT
+{
+	std::string	device_name,
+			event_name,
+			state;
+};
+struct DATA
+{
+	std::string	year,
+			month,
+			day,
+			hour,
+			minute,
+			second;
+	long int start, end;
+	std::vector <EVENT> events;
+};
+
 class LOG_FILE_DATA
 {
 public:
@@ -21,24 +39,11 @@ public:
 	GtkEntryBuffer *get_regex (char type, int pos);
 	int get_regex_list_size (char type);
 
-private:
-	struct DATA
-	{
-		std::string 	year,
-				month,
-				day,
-				hour,
-				minute,
-				second;
-		long int start, end;
-		struct event
-		{
-			std::string 	device_name,
-					event_name,
-					state;
-		};
-		std::vector <event> events;
-	};
+	long int get_current_data ();
+	void set_current_data (long int pos);
+	long int is_same_data (DATA _);
+	void merge_data (long int data_pos, DATA _);
+
 	GtkTextBuffer *Text_File = gtk_text_buffer_new (NULL);
 	long int current_data = -1;
 	std::vector <DATA> data;
