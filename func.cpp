@@ -489,21 +489,21 @@ void initialize_log_file_stats ()
 			StateP;
 	std::string contents, line;
 	std::stringstream buffer;
-	GtkTextIter *start, *end;
+	GtkTextIter *start;
+	GtkTextIter *end;
 	GtkTextBuffer *TextBuffer;
 	DATA *check;
 	EVENT *E;
 	for (int i = 0; i < log_files.size (); i ++)
 	{
 //copy text from text buffer into string stream
-		TextBuffer = log_files.at (i).get_text_file ();
-		std::cout << gtk_text_buffer_get_char_count (TextBuffer) << std::endl;
+		//TextBuffer = log_files.at (i).get_text_file ();
+		//std::cout << gtk_text_buffer_get_char_count (TextBuffer) << std::endl;
 		//gtk_text_buffer_get_iter_at_offset (TextBuffer, start, 0);
-		//gtk_text_buffer_get_iter_at_offset (TextBuffer, end, -1);
-		gtk_text_buffer_get_start_iter (TextBuffer, start);
-		gtk_text_buffer_get_end_iter (TextBuffer, end);
-		contents = gtk_text_buffer_get_text (TextBuffer, start, end, TRUE);
-		buffer.str (contents);
+		//gtk_text_buffer_get_start_iter (TextBuffer, start);
+		//gtk_text_buffer_get_end_iter (TextBuffer, end);
+		//contents = gtk_text_buffer_get_text (TextBuffer, start, end, TRUE);
+		buffer.str (log_files.at(i).Text_File_Buffer);
 //create regex expressions
 		for (int i = 0; i < log_files.at (i).Year_Regex.size (); i ++)
 		{
@@ -568,33 +568,36 @@ void initialize_log_file_stats ()
 			std::getline (buffer, line);
 			check->end = buffer.tellg ();
 			int k = 0;
-			while (!boost::regex_search (line, YearP, year.at (i)));
-				k++;
-			k = 0;
-			while (!boost::regex_search (line, MonthP, month.at (i)));
-				k ++;
-			k = 0;
-			while (!boost::regex_search (line, DayP, day.at (i)));
-				k ++;
-			k = 0;
-			while (!boost::regex_search (line, HourP, hour.at (i)));
-				k ++;
-			k = 0;
-			while (!boost::regex_search (line, MinuteP, minute.at (i)));
-				k ++;
-			k = 0;
-			while (!boost::regex_search (line, SecondP, second.at (i)));
-				k ++;
-			k = 0;
-			while (!boost::regex_search (line, DeviceP, device.at (i)));
-				k ++;
-			k = 0;
-			while (!boost::regex_search (line, EventP, event.at (i)));
-				k ++;
-			k = 0;
-			while (!boost::regex_search (line, StateP, state.at (i)));
-				k ++;
-
+			for (int k = 0; k < year.size (); k ++)
+			{
+				if (boost::regex_search (line, YearP, year.at (k)))
+					break;
+			}
+			for (int k = 0; k < month.size (); k ++)
+				if (boost::regex_search (line, MonthP, month.at (k)))
+					break;
+			for (int k = 0; k < day.size (); k ++)
+				if (boost::regex_search (line, DayP, day.at (k)))
+					break;
+			for (int k = 0; k < hour.size (); k ++)
+				if (boost::regex_search (line, HourP, hour.at (k)))
+					break;
+			for (int k = 0; k < minute.size (); k ++)
+				if (boost::regex_search (line, MinuteP, minute.at (k)))
+					break;
+			for (int k = 0; k < second.size (); k ++)
+				if (boost::regex_search (line, SecondP, second.at (k)))
+					break;
+			for (int k = 0; k < device.size (); k ++)
+				if (boost::regex_search (line, DeviceP, device.at (k)))
+					break;
+			for (int k = 0; k < event.size (); k ++)
+				if (boost::regex_search (line, EventP, event.at (k)))
+					break;
+			for (int k = 0; k < state.size (); k ++)
+				if (boost::regex_search (line, StateP, state.at (k)))
+					break;
+					
 			check->year = YearP[0];
 			check->month = MonthP[0];
 			check->day = DayP[0];

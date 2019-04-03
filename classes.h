@@ -45,6 +45,7 @@ public:
 	void merge_data (long int data_pos, DATA _);
 
 	GtkTextBuffer *Text_File = gtk_text_buffer_new (NULL);
+	std::string Text_File_Buffer;
 	long int current_data = -1;
 	std::vector <DATA> data;
 	std::vector <GtkEntryBuffer *>	Year_Regex,
