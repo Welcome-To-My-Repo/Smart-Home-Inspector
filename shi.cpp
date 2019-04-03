@@ -1,5 +1,6 @@
 #include "shi.h"
 std::vector <LOG_FILE_DATA> log_files;
+long  int current_time = 0;
 int main (int argc, char **argv)
 
 {

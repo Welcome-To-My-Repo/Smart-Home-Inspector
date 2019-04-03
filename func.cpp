@@ -491,14 +491,17 @@ void initialize_log_file_stats ()
 	std::stringstream buffer;
 	GtkTextIter *start, *end;
 	GtkTextBuffer *TextBuffer;
-	DATA *check = new DATA;
-	EVENT *E = new EVENT;
+	DATA *check;
+	EVENT *E;
 	for (int i = 0; i < log_files.size (); i ++)
 	{
 //copy text from text buffer into string stream
 		TextBuffer = log_files.at (i).get_text_file ();
-		gtk_text_buffer_get_iter_at_offset (TextBuffer, start, 0);
-		gtk_text_buffer_get_iter_at_offset (TextBuffer, end, -1);
+		std::cout << gtk_text_buffer_get_char_count (TextBuffer) << std::endl;
+		//gtk_text_buffer_get_iter_at_offset (TextBuffer, start, 0);
+		//gtk_text_buffer_get_iter_at_offset (TextBuffer, end, -1);
+		gtk_text_buffer_get_start_iter (TextBuffer, start);
+		gtk_text_buffer_get_end_iter (TextBuffer, end);
 		contents = gtk_text_buffer_get_text (TextBuffer, start, end, TRUE);
 		buffer.str (contents);
 //create regex expressions
@@ -622,78 +625,6 @@ void initialize_log_file_stats ()
 			delete E;
 		}
 	}
-	/*
-	for (int i = 0; i < Text_Files.size (); i ++)
-	{
-		to_text = Text_Files.at (i);
-//make the text buffer
-		gtk_text_buffer_get_iter_at_offset (GTK_TEXT_BUFFER (Text_Files.at (i)), start, 0);
-		gtk_text_buffer_get_iter_at_offset (GTK_TEXT_BUFFER (Text_Files.at (i)), end, -1);
-		contents = gtk_text_buffer_get_text (GTK_TEXT_BUFFER (Text_Files.at (i)), start, end, TRUE);
-		buffer.str (contents);
-//loop creating regex's from the parse log file dialogue
-		for (int i = 0; i < log_file_syntax.Year_Regex.size (); i++)
-		{
-			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_file_syntax.Year_Regex.at (i))));
-			year.push_back (*tmp);
-			delete tmp;
-		}
-//create match patterns for applying the regexes
-		while (!buffer.eof ())
-		{
-			pos->start = buffer.tellg ();
-//get a single line from the buffer
-			std::getline (buffer, line);
-//get ending position
-			pos->end = buffer.tellg ();
-			int i = 0;
-//check all time regular expressions against the string until a hit
-			try
-			{while (!boost::regex_search (line, YearPatterns, year.at (i))); i ++;}
-			catch (...)
-			{error_window ("Regex Search Error!");}
-			i = 0;
-
-//check all device regular expressions against the string until a hit
-			try
-			{while (!boost::regex_search (line, Dpatterns, d.at (i))); i++;}
-			catch (...)
-			{error_window ("Regex Search Error!");}
-			i = 0;
-//check all event regular expressions against the string until a hit
-			try
-			{while (!boost::regex_search (line, Epatterns, e.at (i))); i++;}
-			catch (...)
-			{error_window ("Regex Search Error!");}
-			i = 0;
-//check all state regular expressions against the string until a hit
-			try
-			{while (!boost::regex_search (line, Spatterns, s.at (i))); i ++;}
-			catch (...)
-			{error_window ("Regex Search Error!");}
-//if the time pattern already esists in the string, do stuff
-			if (log_files.is_time_pattern (YearPatterns[0], MonthPatterns[0], DayPatterns[0], HourPatterns[0], MinutePatterns[0], SecondPatterns[0]))
-			{
-//find the identical time pattern
-				long int a = log_files.find (YearPatterns[0], MonthPatterns[0], DayPatterns[0], HourPatterns[0], MinutePatterns[0], SecondPatterns[0]);
-//add the pointer to the text buffer
-				log_files.at (a).add_text_buffer_link (Text_Files.at (i));
-//add the segment position to the vector
-				log_files.at (a).add_segment_pos (*pos);
-
-			}
-//if the time pattern is new, do stuff
-			else
-			{
-				shi::LOG_FILE_STATS x;
-				x.add_text_buffer_link (Text_Files.at (i));
-				x.add_segment_pos (*pos);
-				log_files.log_file_stats.push_back (x);
-			}
-		}
-
-	}
-*/
 }
 
 void error_window_dialogue (char *error_warning);

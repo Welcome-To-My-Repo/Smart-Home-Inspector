@@ -17,8 +17,9 @@
 #include <filesystem>
 #include "classes.h"
 
-//all global classes initialized here
+//global shit
 extern std::vector <LOG_FILE_DATA> log_files;
+extern long int current_time;
 
 #define default_text "There are no log files currently loaded."
 //GUI functions
