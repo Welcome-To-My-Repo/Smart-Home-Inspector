@@ -1,6 +1,7 @@
 #include "shi.h"
 
 void mainwindowactivate (GtkApplication *app)
+{
 //assign new window to Window
 	GtkWidget *Window = gtk_application_window_new (app);
 //set Window parameters
@@ -183,7 +184,7 @@ void open_file (open_file_params *_)
 
 }
 
-void add_text_view (char *filename, GtkWidget *tabs, std::vector <LOG_FILE_DATA> *log_files)
+void add_text_view (char *filename, GtkWidget *tabs)
 {
 	GtkWidget 	*scroll = gtk_scrolled_window_new (NULL, NULL),
 			*text,
@@ -193,7 +194,6 @@ void add_text_view (char *filename, GtkWidget *tabs, std::vector <LOG_FILE_DATA>
 	int page;
 	std::string str = filename, sub = "";
 	sub = str.substr (str.rfind ("/", std::string::npos) + 1, std::string::npos);
-	page = gtk_notebook_get_n_pages (GTK_NOTEBOOK (tabs));
 	std::ifstream in;
 	std::string contents = "";
 	std::stringstream buffer;
@@ -218,8 +218,8 @@ void add_text_view (char *filename, GtkWidget *tabs, std::vector <LOG_FILE_DATA>
 	gtk_notebook_append_page (GTK_NOTEBOOK (tabs), box, NULL);
 	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (tabs), box, sub.c_str());
 
-	text = gtk_text_view_new_with_buffer (GTK_TEXT_BUFFER (log_files->back ().get_text_file()));
-
+	text = gtk_text_view_new_with_buffer (GTK_TEXT_BUFFER (log_files.back ().get_text_file()));
+	page = gtk_notebook_get_n_pages (GTK_NOTEBOOK (tabs));
 
 	gtk_text_view_set_cursor_visible (GTK_TEXT_VIEW (text), false);
 	gtk_text_view_set_editable (GTK_TEXT_VIEW (text), false);
@@ -236,8 +236,10 @@ void add_text_view (char *filename, GtkWidget *tabs, std::vector <LOG_FILE_DATA>
 	_*to_remove = new _;
 	to_remove->y = tabs; to_remove->z = page;
 	g_signal_connect_swapped (close, "clicked", G_CALLBACK (remove_page), to_remove);
+
 	to_regex *i = new to_regex;
 	i->pos = page - 1;
+	std::cout << "page number\t" << page << std::endl;
 	g_signal_connect_swapped (set_regex, "clicked", G_CALLBACK (set_regular_expressions), i);
 	std::cout << "add text view function finished" << std::endl;
 }

@@ -5,10 +5,12 @@ void set_regular_expressions (to_regex *_)
 {
 	GtkApplication *dialogue = gtk_application_new ("app.shi.syntax_dialogue", G_APPLICATION_FLAGS_NONE);
 
-	to_regex_window *z;
+	std::cout << "value in set_regular_expression \t" << _->pos << std::endl;
+	to_regex_window *z = new to_regex_window;
 	z->a = dialogue;
 	z->b = _->pos;
-
+	std::cout << "z->b\t" << z->b << std::endl;
+	std::cout << "ready to run regex window" << std::endl;
 	g_signal_connect (dialogue, "activate", G_CALLBACK (set_regex_window), z);
 	g_application_run (G_APPLICATION (dialogue), 0, NULL);
 	g_object_unref (dialogue);
@@ -40,7 +42,7 @@ void remove_expression (to_remove_entry *_)
 
 void set_regex_window (to_regex_window *_)
 {
-	int pos = _->b;
+	int pos = 0;
 	GtkWidget	*Window = gtk_application_window_new (_->a),
 			*BigBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
 			*Notebook = gtk_notebook_new (),
@@ -95,7 +97,6 @@ void set_regex_window (to_regex_window *_)
 		x->a = 'y';
 		x->b = Entry;
 		x->pos = pos;
-		x->log_files = &log_files;
 		g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_expression), x);
 	}
 	else
@@ -112,7 +113,6 @@ void set_regex_window (to_regex_window *_)
 			x->a = 'y';
 			x->b = Entry;
 			x->pos = pos;
-			x->log_files = &log_files;
 			g_signal_connect_swapped (DeleteEntryButton, "clicked", G_CALLBACK (remove_expression), x);
 		}
 	}
@@ -120,7 +120,6 @@ void set_regex_window (to_regex_window *_)
 	y->a = 'y';
 	y->b = EntryViewportBox;
 	y->pos = pos;
-	y->log_files = &log_files;
 	g_signal_connect_swapped (AddExpressionButton, "clicked", G_CALLBACK (add_entry_box_regex), y);
 
 	gtk_widget_show_all (Window);
