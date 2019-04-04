@@ -679,7 +679,7 @@ void error_window_dialogue (GtkApplication *app, char *error_warning)
 
 }
 
-void save_to_json (int *log_files_pos)
+void load_from_json (int *log_files_pos)
 {
 	GtkWidget	*file_chooser,
 			*window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
@@ -690,7 +690,7 @@ void save_to_json (int *log_files_pos)
 							GTK_FILE_CHOOSER_ACTION_OPEN,
 							("_Cancel"),
 							GTK_RESPONSE_CANCEL,
-							("_Open"),
+							("_Save"),
 							GTK_RESPONSE_ACCEPT,
 							NULL);
 	i = gtk_dialog_run (GTK_DIALOG (file_chooser));
@@ -711,105 +711,105 @@ void save_to_json (int *log_files_pos)
 		log_files.at (*log_files_pos).Device_Regex.clear ();
 		log_files.at (*log_files_pos).Event_Regex.clear ();
 		log_files.at (*log_files_pos).State_Regex.clear ();
-		ifstream a;
-		a.open (filename);
-		if (a.is_open ())
+		std::ifstream b;
+		b.open (filename);
+		if (b.is_open ())
 		{
-			std::string b;
+			std::string a;
 			while (true)
 			{
-				getline (b, a);
-				if (a == "")
+				std::getline (b, a);
+				if (a.empty ())
 					break;
-				gtk_entry_buffer_new (
+				gtk_entry_buffer_set_text (
 					log_files.at (*log_files_pos).add_regex ('y'),
 					a.c_str (),
-					-1)
+					-1);
 			}
 			while (true)
 			{
-				getline (b, a);
-				if (a == "")
+				std::getline (b, a);
+				if (a.empty ())
 					break;
-				gtk_entry_buffer_new (
+				gtk_entry_buffer_set_text (
 					log_files.at (*log_files_pos).add_regex ('M'),
 					a.c_str (),
-					-1)
+					-1);
 			}
 			while (true)
 			{
-				getline (b, a);
-				if (a == "")
+				std::getline (b, a);
+				if (a.empty ())
 					break;
-				gtk_entry_buffer_new (
+				gtk_entry_buffer_set_text (
 					log_files.at (*log_files_pos).add_regex ('d'),
 					a.c_str (),
-					-1)
+					-1);
 			}
 			while (true)
 			{
-				getline (b, a);
-				if (a == "")
+				std::getline (b, a);
+				if (a.empty ())
 					break;
-				gtk_entry_buffer_new (
+				gtk_entry_buffer_set_text (
 					log_files.at (*log_files_pos).add_regex ('h'),
 					a.c_str (),
-					-1)
+					-1);
 			}
 			while (true)
 			{
-				getline (b, a);
-				if (a == "")
+				std::getline (b, a);
+				if (a.empty ())
 					break;
-				gtk_entry_buffer_new (
+				gtk_entry_buffer_set_text (
 					log_files.at (*log_files_pos).add_regex ('m'),
 					a.c_str (),
-					-1)
+					-1);
 			}
 			while (true)
 			{
-				getline (b, a);
-				if (a == "")
+				std::getline (b, a);
+				if (a.empty ())
 					break;
-				gtk_entry_buffer_new (
+				gtk_entry_buffer_set_text (
 					log_files.at (*log_files_pos).add_regex ('s'),
 					a.c_str (),
-					-1)
+					-1);;
 			}
 			while (true)
 			{
-				getline (b, a);
-				if (a == "")
+				std::getline (b, a);
+				if (a.empty ())
 					break;
-				gtk_entry_buffer_new (
+				gtk_entry_buffer_set_text (
 					log_files.at (*log_files_pos).add_regex ('D'),
 					a.c_str (),
-					-1)
+					-1);;
 			}
 			while (true)
 			{
-				getline (b, a);
-				if (a == "")
+				std::getline (b, a);
+				if (a.empty ())
 					break;
-				gtk_entry_buffer_new (
+				gtk_entry_buffer_set_text (
 					log_files.at (*log_files_pos).add_regex ('e'),
 					a.c_str (),
-					-1)
+					-1);
 			}
 			while (true)
 			{
-				getline (b, a);
-				if (a == "")
+				std::getline (b, a);
+				if (a.empty ())
 					break;
-				gtk_entry_buffer_new (
+				gtk_entry_buffer_set_text (
 					log_files.at (*log_files_pos).add_regex ('S'),
 					a.c_str (),
-					-1)
+					-1);
 			}
 		}
 	}
 }
-void load_from_json (int *log_files_pos)
+void save_to_json (int *log_files_pos)
 {
 	GtkWidget	*file_chooser,
 			*window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
@@ -832,7 +832,71 @@ void load_from_json (int *log_files_pos)
 	gtk_widget_destroy (file_chooser);
 	if (filename != nullptr)
 	{
-		ofstream a;
-		a.open (filename)
+		std::ofstream a;
+		a.open (filename);
+		for (int i = 0; i < log_files.at (*log_files_pos).Year_Regex.size (); i ++)
+		{
+			a << gtk_entry_buffer_get_text (
+				log_files.at (*log_files_pos)
+				.Year_Regex.at (i)) << std::endl;
+		}
+		a << std::endl;
+		for (int i = 0; i < log_files.at (*log_files_pos).Month_Regex.size (); i ++)
+		{
+			a << gtk_entry_buffer_get_text (
+				log_files.at (*log_files_pos)
+				.Month_Regex.at (i)) << std::endl;
+		}
+		a << std::endl;
+		for (int i = 0; i < log_files.at (*log_files_pos).Day_Regex.size (); i ++)
+		{
+			a << gtk_entry_buffer_get_text (
+				log_files.at (*log_files_pos)
+				.Day_Regex.at (i)) << std::endl;
+		}
+		a << std::endl;
+		for (int i = 0; i < log_files.at (*log_files_pos).Hour_Regex.size (); i ++)
+		{
+			a << gtk_entry_buffer_get_text (
+				log_files.at (*log_files_pos)
+				.Hour_Regex.at (i)) << std::endl;
+		}
+		a << std::endl;
+		for (int i = 0; i < log_files.at (*log_files_pos).Minute_Regex.size (); i ++)
+		{
+			a << gtk_entry_buffer_get_text (
+				log_files.at (*log_files_pos)
+				.Minute_Regex.at (i)) << std::endl;
+		}
+		a << std::endl;
+		for (int i = 0; i < log_files.at (*log_files_pos).Second_Regex.size (); i ++)
+		{
+			a << gtk_entry_buffer_get_text (
+				log_files.at (*log_files_pos)
+				.Second_Regex.at (i)) << std::endl;
+		}
+		a << std::endl;
+		for (int i = 0; i < log_files.at (*log_files_pos).Device_Regex.size (); i ++)
+		{
+			a << gtk_entry_buffer_get_text (
+				log_files.at (*log_files_pos)
+				.Device_Regex.at (i)) << std::endl;
+		}
+		a << std::endl;
+		for (int i = 0; i < log_files.at (*log_files_pos).Event_Regex.size (); i ++)
+		{
+			a << gtk_entry_buffer_get_text (
+				log_files.at (*log_files_pos)
+				.Event_Regex.at (i)) << std::endl;
+		}
+		a << std::endl;
+		for (int i = 0; i < log_files.at (*log_files_pos).State_Regex.size (); i ++)
+		{
+			a << gtk_entry_buffer_get_text (
+				log_files.at (*log_files_pos)
+				.State_Regex.at (i)) << std::endl;
+		}
+		a << std::endl;
 	}
+
 }
