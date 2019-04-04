@@ -69,7 +69,7 @@ void add_entry_box_regex (GtkWidget *container);
 //saves regular expression set to a JSON file
 void save_to_json (int *log_files_pos);
 //loads regular expression set from a JSON file
-void load_from_json (int *log_files_pos);
+void load_from_json (GtkWidget *refresh);
 
 //functions to highlight text buffers:
 //creates a giant list of all events correlated to the time across all log files

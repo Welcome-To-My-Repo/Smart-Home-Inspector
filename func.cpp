@@ -77,7 +77,8 @@ void set_regex_window (GtkApplication *app)
 	gtk_container_add (GTK_CONTAINER (Window), BigBox);
 	gtk_box_pack_start (GTK_BOX (OpenSaveBox), OpenJSON, TRUE, TRUE, 0);
 	gtk_box_pack_start (GTK_BOX (OpenSaveBox), SaveJSON, TRUE, TRUE, 0);
-	g_signal_connect_swapped (OpenJSON, "clicked", G_CALLBACK (load_from_json), pos);
+	g_object_set_data (G_OBJECT (BigBox), "position", pos);
+	g_signal_connect_swapped (OpenJSON, "clicked", G_CALLBACK (load_from_json), BigBox);
 	g_signal_connect_swapped (SaveJSON, "clicked", G_CALLBACK (save_to_json), pos);
 	gtk_box_pack_start (GTK_BOX (BigBox), OpenSaveBox, TRUE, TRUE, 0);
 	gtk_box_pack_start (GTK_BOX (BigBox), Notebook, TRUE, TRUE, 0);
@@ -510,57 +511,57 @@ void initialize_log_file_stats ()
 		contents = gtk_text_buffer_get_text (TextBuffer, &start, &end, TRUE);
 		buffer.str (contents);
 //create regex expressions
-		for (int i = 0; i < log_files.at (i).Year_Regex.size (); i ++)
+		for (int k = 0; k < log_files.at (i).Year_Regex.size (); k ++)
 		{
-			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Year_Regex.at (i))));
+			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Year_Regex.at (k))));
 			year.push_back (*tmp);
 			delete tmp;
 		}
-		for (int i = 0; i < log_files.at (i).Month_Regex.size (); i ++)
+		for (int k = 0; k < log_files.at (i).Month_Regex.size (); k ++)
 		{
-			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Month_Regex.at (i))));
+			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Month_Regex.at (k))));
 			month.push_back (*tmp);
 			delete tmp;
 		}
-		for (int i = 0; i < log_files.at (i).Day_Regex.size (); i ++)
+		for (int k= 0; k < log_files.at (i).Day_Regex.size (); k ++)
 		{
-			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Day_Regex.at (i))));
+			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Day_Regex.at (k))));
 			day.push_back (*tmp);
 			delete tmp;
 		}
-		for (int i = 0; i < log_files.at (i).Hour_Regex.size (); i ++)
+		for (int k = 0; k < log_files.at (i).Hour_Regex.size (); k ++)
 		{
-			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Hour_Regex.at (i))));
+			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Hour_Regex.at (k))));
 			hour.push_back (*tmp);
 			delete tmp;
 		}
-		for (int i = 0; i < log_files.at (i).Minute_Regex.size (); i ++)
+		for (int k = 0; k < log_files.at (i).Minute_Regex.size (); k ++)
 		{
-			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Minute_Regex.at (i))));
+			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Minute_Regex.at (k))));
 			minute.push_back (*tmp);
 			delete tmp;
 		}
-		for (int i = 0; i < log_files.at (i).Second_Regex.size (); i ++)
+		for (int k = 0; k < log_files.at (i).Second_Regex.size (); k ++)
 		{
-			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Second_Regex.at (i))));
+			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Second_Regex.at (k))));
 			second.push_back (*tmp);
 			delete tmp;
 		}
-		for (int i = 0; i < log_files.at (i).Device_Regex.size (); i ++)
+		for (int k = 0; k < log_files.at (i).Device_Regex.size (); k ++)
 		{
-			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Device_Regex.at (i))));
+			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Device_Regex.at (k))));
 			device.push_back (*tmp);
 			delete tmp;
 		}
-		for (int i = 0; i < log_files.at (i).Event_Regex.size (); i ++)
+		for (int k = 0; k < log_files.at (i).Event_Regex.size (); k ++)
 		{
-			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Event_Regex.at (i))));
+			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Event_Regex.at (k))));
 			event.push_back (*tmp);
 			delete tmp;
 		}
-		for (int i = 0; i < log_files.at (i).State_Regex.size (); i ++)
+		for (int k = 0; k < log_files.at (i).State_Regex.size (); k ++)
 		{
-			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).State_Regex.at (i))));
+			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).State_Regex.at (k))));
 			state.push_back (*tmp);
 			delete tmp;
 		}
@@ -679,12 +680,13 @@ void error_window_dialogue (GtkApplication *app, char *error_warning)
 
 }
 
-void load_from_json (int *log_files_pos)
+void load_from_json (GtkWidget *refresh)
 {
 	GtkWidget	*file_chooser,
 			*window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
 	int i;
 	char *filename;
+	int *log_files_pos = (int*) g_object_get_data (G_OBJECT (refresh), "position");
 	file_chooser = gtk_file_chooser_dialog_new (	"Open a Regex Set",
 							GTK_WINDOW (window),
 							GTK_FILE_CHOOSER_ACTION_OPEN,
@@ -716,7 +718,7 @@ void load_from_json (int *log_files_pos)
 		if (b.is_open ())
 		{
 			std::string a;
-			while (true)
+			while (true and b.is_open ())
 			{
 				std::getline (b, a);
 				if (a.empty ())
@@ -726,7 +728,7 @@ void load_from_json (int *log_files_pos)
 					a.c_str (),
 					-1);
 			}
-			while (true)
+			while (true and b.is_open ())
 			{
 				std::getline (b, a);
 				if (a.empty ())
@@ -736,7 +738,7 @@ void load_from_json (int *log_files_pos)
 					a.c_str (),
 					-1);
 			}
-			while (true)
+			while (true and b.is_open ())
 			{
 				std::getline (b, a);
 				if (a.empty ())
@@ -746,7 +748,7 @@ void load_from_json (int *log_files_pos)
 					a.c_str (),
 					-1);
 			}
-			while (true)
+			while (true and b.is_open ())
 			{
 				std::getline (b, a);
 				if (a.empty ())
@@ -756,7 +758,7 @@ void load_from_json (int *log_files_pos)
 					a.c_str (),
 					-1);
 			}
-			while (true)
+			while (true and b.is_open ())
 			{
 				std::getline (b, a);
 				if (a.empty ())
@@ -766,7 +768,7 @@ void load_from_json (int *log_files_pos)
 					a.c_str (),
 					-1);
 			}
-			while (true)
+			while (true and b.is_open ())
 			{
 				std::getline (b, a);
 				if (a.empty ())
@@ -776,7 +778,7 @@ void load_from_json (int *log_files_pos)
 					a.c_str (),
 					-1);;
 			}
-			while (true)
+			while (true and b.is_open ())
 			{
 				std::getline (b, a);
 				if (a.empty ())
@@ -786,7 +788,7 @@ void load_from_json (int *log_files_pos)
 					a.c_str (),
 					-1);;
 			}
-			while (true)
+			while (true and b.is_open ())
 			{
 				std::getline (b, a);
 				if (a.empty ())
@@ -796,7 +798,7 @@ void load_from_json (int *log_files_pos)
 					a.c_str (),
 					-1);
 			}
-			while (true)
+			while (true and b.is_open ())
 			{
 				std::getline (b, a);
 				if (a.empty ())
@@ -808,6 +810,7 @@ void load_from_json (int *log_files_pos)
 			}
 		}
 	}
+	gtk_widget_show_all (refresh);
 }
 void save_to_json (int *log_files_pos)
 {
