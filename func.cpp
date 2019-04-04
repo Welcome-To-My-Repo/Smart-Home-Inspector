@@ -811,5 +811,28 @@ void save_to_json (int *log_files_pos)
 }
 void load_from_json (int *log_files_pos)
 {
-
+	GtkWidget	*file_chooser,
+			*window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
+	int i;
+	char *filename;
+	file_chooser = gtk_file_chooser_dialog_new (	"Open a Regex Set",
+							GTK_WINDOW (window),
+							GTK_FILE_CHOOSER_ACTION_SAVE,
+							("_Cancel"),
+							GTK_RESPONSE_CANCEL,
+							("_Open"),
+							GTK_RESPONSE_ACCEPT,
+							NULL);
+	i = gtk_dialog_run (GTK_DIALOG (file_chooser));
+	if (i == GTK_RESPONSE_ACCEPT)
+	{
+		GtkFileChooser *a = GTK_FILE_CHOOSER (file_chooser);
+		filename = gtk_file_chooser_get_filename (a);
+	}
+	gtk_widget_destroy (file_chooser);
+	if (filename != nullptr)
+	{
+		ofstream a;
+		a.open (filename)
+	}
 }
