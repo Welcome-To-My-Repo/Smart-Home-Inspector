@@ -24,8 +24,9 @@ void mainwindowactivate (GtkApplication *app)
 	*ActionsBox = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
 	*MenuBox = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
 	*MenuBar = 	gtk_menu_bar_new (),
-	*Open = 		gtk_menu_item_new_with_label ("Open Log File"),
-	*Save = 		gtk_menu_item_new_with_label ("Save Project"),
+	*Open = 	gtk_menu_item_new_with_label ("Open Log File"),
+	*OpenProject = 	gtk_menu_item_new_with_label ("Open Project"),
+	*Save = 	gtk_menu_item_new_with_label ("Save Project"),
 	*SaveAs = 	gtk_menu_item_new_with_label ("Save Project As"),
 	*MenuSeparator =	gtk_separator_menu_item_new (),
 	*Quit = 		gtk_menu_item_new_with_label ("Quit"),
@@ -68,6 +69,7 @@ void mainwindowactivate (GtkApplication *app)
 
 //add menu items to drop down menu
 	gtk_menu_shell_append (GTK_MENU_SHELL (FileMenu), Open);
+	gtk_menu_shell_append (GTK_MENU_SHELL (FileMenu), OpenProject);
 	gtk_menu_shell_append (GTK_MENU_SHELL (FileMenu), Save);
 	gtk_menu_shell_append (GTK_MENU_SHELL (FileMenu), SaveAs);
 	gtk_menu_shell_append (GTK_MENU_SHELL (FileMenu), MenuSeparator);
@@ -93,14 +95,13 @@ void mainwindowactivate (GtkApplication *app)
 //box child packing settings
 	gtk_box_set_child_packing (GTK_BOX (MainBox), SecondBox, true, true, 0, GTK_PACK_START);
 	gtk_box_set_child_packing (GTK_BOX (SecondBox), TextTabs, TRUE, TRUE, 0, GTK_PACK_START);
-	//gtk_box_set_child_packing (GTK_BOX (SecondBox), TextDisplay, true, true, 5, GTK_PACK_START);
-	//gtk_box_set_child_packing (GTK_BOX (SecondBox), DrawDisplay, true, true, 5, GTK_PACK_START);
 //create signal handlers for button press events
 	g_signal_connect_swapped (Quit, "activate", G_CALLBACK (gtk_widget_destroy), Window);
 	open_file_params *j = new open_file_params;
 	j->tabs = TextTabs;
 	g_signal_connect_swapped (Open, "activate", G_CALLBACK (open_file), j);
 	g_signal_connect_swapped (SaveAs, "activate", G_CALLBACK (save_project), NULL);
+	g_signal_connect_swapped (OpenProject, "activate", G_CALLBACK (open_project), NULL);
 	g_signal_connect_swapped (Inspect, "activate", G_CALLBACK (initialize_log_file_stats), NULL);
 //display all elements in window
 	gtk_widget_show_all (Window);

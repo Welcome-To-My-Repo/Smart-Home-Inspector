@@ -903,3 +903,103 @@ void save_to_json (int *log_files_pos)
 	}
 
 }
+
+void save_project ()
+{
+	GtkWidget	*file_chooser,
+			*window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
+	int i;
+	char *filename;
+	file_chooser = gtk_file_chooser_dialog_new (	"Open a Regex Set",
+							GTK_WINDOW (window),
+							GTK_FILE_CHOOSER_ACTION_SAVE,
+							("_Cancel"),
+							GTK_RESPONSE_CANCEL,
+							("_Open"),
+							GTK_RESPONSE_ACCEPT,
+							NULL);
+	i = gtk_dialog_run (GTK_DIALOG (file_chooser));
+	if (i == GTK_RESPONSE_ACCEPT)
+	{
+		GtkFileChooser *a = GTK_FILE_CHOOSER (file_chooser);
+		filename = gtk_file_chooser_get_filename (a);
+	}
+	gtk_widget_destroy (file_chooser);
+	if (filename != nullptr)
+	{
+		std::ofstream a;
+		a.open (filename);
+		for (int j = 0; j < log_files.size (); j ++)
+		{
+			a << log_files.at (j).filename << std::endl;
+			for (int i = 0; i < log_files.at (j).Year_Regex.size (); i ++)
+			{
+				a << gtk_entry_buffer_get_text (
+					log_files.at (j)
+					.Year_Regex.at (i)) << std::endl;
+			}
+			a << std::endl;
+			for (int i = 0; i < log_files.at (j).Month_Regex.size (); i ++)
+			{
+				a << gtk_entry_buffer_get_text (
+					log_files.at (j)
+					.Month_Regex.at (i)) << std::endl;
+			}
+			a << std::endl;
+			for (int i = 0; i < log_files.at (j).Day_Regex.size (); i ++)
+			{
+				a << gtk_entry_buffer_get_text (
+					log_files.at (j)
+					.Day_Regex.at (i)) << std::endl;
+			}
+			a << std::endl;
+			for (int i = 0; i < log_files.at (j).Hour_Regex.size (); i ++)
+			{
+				a << gtk_entry_buffer_get_text (
+					log_files.at (j)
+					.Hour_Regex.at (i)) << std::endl;
+			}
+			a << std::endl;
+			for (int i = 0; i < log_files.at (j).Minute_Regex.size (); i ++)
+			{
+				a << gtk_entry_buffer_get_text (
+					log_files.at (j)
+					.Minute_Regex.at (i)) << std::endl;
+			}
+			a << std::endl;
+			for (int i = 0; i < log_files.at (j).Second_Regex.size (); i ++)
+			{
+				a << gtk_entry_buffer_get_text (
+					log_files.at (j)
+					.Second_Regex.at (i)) << std::endl;
+			}
+			a << std::endl;
+			for (int i = 0; i < log_files.at (j).Device_Regex.size (); i ++)
+			{
+				a << gtk_entry_buffer_get_text (
+					log_files.at (j
+					.Device_Regex.at (i)) << std::endl;
+			}
+			a << std::endl;
+			for (int i = 0; i < log_files.at (j).Event_Regex.size (); i ++)
+			{
+				a << gtk_entry_buffer_get_text (
+					log_files.at (j)
+					.Event_Regex.at (i)) << std::endl;
+			}
+			a << std::endl;
+			for (int i = 0; i < log_files.at (j).State_Regex.size (); i ++)
+			{
+				a << gtk_entry_buffer_get_text (
+					log_files.at (j)
+					.State_Regex.at (i)) << std::endl;
+			}
+			a << std::endl;
+			a << '\t';
+		}
+	}
+}
+void open_project ()
+{
+
+}
