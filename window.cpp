@@ -70,7 +70,7 @@ void mainwindowactivate (GtkApplication *app)
 //add menu items to drop down menu
 	gtk_menu_shell_append (GTK_MENU_SHELL (FileMenu), Open);
 	gtk_menu_shell_append (GTK_MENU_SHELL (FileMenu), OpenProject);
-	gtk_menu_shell_append (GTK_MENU_SHELL (FileMenu), Save);
+	//gtk_menu_shell_append (GTK_MENU_SHELL (FileMenu), Save);
 	gtk_menu_shell_append (GTK_MENU_SHELL (FileMenu), SaveAs);
 	gtk_menu_shell_append (GTK_MENU_SHELL (FileMenu), MenuSeparator);
 	gtk_menu_shell_append (GTK_MENU_SHELL (FileMenu), Quit);
@@ -113,50 +113,6 @@ void drawing_area (GtkWidget *area)
 
 }
 
-void open_project ()
-{
-	gint x;
-	char *filename;
-	GtkWidget *Window, *File_Chooser;
-	Window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
-	gtk_window_set_title (GTK_WINDOW (Window), "Open A Project");
-	gtk_window_set_default_size (GTK_WINDOW (Window), 512, 256);
-	File_Chooser = gtk_file_chooser_dialog_new (	"Open A Project",
-							GTK_WINDOW (Window),
-							GTK_FILE_CHOOSER_ACTION_OPEN,
-							("Cancel"),
-							GTK_RESPONSE_CANCEL,
-							("Open"),
-							GTK_RESPONSE_ACCEPT,
-							NULL);
-	x = gtk_dialog_run (GTK_DIALOG (File_Chooser));
-	if (x == GTK_RESPONSE_ACCEPT)
-	{
-		GtkFileChooser *Choose = GTK_FILE_CHOOSER (File_Chooser);
-		filename = gtk_file_chooser_get_filename (Choose);
-	}
-	gtk_widget_destroy (File_Chooser);
-	g_free (filename);
-}
-
-void save_project ()
-{
-	gint x;
-	GtkWidget *Window, *File_Chooser;
-	Window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
-	gtk_window_set_title (GTK_WINDOW (Window), "Save Project");
-	gtk_window_set_default_size (GTK_WINDOW (Window), 512, 256);
-	File_Chooser = gtk_file_chooser_dialog_new (	"Save Project",
-							GTK_WINDOW (Window),
-							GTK_FILE_CHOOSER_ACTION_SAVE,
-							("Cancel"),
-							GTK_RESPONSE_CANCEL,
-							("Save"),
-							GTK_RESPONSE_ACCEPT,
-							NULL);
-	gtk_widget_destroy (File_Chooser);
-}
-//		GtkWidget *tabs
 void open_file (open_file_params *_)
 {
 	GtkWidget *file_chooser, *window;

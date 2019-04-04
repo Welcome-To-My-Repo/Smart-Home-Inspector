@@ -977,7 +977,7 @@ void save_project ()
 			for (int i = 0; i < log_files.at (j).Device_Regex.size (); i ++)
 			{
 				a << gtk_entry_buffer_get_text (
-					log_files.at (j
+					log_files.at (j)
 					.Device_Regex.at (i)) << std::endl;
 			}
 			a << std::endl;
