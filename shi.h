@@ -5,6 +5,7 @@
 
 #include <boost/regex.hpp>
 
+#include <cstdlib>
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
@@ -65,6 +66,10 @@ void remove_expression (GtkEntry *Entry);
 //add entry boxes for syntax types:
 struct to_add_entry {char a; GtkWidget *b; int pos;};
 void add_entry_box_regex (GtkWidget *container);
+//saves regular expression set to a JSON file
+void save_to_json (int *log_files_pos);
+//loads regular expression set from a JSON file
+void load_from_json (int *log_files_pos);
 
 //functions to highlight text buffers:
 //creates a giant list of all events correlated to the time across all log files

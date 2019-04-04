@@ -45,6 +45,9 @@ void set_regex_window (GtkApplication *app)
 	*pos = params->pos;
 	GtkWidget	*Window = gtk_application_window_new (app),
 			*BigBox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
+			*OpenSaveBox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0),
+			*OpenJSON = gtk_button_new_from_icon_name ("gtk-open", GTK_ICON_SIZE_SMALL_TOOLBAR),
+			*SaveJSON = gtk_button_new_from_icon_name ("gtk-save", GTK_ICON_SIZE_SMALL_TOOLBAR),
 			*Notebook = gtk_notebook_new (),
 			*NotebookEndAction = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
 			*AddCustomTabButton = gtk_button_new_with_label ("Add Custom"),
@@ -72,6 +75,11 @@ void set_regex_window (GtkApplication *app)
 		*state = new char {'S'};
 
 	gtk_container_add (GTK_CONTAINER (Window), BigBox);
+	gtk_box_pack_start (GTK_BOX (OpenSaveBox), OpenJSON, TRUE, TRUE, 0);
+	gtk_box_pack_start (GTK_BOX (OpenSaveBox), SaveJSON, TRUE, TRUE, 0);
+	g_signal_connect_swapped (OpenJSON, "clicked", G_CALLBACK (load_from_json), pos);
+	g_signal_connect_swapped (SaveJSON, "clicked", G_CALLBACK (save_to_json), pos);
+	gtk_box_pack_start (GTK_BOX (BigBox), OpenSaveBox, TRUE, TRUE, 0);
 	gtk_box_pack_start (GTK_BOX (BigBox), Notebook, TRUE, TRUE, 0);
 	gtk_box_pack_end (GTK_BOX (BigBox), Apply_button, FALSE, FALSE, 0);
 	g_signal_connect_swapped (Apply_button, "clicked", G_CALLBACK (gtk_widget_destroy), Window);
@@ -489,21 +497,18 @@ void initialize_log_file_stats ()
 			StateP;
 	std::string contents, line;
 	std::stringstream buffer;
-	GtkTextIter *start;
-	GtkTextIter *end;
+	GtkTextIter start, end;
 	GtkTextBuffer *TextBuffer;
 	DATA *check;
 	EVENT *E;
 	for (int i = 0; i < log_files.size (); i ++)
 	{
 //copy text from text buffer into string stream
-		//TextBuffer = log_files.at (i).get_text_file ();
-		//std::cout << gtk_text_buffer_get_char_count (TextBuffer) << std::endl;
-		//gtk_text_buffer_get_iter_at_offset (TextBuffer, start, 0);
-		//gtk_text_buffer_get_start_iter (TextBuffer, start);
-		//gtk_text_buffer_get_end_iter (TextBuffer, end);
-		//contents = gtk_text_buffer_get_text (TextBuffer, start, end, TRUE);
-		buffer.str (log_files.at(i).Text_File_Buffer);
+		TextBuffer = log_files.at (i).get_text_file ();
+		gtk_text_buffer_get_start_iter (TextBuffer, &start);
+		gtk_text_buffer_get_end_iter (TextBuffer, &end);
+		contents = gtk_text_buffer_get_text (TextBuffer, &start, &end, TRUE);
+		buffer.str (contents);
 //create regex expressions
 		for (int i = 0; i < log_files.at (i).Year_Regex.size (); i ++)
 		{
@@ -569,10 +574,8 @@ void initialize_log_file_stats ()
 			check->end = buffer.tellg ();
 			int k = 0;
 			for (int k = 0; k < year.size (); k ++)
-			{
 				if (boost::regex_search (line, YearP, year.at (k)))
 					break;
-			}
 			for (int k = 0; k < month.size (); k ++)
 				if (boost::regex_search (line, MonthP, month.at (k)))
 					break;
@@ -597,16 +600,24 @@ void initialize_log_file_stats ()
 			for (int k = 0; k < state.size (); k ++)
 				if (boost::regex_search (line, StateP, state.at (k)))
 					break;
-					
-			check->year = YearP[0];
-			check->month = MonthP[0];
-			check->day = DayP[0];
-			check->hour = HourP[0];
-			check->minute = MinuteP[0];
-			check->second = SecondP[0];
-			E->device_name = DeviceP[0];
-			E->event_name = EventP[0];
-			E->state = StateP[0];
+			if (!YearP.empty ())
+				check->year = YearP[0];
+			if (!MonthP.empty ())
+				check->month = MonthP[0];
+			if (!DayP.empty ())
+				check->day = DayP[0];
+			if (!HourP.empty ())
+				check->hour = HourP[0];
+			if (!MinuteP.empty ())
+				check->minute = MinuteP[0];
+			if  (!SecondP.empty ())
+				check->second = SecondP[0];
+			if (!DeviceP.empty ())
+				E->device_name = DeviceP[0];
+			if (!EventP.empty ())
+				E->event_name = EventP[0];
+			if (!StateP.empty ())
+				E->state = StateP[0];
 			check->events.push_back (*E);
 			if (log_files.at (i).data.size () == 0)
 			{
@@ -665,5 +676,140 @@ void error_window_dialogue (GtkApplication *app, char *error_warning)
 
 	window = gtk_application_window_new (app);
 	error_label = gtk_label_new (error_warning);
+
+}
+
+void save_to_json (int *log_files_pos)
+{
+	GtkWidget	*file_chooser,
+			*window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
+	int i;
+	char *filename;
+	file_chooser = gtk_file_chooser_dialog_new (	"Open a Regex Set",
+							GTK_WINDOW (window),
+							GTK_FILE_CHOOSER_ACTION_OPEN,
+							("_Cancel"),
+							GTK_RESPONSE_CANCEL,
+							("_Open"),
+							GTK_RESPONSE_ACCEPT,
+							NULL);
+	i = gtk_dialog_run (GTK_DIALOG (file_chooser));
+	if (i == GTK_RESPONSE_ACCEPT)
+	{
+		GtkFileChooser *a = GTK_FILE_CHOOSER (file_chooser);
+		filename = gtk_file_chooser_get_filename (a);
+	}
+	gtk_widget_destroy (file_chooser);
+	if (filename != nullptr)
+	{
+		log_files.at (*log_files_pos).Year_Regex.clear ();
+		log_files.at (*log_files_pos).Month_Regex.clear ();
+		log_files.at (*log_files_pos).Day_Regex.clear ();
+		log_files.at (*log_files_pos).Hour_Regex.clear ();
+		log_files.at (*log_files_pos).Minute_Regex.clear ();
+		log_files.at (*log_files_pos).Second_Regex.clear ();
+		log_files.at (*log_files_pos).Device_Regex.clear ();
+		log_files.at (*log_files_pos).Event_Regex.clear ();
+		log_files.at (*log_files_pos).State_Regex.clear ();
+		ifstream a;
+		a.open (filename);
+		if (a.is_open ())
+		{
+			std::string b;
+			while (true)
+			{
+				getline (b, a);
+				if (a == "")
+					break;
+				gtk_entry_buffer_new (
+					log_files.at (*log_files_pos).add_regex ('y'),
+					a.c_str (),
+					-1)
+			}
+			while (true)
+			{
+				getline (b, a);
+				if (a == "")
+					break;
+				gtk_entry_buffer_new (
+					log_files.at (*log_files_pos).add_regex ('M'),
+					a.c_str (),
+					-1)
+			}
+			while (true)
+			{
+				getline (b, a);
+				if (a == "")
+					break;
+				gtk_entry_buffer_new (
+					log_files.at (*log_files_pos).add_regex ('d'),
+					a.c_str (),
+					-1)
+			}
+			while (true)
+			{
+				getline (b, a);
+				if (a == "")
+					break;
+				gtk_entry_buffer_new (
+					log_files.at (*log_files_pos).add_regex ('h'),
+					a.c_str (),
+					-1)
+			}
+			while (true)
+			{
+				getline (b, a);
+				if (a == "")
+					break;
+				gtk_entry_buffer_new (
+					log_files.at (*log_files_pos).add_regex ('m'),
+					a.c_str (),
+					-1)
+			}
+			while (true)
+			{
+				getline (b, a);
+				if (a == "")
+					break;
+				gtk_entry_buffer_new (
+					log_files.at (*log_files_pos).add_regex ('s'),
+					a.c_str (),
+					-1)
+			}
+			while (true)
+			{
+				getline (b, a);
+				if (a == "")
+					break;
+				gtk_entry_buffer_new (
+					log_files.at (*log_files_pos).add_regex ('D'),
+					a.c_str (),
+					-1)
+			}
+			while (true)
+			{
+				getline (b, a);
+				if (a == "")
+					break;
+				gtk_entry_buffer_new (
+					log_files.at (*log_files_pos).add_regex ('e'),
+					a.c_str (),
+					-1)
+			}
+			while (true)
+			{
+				getline (b, a);
+				if (a == "")
+					break;
+				gtk_entry_buffer_new (
+					log_files.at (*log_files_pos).add_regex ('S'),
+					a.c_str (),
+					-1)
+			}
+		}
+	}
+}
+void load_from_json (int *log_files_pos)
+{
 
 }

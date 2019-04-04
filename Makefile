@@ -16,7 +16,7 @@ debug: DBG = -g3
 debug: shi
 
 shi: $(OBJS)
-	g++ $(OBJS) $(FLAGS) $(LIBS) -o$(OUT)
+	g++ $(OBJS) $(LIBS) $(FLAGS) -o$(OUT)
 
 shi.o: shi.cpp shi.h classes.h
 	g++ -c $*.cpp $(FLAGS) $(DBG)
