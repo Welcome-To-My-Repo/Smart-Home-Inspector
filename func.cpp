@@ -936,66 +936,65 @@ void save_project ()
 			{
 				a << gtk_entry_buffer_get_text (
 					log_files.at (j)
-					.Year_Regex.at (i)) << std::endl;
+					.Year_Regex.at (i)) << '\t';
 			}
 			a << std::endl;
 			for (int i = 0; i < log_files.at (j).Month_Regex.size (); i ++)
 			{
 				a << gtk_entry_buffer_get_text (
 					log_files.at (j)
-					.Month_Regex.at (i)) << std::endl;
+					.Month_Regex.at (i)) << '\t';
 			}
 			a << std::endl;
 			for (int i = 0; i < log_files.at (j).Day_Regex.size (); i ++)
 			{
 				a << gtk_entry_buffer_get_text (
 					log_files.at (j)
-					.Day_Regex.at (i)) << std::endl;
+					.Day_Regex.at (i)) << '\t';
 			}
 			a << std::endl;
 			for (int i = 0; i < log_files.at (j).Hour_Regex.size (); i ++)
 			{
 				a << gtk_entry_buffer_get_text (
 					log_files.at (j)
-					.Hour_Regex.at (i)) << std::endl;
+					.Hour_Regex.at (i)) << '\t';
 			}
 			a << std::endl;
 			for (int i = 0; i < log_files.at (j).Minute_Regex.size (); i ++)
 			{
 				a << gtk_entry_buffer_get_text (
 					log_files.at (j)
-					.Minute_Regex.at (i)) << std::endl;
+					.Minute_Regex.at (i)) << '\t';
 			}
 			a << std::endl;
 			for (int i = 0; i < log_files.at (j).Second_Regex.size (); i ++)
 			{
 				a << gtk_entry_buffer_get_text (
 					log_files.at (j)
-					.Second_Regex.at (i)) << std::endl;
+					.Second_Regex.at (i)) << '\t';
 			}
 			a << std::endl;
 			for (int i = 0; i < log_files.at (j).Device_Regex.size (); i ++)
 			{
 				a << gtk_entry_buffer_get_text (
 					log_files.at (j)
-					.Device_Regex.at (i)) << std::endl;
+					.Device_Regex.at (i)) << '\t';
 			}
 			a << std::endl;
 			for (int i = 0; i < log_files.at (j).Event_Regex.size (); i ++)
 			{
 				a << gtk_entry_buffer_get_text (
 					log_files.at (j)
-					.Event_Regex.at (i)) << std::endl;
+					.Event_Regex.at (i)) << '\t';
 			}
 			a << std::endl;
 			for (int i = 0; i < log_files.at (j).State_Regex.size (); i ++)
 			{
 				a << gtk_entry_buffer_get_text (
 					log_files.at (j)
-					.State_Regex.at (i)) << std::endl;
+					.State_Regex.at (i)) << '\t';
 			}
 			a << std::endl;
-			a << '\t' << std::endl;;
 		}
 	}
 }
@@ -1022,6 +1021,107 @@ void open_project ()
 	gtk_widget_destroy (file_chooser);
 	if (filename != nullptr)
 	{
+		log_files.clear ();
+		std::ifstream b;
+		b.open (filename);
+		if (b.is_open ())
+		{
+			std::string a;
+			LOG_FILE_DATA *NewLogFiles;
+			while (!b.eof ())
+			{
+				NewLogFiles = new LOG_FILE_DATA;
+				std::getline (b, a);
+				if (a.empty ())
+					continue;
+				else
+				{
+					NewLogFiles->filename = a;
+					while (true)
+					{
+						std::getline (b, a, '\t');
+						if (a.empty ())
+							break;
+						gtk_entry_buffer_set_text (NewLogFiles.add_regex ('y'),
+							a.c_str (),
+							-1);
+					}
+					while (true)
+					{
+						std::getline (b, a, '\t');
+						if (a.empty ())
+							break;
+						gtk_entry_buffer_set_text (NewLogFiles->add_regex ('M'),
+						a.c_str (),
+						-1);
+					}
+					while (true)
+					{
+						std::getline (b, a, '\t');
+						if (a.empty ())
+							break;
+						gtk_entry_buffer_set_text (NewLogFiles->add_regex ('d'),
+						a.c_str (),
+						-1);
+					}
+					while (true)
+					{
+						std::getline (b, a, '\t');
+						if (a.empty ())
+							break;
+						gtk_entry_buffer_set_text (NewLogFiles->add_regex ('h'),
+						a.c_str (),
+						-1);
+					}
+					while (true)
+					{
+						std::getline (b, a, '\t');
+						if (a.empty ())
+							break;
+						gtk_entry_buffer_set_text (NewLogFiles->add_regex ('m'),
+						a.c_str (),
+						-1);
+					}
+					while (true)
+					{
+						std::getline (b, a, '\t');
+						if (a.empty ())
+							break;
+						gtk_entry_buffer_set_text (NewLogFiles->add_regex ('s'),
+						a.c_str (),
+						-1);
+					}
+					while (true)
+					{
+						std::getline (b, a, '\t');
+						if (a.empty ())
+							break;
+						gtk_entry_buffer_set_text (NewLogFiles->add_regex ('D'),
+						a.c_str (),
+						-1);
+					}
+					while (true)
+					{
+						std::getline (b, a, '\t');
+						if (a.empty ())
+							break;
+						gtk_entry_buffer_set_text (NewLogFiles->add_regex ('e'),
+						a.c_str (),
+						-1);
+					}
+					while (true)
+					{
+						std::getline (b, a, '\t');
+						if (a.empty ())
+							break;
+						gtk_entry_buffer_set_text (NewLogFiles->add_regex ('S'),
+						a.c_str (),
+						-1);
+					}
+				}
+			}
+		}
+		/*
 		log_files.clear ();
 		std::ifstream b;
 		b.open (filename);
@@ -1061,6 +1161,7 @@ void open_project ()
 				}
 			}
 		}
+		*/
 	}
 
 }
