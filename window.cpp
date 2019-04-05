@@ -164,7 +164,7 @@ void add_text_view (char *filename, GtkWidget *tabs)
 		buffer << in.rdbuf ();	//copy contents of ifstream buffer to stringstream
 		contents = buffer.str ();	//copy contents of stringstream to string
 		LOG_FILE_DATA tmp;
-		tmp.filename = filename;
+		tmp.filename.append (filename);
 		gtk_text_buffer_set_text (tmp.get_text_file (), contents.c_str (), -1);
 		log_files.push_back (tmp);
 	}

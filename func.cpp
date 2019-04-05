@@ -692,7 +692,7 @@ void load_from_json (GtkWidget *refresh)
 							GTK_FILE_CHOOSER_ACTION_OPEN,
 							("_Cancel"),
 							GTK_RESPONSE_CANCEL,
-							("_Save"),
+							("_Open"),
 							GTK_RESPONSE_ACCEPT,
 							NULL);
 	i = gtk_dialog_run (GTK_DIALOG (file_chooser));
@@ -818,12 +818,12 @@ void save_to_json (int *log_files_pos)
 			*window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
 	int i;
 	char *filename;
-	file_chooser = gtk_file_chooser_dialog_new (	"Open a Regex Set",
+	file_chooser = gtk_file_chooser_dialog_new (	"Save a Regex Set",
 							GTK_WINDOW (window),
 							GTK_FILE_CHOOSER_ACTION_SAVE,
 							("_Cancel"),
 							GTK_RESPONSE_CANCEL,
-							("_Open"),
+							("_Save"),
 							GTK_RESPONSE_ACCEPT,
 							NULL);
 	i = gtk_dialog_run (GTK_DIALOG (file_chooser));
@@ -915,7 +915,7 @@ void save_project ()
 							GTK_FILE_CHOOSER_ACTION_SAVE,
 							("_Cancel"),
 							GTK_RESPONSE_CANCEL,
-							("_Open"),
+							("_Save"),
 							GTK_RESPONSE_ACCEPT,
 							NULL);
 	i = gtk_dialog_run (GTK_DIALOG (file_chooser));
@@ -995,11 +995,72 @@ void save_project ()
 					.State_Regex.at (i)) << std::endl;
 			}
 			a << std::endl;
-			a << '\t';
+			a << '\t' << std::endl;;
 		}
 	}
 }
 void open_project ()
 {
+	GtkWidget	*file_chooser,
+			*window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
+	int i;
+	char *filename;
+	file_chooser = gtk_file_chooser_dialog_new (	"Open a Project",
+							GTK_WINDOW (window),
+							GTK_FILE_CHOOSER_ACTION_OPEN,
+							("_Cancel"),
+							GTK_RESPONSE_CANCEL,
+							("_Open"),
+							GTK_RESPONSE_ACCEPT,
+							NULL);
+	i = gtk_dialog_run (GTK_DIALOG (file_chooser));
+	if (i == GTK_RESPONSE_ACCEPT)
+	{
+		GtkFileChooser *a = GTK_FILE_CHOOSER (file_chooser);
+		filename = gtk_file_chooser_get_filename (a);
+	}
+	gtk_widget_destroy (file_chooser);
+	if (filename != nullptr)
+	{
+		log_files.clear ();
+		std::ifstream b;
+		b.open (filename);
+		if (b.is_open ())
+		{
+			std::string a;
+			LOG_FILE_DATA *NewLogFiles;
+			while (!b.eof ())
+			{
+				NewLogFiles = new LOG_FILE_DATA;
+				std::getline (b, a);
+				NewLogFiles->filename = a;
+				std::getline (b, a);
+				if (a == "\t")
+					continue;
+				else
+				{
+					while (!b.eof ())
+					{
+						std::getline (b, a);
+						if (a.empty ())
+							break;
+						gtk_entry_buffer_set_text(NewLogFiles->add_regex ('y'),
+						a.c_str (),
+						-1);
+					}
+					while (!b.eof ())
+					{
+						std::getline (b, a);
+						if (a.empty ())
+							break;
+						gtk_entry_buffer_set_text(NewLogFiles->add_regex ('y'),
+						a.c_str (),
+						-1);
+					}
+
+				}
+			}
+		}
+	}
 
 }

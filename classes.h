@@ -46,7 +46,7 @@ public:
 
 	GtkTextBuffer *Text_File = gtk_text_buffer_new (NULL);
 	long int current_data = -1;
-	char *filename;
+	std::string filename;
 	std::vector <DATA> data;
 	std::vector <GtkEntryBuffer *>	Year_Regex,
 					Month_Regex,
