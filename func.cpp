@@ -998,7 +998,7 @@ void save_project ()
 		}
 	}
 }
-void open_project ()
+void open_project (GtkWidget *tabs)
 {
 	GtkWidget	*file_chooser,
 			*window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
@@ -1037,12 +1037,13 @@ void open_project ()
 				else
 				{
 					NewLogFiles->filename = a;
-					while (true)
+					std::cout << a << std::endl;
+					while (b.peek () != '\n')
 					{
 						std::getline (b, a, '\t');
 						if (a.empty ())
 							break;
-						gtk_entry_buffer_set_text (NewLogFiles.add_regex ('y'),
+						gtk_entry_buffer_set_text (NewLogFiles->add_regex ('y'),
 							a.c_str (),
 							-1);
 					}
@@ -1119,49 +1120,66 @@ void open_project ()
 						-1);
 					}
 				}
+				log_files.push_back (*NewLogFiles);
 			}
-		}
-		/*
-		log_files.clear ();
-		std::ifstream b;
-		b.open (filename);
-		if (b.is_open ())
-		{
-			std::string a;
-			LOG_FILE_DATA *NewLogFiles;
-			while (!b.eof ())
-			{
-				NewLogFiles = new LOG_FILE_DATA;
-				std::getline (b, a);
-				NewLogFiles->filename = a;
-				std::getline (b, a);
-				if (a == "\t")
-					continue;
-				else
-				{
-					while (!b.eof ())
-					{
-						std::getline (b, a);
-						if (a.empty ())
-							break;
-						gtk_entry_buffer_set_text(NewLogFiles->add_regex ('y'),
-						a.c_str (),
-						-1);
-					}
-					while (!b.eof ())
-					{
-						std::getline (b, a);
-						if (a.empty ())
-							break;
-						gtk_entry_buffer_set_text(NewLogFiles->add_regex ('y'),
-						a.c_str (),
-						-1);
-					}
 
-				}
-			}
 		}
-		*/
 	}
+	for (int z = 0; z < gtk_notebook_get_n_pages (GTK_NOTEBOOK (tabs)); z ++)
+		gtk_notebook_remove_page (GTK_NOTEBOOK (tabs), z);
+	for (int x = 0; x < log_files.size (); x ++)
+	{
+		GtkWidget 	*scroll = gtk_scrolled_window_new (NULL, NULL),
+				*text,
+				*box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
+				*set_regex = gtk_button_new_with_label ("Set Regular Expressions"),
+				*close = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
+		std::string LogFilename = log_files.at (x).filename;
+		std::cout << LogFilename << std::endl;
+		int page;
+		std::string str, sub;
+		str = filename;
+		sub = "";
+		sub = str.substr (str.rfind ("/", std::string::npos) + 1, std::string::npos);
+		std::ifstream in;
+		std::string contents = "";
+		std::stringstream buffer;
 
+		in.open (log_files.at (x).filename);
+		if (in.is_open ())
+		{
+			buffer << in.rdbuf ();
+			contents = buffer.str ();
+			gtk_text_buffer_set_text (log_files.at (x).get_text_file (), contents.c_str (), -1);
+		}
+		gtk_box_pack_start (GTK_BOX (box), set_regex, FALSE, FALSE, 0);
+		gtk_box_pack_start (GTK_BOX (box), scroll, TRUE, TRUE, 0);
+		gtk_box_pack_start (GTK_BOX (box), close, FALSE, TRUE, 0);
+		gtk_notebook_append_page (GTK_NOTEBOOK (tabs), box, NULL);
+		gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (tabs), box, sub.c_str());
+
+		text = gtk_text_view_new_with_buffer (GTK_TEXT_BUFFER (log_files.at (x).get_text_file()));
+		page = gtk_notebook_get_n_pages (GTK_NOTEBOOK (tabs));
+
+		gtk_text_view_set_cursor_visible (GTK_TEXT_VIEW (text), false);
+		gtk_text_view_set_editable (GTK_TEXT_VIEW (text), false);
+		gtk_text_view_set_accepts_tab (GTK_TEXT_VIEW (text), false);
+		gtk_text_view_set_wrap_mode (GTK_TEXT_VIEW (text), GTK_WRAP_NONE);
+		gtk_text_view_set_monospace (GTK_TEXT_VIEW (text), GTK_WRAP_NONE);
+		gtk_text_view_set_justification (GTK_TEXT_VIEW (text), GTK_JUSTIFY_LEFT);
+		gtk_scrollable_set_vscroll_policy (GTK_SCROLLABLE (text), GTK_SCROLL_NATURAL);
+		gtk_scrollable_set_hscroll_policy (GTK_SCROLLABLE (text), GTK_SCROLL_NATURAL);
+		gtk_container_add (GTK_CONTAINER (scroll), text);
+		gtk_widget_show_all (tabs);
+
+		struct _ {GtkWidget *y; int z;};
+		_*to_remove = new _;
+		to_remove->y = tabs; to_remove->z = page - 1;
+		g_signal_connect_swapped (close, "clicked", G_CALLBACK (remove_page), to_remove);
+
+		to_regex *i = new to_regex;
+		i->pos = page -1;
+		g_signal_connect_swapped (set_regex, "clicked", G_CALLBACK (set_regular_expressions), i);
+
+	}
 }

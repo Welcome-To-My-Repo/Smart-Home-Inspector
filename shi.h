@@ -33,7 +33,7 @@ void mainwindowactivate (GtkApplication *app);
 //function to run the drawing area
 void drawing_area (GtkWidget *area);
 //open file dialogue for project files
-void open_project ();
+void open_project (GtkWidget *tabs);
 //open file dialogue for log files
 struct open_file_params {GtkWidget *tabs;};
 void open_file (open_file_params *_);

@@ -101,7 +101,7 @@ void mainwindowactivate (GtkApplication *app)
 	j->tabs = TextTabs;
 	g_signal_connect_swapped (Open, "activate", G_CALLBACK (open_file), j);
 	g_signal_connect_swapped (SaveAs, "activate", G_CALLBACK (save_project), NULL);
-	g_signal_connect_swapped (OpenProject, "activate", G_CALLBACK (open_project), NULL);
+	g_signal_connect_swapped (OpenProject, "activate", G_CALLBACK (open_project), TextTabs);
 	g_signal_connect_swapped (Inspect, "activate", G_CALLBACK (initialize_log_file_stats), NULL);
 //display all elements in window
 	gtk_widget_show_all (Window);
