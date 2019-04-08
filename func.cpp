@@ -640,6 +640,10 @@ void initialize_log_file_stats ()
 			delete E;
 		}
 	}
+	for (int r = 0; r < log_files.size (); r ++)
+	{
+		log_files.at (r).highlight_time_point (0);
+	}
 }
 
 void error_window_dialogue (char *error_warning);

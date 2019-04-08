@@ -44,7 +44,10 @@ public:
 	long int is_same_data (DATA _);
 	void merge_data (long int data_pos, DATA _);
 
+	void highlight_time_point (long int pos);
+
 	GtkTextBuffer *Text_File = gtk_text_buffer_new (NULL);
+	GtkTextTag *tag;
 	long int current_data = -1;
 	std::string filename;
 	std::vector <DATA> data;

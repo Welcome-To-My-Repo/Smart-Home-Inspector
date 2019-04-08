@@ -1,7 +1,7 @@
 #include "shi.h"
 LOG_FILE_DATA::LOG_FILE_DATA ()
 {
-
+	tag = gtk_text_buffer_create_tag (Text_File, "highlight", "background", "yellow", NULL);
 }
 LOG_FILE_DATA::~LOG_FILE_DATA ()
 {
@@ -296,4 +296,18 @@ void LOG_FILE_DATA::merge_data (long int data_pos, DATA _)
 	data.at (data_pos).events.insert (data.at (data_pos).events.end (),
 	_.events.begin (),
 	_.events.end ());
+}
+
+void LOG_FILE_DATA::highlight_time_point (long int pos)
+{
+	int start, end;
+	start = data.at (pos).start;
+	end = data.at (pos).end;
+	GtkTextIter first, last;
+	gtk_text_buffer_get_start_iter (Text_File, &first);
+	gtk_text_buffer_get_end_iter (Text_File, &last);
+	gtk_text_buffer_remove_tag (Text_File, tag, gtk_buffer, &first, &last);
+	gtk_text_buffer_get_iter_at_offset (Text_File, &first, start);
+	gtk_text_buffer_get_iter_at_offset (Text_File, &last, end);
+	gtk_text_buffer_apply_tag (Text_Files, tag, &first, &last);
 }
