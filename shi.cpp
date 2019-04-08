@@ -1,6 +1,7 @@
 #include "shi.h"
 std::vector <LOG_FILE_DATA> log_files;
 long  int current_time = 0;
+bool Playing = false;
 int main (int argc, char **argv)
 
 {

@@ -21,6 +21,7 @@
 //global shit
 extern std::vector <LOG_FILE_DATA> log_files;
 extern long int current_time;
+extern bool Playing
 
 #define default_text "There are no log files currently loaded."
 //GUI functions
@@ -80,6 +81,21 @@ void sort_times();
 void move_time_forward ();
 //moves iterator to previous time and adjusts UI accordingly
 void move_time_backward ();
+
+//moves the time forward when the play button moves
+void play ();
+//stops playback
+void stop ();
+//skip button Functions
+void skip_forward ();
+void skip_backward ();
+//connects the current time to the scrubber
+void scrubber_change_time ();
+
+//creates device list window
+void generate_device_list (GtkWidget *tab);
+//creates device map window
+void generate_device_map (GtkWidget *tab);
 
 //creates error window
 void error_window (char *error_string);

@@ -1000,151 +1000,133 @@ void save_project ()
 }
 void open_project (GtkWidget *tabs)
 {
-	GtkWidget	*file_chooser,
+//make variables for file dialog and reading in from save file
+	GtkWidget 	*file_chooser = gtk_file_chooser_dialog_new (	"Open a Project",
+									GTK_WINDOW (window),
+									GTK_FILE_CHOOSER_ACTION_OPEN,
+									("_Cancel"),
+									GTK_RESPONSE_CANCEL,
+									("_Open"),
+									GTK_RESPONSE_ACCEPT,
+									NULL),
 			*window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
 	int i;
-	char *filename;
-	file_chooser = gtk_file_chooser_dialog_new (	"Open a Project",
-							GTK_WINDOW (window),
-							GTK_FILE_CHOOSER_ACTION_OPEN,
-							("_Cancel"),
-							GTK_RESPONSE_CANCEL,
-							("_Open"),
-							GTK_RESPONSE_ACCEPT,
-							NULL);
+	char *OpenFile, *LogFile, CharReadIn;
+	std::ifstream b;
+	std::string HoldsLine;
+//class pointer to make new objects as needed
+	LOG_FILE_DATA *NewClass;
+//run file dialog
 	i = gtk_dialog_run (GTK_DIALOG (file_chooser));
 	if (i == GTK_RESPONSE_ACCEPT)
 	{
+//get save file path from file dialog
 		GtkFileChooser *a = GTK_FILE_CHOOSER (file_chooser);
-		filename = gtk_file_chooser_get_filename (a);
+		OpenFile = gtk_file_chooser_get_filename (a);
 	}
-	gtk_widget_destroy (file_chooser);
-	if (filename != nullptr)
+	gtk_widget_destroy (window);
+//check file path actuall was gotten
+	if (OpenFile != nullptr)
 	{
+//empty current log files and read in from project file
 		log_files.clear ();
-		std::ifstream b;
-		b.open (filename);
+		b.open (OpenFile);
 		if (b.is_open ())
 		{
-			std::string a;
-			LOG_FILE_DATA *NewLogFiles;
 			while (!b.eof ())
 			{
-				NewLogFiles = new LOG_FILE_DATA;
-				std::getline (b, a);
-				if (a.empty ())
-					continue;
+				NewClass = new LOG_FILE_DATA;
+//read in first log file path (or empty line for a bad project file)
+				std::getline (b, HoldsLine);
+				if (HoldsLine.empty ())
+				{
+					error_window ("Bad/Corrupted Project File");
+				}
 				else
 				{
-					NewLogFiles->filename = a;
-					std::cout << a << std::endl;
+//set the file path for the new class object
+					NewClass->filename = HoldsLine;
+					std::cout << HoldsLine << std::endl;
+//read in an entire line in while loop
 					while (b.peek () != '\n')
 					{
-						std::getline (b, a, '\t');
-						if (a.empty ())
-							break;
-						gtk_entry_buffer_set_text (NewLogFiles->add_regex ('y'),
-							a.c_str (),
-							-1);
+						HoldsLine.clear ();
+//read in everything before a tab space
+						while (b.peek () != '\t')
+						{
+							b.get (CharReadIn);
+//add stuff that was read in into
+							HoldsLine += CharReadIn;
+						}
+//move iterator past the tab space
+						b.seekg (b.tellg () + 1);
+//add new year regex to class object
+						gtk_entry_buffer_set_text (NewClass->add_regex ('y'), HoldsLine.c_str (), -1);
 					}
-					while (true)
-					{
-						std::getline (b, a, '\t');
-						if (a.empty ())
-							break;
-						gtk_entry_buffer_set_text (NewLogFiles->add_regex ('M'),
-						a.c_str (),
-						-1);
-					}
-					while (true)
-					{
-						std::getline (b, a, '\t');
-						if (a.empty ())
-							break;
-						gtk_entry_buffer_set_text (NewLogFiles->add_regex ('d'),
-						a.c_str (),
-						-1);
-					}
-					while (true)
-					{
-						std::getline (b, a, '\t');
-						if (a.empty ())
-							break;
-						gtk_entry_buffer_set_text (NewLogFiles->add_regex ('h'),
-						a.c_str (),
-						-1);
-					}
-					while (true)
-					{
-						std::getline (b, a, '\t');
-						if (a.empty ())
-							break;
-						gtk_entry_buffer_set_text (NewLogFiles->add_regex ('m'),
-						a.c_str (),
-						-1);
-					}
-					while (true)
-					{
-						std::getline (b, a, '\t');
-						if (a.empty ())
-							break;
-						gtk_entry_buffer_set_text (NewLogFiles->add_regex ('s'),
-						a.c_str (),
-						-1);
-					}
-					while (true)
-					{
-						std::getline (b, a, '\t');
-						if (a.empty ())
-							break;
-						gtk_entry_buffer_set_text (NewLogFiles->add_regex ('D'),
-						a.c_str (),
-						-1);
-					}
-					while (true)
-					{
-						std::getline (b, a, '\t');
-						if (a.empty ())
-							break;
-						gtk_entry_buffer_set_text (NewLogFiles->add_regex ('e'),
-						a.c_str (),
-						-1);
-					}
-					while (true)
-					{
-						std::getline (b, a, '\t');
-						if (a.empty ())
-							break;
-						gtk_entry_buffer_set_text (NewLogFiles->add_regex ('S'),
-						a.c_str (),
-						-1);
-					}
+//move iterator past the newline character
+					b.seekg (b.tellg () + 1)
 				}
-				log_files.push_back (*NewLogFiles);
+				log_files.push_back (*NewClass);
 			}
-
 		}
 	}
+//clear all current notebook pages
 	for (int z = 0; z < gtk_notebook_get_n_pages (GTK_NOTEBOOK (tabs)); z ++)
 		gtk_notebook_remove_page (GTK_NOTEBOOK (tabs), z);
-	for (int x = 0; x < log_files.size (); x ++)
-	{
-		GtkWidget 	*scroll = gtk_scrolled_window_new (NULL, NULL),
-				*text,
-				*box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
-				*set_regex = gtk_button_new_with_label ("Set Regular Expressions"),
-				*close = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
-		std::string LogFilename = log_files.at (x).filename;
-		std::cout << LogFilename << std::endl;
-		int page;
-		std::string str, sub;
-		str = filename;
-		sub = "";
-		sub = str.substr (str.rfind ("/", std::string::npos) + 1, std::string::npos);
-		std::ifstream in;
-		std::string contents = "";
-		std::stringstream buffer;
+		for (int x = 0; x < log_files.size (); x ++)
+		{
+			GtkWidget	*scroll = gtk_scrolled_window_new (NULL, NULL),
+					*text,
+					*box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
+					*set_regex = gtk_button_new_with_label ("Set Regular Expressions"),
+					*close = gtk_button_new_from_icon_name ("gtk-close", GTK_ICON_SIZE_SMALL_TOOLBAR);
+			std::string LogFileName = log_files.at (x).filename;
+			std::cout << LogFileName << std::endl;
+			int page;
+			std::string str, sub;
+			str = LogFileName;
+//get end of string to make filename for tab title
+			sub = str.substr (str.rfind ("/", std::string::npos) + 1, std::string::npos);
+			std::ifstream in;
+			std::string contents;
+			std::stringstream buffer;
+			in.open (log_files.at (x).filename)
+			if (in.is_open ())
+			{
+				buffer << in.rdbuf ();
+				contents = buffer.str ();
+				gtk_text_buffer_new (log_files.at (x).get_text_file (), contents.c_str (), -1);
+			}
+			gtk_box_pack_start (GTK_BOX (box), set_regex, FALSE, FALSE, 0);
+			gtk_box_pack_start (GTK_BOX (box), scroll, TRUE, TRUE, 0);
+			gtk_box_pack_start (GTK_BOX (box), close, FALSE, TRUE, 0);
+			gtk_notebook_append_page (GTK_NOTEBOOK (tabs), box, NULL);
+			gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (tabs), box, sub.c_str());
 
+			text = gtk_text_view_new_with_buffer (GTK_TEXT_BUFFER (log_files.at (x).get_text_file()));
+			page = gtk_notebook_get_n_pages (GTK_NOTEBOOK (tabs));
+
+			gtk_text_view_set_cursor_visible (GTK_TEXT_VIEW (text), false);
+			gtk_text_view_set_editable (GTK_TEXT_VIEW (text), false);
+			gtk_text_view_set_accepts_tab (GTK_TEXT_VIEW (text), false);
+			gtk_text_view_set_wrap_mode (GTK_TEXT_VIEW (text), GTK_WRAP_NONE);
+			gtk_text_view_set_monospace (GTK_TEXT_VIEW (text), GTK_WRAP_NONE);
+			gtk_text_view_set_justification (GTK_TEXT_VIEW (text), GTK_JUSTIFY_LEFT);
+			gtk_scrollable_set_vscroll_policy (GTK_SCROLLABLE (text), GTK_SCROLL_NATURAL);
+			gtk_scrollable_set_hscroll_policy (GTK_SCROLLABLE (text), GTK_SCROLL_NATURAL);
+			gtk_container_add (GTK_CONTAINER (scroll), text);
+			gtk_widget_show_all (tabs);
+
+			struct _ {GtkWidget *y; int z;};
+			_*to_remove = new _;
+			to_remove->y = tabs; to_remove->z = page - 1;
+			g_signal_connect_swapped (close, "clicked", G_CALLBACK (remove_page), to_remove);
+
+			to_regex *i = new to_regex;
+			i->pos = page -1;
+			g_signal_connect_swapped (set_regex, "clicked", G_CALLBACK (set_regular_expressions), i);
+		}
+	/*
 		in.open (log_files.at (x).filename);
 		if (in.is_open ())
 		{
@@ -1182,4 +1164,5 @@ void open_project (GtkWidget *tabs)
 		g_signal_connect_swapped (set_regex, "clicked", G_CALLBACK (set_regular_expressions), i);
 
 	}
+	*/
 }
