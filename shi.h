@@ -21,7 +21,7 @@
 //global shit
 extern std::vector <LOG_FILE_DATA> log_files;
 extern long int current_time;
-extern bool Playing
+extern bool Playing;
 
 #define default_text "There are no log files currently loaded."
 //GUI functions

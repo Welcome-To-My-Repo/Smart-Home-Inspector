@@ -32,12 +32,13 @@ void mainwindowactivate (GtkApplication *app)
 	*Quit = 		gtk_menu_item_new_with_label ("Quit"),
 	*Inspect = 	gtk_menu_item_new_with_label ("Inspect Log Files"),
 	*Playbar = 	gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0),
-	*ScrubberAdjustment = gtk_adjustment_new (0, 100, 1, 1, 1);
-	*PlayScrubber = gtk_scale_new (GTK_ORIENTATION_HORIZONTAL, ScrubberAdjustment),
+	*PlayScrubber,
 	*PlayButton = 	gtk_button_new_from_icon_name ("gtk-media-play", GTK_ICON_SIZE_SMALL_TOOLBAR),
 	*StopButton = 	gtk_button_new_from_icon_name ("gtk-media-stop", GTK_ICON_SIZE_SMALL_TOOLBAR),
 	*SkipRight = 	gtk_button_new_from_icon_name ("gtk-media-rewind", GTK_ICON_SIZE_SMALL_TOOLBAR),
 	*SkipLeft = 	gtk_button_new_from_icon_name ("gtk-media-forward", GTK_ICON_SIZE_SMALL_TOOLBAR);
+	GtkAdjustment *ScrubberAdjustment = gtk_adjustment_new (0, 100, 1, 1, 1, 1);
+	PlayScrubber = gtk_scale_new (GTK_ORIENTATION_HORIZONTAL, ScrubberAdjustment);
 
 //set default text display
 	GtkWidget *tmp;

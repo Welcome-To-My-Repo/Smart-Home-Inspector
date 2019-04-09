@@ -303,11 +303,12 @@ void LOG_FILE_DATA::highlight_time_point (long int pos)
 	int start, end;
 	start = data.at (pos).start;
 	end = data.at (pos).end;
-	GtkTextIter first, last;
+	std::cout << "start " << data.at (pos).start << " end " << data.at (pos).end << std::endl;
+	GtkTextIter first, last, Hstart, Hend;
 	gtk_text_buffer_get_start_iter (Text_File, &first);
 	gtk_text_buffer_get_end_iter (Text_File, &last);
-	gtk_text_buffer_remove_tag (Text_File, tag, gtk_buffer, &first, &last);
-	gtk_text_buffer_get_iter_at_offset (Text_File, &first, start);
-	gtk_text_buffer_get_iter_at_offset (Text_File, &last, end);
-	gtk_text_buffer_apply_tag (Text_Files, tag, &first, &last);
+	gtk_text_buffer_remove_tag (Text_File, tag, &first, &last);
+	gtk_text_buffer_get_iter_at_offset (Text_File, &Hstart, start);
+	gtk_text_buffer_get_iter_at_offset (Text_File, &Hend, end);
+	gtk_text_buffer_apply_tag (Text_File, tag, &first, &last);
 }

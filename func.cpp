@@ -571,8 +571,10 @@ void initialize_log_file_stats ()
 			check = new DATA;
 			E = new EVENT;
 			check->start = buffer.tellg ();
+			std::cout << buffer.tellg () << std::endl;
 			std::getline (buffer, line);
 			check->end = buffer.tellg ();
+			std::cout << buffer.tellg () << std::endl;
 			int k = 0;
 			for (int k = 0; k < year.size (); k ++)
 				if (boost::regex_search (line, YearP, year.at (k)))
@@ -1005,15 +1007,16 @@ void save_project ()
 void open_project (GtkWidget *tabs)
 {
 //make variables for file dialog and reading in from save file
-	GtkWidget 	*file_chooser = gtk_file_chooser_dialog_new (	"Open a Project",
+	GtkWidget 	*window = gtk_window_new (GTK_WINDOW_TOPLEVEL),
+			*file_chooser = gtk_file_chooser_dialog_new (	"Open a Project",
 									GTK_WINDOW (window),
 									GTK_FILE_CHOOSER_ACTION_OPEN,
 									("_Cancel"),
 									GTK_RESPONSE_CANCEL,
 									("_Open"),
 									GTK_RESPONSE_ACCEPT,
-									NULL),
-			*window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
+									NULL);
+
 	int i;
 	char *OpenFile, *LogFile, CharReadIn;
 	std::ifstream b;
@@ -1068,7 +1071,7 @@ void open_project (GtkWidget *tabs)
 						gtk_entry_buffer_set_text (NewClass->add_regex ('y'), HoldsLine.c_str (), -1);
 					}
 //move iterator past the newline character
-					b.seekg (b.tellg () + 1)
+					b.seekg (b.tellg () + 1);
 				}
 				log_files.push_back (*NewClass);
 			}
@@ -1094,12 +1097,12 @@ void open_project (GtkWidget *tabs)
 			std::ifstream in;
 			std::string contents;
 			std::stringstream buffer;
-			in.open (log_files.at (x).filename)
+			in.open (log_files.at (x).filename);
 			if (in.is_open ())
 			{
 				buffer << in.rdbuf ();
 				contents = buffer.str ();
-				gtk_text_buffer_new (log_files.at (x).get_text_file (), contents.c_str (), -1);
+				gtk_text_buffer_set_text (log_files.at (x).get_text_file (), contents.c_str (), -1);
 			}
 			gtk_box_pack_start (GTK_BOX (box), set_regex, FALSE, FALSE, 0);
 			gtk_box_pack_start (GTK_BOX (box), scroll, TRUE, TRUE, 0);
@@ -1169,4 +1172,8 @@ void open_project (GtkWidget *tabs)
 
 	}
 	*/
+}
+void scrubber_change_time ()
+{
+	return;
 }
