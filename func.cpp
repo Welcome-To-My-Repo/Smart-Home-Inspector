@@ -571,10 +571,8 @@ void initialize_log_file_stats ()
 			check = new DATA;
 			E = new EVENT;
 			check->start = buffer.tellg ();
-			std::cout << buffer.tellg () << std::endl;
 			std::getline (buffer, line);
 			check->end = buffer.tellg ();
-			std::cout << buffer.tellg () << std::endl;
 			int k = 0;
 			for (int k = 0; k < year.size (); k ++)
 				if (boost::regex_search (line, YearP, year.at (k)))
@@ -644,7 +642,9 @@ void initialize_log_file_stats ()
 	}
 	for (int r = 0; r < log_files.size (); r ++)
 	{
-		log_files.at (r).highlight_time_point (0);
+		std::cout << log_files.at (r).data.at (3).start << std::endl
+				<< log_files.at (r).data.at (3).end << std::endl;
+		log_files.at (r).highlight_time_point (3);
 	}
 }
 

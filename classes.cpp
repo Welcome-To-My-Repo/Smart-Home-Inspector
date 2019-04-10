@@ -2,6 +2,10 @@
 LOG_FILE_DATA::LOG_FILE_DATA ()
 {
 	tag = gtk_text_buffer_create_tag (Text_File, "highlight", "background", "yellow", NULL);
+	GtkTextIter start, end;
+	gtk_text_buffer_get_start_iter (Text_File, &start);
+	gtk_text_buffer_get_end_iter (Text_File, &end);
+	gtk_text_buffer_remove_tag (Text_File, tag, &start, &end);
 }
 LOG_FILE_DATA::~LOG_FILE_DATA ()
 {
