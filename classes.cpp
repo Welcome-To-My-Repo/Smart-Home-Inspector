@@ -275,11 +275,20 @@ void LOG_FILE_DATA::set_current_data (long int pos)
 {
 	if (pos > data.size ())
 		current_data = pos;
+	GtkTextIter first, last, startpos, endpos;
+	gtk_text_buffer_get_start_iter (Text_File, &first);
+	gtk_text_buffer_get_end_iter (Text_File, &last);
+	gtk_text_buffer_remove_tag (Text_File, tag, &first, &last);
+	gtk_text_buffer_get_iter_at_offset (Text_File, &startpos, data.at (pos).start);
+	gtk_text_buffer_get_iter_at_offset (Text_File, &endpos, data.at (pos).end);
+	gtk_text_buffer_apply_tag (Text_File, tag, &startpos, &endpos);
 }
 long int LOG_FILE_DATA::is_same_data (DATA _)
 {
 	for (long int i = 0; i < data.size (); i ++)
 	{
+		std::cout << "current data\t" << data.at (i).year << " " << data.at (i).month << " " << data.at (i).day << " " << data.at (i).hour << " " << data.at (i).minute << " " << data.at (i).second << std::endl
+		<< "data to check\t" << _.year << " " << _.month << " " << _.day << " " << _.hour << " " << _.minute << " " << _.second << std::endl;
 		if (data.at(i).year == _.year
 			and data.at (i).month == _.month
 			and data.at (i).day == _.day
@@ -295,7 +304,7 @@ void LOG_FILE_DATA::merge_data (long int data_pos, DATA _)
 {
 	if (data.at (data_pos).start > _.start)
 		data.at (data_pos).start = _.start;
-	if (data.at (data_pos).end > _.end)
+	if (data.at (data_pos).end < _.end)
 		data.at (data_pos).end = _.end;
 	data.at (data_pos).events.insert (data.at (data_pos).events.end (),
 	_.events.begin (),
@@ -308,6 +317,12 @@ void LOG_FILE_DATA::highlight_time_point (long int pos)
 	start = data.at (pos).start;
 	end = data.at (pos).end;
 	std::cout << "start " << data.at (pos).start << " end " << data.at (pos).end << std::endl;
+	GtkTextIter FirstPoint, LastPoint;
+	gtk_text_buffer_get_iter_at_offset (Text_File, &FirstPoint, start);
+	gtk_text_buffer_get_iter_at_offset (Text_File, &LastPoint, end);
+	gtk_text_buffer_apply_tag (Text_File, tag, &FirstPoint, &LastPoint);
+
+/*
 	GtkTextIter first, last, Hstart, Hend;
 	gtk_text_buffer_get_start_iter (Text_File, &first);
 	gtk_text_buffer_get_end_iter (Text_File, &last);
@@ -315,4 +330,5 @@ void LOG_FILE_DATA::highlight_time_point (long int pos)
 	gtk_text_buffer_get_iter_at_offset (Text_File, &Hstart, start);
 	gtk_text_buffer_get_iter_at_offset (Text_File, &Hend, end);
 	gtk_text_buffer_apply_tag (Text_File, tag, &last, &first);
+*/
 }

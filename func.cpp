@@ -477,6 +477,8 @@ void set_regex_window (GtkApplication *app)
 
 void initialize_log_file_stats ()
 {
+	if (log_files.size () == 0)
+		return;
 	std::vector <boost::regex>	year,
 					month,
 					day,
@@ -498,6 +500,7 @@ void initialize_log_file_stats ()
 			StateP;
 	std::string contents, line;
 	std::stringstream buffer;
+	int contentsLength;
 	GtkTextIter start, end;
 	GtkTextBuffer *TextBuffer;
 	DATA *check;
@@ -629,6 +632,8 @@ void initialize_log_file_stats ()
 				long int CheckPos = log_files.at (i).is_same_data (*check);
 				if (CheckPos != -1)
 				{
+					std::cout << "position\t" << CheckPos << std::endl
+						<< "data size\t" << log_files.at (i).data.size () << std::endl;
 					log_files.at (i).merge_data (CheckPos, *check);
 				}
 				else
@@ -642,9 +647,9 @@ void initialize_log_file_stats ()
 	}
 	for (int r = 0; r < log_files.size (); r ++)
 	{
-		std::cout << log_files.at (r).data.at (3).start << std::endl
-				<< log_files.at (r).data.at (3).end << std::endl;
-		log_files.at (r).highlight_time_point (3);
+		std::cout << log_files.at (r).data.at (0).start << std::endl
+				<< log_files.at (r).data.at (0).end << std::endl;
+		log_files.at (r).highlight_time_point (0);
 	}
 }
 
