@@ -314,5 +314,5 @@ void LOG_FILE_DATA::highlight_time_point (long int pos)
 	gtk_text_buffer_remove_tag (Text_File, tag, &first, &last);
 	gtk_text_buffer_get_iter_at_offset (Text_File, &Hstart, start);
 	gtk_text_buffer_get_iter_at_offset (Text_File, &Hend, end);
-	gtk_text_buffer_apply_tag (Text_File, tag, &first, &last);
+	gtk_text_buffer_apply_tag (Text_File, tag, &last, &first);
 }
