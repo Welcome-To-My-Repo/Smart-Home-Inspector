@@ -623,6 +623,8 @@ void initialize_log_file_stats ()
 			if (!StateP.empty ())
 				E->state = StateP[0];
 			check->events.push_back (*E);
+			log_files.at (i).data.push_back (*check);
+			/*
 			if (log_files.at (i).data.size () == 0)
 			{
 				log_files.at (i).data.push_back (*check);
@@ -641,6 +643,7 @@ void initialize_log_file_stats ()
 					log_files.at (i).data.push_back (*check);
 				}
 			}
+			*/
 			delete check;
 			delete E;
 		}
