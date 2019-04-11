@@ -35,9 +35,9 @@ void mainwindowactivate (GtkApplication *app)
 	*PlayScrubber,
 	*PlayButton = 	gtk_button_new_from_icon_name ("gtk-media-play", GTK_ICON_SIZE_SMALL_TOOLBAR),
 	*StopButton = 	gtk_button_new_from_icon_name ("gtk-media-stop", GTK_ICON_SIZE_SMALL_TOOLBAR),
-	*SkipRight = 	gtk_button_new_from_icon_name ("gtk-media-rewind", GTK_ICON_SIZE_SMALL_TOOLBAR),
-	*SkipLeft = 	gtk_button_new_from_icon_name ("gtk-media-forward", GTK_ICON_SIZE_SMALL_TOOLBAR);
-	GtkAdjustment *ScrubberAdjustment = gtk_adjustment_new (0, 100, 1, 1, 1, 1);
+	*SkipLeft = 	gtk_button_new_from_icon_name ("gtk-media-rewind", GTK_ICON_SIZE_SMALL_TOOLBAR),
+	*SkipRight = 	gtk_button_new_from_icon_name ("gtk-media-forward", GTK_ICON_SIZE_SMALL_TOOLBAR);
+	GtkAdjustment *ScrubberAdjustment = gtk_adjustment_new (0, 0, 100, 1, 1, 1);
 	PlayScrubber = gtk_scale_new (GTK_ORIENTATION_HORIZONTAL, ScrubberAdjustment);
 
 //set default text display
@@ -54,12 +54,13 @@ void mainwindowactivate (GtkApplication *app)
 	gtk_notebook_append_page (GTK_NOTEBOOK (Tabs), DevListScroll, NULL);
 	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (Tabs), DevListScroll, "Device List");
 //create the playbar with scrubber
-	gtk_box_pack_start (GTK_BOX (Playbar), SkipRight, FALSE, FALSE, 0);
+	gtk_box_pack_start (GTK_BOX (Playbar), SkipLeft, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (Playbar), PlayButton, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (Playbar), StopButton, FALSE, FALSE, 0);
-	gtk_box_pack_start (GTK_BOX (Playbar), SkipLeft, FALSE, FALSE, 0);
+	gtk_box_pack_start (GTK_BOX (Playbar), SkipRight, FALSE, FALSE, 0);
 	gtk_box_pack_start (GTK_BOX (Playbar), PlayScrubber, TRUE, TRUE, 0);
-	g_signal_connect_swapped (ScrubberAdjustment, "value-changed", G_CALLBACK (scrubber_change_time), NULL);
+	g_signal_connect_swapped (ScrubberAdjustment, "value-changed", G_CALLBACK (scrubber_change_time), ScrubberAdjustment);
+
 //add primary container element to window
 	gtk_container_add (GTK_CONTAINER (Window), MainBox);
 	//gtk_container_add (GTK_CONTAINER (TextTabs), TextDisplay);
@@ -105,7 +106,7 @@ void mainwindowactivate (GtkApplication *app)
 	g_signal_connect_swapped (Open, "activate", G_CALLBACK (open_file), j);
 	g_signal_connect_swapped (SaveAs, "activate", G_CALLBACK (save_project), NULL);
 	g_signal_connect_swapped (OpenProject, "activate", G_CALLBACK (open_project), TextTabs);
-	g_signal_connect_swapped (Inspect, "activate", G_CALLBACK (initialize_log_file_stats), NULL);
+	g_signal_connect_swapped (Inspect, "activate", G_CALLBACK (initialize_log_file_stats), ScrubberAdjustment);
 //display all elements in window
 	gtk_widget_show_all (Window);
 }

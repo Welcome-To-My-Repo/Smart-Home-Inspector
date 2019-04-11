@@ -275,13 +275,16 @@ void LOG_FILE_DATA::set_current_data (long int pos)
 {
 	if (pos > data.size ())
 		current_data = pos;
-	GtkTextIter first, last, startpos, endpos;
-	gtk_text_buffer_get_start_iter (Text_File, &first);
-	gtk_text_buffer_get_end_iter (Text_File, &last);
-	gtk_text_buffer_remove_tag (Text_File, tag, &first, &last);
-	gtk_text_buffer_get_iter_at_offset (Text_File, &startpos, data.at (pos).start);
-	gtk_text_buffer_get_iter_at_offset (Text_File, &endpos, data.at (pos).end);
-	gtk_text_buffer_apply_tag (Text_File, tag, &startpos, &endpos);
+	int start, end;
+	start = data.at (pos).start;
+	end = data.at (pos).end;
+	GtkTextIter FirstPoint, LastPoint, leftEnd, rightEnd;
+	gtk_text_buffer_get_start_iter (Text_File, &leftEnd);
+	gtk_text_buffer_get_end_iter (Text_File, &rightEnd);
+	gtk_text_buffer_remove_tag (Text_File, tag, &rightEnd, &leftEnd);
+	gtk_text_buffer_get_iter_at_offset (Text_File, &FirstPoint, start);
+	gtk_text_buffer_get_iter_at_offset (Text_File, &LastPoint, end);
+	gtk_text_buffer_apply_tag (Text_File, tag, &FirstPoint, &LastPoint);
 }
 long int LOG_FILE_DATA::is_same_data (DATA _)
 {
@@ -316,8 +319,10 @@ void LOG_FILE_DATA::highlight_time_point (long int pos)
 	int start, end;
 	start = data.at (pos).start;
 	end = data.at (pos).end;
-	std::cout << "start " << data.at (pos).start << " end " << data.at (pos).end << std::endl;
-	GtkTextIter FirstPoint, LastPoint;
+	GtkTextIter FirstPoint, LastPoint, leftEnd, rightEnd;
+	gtk_text_buffer_get_start_iter (Text_File, &leftEnd);
+	gtk_text_buffer_get_end_iter (Text_File, &rightEnd);
+	gtk_text_buffer_remove_tag (Text_File, tag, &rightEnd, &leftEnd);
 	gtk_text_buffer_get_iter_at_offset (Text_File, &FirstPoint, start);
 	gtk_text_buffer_get_iter_at_offset (Text_File, &LastPoint, end);
 	gtk_text_buffer_apply_tag (Text_File, tag, &FirstPoint, &LastPoint);

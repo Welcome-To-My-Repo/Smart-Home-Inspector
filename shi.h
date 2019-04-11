@@ -74,7 +74,7 @@ void load_from_json (GtkWidget *refresh);
 
 //functions to highlight text buffers:
 //creates a giant list of all events correlated to the time across all log files
-void initialize_log_file_stats ();
+void initialize_log_file_stats (GtkAdjustment *adjustment);
 //sorts all the times in chronological order
 void sort_times();
 //moves iterator to next time and adjusts UI accordingly
@@ -90,7 +90,7 @@ void stop ();
 void skip_forward ();
 void skip_backward ();
 //connects the current time to the scrubber
-void scrubber_change_time ();
+void scrubber_change_time (GtkAdjustment *adjustment);
 
 //creates device list window
 void generate_device_list (GtkWidget *tab);

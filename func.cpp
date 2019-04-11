@@ -475,7 +475,7 @@ void set_regex_window (GtkApplication *app)
 	gtk_widget_show_all (Window);
 }
 
-void initialize_log_file_stats ()
+void initialize_log_file_stats (GtkAdjustment *adjustment)
 {
 	if (log_files.size () == 0)
 		return;
@@ -604,6 +604,13 @@ void initialize_log_file_stats ()
 			for (int k = 0; k < state.size (); k ++)
 				if (boost::regex_search (line, StateP, state.at (k)))
 					break;
+			if (	YearP[0] == "" or
+				MonthP[0] == "" or
+				DayP[0] == "" or
+				HourP[0] == "" or
+				MinuteP[0] == "" or
+				SecondP[0] == "")
+				continue;
 			if (!YearP.empty ())
 				check->year = YearP[0];
 			if (!MonthP.empty ())
@@ -624,7 +631,6 @@ void initialize_log_file_stats ()
 				E->state = StateP[0];
 			check->events.push_back (*E);
 			log_files.at (i).data.push_back (*check);
-			/*
 			if (log_files.at (i).data.size () == 0)
 			{
 				log_files.at (i).data.push_back (*check);
@@ -643,7 +649,6 @@ void initialize_log_file_stats ()
 					log_files.at (i).data.push_back (*check);
 				}
 			}
-			*/
 			delete check;
 			delete E;
 		}
@@ -654,6 +659,14 @@ void initialize_log_file_stats ()
 				<< log_files.at (r).data.at (0).end << std::endl;
 		log_files.at (r).highlight_time_point (0);
 	}
+	int highest = 0;
+	for (int i = 0; i < log_files.size (); i ++)
+	{
+		std::cout << "data size\t" << log_files.at (i).data.size () << std::endl;
+		if (log_files.at (i).data.size () > highest)
+			highest = log_files.at (i).data.size ();
+	}
+	gtk_adjustment_set_upper (GTK_ADJUSTMENT (adjustment), highest);
 }
 
 void error_window_dialogue (char *error_warning);
@@ -1181,7 +1194,12 @@ void open_project (GtkWidget *tabs)
 	}
 	*/
 }
-void scrubber_change_time ()
+void scrubber_change_time (GtkAdjustment *adjustment)
 {
+	current_time = gtk_adjustment_get_value (adjustment);
+	for (int i = 0; i < log_files.size (); i ++)
+	{
+		log_files.at (i).set_current_data (current_time);
+	}
 	return;
 }
