@@ -667,6 +667,7 @@ void initialize_log_file_stats (GtkAdjustment *adjustment)
 			highest = log_files.at (i).data.size ();
 	}
 	gtk_adjustment_set_upper (GTK_ADJUSTMENT (adjustment), highest);
+	current_time = 0;
 }
 
 void error_window_dialogue (char *error_warning);
@@ -1202,4 +1203,38 @@ void scrubber_change_time (GtkAdjustment *adjustment)
 		log_files.at (i).set_current_data (current_time);
 	}
 	return;
+}
+void skip_forward (GtkAdjustment *adjustment)
+{
+	current_time ++;
+	gtk_adjustment_set_value (adjustment, current_time);
+}
+void skip_backward (GtkAdjustment *adjustment)
+{
+	current_time --;
+	gtk_adjustment_set_value (adjustment, current_time);
+}
+void play (GtkAdjustment *adjustment)
+{
+	gdk_threads_add_idle (G_SOURCE_FUNC(play_loop), adjustment);
+}
+bool play_loop (GtkAdjustment *adjustment)
+{
+	Playing = true;
+	while (Playing)
+	{
+		current_time ++;
+		if (current_time > gtk_adjustment_get_value (adjustment))
+		{
+			current_time --;
+			return false;
+		}
+		gtk_adjustment_set_value (adjustment, current_time);
+		gtk_widget_show_all (gtk_widget_get_parent (GTK_WIDGET (adjustment)));
+	}
+	return false;
+}
+void stop ()
+{
+	Playing = false;
 }

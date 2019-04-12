@@ -2,6 +2,7 @@
 #define SHI
 
 #include <gtk/gtk.h>
+#include <gtk/gtk.h>
 
 #include <boost/regex.hpp>
 
@@ -83,12 +84,13 @@ void move_time_forward ();
 void move_time_backward ();
 
 //moves the time forward when the play button moves
-void play ();
+void play (GtkAdjustment *adjustment);
+bool play_loop (GtkAdjustment *adjustment);
 //stops playback
 void stop ();
 //skip button Functions
-void skip_forward ();
-void skip_backward ();
+void skip_forward (GtkAdjustment *adjustment);
+void skip_backward (GtkAdjustment *adjustment);
 //connects the current time to the scrubber
 void scrubber_change_time (GtkAdjustment *adjustment);
 

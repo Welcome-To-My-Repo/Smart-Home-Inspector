@@ -55,9 +55,13 @@ void mainwindowactivate (GtkApplication *app)
 	gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (Tabs), DevListScroll, "Device List");
 //create the playbar with scrubber
 	gtk_box_pack_start (GTK_BOX (Playbar), SkipLeft, FALSE, FALSE, 0);
+	g_signal_connect_swapped (SkipLeft, "clicked", G_CALLBACK (skip_backward), ScrubberAdjustment);
 	gtk_box_pack_start (GTK_BOX (Playbar), PlayButton, FALSE, FALSE, 0);
+	g_signal_connect_swapped (PlayButton, "clicked", G_CALLBACK (play), ScrubberAdjustment);
 	gtk_box_pack_start (GTK_BOX (Playbar), StopButton, FALSE, FALSE, 0);
+	g_signal_connect_swapped (StopButton, "clicked", G_CALLBACK (stop), NULL);
 	gtk_box_pack_start (GTK_BOX (Playbar), SkipRight, FALSE, FALSE, 0);
+	g_signal_connect_swapped (SkipRight, "clicked", G_CALLBACK (skip_forward), ScrubberAdjustment);
 	gtk_box_pack_start (GTK_BOX (Playbar), PlayScrubber, TRUE, TRUE, 0);
 	g_signal_connect_swapped (ScrubberAdjustment, "value-changed", G_CALLBACK (scrubber_change_time), ScrubberAdjustment);
 
