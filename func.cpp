@@ -668,6 +668,8 @@ void initialize_log_file_stats (GtkAdjustment *adjustment)
 	}
 	gtk_adjustment_set_upper (GTK_ADJUSTMENT (adjustment), highest);
 	current_time = 0;
+	generate_device_list ();
+	generate_device_map ();
 }
 
 void error_window_dialogue (char *error_warning);
@@ -959,6 +961,7 @@ void save_project ()
 		a.open (filename);
 		for (int j = 0; j < log_files.size (); j ++)
 		{
+//bigass loop to print all the different regular expressions
 			a << log_files.at (j).filename << std::endl;
 			for (int i = 0; i < log_files.at (j).Year_Regex.size (); i ++)
 			{
@@ -1023,6 +1026,7 @@ void save_project ()
 					.State_Regex.at (i)) << '\t';
 			}
 			a << std::endl;
+//that hurt my hands
 		}
 	}
 }
@@ -1054,7 +1058,7 @@ void open_project (GtkWidget *tabs)
 		OpenFile = gtk_file_chooser_get_filename (a);
 	}
 	gtk_widget_destroy (window);
-//check file path actuall was gotten
+//check file path actually was gotten
 	if (OpenFile != nullptr)
 	{
 //empty current log files and read in from project file
@@ -1195,6 +1199,8 @@ void open_project (GtkWidget *tabs)
 	}
 	*/
 }
+//when you move the scrubber, this gets fired off to reflect the changes in
+//the log files' active time point
 void scrubber_change_time (GtkAdjustment *adjustment)
 {
 	current_time = gtk_adjustment_get_value (adjustment);
@@ -1204,20 +1210,25 @@ void scrubber_change_time (GtkAdjustment *adjustment)
 	}
 	return;
 }
+//moves the current time forward
 void skip_forward (GtkAdjustment *adjustment)
 {
 	current_time ++;
 	gtk_adjustment_set_value (adjustment, current_time);
 }
+//moves time backward. really!
 void skip_backward (GtkAdjustment *adjustment)
 {
 	current_time --;
 	gtk_adjustment_set_value (adjustment, current_time);
 }
+//it plays...
 void play (GtkAdjustment *adjustment)
 {
 	gdk_threads_add_idle (G_SOURCE_FUNC(play_loop), adjustment);
 }
+//called by play because it needs to be on a separate thread for some
+//godforsaken reason
 bool play_loop (GtkAdjustment *adjustment)
 {
 	Playing = true;
@@ -1234,7 +1245,30 @@ bool play_loop (GtkAdjustment *adjustment)
 	}
 	return false;
 }
+//guess what this function does?
 void stop ()
 {
 	Playing = false;
+}
+
+//it generates...
+//a device list!
+void generate_device_list ()
+{
+//get rid of all the previous crap displayed in the box
+	gtk_widget_destroy (DevList);
+//after emptying the box, put it back
+	DevList = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+	gtk_container_add (GTK_CONTAINER (DevListScroll), DevList);
+//loop through all the log files and do sum shit
+	for (int a = 0; a < log_files.size (); a ++)
+	{
+
+	}
+}
+
+//it makes a map yay!
+void generate_device_map ()
+{
+
 }

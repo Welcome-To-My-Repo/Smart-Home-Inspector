@@ -67,7 +67,6 @@ void mainwindowactivate (GtkApplication *app)
 
 //add primary container element to window
 	gtk_container_add (GTK_CONTAINER (Window), MainBox);
-	//gtk_container_add (GTK_CONTAINER (TextTabs), TextDisplay);
 	gtk_container_add (GTK_CONTAINER (DevListScroll), DevList);
 //add menu elements to menu bar container
 	gtk_menu_item_set_submenu (GTK_MENU_ITEM (FileButton), FileMenu);

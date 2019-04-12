@@ -20,9 +20,49 @@
 #include "classes.h"
 
 //global shit
+//vector of the data structure so there can be one structure for every file loaded
 extern std::vector <LOG_FILE_DATA> log_files;
+//keeps track of actual current time between log files
+//there's going to be a lot of problems with this between multiple log files
+//but whatever
 extern long int current_time;
+//if (Playing) it's playing duuhh
 extern bool Playing;
+/*
+//i need all the main window UI elements as global variables because
+//GTK callbacks are the most horrendos pain in the rear so fuckit, global access
+extern GtkWidget
+	*MainBox,
+	*SecondBox,
+	*TextTabs,
+	*Tabs,
+	*EventsPlayBox,
+	*DrawDisplay,
+	*DevList,
+	*DevListScroll,
+	*FileMenu,
+	*FileButton,
+	*ActionsMenu,
+	*ActionsButton,
+	*ActionsBox,
+	*MenuBox,
+	*MenuBar,
+	*Open,
+	*OpenProject,
+	*Save,
+	*SaveAs,
+	*MenuSeparator ,
+	*Quit,
+	*Inspect,
+	*Playbar,
+	*PlayScrubber,
+	*PlayButton,
+	*StopButton,
+	*SkipLeft,
+	*SkipRight;
+//except for this one, it's a GtkAdjustment pointer because i said so
+extern GtkAdjustment *ScrubberAdjustment;
+*/
 
 #define default_text "There are no log files currently loaded."
 //GUI functions
@@ -95,9 +135,9 @@ void skip_backward (GtkAdjustment *adjustment);
 void scrubber_change_time (GtkAdjustment *adjustment);
 
 //creates device list window
-void generate_device_list (GtkWidget *tab);
+void generate_device_list ();
 //creates device map window
-void generate_device_map (GtkWidget *tab);
+void generate_device_map ();
 
 //creates error window
 void error_window (char *error_string);
