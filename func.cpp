@@ -668,8 +668,8 @@ void initialize_log_file_stats (GtkAdjustment *adjustment)
 	}
 	gtk_adjustment_set_upper (GTK_ADJUSTMENT (adjustment), highest);
 	current_time = 0;
-	generate_device_list ();
-	generate_device_map ();
+	generate_device_list (adjustment);
+	generate_device_map (adjustment);
 }
 
 void error_window_dialogue (char *error_warning);
@@ -1253,8 +1253,10 @@ void stop ()
 
 //it generates...
 //a device list!
-void generate_device_list ()
+void generate_device_list (GtkAdjustment *adjustment)
 {
+	GtkWidget 	*Devlist = (GtkWidget*)g_object_get_data (G_OBJECT (adjustment), "dev_list"),
+			*DevListScroll = (GtkWidget*)g_object_get_data (G_OBJECT (adjustment), "dev_list_scroll");
 //get rid of all the previous crap displayed in the box
 	gtk_widget_destroy (DevList);
 //after emptying the box, put it back
@@ -1263,7 +1265,7 @@ void generate_device_list ()
 //loop through all the log files and do sum shit
 	for (int a = 0; a < log_files.size (); a ++)
 	{
-
+		
 	}
 }
 

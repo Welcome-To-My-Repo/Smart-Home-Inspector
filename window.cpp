@@ -40,6 +40,11 @@ void mainwindowactivate (GtkApplication *app)
 	GtkAdjustment *ScrubberAdjustment = gtk_adjustment_new (0, 0, 100, 1, 1, 1);
 	PlayScrubber = gtk_scale_new (GTK_ORIENTATION_HORIZONTAL, ScrubberAdjustment);
 
+	g_object_set_data (G_OBJECT (ScrubberAdjustment), "dev_list_scroll", DevListScroll);
+	g_object_set_data (G_OBJECT (ScrubberAdjustment), "dev_list", DevList);
+	g_object_set_data (G_OBJECT (ScrubberAdjustment), "events", EventsPlayBox);
+	g_object_set_data (G_OBJECT (ScrubberAdjustment), "tabs", Tabs);
+
 //set default text display
 	GtkWidget *tmp;
 	gtk_notebook_set_scrollable (GTK_NOTEBOOK (TextTabs), TRUE);

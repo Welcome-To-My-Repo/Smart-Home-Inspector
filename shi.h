@@ -135,9 +135,9 @@ void skip_backward (GtkAdjustment *adjustment);
 void scrubber_change_time (GtkAdjustment *adjustment);
 
 //creates device list window
-void generate_device_list ();
+void generate_device_list (GtkAdjustment *adjustment);
 //creates device map window
-void generate_device_map ();
+void generate_device_map (GtkAdjustment *adjustment);
 
 //creates error window
 void error_window (char *error_string);
