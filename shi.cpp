@@ -2,7 +2,8 @@
 //define all the global shit from shi.h...
 //wheeee!
 std::vector <LOG_FILE_DATA> log_files;
-long  int current_time = 0;
+//long  int current_time = 0;
+gtk_adjustmetn_set_value (&current_time, 0);
 bool Playing = false;
 /*
 GtkWidget

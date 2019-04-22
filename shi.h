@@ -17,6 +17,7 @@
 #include <chrono>
 #include <regex>
 #include <filesystem>
+#include <thread>
 #include "classes.h"
 
 //global shit
@@ -25,7 +26,8 @@ extern std::vector <LOG_FILE_DATA> log_files;
 //keeps track of actual current time between log files
 //there's going to be a lot of problems with this between multiple log files
 //but whatever
-extern long int current_time;
+//extern long int current_time;
+extern GtkAdjustment current_time;
 //if (Playing) it's playing duuhh
 extern bool Playing;
 /*

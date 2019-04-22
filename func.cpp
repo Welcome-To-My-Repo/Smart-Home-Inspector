@@ -667,7 +667,7 @@ void initialize_log_file_stats (GtkAdjustment *adjustment)
 			highest = log_files.at (i).data.size ();
 	}
 	gtk_adjustment_set_upper (GTK_ADJUSTMENT (adjustment), highest);
-	current_time = 0;
+	gtk_adjustment_set_upper (&current_time, highest);
 	generate_device_list (adjustment);
 	generate_device_map (adjustment);
 }
@@ -1203,7 +1203,7 @@ void open_project (GtkWidget *tabs)
 //the log files' active time point
 void scrubber_change_time (GtkAdjustment *adjustment)
 {
-	current_time = gtk_adjustment_get_value (adjustment);
+	gtk_adjustment_set_value (&current_time, gtk_adjustment_get_value (adjustment));
 	for (int i = 0; i < log_files.size (); i ++)
 	{
 		log_files.at (i).set_current_data (current_time);
@@ -1213,19 +1213,20 @@ void scrubber_change_time (GtkAdjustment *adjustment)
 //moves the current time forward
 void skip_forward (GtkAdjustment *adjustment)
 {
-	current_time ++;
-	gtk_adjustment_set_value (adjustment, current_time);
+	gtk_adjustment_set_value (&current_time, gtk_adjustment_get_value (&current_time) + 1);
+	gtk_adjustment_set_value (adjustment, gtk_adjustment_get_value(current_time));
 }
 //moves time backward. really!
 void skip_backward (GtkAdjustment *adjustment)
 {
-	current_time --;
-	gtk_adjustment_set_value (adjustment, current_time);
+	gtk_adjustment_set_value (&current_time, gtk_adjustment_get_value (&current_time) - 1);
+	gtk_adjustment_set_value (adjustment, gtk_adjustment_get_value(current_time));
 }
 //it plays...
 void play (GtkAdjustment *adjustment)
 {
-	gdk_threads_add_idle (G_SOURCE_FUNC(play_loop), adjustment);
+	//gdk_threads_add_idle (G_SOURCE_FUNC(play_loop), adjustment);
+	std::thread playing (play_loop, adjustment);
 }
 //called by play because it needs to be on a separate thread for some
 //godforsaken reason
@@ -1234,13 +1235,8 @@ bool play_loop (GtkAdjustment *adjustment)
 	Playing = true;
 	while (Playing)
 	{
-		current_time ++;
-		if (current_time > gtk_adjustment_get_value (adjustment))
-		{
-			current_time --;
-			return false;
-		}
-		gtk_adjustment_set_value (adjustment, current_time);
+		gtk_adjustment_set_value (&current_time, gtk_adjustment_get_value (&current_time) + 1);
+		gtk_adjustment_set_value (adjustment, gtk_adjustment_get_value(current_time));
 		gtk_widget_show_all (gtk_widget_get_parent (GTK_WIDGET (adjustment)));
 	}
 	return false;
@@ -1262,15 +1258,24 @@ void generate_device_list (GtkAdjustment *adjustment)
 //after emptying the box, put it back
 	DevList = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	gtk_container_add (GTK_CONTAINER (DevListScroll), DevList);
+	std::vector <GtkWidget*> list_of_widgets;
+	GtkWidget 	*labels,
+			*boxes;
 //loop through all the log files and do sum shit
 	for (int a = 0; a < log_files.size (); a ++)
 	{
-		
+
 	}
 }
 
 //it makes a map yay!
-void generate_device_map ()
+void generate_device_map (GtkAdjustment *adjustment)
 {
+	Gtkwidget	*Tabs = (GtkWidget*)g_object_get_data (G_OBJECT (adjustment), "tabs"),
+			*Events = (GtkWidget*)g_object_get_data (G_OBJECT (adjustment), "events");
 
+	for (int a = 0; a < log_files.size (); a ++)
+	{
+
+	}
 }
