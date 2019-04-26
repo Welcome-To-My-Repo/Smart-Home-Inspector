@@ -3,8 +3,8 @@
 //wheeee!
 std::vector <LOG_FILE_DATA> log_files;
 //long  int current_time = 0;
-gtk_adjustmetn_set_value (&current_time, 0);
 bool Playing = false;
+GtkAdjustment current_time;
 /*
 GtkWidget
 	*MainBox = 	gtk_box_new (GTK_ORIENTATION_VERTICAL, 0),
@@ -42,6 +42,7 @@ GtkAdjustment *ScrubberAdjustment = gtk_adjustment_new (0, 0, 100, 1, 1, 1);
 int main (int argc, char **argv)
 
 {
+	gtk_adjustment_set_value (&current_time, 0);
 //create the application (don't ask me ask the GTK project...)
 	GtkApplication *MainWindow = gtk_application_new ("app.shi", G_APPLICATION_FLAGS_NONE);
 	g_signal_connect (MainWindow, "activate", G_CALLBACK (mainwindowactivate), MainWindow);

@@ -1206,7 +1206,7 @@ void scrubber_change_time (GtkAdjustment *adjustment)
 	gtk_adjustment_set_value (&current_time, gtk_adjustment_get_value (adjustment));
 	for (int i = 0; i < log_files.size (); i ++)
 	{
-		log_files.at (i).set_current_data (current_time);
+		log_files.at (i).set_current_data (gtk_adjustment_get_value (&current_time));
 	}
 	return;
 }
@@ -1214,13 +1214,13 @@ void scrubber_change_time (GtkAdjustment *adjustment)
 void skip_forward (GtkAdjustment *adjustment)
 {
 	gtk_adjustment_set_value (&current_time, gtk_adjustment_get_value (&current_time) + 1);
-	gtk_adjustment_set_value (adjustment, gtk_adjustment_get_value(current_time));
+	gtk_adjustment_set_value (adjustment, gtk_adjustment_get_value(&current_time));
 }
 //moves time backward. really!
 void skip_backward (GtkAdjustment *adjustment)
 {
 	gtk_adjustment_set_value (&current_time, gtk_adjustment_get_value (&current_time) - 1);
-	gtk_adjustment_set_value (adjustment, gtk_adjustment_get_value(current_time));
+	gtk_adjustment_set_value (adjustment, gtk_adjustment_get_value(&current_time));
 }
 //it plays...
 void play (GtkAdjustment *adjustment)
@@ -1236,7 +1236,7 @@ bool play_loop (GtkAdjustment *adjustment)
 	while (Playing)
 	{
 		gtk_adjustment_set_value (&current_time, gtk_adjustment_get_value (&current_time) + 1);
-		gtk_adjustment_set_value (adjustment, gtk_adjustment_get_value(current_time));
+		gtk_adjustment_set_value (adjustment, gtk_adjustment_get_value(&current_time));
 		gtk_widget_show_all (gtk_widget_get_parent (GTK_WIDGET (adjustment)));
 	}
 	return false;
@@ -1251,7 +1251,7 @@ void stop ()
 //a device list!
 void generate_device_list (GtkAdjustment *adjustment)
 {
-	GtkWidget 	*Devlist = (GtkWidget*)g_object_get_data (G_OBJECT (adjustment), "dev_list"),
+	GtkWidget 	*DevList = (GtkWidget*)g_object_get_data (G_OBJECT (adjustment), "dev_list"),
 			*DevListScroll = (GtkWidget*)g_object_get_data (G_OBJECT (adjustment), "dev_list_scroll");
 //get rid of all the previous crap displayed in the box
 	gtk_widget_destroy (DevList);
@@ -1271,7 +1271,7 @@ void generate_device_list (GtkAdjustment *adjustment)
 //it makes a map yay!
 void generate_device_map (GtkAdjustment *adjustment)
 {
-	Gtkwidget	*Tabs = (GtkWidget*)g_object_get_data (G_OBJECT (adjustment), "tabs"),
+	GtkWidget	*Tabs = (GtkWidget*)g_object_get_data (G_OBJECT (adjustment), "tabs"),
 			*Events = (GtkWidget*)g_object_get_data (G_OBJECT (adjustment), "events");
 
 	for (int a = 0; a < log_files.size (); a ++)
