@@ -1221,6 +1221,10 @@ void skip_forward (GtkAdjustment *adjustment)
 {
 	gtk_adjustment_set_value (&current_time, gtk_adjustment_get_value (&current_time) + 1);
 	gtk_adjustment_set_value (adjustment, gtk_adjustment_get_value(&current_time));
+	for (int i = 0; i < log_files.size (); i ++)
+	{
+		
+	}
 }
 //moves time backward. really!
 void skip_backward (GtkAdjustment *adjustment)

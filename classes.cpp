@@ -329,14 +329,4 @@ void LOG_FILE_DATA::highlight_time_point (long int pos)
 	gtk_text_buffer_get_iter_at_offset (Text_File, &FirstPoint, start);
 	gtk_text_buffer_get_iter_at_offset (Text_File, &LastPoint, end);
 	gtk_text_buffer_apply_tag (Text_File, tag, &FirstPoint, &LastPoint);
-
-/*
-	GtkTextIter first, last, Hstart, Hend;
-	gtk_text_buffer_get_start_iter (Text_File, &first);
-	gtk_text_buffer_get_end_iter (Text_File, &last);
-	gtk_text_buffer_remove_tag (Text_File, tag, &first, &last);
-	gtk_text_buffer_get_iter_at_offset (Text_File, &Hstart, start);
-	gtk_text_buffer_get_iter_at_offset (Text_File, &Hend, end);
-	gtk_text_buffer_apply_tag (Text_File, tag, &last, &first);
-*/
 }

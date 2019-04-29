@@ -29,41 +29,6 @@ extern std::vector <LOG_FILE_DATA> log_files;
 extern GtkAdjustment current_time;
 //if (Playing) it's playing duuhh
 extern bool Playing;
-/*
-//i need all the main window UI elements as global variables because
-//GTK callbacks are the most horrendos pain in the rear so fuckit, global access
-extern GtkWidget
-	*MainBox,
-	*SecondBox,
-	*TextTabs,
-	*Tabs,
-	*EventsPlayBox,
-	*DrawDisplay,
-	*DevList,
-	*DevListScroll,
-	*FileMenu,
-	*FileButton,
-	*ActionsMenu,
-	*ActionsButton,
-	*ActionsBox,
-	*MenuBox,
-	*MenuBar,
-	*Open,
-	*OpenProject,
-	*Save,
-	*SaveAs,
-	*MenuSeparator ,
-	*Quit,
-	*Inspect,
-	*Playbar,
-	*PlayScrubber,
-	*PlayButton,
-	*StopButton,
-	*SkipLeft,
-	*SkipRight;
-//except for this one, it's a GtkAdjustment pointer because i said so
-extern GtkAdjustment *ScrubberAdjustment;
-*/
 
 #define default_text "There are no log files currently loaded."
 //GUI functions
