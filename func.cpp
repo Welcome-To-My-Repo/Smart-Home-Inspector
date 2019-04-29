@@ -963,69 +963,69 @@ void save_project ()
 		{
 //bigass loop to print all the different regular expressions
 			a << log_files.at (j).filename << std::endl;
+			a << log_files.at (j).Year_Regex.size () << std::endl;
 			for (int i = 0; i < log_files.at (j).Year_Regex.size (); i ++)
 			{
 				a << gtk_entry_buffer_get_text (
 					log_files.at (j)
-					.Year_Regex.at (i)) << '\t';
+					.Year_Regex.at (i)) << std::endl;
 			}
-			a << std::endl;
+			a << log_files.at (j).Month_Regex.size () << std::endl;
 			for (int i = 0; i < log_files.at (j).Month_Regex.size (); i ++)
 			{
 				a << gtk_entry_buffer_get_text (
 					log_files.at (j)
-					.Month_Regex.at (i)) << '\t';
+					.Month_Regex.at (i)) << std::endl;;
 			}
-			a << std::endl;
+			a << log_files.at (j).Day_Regex.size () << std::endl;
 			for (int i = 0; i < log_files.at (j).Day_Regex.size (); i ++)
 			{
 				a << gtk_entry_buffer_get_text (
 					log_files.at (j)
-					.Day_Regex.at (i)) << '\t';
+					.Day_Regex.at (i)) << std::endl;;
 			}
-			a << std::endl;
+			a << log_files.at (j).Hour_Regex.size () << std::endl;
 			for (int i = 0; i < log_files.at (j).Hour_Regex.size (); i ++)
 			{
 				a << gtk_entry_buffer_get_text (
 					log_files.at (j)
-					.Hour_Regex.at (i)) << '\t';
+					.Hour_Regex.at (i)) << std::endl;
 			}
-			a << std::endl;
+			a << log_files.at (j).Minute_Regex.size () << std::endl;
 			for (int i = 0; i < log_files.at (j).Minute_Regex.size (); i ++)
 			{
 				a << gtk_entry_buffer_get_text (
 					log_files.at (j)
-					.Minute_Regex.at (i)) << '\t';
+					.Minute_Regex.at (i)) << std::endl;
 			}
-			a << std::endl;
+			a << log_files.at (j).Second_Regex.size () << std::endl;
 			for (int i = 0; i < log_files.at (j).Second_Regex.size (); i ++)
 			{
 				a << gtk_entry_buffer_get_text (
 					log_files.at (j)
-					.Second_Regex.at (i)) << '\t';
+					.Second_Regex.at (i)) << std::endl;
 			}
-			a << std::endl;
+			a << log_files.at (j).Device_Regex.size () << std::endl;
 			for (int i = 0; i < log_files.at (j).Device_Regex.size (); i ++)
 			{
 				a << gtk_entry_buffer_get_text (
 					log_files.at (j)
-					.Device_Regex.at (i)) << '\t';
+					.Device_Regex.at (i)) << std::endl;
 			}
-			a << std::endl;
+			a << log_files.at (j).Event_Regex.size () << std::endl;
 			for (int i = 0; i < log_files.at (j).Event_Regex.size (); i ++)
 			{
 				a << gtk_entry_buffer_get_text (
 					log_files.at (j)
-					.Event_Regex.at (i)) << '\t';
+					.Event_Regex.at (i)) << std::endl;
 			}
-			a << std::endl;
+			a << log_files.at (j).State_Regex.size () << std::endl;
 			for (int i = 0; i < log_files.at (j).State_Regex.size (); i ++)
 			{
 				a << gtk_entry_buffer_get_text (
 					log_files.at (j)
-					.State_Regex.at (i)) << '\t';
+					.State_Regex.at (i)) << std::endl;
 			}
-			a << std::endl;
 //that hurt my hands
 		}
 	}
@@ -1072,33 +1072,77 @@ void open_project (GtkWidget *tabs)
 //read in first log file path (or empty line for a bad project file)
 				std::getline (b, HoldsLine);
 				if (HoldsLine.empty ())
-				{
-					error_window ("Bad/Corrupted Project File");
-				}
-				else
-				{
+					break;
 //set the file path for the new class object
-					NewClass->filename = HoldsLine;
-					std::cout << HoldsLine << std::endl;
-//read in an entire line in while loop
-					while (b.peek () != '\n')
-					{
-						HoldsLine.clear ();
-//read in everything before a tab space
-						while (b.peek () != '\t')
-						{
-							b.get (CharReadIn);
-//add stuff that was read in into
-							HoldsLine += CharReadIn;
-						}
-//move iterator past the tab space
-						b.seekg (b.tellg () + 1);
-//add new year regex to class object
-						gtk_entry_buffer_set_text (NewClass->add_regex ('y'), HoldsLine.c_str (), -1);
-					}
-//move iterator past the newline character
-					b.seekg (b.tellg () + 1);
+				NewClass->filename = HoldsLine;
+				std::cout << HoldsLine << std::endl;
+				std::string::size_type SizeType;
+				int NumberOfReg;
+
+				std::getline (b, HoldsLine);
+				NumberOfReg = std::stoi (HoldsLine, &SizeType);
+				for (int i = 0; i < NumberOfReg; i ++)
+				{
+					std::getline (b, HoldsLine);
+					gtk_entry_buffer_set_text (NewClass->add_regex ('y'), HoldsLine.c_str (), -1);
 				}
+				std::getline (b, HoldsLine);
+				NumberOfReg = std::stoi (HoldsLine, &SizeType);
+				for (int i = 0; i < NumberOfReg; i ++)
+				{
+					std::getline (b, HoldsLine);
+					gtk_entry_buffer_set_text (NewClass->add_regex ('M'), HoldsLine.c_str (), -1);
+				}
+				std::getline (b, HoldsLine);
+				NumberOfReg = std::stoi (HoldsLine, &SizeType);
+				for (int i = 0; i < NumberOfReg; i ++)
+				{
+					std::getline (b, HoldsLine);
+					gtk_entry_buffer_set_text (NewClass->add_regex ('d'), HoldsLine.c_str (), -1);
+				}
+				std::getline (b, HoldsLine);
+				NumberOfReg = std::stoi (HoldsLine, &SizeType);
+				for (int i = 0; i < NumberOfReg; i ++)
+				{
+					std::getline (b, HoldsLine);
+					gtk_entry_buffer_set_text (NewClass->add_regex ('h'), HoldsLine.c_str (), -1);
+				}
+				std::getline (b, HoldsLine);
+				NumberOfReg = std::stoi (HoldsLine, &SizeType);
+				for (int i = 0; i < NumberOfReg; i ++)
+				{
+					std::getline (b, HoldsLine);
+					gtk_entry_buffer_set_text (NewClass->add_regex ('m'), HoldsLine.c_str (), -1);
+				}
+				std::getline (b, HoldsLine);
+				NumberOfReg = std::stoi (HoldsLine, &SizeType);
+				for (int i = 0; i < NumberOfReg; i ++)
+				{
+					std::getline (b, HoldsLine);
+					gtk_entry_buffer_set_text (NewClass->add_regex ('s'), HoldsLine.c_str (), -1);
+				}
+				std::getline (b, HoldsLine);
+				NumberOfReg = std::stoi (HoldsLine, &SizeType);
+				for (int i = 0; i < NumberOfReg; i ++)
+				{
+					std::getline (b, HoldsLine);
+					gtk_entry_buffer_set_text (NewClass->add_regex ('D'), HoldsLine.c_str (), -1);
+				}
+				std::getline (b, HoldsLine);
+				NumberOfReg = std::stoi (HoldsLine, &SizeType);
+				for (int i = 0; i < NumberOfReg; i ++)
+				{
+					std::getline (b, HoldsLine);
+					gtk_entry_buffer_set_text (NewClass->add_regex ('e'), HoldsLine.c_str (), -1);
+				}
+				std::getline (b, HoldsLine);
+				NumberOfReg = std::stoi (HoldsLine, &SizeType);
+				for (int i = 0; i < NumberOfReg; i ++)
+				{
+					std::getline (b, HoldsLine);
+					gtk_entry_buffer_set_text (NewClass->add_regex ('S'), HoldsLine.c_str (), -1);
+				}
+
 				log_files.push_back (*NewClass);
 			}
 		}
@@ -1159,50 +1203,13 @@ void open_project (GtkWidget *tabs)
 			i->pos = page -1;
 			g_signal_connect_swapped (set_regex, "clicked", G_CALLBACK (set_regular_expressions), i);
 		}
-	/*
-		in.open (log_files.at (x).filename);
-		if (in.is_open ())
-		{
-			buffer << in.rdbuf ();
-			contents = buffer.str ();
-			gtk_text_buffer_set_text (log_files.at (x).get_text_file (), contents.c_str (), -1);
-		}
-		gtk_box_pack_start (GTK_BOX (box), set_regex, FALSE, FALSE, 0);
-		gtk_box_pack_start (GTK_BOX (box), scroll, TRUE, TRUE, 0);
-		gtk_box_pack_start (GTK_BOX (box), close, FALSE, TRUE, 0);
-		gtk_notebook_append_page (GTK_NOTEBOOK (tabs), box, NULL);
-		gtk_notebook_set_tab_label_text (GTK_NOTEBOOK (tabs), box, sub.c_str());
-
-		text = gtk_text_view_new_with_buffer (GTK_TEXT_BUFFER (log_files.at (x).get_text_file()));
-		page = gtk_notebook_get_n_pages (GTK_NOTEBOOK (tabs));
-
-		gtk_text_view_set_cursor_visible (GTK_TEXT_VIEW (text), false);
-		gtk_text_view_set_editable (GTK_TEXT_VIEW (text), false);
-		gtk_text_view_set_accepts_tab (GTK_TEXT_VIEW (text), false);
-		gtk_text_view_set_wrap_mode (GTK_TEXT_VIEW (text), GTK_WRAP_NONE);
-		gtk_text_view_set_monospace (GTK_TEXT_VIEW (text), GTK_WRAP_NONE);
-		gtk_text_view_set_justification (GTK_TEXT_VIEW (text), GTK_JUSTIFY_LEFT);
-		gtk_scrollable_set_vscroll_policy (GTK_SCROLLABLE (text), GTK_SCROLL_NATURAL);
-		gtk_scrollable_set_hscroll_policy (GTK_SCROLLABLE (text), GTK_SCROLL_NATURAL);
-		gtk_container_add (GTK_CONTAINER (scroll), text);
-		gtk_widget_show_all (tabs);
-
-		struct _ {GtkWidget *y; int z;};
-		_*to_remove = new _;
-		to_remove->y = tabs; to_remove->z = page - 1;
-		g_signal_connect_swapped (close, "clicked", G_CALLBACK (remove_page), to_remove);
-
-		to_regex *i = new to_regex;
-		i->pos = page -1;
-		g_signal_connect_swapped (set_regex, "clicked", G_CALLBACK (set_regular_expressions), i);
-
-	}
-	*/
 }
 //when you move the scrubber, this gets fired off to reflect the changes in
 //the log files' active time point
 void scrubber_change_time (GtkAdjustment *adjustment)
 {
+	if (gtk_adjustment_get_value (adjustment) == 0)
+		return;
 	gtk_adjustment_set_value (&current_time, gtk_adjustment_get_value (adjustment));
 	for (int i = 0; i < log_files.size (); i ++)
 	{
@@ -1226,20 +1233,23 @@ void skip_backward (GtkAdjustment *adjustment)
 void play (GtkAdjustment *adjustment)
 {
 	//gdk_threads_add_idle (G_SOURCE_FUNC(play_loop), adjustment);
-	std::thread playing (play_loop, adjustment);
+	Playing = true;
+	std::thread (play_loop, adjustment).detach ();
+	return;
 }
 //called by play because it needs to be on a separate thread for some
 //godforsaken reason
-bool play_loop (GtkAdjustment *adjustment)
+void play_loop (GtkAdjustment *adjustment)
 {
-	Playing = true;
 	while (Playing)
 	{
+		if (gtk_adjustment_get_value (adjustment) >= gtk_adjustment_get_upper (adjustment))
+			break;
 		gtk_adjustment_set_value (&current_time, gtk_adjustment_get_value (&current_time) + 1);
 		gtk_adjustment_set_value (adjustment, gtk_adjustment_get_value(&current_time));
 		gtk_widget_show_all (gtk_widget_get_parent (GTK_WIDGET (adjustment)));
 	}
-	return false;
+	return;
 }
 //guess what this function does?
 void stop ()

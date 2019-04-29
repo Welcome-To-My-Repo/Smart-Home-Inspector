@@ -126,7 +126,7 @@ void move_time_backward ();
 
 //moves the time forward when the play button moves
 void play (GtkAdjustment *adjustment);
-bool play_loop (GtkAdjustment *adjustment);
+void play_loop (GtkAdjustment *adjustment);
 //stops playback
 void stop ();
 //skip button Functions

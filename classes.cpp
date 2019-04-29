@@ -298,7 +298,10 @@ long int LOG_FILE_DATA::is_same_data (DATA _)
 			and data.at (i).hour == _.hour
 			and data.at (i).minute == _.minute
 			and data.at (i).second == _.second)
+		{
+			std::cout << "match" << std::endl;
 			return i;
+		}
 		else
 			return -1;
 	}

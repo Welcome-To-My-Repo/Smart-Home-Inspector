@@ -34,6 +34,7 @@ regex to get days "(?<=-)[0-9]{1,2}(?=\s)
 regex to get months "(?<=-)[0-9]{1,2}(?=-)
 regex to get years "(?<=\[)[0-9]{4}(?=-)"
 
-Instead of having to collata all the information from all the files, each log
-file loaded can be analyzed and presented individually based on which log file
-tab is selected.
+Add regex testing field to the regex editor
+
+add file filter (GtkFileFilter) to the file chooser dialogs so they only see
+.shi and .regex files.
