@@ -1054,10 +1054,9 @@ void open_project (GtkWidget *tabs)
 	if (i == GTK_RESPONSE_ACCEPT)
 	{
 //get save file path from file dialog
-		GtkFileChooser *a = GTK_FILE_CHOOSER (file_chooser);
-		OpenFile = gtk_file_chooser_get_filename (a);
+		OpenFile = gtk_file_chooser_get_filename (GTK_FILE_CHOOSER (file_chooser));
 	}
-	gtk_widget_destroy (window);
+	gtk_widget_destroy (file_chooser);
 //check file path actually was gotten
 	if (OpenFile != nullptr)
 	{
