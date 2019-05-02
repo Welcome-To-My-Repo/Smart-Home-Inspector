@@ -44,6 +44,7 @@ void mainwindowactivate (GtkApplication *app)
 	g_object_set_data (G_OBJECT (ScrubberAdjustment), "dev_list", DevList);
 	g_object_set_data (G_OBJECT (ScrubberAdjustment), "events", EventsPlayBox);
 	g_object_set_data (G_OBJECT (ScrubberAdjustment), "tabs", Tabs);
+	g_signal_connect ( G_OBJECT (DrawDisplay), "draw", G_CALLBACK (generate_device_map), NULL);
 
 //set default text display
 	GtkWidget *tmp;

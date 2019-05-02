@@ -1223,7 +1223,7 @@ void skip_forward (GtkAdjustment *adjustment)
 	gtk_adjustment_set_value (adjustment, gtk_adjustment_get_value(&current_time));
 	for (int i = 0; i < log_files.size (); i ++)
 	{
-		
+
 	}
 }
 //moves time backward. really!
@@ -1284,11 +1284,42 @@ void generate_device_list (GtkAdjustment *adjustment)
 //it makes a map yay!
 void generate_device_map (GtkAdjustment *adjustment)
 {
+	/*
 	GtkWidget	*Tabs = (GtkWidget*)g_object_get_data (G_OBJECT (adjustment), "tabs"),
 			*Events = (GtkWidget*)g_object_get_data (G_OBJECT (adjustment), "events");
+
 
 	for (int a = 0; a < log_files.size (); a ++)
 	{
 
 	}
+	*/
+	guint width, height;
+	GdkRGBA color;
+	GtkStyleContext *context;
+	std::vector <cairo_t *> cr;
+
+	context = gtk_widget_get_style_context (widget);
+	width = gtk_widget_get_allocated_width (widget);
+	height = gtk_widget_get_allocated_height (widget);
+
+	gtk_render_background (context, cr, 0, 0, width, height);
+	gtk_style_context_get_color (context,
+                               gtk_style_context_get_state (context),
+                               &color);
+	gdk_cairo_set_source_rgba (cr, &color);
+	cairo_fill (cr);
+
+	int files = log_files.size ();
+
+	for (int i = 0; i < log_files.size (); i ++)
+	{
+		cairo_rectancle
+	}
+
+	cairo_rectangle
+}
+void draw_on_device_map (GtkWidget *widget, cairo_t *cr, gpointer data)
+{
+
 }

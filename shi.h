@@ -104,6 +104,7 @@ void scrubber_change_time (GtkAdjustment *adjustment);
 void generate_device_list (GtkAdjustment *adjustment);
 //creates device map window
 void generate_device_map (GtkAdjustment *adjustment);
+void draw_on_device_map (GtkWidget *widget, cairo_t *cr, gpointer data);
 
 //creates error window
 void error_window (char *error_string);
