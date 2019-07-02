@@ -1314,7 +1314,9 @@ void generate_device_map (GtkAdjustment *adjustment)
 
 	for (int i = 0; i < log_files.size (); i ++)
 	{
-		cairo_rectancle
+		for (int j = 0; j < log_files.at (i).data.size (); j ++)
+		{
+		}
 	}
 
 	cairo_rectangle
