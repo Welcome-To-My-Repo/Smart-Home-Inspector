@@ -40,10 +40,10 @@ void mainwindowactivate (GtkApplication *app)
 	GtkAdjustment *ScrubberAdjustment = gtk_adjustment_new (0, 0, 100, 1, 1, 1);
 	PlayScrubber = gtk_scale_new (GTK_ORIENTATION_HORIZONTAL, ScrubberAdjustment);
 
-	g_object_set_data (G_OBJECT (ScrubberAdjustment), "dev_list_scroll", DevListScroll);
-	g_object_set_data (G_OBJECT (ScrubberAdjustment), "dev_list", DevList);
-	g_object_set_data (G_OBJECT (ScrubberAdjustment), "events", EventsPlayBox);
-	g_object_set_data (G_OBJECT (ScrubberAdjustment), "tabs", Tabs);
+	//g_object_set_data (G_OBJECT (ScrubberAdjustment), "dev_list_scroll", DevListScroll);
+	//g_object_set_data (G_OBJECT (ScrubberAdjustment), "dev_list", DevList);
+	//g_object_set_data (G_OBJECT (ScrubberAdjustment), "events", EventsPlayBox);
+	//g_object_set_data (G_OBJECT (ScrubberAdjustment), "tabs", Tabs);
 	g_signal_connect ( G_OBJECT (DrawDisplay), "draw", G_CALLBACK (generate_device_map), NULL);
 
 //set default text display

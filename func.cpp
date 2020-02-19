@@ -3,11 +3,8 @@
 //main function to parse the log file
 void set_regular_expressions (to_regex *_)
 {
-	GtkApplication *dialogue = gtk_application_new ("app.shi.syntax_dialogue", G_APPLICATION_FLAGS_NONE);
-	g_object_set_data (G_OBJECT (dialogue), "position", _);
-	g_signal_connect (dialogue, "activate", G_CALLBACK (set_regex_window), dialogue);
-	g_application_run (G_APPLICATION (dialogue), 0, NULL);
-	g_object_unref (dialogue);
+	g_object_set_data (G_OBJECT (MainWindow), "position", _);
+	set_regex_window (MainWindow);
 }
 void add_entry_box_regex (GtkWidget *container)
 {
@@ -41,6 +38,7 @@ void remove_expression (GtkEntry *Entry)
 void set_regex_window (GtkApplication *app)
 {
 	to_regex *params = (to_regex*)g_object_get_data (G_OBJECT (app), "position");
+	g_object_steal_data (G_OBJECT(app), "position");
 	int *pos = new int;
 	*pos = params->pos;
 	GtkWidget	*Window = gtk_application_window_new (app),
@@ -667,12 +665,11 @@ void initialize_log_file_stats (GtkAdjustment *adjustment)
 			highest = log_files.at (i).data.size ();
 	}
 	gtk_adjustment_set_upper (GTK_ADJUSTMENT (adjustment), highest);
-	gtk_adjustment_set_upper (&current_time, highest);
+	gtk_adjustment_set_upper (current_time, highest);
 	generate_device_list (adjustment);
 	generate_device_map (adjustment);
 }
 
-void error_window_dialogue (char *error_warning);
 void error_window (char *error_string)
 {
 	/*
@@ -1207,30 +1204,32 @@ void open_project (GtkWidget *tabs)
 //the log files' active time point
 void scrubber_change_time (GtkAdjustment *adjustment)
 {
-	if (gtk_adjustment_get_value (adjustment) == 0)
-		return;
-	gtk_adjustment_set_value (&current_time, gtk_adjustment_get_value (adjustment));
+	gtk_adjustment_set_value (current_time, gtk_adjustment_get_value (adjustment));
 	for (int i = 0; i < log_files.size (); i ++)
 	{
-		log_files.at (i).set_current_data (gtk_adjustment_get_value (&current_time));
+		log_files.at (i).set_current_data (gtk_adjustment_get_value (current_time));
 	}
 	return;
 }
 //moves the current time forward
 void skip_forward (GtkAdjustment *adjustment)
 {
-	gtk_adjustment_set_value (&current_time, gtk_adjustment_get_value (&current_time) + 1);
-	gtk_adjustment_set_value (adjustment, gtk_adjustment_get_value(&current_time));
+	gtk_adjustment_set_value (current_time, gtk_adjustment_get_value (current_time) + 1);
+	gtk_adjustment_set_value (adjustment, gtk_adjustment_get_value(current_time));
 	for (int i = 0; i < log_files.size (); i ++)
 	{
-
+		log_files.at (i).set_current_data (gtk_adjustment_get_value (current_time));
 	}
 }
 //moves time backward. really!
 void skip_backward (GtkAdjustment *adjustment)
 {
-	gtk_adjustment_set_value (&current_time, gtk_adjustment_get_value (&current_time) - 1);
-	gtk_adjustment_set_value (adjustment, gtk_adjustment_get_value(&current_time));
+	gtk_adjustment_set_value (current_time, gtk_adjustment_get_value (current_time) - 1);
+	gtk_adjustment_set_value (adjustment, gtk_adjustment_get_value(current_time));
+	for (int i = 0; i < log_files.size (); i ++)
+	{
+		log_files.at (i).set_current_data (gtk_adjustment_get_value (current_time));
+	}
 }
 //it plays...
 void play (GtkAdjustment *adjustment)
@@ -1248,9 +1247,10 @@ void play_loop (GtkAdjustment *adjustment)
 	{
 		if (gtk_adjustment_get_value (adjustment) >= gtk_adjustment_get_upper (adjustment))
 			break;
-		gtk_adjustment_set_value (&current_time, gtk_adjustment_get_value (&current_time) + 1);
-		gtk_adjustment_set_value (adjustment, gtk_adjustment_get_value(&current_time));
+		gtk_adjustment_set_value (current_time, gtk_adjustment_get_value (current_time) + 1);
+		gtk_adjustment_set_value (adjustment, gtk_adjustment_get_value(current_time));
 		gtk_widget_show_all (gtk_widget_get_parent (GTK_WIDGET (adjustment)));
+		std::this_thread::sleep_for (std::chrono::milliseconds (500));
 	}
 	return;
 }
@@ -1284,42 +1284,7 @@ void generate_device_list (GtkAdjustment *adjustment)
 //it makes a map yay!
 void generate_device_map (GtkAdjustment *adjustment)
 {
-	/*
-	GtkWidget	*Tabs = (GtkWidget*)g_object_get_data (G_OBJECT (adjustment), "tabs"),
-			*Events = (GtkWidget*)g_object_get_data (G_OBJECT (adjustment), "events");
-
-
-	for (int a = 0; a < log_files.size (); a ++)
-	{
-
-	}
-	*/
-	guint width, height;
-	GdkRGBA color;
-	GtkStyleContext *context;
-	std::vector <cairo_t *> cr;
-
-	context = gtk_widget_get_style_context (widget);
-	width = gtk_widget_get_allocated_width (widget);
-	height = gtk_widget_get_allocated_height (widget);
-
-	gtk_render_background (context, cr, 0, 0, width, height);
-	gtk_style_context_get_color (context,
-                               gtk_style_context_get_state (context),
-                               &color);
-	gdk_cairo_set_source_rgba (cr, &color);
-	cairo_fill (cr);
-
-	int files = log_files.size ();
-
-	for (int i = 0; i < log_files.size (); i ++)
-	{
-		for (int j = 0; j < log_files.at (i).data.size (); j ++)
-		{
-		}
-	}
-
-	cairo_rectangle
+	return;
 }
 void draw_on_device_map (GtkWidget *widget, cairo_t *cr, gpointer data)
 {

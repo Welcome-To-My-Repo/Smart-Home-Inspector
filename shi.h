@@ -20,13 +20,15 @@
 #include "classes.h"
 
 //global shit
+//base application pointer
+extern GtkApplication *MainWindow;
 //vector of the data structure so there can be one structure for every file loaded
 extern std::vector <LOG_FILE_DATA> log_files;
 //keeps track of actual current time between log files
 //there's going to be a lot of problems with this between multiple log files
 //but whatever
 //extern long int current_time;
-extern GtkAdjustment current_time;
+extern GtkAdjustment *current_time;
 //if (Playing) it's playing duuhh
 extern bool Playing;
 
@@ -107,6 +109,7 @@ void generate_device_map (GtkAdjustment *adjustment);
 void draw_on_device_map (GtkWidget *widget, cairo_t *cr, gpointer data);
 
 //creates error window
+void error_window_dialogue (char *error_warning);
 void error_window (char *error_string);
 
 #endif
