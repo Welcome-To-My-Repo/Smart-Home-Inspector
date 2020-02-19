@@ -267,11 +267,11 @@ int LOG_FILE_DATA::get_regex_list_size (char type)
 	};
 }
 
-long int LOG_FILE_DATA::get_current_data ()
+long long int LOG_FILE_DATA::get_current_data ()
 {
 	return current_data;
 }
-void LOG_FILE_DATA::set_current_data (long int pos)
+void LOG_FILE_DATA::set_current_data (long long int pos)
 {
 	if (pos > data.size ())
 		current_data = pos;
@@ -286,7 +286,7 @@ void LOG_FILE_DATA::set_current_data (long int pos)
 	gtk_text_buffer_get_iter_at_offset (Text_File, &LastPoint, end);
 	gtk_text_buffer_apply_tag (Text_File, tag, &FirstPoint, &LastPoint);
 }
-long int LOG_FILE_DATA::is_same_data (DATA _)
+long long int LOG_FILE_DATA::is_same_data (DATA _)
 {
 	for (long int i = 0; i < data.size (); i ++)
 	{
@@ -302,11 +302,10 @@ long int LOG_FILE_DATA::is_same_data (DATA _)
 			std::cout << "match" << std::endl;
 			return i;
 		}
-		else
-			return -1;
 	}
+	return -1;
 }
-void LOG_FILE_DATA::merge_data (long int data_pos, DATA _)
+void LOG_FILE_DATA::merge_data (long long int data_pos, DATA _)
 {
 	if (data.at (data_pos).start > _.start)
 		data.at (data_pos).start = _.start;

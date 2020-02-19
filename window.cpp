@@ -30,7 +30,7 @@ void mainwindowactivate (GtkApplication *app)
 	*SaveAs = 	gtk_menu_item_new_with_label ("Save Project As"),
 	*MenuSeparator =	gtk_separator_menu_item_new (),
 	*Quit = 		gtk_menu_item_new_with_label ("Quit"),
-	*Inspect = 	gtk_menu_item_new_with_label ("Inspect Log Files"),
+	*Inspect = 	gtk_menu_item_new_with_label ("Analyze"),
 	*Playbar = 	gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0),
 	*PlayScrubber,
 	*PlayButton = 	gtk_button_new_from_icon_name ("gtk-media-play", GTK_ICON_SIZE_SMALL_TOOLBAR),
@@ -40,10 +40,10 @@ void mainwindowactivate (GtkApplication *app)
 	GtkAdjustment *ScrubberAdjustment = gtk_adjustment_new (0, 0, 100, 1, 1, 1);
 	PlayScrubber = gtk_scale_new (GTK_ORIENTATION_HORIZONTAL, ScrubberAdjustment);
 
-	//g_object_set_data (G_OBJECT (ScrubberAdjustment), "dev_list_scroll", DevListScroll);
-	//g_object_set_data (G_OBJECT (ScrubberAdjustment), "dev_list", DevList);
-	//g_object_set_data (G_OBJECT (ScrubberAdjustment), "events", EventsPlayBox);
-	//g_object_set_data (G_OBJECT (ScrubberAdjustment), "tabs", Tabs);
+	g_object_set_data (G_OBJECT (ScrubberAdjustment), "dev_list_scroll", DevListScroll);
+	g_object_set_data (G_OBJECT (ScrubberAdjustment), "dev_list", DevList);
+	g_object_set_data (G_OBJECT (ScrubberAdjustment), "events", EventsPlayBox);
+	g_object_set_data (G_OBJECT (ScrubberAdjustment), "tabs", Tabs);
 	g_signal_connect ( G_OBJECT (DrawDisplay), "draw", G_CALLBACK (generate_device_map), NULL);
 
 //set default text display

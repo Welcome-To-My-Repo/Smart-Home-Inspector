@@ -475,6 +475,7 @@ void set_regex_window (GtkApplication *app)
 
 void initialize_log_file_stats (GtkAdjustment *adjustment)
 {
+//if there are no log files, exit the function
 	if (log_files.size () == 0)
 		return;
 	std::vector <boost::regex>	year,
@@ -503,20 +504,28 @@ void initialize_log_file_stats (GtkAdjustment *adjustment)
 	GtkTextBuffer *TextBuffer;
 	DATA *check;
 	EVENT *E;
+	bool blankline = false;
+	long long int old_start, CheckPos;
 	for (int i = 0; i < log_files.size (); i ++)
 	{
-//copy text from text buffer into string stream
+//set gtk text buffer from contents of the logfile and pass to string
 		TextBuffer = log_files.at (i).get_text_file ();
 		gtk_text_buffer_get_start_iter (TextBuffer, &start);
 		gtk_text_buffer_get_end_iter (TextBuffer, &end);
 		contents = gtk_text_buffer_get_text (TextBuffer, &start, &end, TRUE);
+//assign contents of log file to stream buffer
 		buffer.str (contents);
-//create regex expressions
+//generate regex filters from the regex expressions set in the regex settings
+//window
 		for (int k = 0; k < log_files.at (i).Year_Regex.size (); k ++)
 		{
+//call regex constructor with string from regex settings window
 			tmp = new boost::regex (gtk_entry_buffer_get_text (GTK_ENTRY_BUFFER (log_files.at (i).Year_Regex.at (k))));
+//add to vector
 			year.push_back (*tmp);
+//clear pointer (duh)
 			delete tmp;
+//repeat this eight more times for each regex field
 		}
 		for (int k = 0; k < log_files.at (i).Month_Regex.size (); k ++)
 		{
@@ -566,18 +575,32 @@ void initialize_log_file_stats (GtkAdjustment *adjustment)
 			state.push_back (*tmp);
 			delete tmp;
 		}
-//create match patterns for applying the regexes
 		while (!buffer.eof ())
 		{
+//clear data and event classes
 			check = new DATA;
 			E = new EVENT;
-			check->start = buffer.tellg ();
-			std::getline (buffer, line);
-			check->end = buffer.tellg ();
+//set start and primary end position of time point in DATA class and getline
+			if (!blankline)
+			{
+				old_start = buffer.tellg ();
+				check->start = buffer.tellg ();
+				std::getline (buffer, line);
+				check->end = buffer.tellg ();
+			}
+			else
+			{
+				check->start = old_start;
+				std::getline (buffer, line);
+				check->end = buffer.tellg ();
+			}
+//search line for match with each regex entered into the field
 			int k = 0;
 			for (int k = 0; k < year.size (); k ++)
+//if one regex creates a match, stop searching with the rest
 				if (boost::regex_search (line, YearP, year.at (k)))
 					break;
+//repeat this process for the other eight regex fields
 			for (int k = 0; k < month.size (); k ++)
 				if (boost::regex_search (line, MonthP, month.at (k)))
 					break;
@@ -602,6 +625,7 @@ void initialize_log_file_stats (GtkAdjustment *adjustment)
 			for (int k = 0; k < state.size (); k ++)
 				if (boost::regex_search (line, StateP, state.at (k)))
 					break;
+//if there was no time noted in the line, continue to the next line
 			if (	YearP[0] == "" or
 				MonthP[0] == "" or
 				DayP[0] == "" or
@@ -609,33 +633,32 @@ void initialize_log_file_stats (GtkAdjustment *adjustment)
 				MinuteP[0] == "" or
 				SecondP[0] == "")
 				continue;
-			if (!YearP.empty ())
+			else
+			{
+//add time notation to DATA
 				check->year = YearP[0];
-			if (!MonthP.empty ())
 				check->month = MonthP[0];
-			if (!DayP.empty ())
 				check->day = DayP[0];
-			if (!HourP.empty ())
 				check->hour = HourP[0];
-			if (!MinuteP.empty ())
 				check->minute = MinuteP[0];
-			if  (!SecondP.empty ())
 				check->second = SecondP[0];
+			}
+//if there were matches for devices, events, or states, add those to EVENT
 			if (!DeviceP.empty ())
 				E->device_name = DeviceP[0];
 			if (!EventP.empty ())
 				E->event_name = EventP[0];
 			if (!StateP.empty ())
 				E->state = StateP[0];
+//add EVENT to DATA
 			check->events.push_back (*E);
-			log_files.at (i).data.push_back (*check);
 			if (log_files.at (i).data.size () == 0)
 			{
 				log_files.at (i).data.push_back (*check);
 			}
 			else
 			{
-				long int CheckPos = log_files.at (i).is_same_data (*check);
+				CheckPos = log_files.at (i).is_same_data (*check);
 				if (CheckPos != -1)
 				{
 					std::cout << "position\t" << CheckPos << std::endl

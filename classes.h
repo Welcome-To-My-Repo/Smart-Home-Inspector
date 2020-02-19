@@ -12,7 +12,7 @@ struct DATA
 			hour,
 			minute,
 			second;
-	long int start, end;
+	long long int start, end;
 	std::vector <EVENT> events;
 };
 
@@ -39,16 +39,16 @@ public:
 	GtkEntryBuffer *get_regex (char type, int pos);
 	int get_regex_list_size (char type);
 
-	long int get_current_data ();
-	void set_current_data (long int pos);
-	long int is_same_data (DATA _);
-	void merge_data (long int data_pos, DATA _);
+	long long int get_current_data ();
+	void set_current_data (long long int pos);
+	long long int is_same_data (DATA _);
+	void merge_data (long long int data_pos, DATA _);
 
 	void highlight_time_point (long int pos);
 
 	GtkTextBuffer *Text_File = gtk_text_buffer_new (NULL);
 	GtkTextTag *tag;
-	long int current_data = -1;
+	long long int current_data = -1;
 	std::string filename;
 	std::vector <DATA> data;
 	std::vector <GtkEntryBuffer *>	Year_Regex,
