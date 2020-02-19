@@ -11,9 +11,10 @@ OBJS = 		shi.o window.o func.o classes.o
 OUT = 		shi
 DBG =
 
-default: shi
+default: debug
 debug: DBG = -g3
 debug: shi
+release: shi
 
 shi: $(OBJS)
 	g++ $(OBJS) $(LIBS) $(FLAGS) -o$(OUT)

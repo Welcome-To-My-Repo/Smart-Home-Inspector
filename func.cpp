@@ -1204,6 +1204,8 @@ void open_project (GtkWidget *tabs)
 //the log files' active time point
 void scrubber_change_time (GtkAdjustment *adjustment)
 {
+	if (log_files.size () < 1)
+		return;
 	gtk_adjustment_set_value (current_time, gtk_adjustment_get_value (adjustment));
 	for (int i = 0; i < log_files.size (); i ++)
 	{
@@ -1214,6 +1216,8 @@ void scrubber_change_time (GtkAdjustment *adjustment)
 //moves the current time forward
 void skip_forward (GtkAdjustment *adjustment)
 {
+	if (log_files.size () < 1)
+		return;
 	gtk_adjustment_set_value (current_time, gtk_adjustment_get_value (current_time) + 1);
 	gtk_adjustment_set_value (adjustment, gtk_adjustment_get_value(current_time));
 	for (int i = 0; i < log_files.size (); i ++)
@@ -1224,6 +1228,8 @@ void skip_forward (GtkAdjustment *adjustment)
 //moves time backward. really!
 void skip_backward (GtkAdjustment *adjustment)
 {
+	if (log_files.size () < 1)
+		return;
 	gtk_adjustment_set_value (current_time, gtk_adjustment_get_value (current_time) - 1);
 	gtk_adjustment_set_value (adjustment, gtk_adjustment_get_value(current_time));
 	for (int i = 0; i < log_files.size (); i ++)
@@ -1234,6 +1240,10 @@ void skip_backward (GtkAdjustment *adjustment)
 //it plays...
 void play (GtkAdjustment *adjustment)
 {
+	if (log_files.size () < 1)
+		return;
+	if (Playing == true)
+		return;
 	//gdk_threads_add_idle (G_SOURCE_FUNC(play_loop), adjustment);
 	Playing = true;
 	std::thread (play_loop, adjustment).detach ();
@@ -1250,7 +1260,7 @@ void play_loop (GtkAdjustment *adjustment)
 		gtk_adjustment_set_value (current_time, gtk_adjustment_get_value (current_time) + 1);
 		gtk_adjustment_set_value (adjustment, gtk_adjustment_get_value(current_time));
 		gtk_widget_show_all (gtk_widget_get_parent (GTK_WIDGET (adjustment)));
-		std::this_thread::sleep_for (std::chrono::milliseconds (500));
+		std::this_thread::sleep_for (std::chrono::milliseconds (200));
 	}
 	return;
 }
