@@ -290,8 +290,8 @@ long long int LOG_FILE_DATA::is_same_data (DATA _)
 {
 	for (long int i = 0; i < data.size (); i ++)
 	{
-		std::cout << "current data\t" << data.at (i).year << " " << data.at (i).month << " " << data.at (i).day << " " << data.at (i).hour << " " << data.at (i).minute << " " << data.at (i).second << std::endl
-		<< "data to check\t" << _.year << " " << _.month << " " << _.day << " " << _.hour << " " << _.minute << " " << _.second << std::endl;
+		//std::cout << "current data\t" << data.at (i).year << " " << data.at (i).month << " " << data.at (i).day << " " << data.at (i).hour << " " << data.at (i).minute << " " << data.at (i).second << std::endl
+		//<< "data to check\t" << _.year << " " << _.month << " " << _.day << " " << _.hour << " " << _.minute << " " << _.second << std::endl;
 		if (data.at(i).year == _.year
 			and data.at (i).month == _.month
 			and data.at (i).day == _.day
@@ -299,7 +299,7 @@ long long int LOG_FILE_DATA::is_same_data (DATA _)
 			and data.at (i).minute == _.minute
 			and data.at (i).second == _.second)
 		{
-			std::cout << "match" << std::endl;
+			//std::cout << "match" << std::endl;
 			return i;
 		}
 	}
